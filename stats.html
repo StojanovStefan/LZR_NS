@@ -17,6 +17,72 @@
 
       .teamStats {
         overflow-x: auto;
+        margin-bottom: 35px;
+        padding: 20px;
+        border-radius: 12px;
+      }
+
+      @media (max-width: 600px) {
+        #statsContainer {
+          transform: scale(1.12);
+          transform-origin: top left;
+        }
+
+        .teamStats {
+          padding: 15px;
+          border-radius: 10px;
+        }
+
+        .team-header {
+          font-size: 22px;
+        }
+
+        .team-header img {
+          width: 48px;
+          height: 48px;
+        }
+
+        .teamStats table {
+          font-size: 20px;
+        }
+
+        .teamStats th,
+        .teamStats td {
+          padding: 12px 14px;
+        }
+
+        .player-img {
+          width: 38px;
+          height: 38px;
+        }
+
+        #statsContainer {
+          overflow-x: auto;
+        }
+      }
+
+      @media (max-width: 400px) {
+        #statsContainer {
+          transform: scale(1.18);
+        }
+
+        .team-header {
+          font-size: 20px;
+        }
+
+        .teamStats table {
+          font-size: 22px;
+        }
+
+        .teamStats th,
+        .teamStats td {
+          padding: 14px 16px;
+        }
+
+        .player-img {
+          width: 42px;
+          height: 42px;
+        }
       }
 
       table {
@@ -26,26 +92,6 @@
         border-radius: 16px;
         overflow: hidden;
         font-size: 16px;
-      }
-
-      @media (max-width: 600px) {
-        th,
-        td {
-          padding: 10px;
-          font-size: 14px;
-        }
-      }
-
-      @media (max-width: 400px) {
-        th,
-        td {
-          padding: 8px;
-          font-size: 12px;
-        }
-
-        table {
-          font-size: 14px;
-        }
       }
 
       th {

@@ -127,34 +127,7 @@
           padding: 10px;
           display: flex;
           flex-direction: column;
-          gap: 4px;
-        }
-
-        .left-info .date-time,
-        .left-info div:nth-child(2) {
-          font-size: 14px;
-          text-align: center;
-        }
-
-        .left-info .date-time::after {
-          content: " • ";
-        }
-
-        .left-info .date-time,
-        .left-info div:nth-child(2) {
-          display: inline;
-        }
-
-        .left-info div:nth-child(3),
-        .left-info div:nth-child(4) {
-          display: inline-block;
-          font-size: 13px;
-          margin: 0 5px;
-          text-align: center;
-        }
-
-        .left-info div:nth-child(3)::after {
-          content: "";
+          gap: 6px;
         }
 
         .left-info div {
@@ -214,6 +187,7 @@
           text-align: center;
           white-space: nowrap;
         }
+
         .left-info {
           font-size: 13px;
           padding: 8px;
@@ -317,10 +291,10 @@
 
           card.innerHTML = `
           <div class="left-info">
-            <div class="date-time">📅 ${date} • 🕒 ${startTime}</div>
             <div>📍 ${location}</div>
-            <div>${league}</div>
-            <div>${season}</div>
+            <div class="date-time">📅 ${date} • 🕒 ${startTime}</div>
+            <div class="league">${league}</div>
+            <div class="season">${season}</div>
           </div>
 
           <div class="center-content">
