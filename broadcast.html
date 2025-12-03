@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Broadcast Score</title>
+
+    <style>
+      /* GLOBAL TRANSPARENT BACKGROUND */
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background: rgba(0, 0, 0, 0) !important;
+        font-family: Arial, sans-serif;
+        overflow: hidden;
+      }
+
+      /* ---------------- PLAYER POPUP ---------------- */
+
+      .player-stats {
+        position: absolute;
+        bottom: 16%;
+        left: 50%;
+        transform: translateX(-50%) translateY(20px);
+        width: 860px;
+        background: rgba(255, 255, 255, 1);
+        border-radius: 12px;
+        display: flex;
+        padding: 8px 14px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+        opacity: 0;
+        pointer-events: none;
+        z-index: 20;
+        transition: opacity 0.45s ease, transform 0.45s ease;
+      }
+
+      .player-stats.show {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0px);
+        pointer-events: auto;
+      }
+
+      .stats-content {
+        display: flex;
+        align-items: center;
+        width: 100%;
+      }
+
+      #playerPhoto {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: #ddd;
+        object-fit: cover;
+        border: 1px solid #ccc;
+        margin-right: 12px;
+      }
+
+      .player-name {
+        font-size: 22px;
+        min-width: 180px;
+        padding: 6px 10px;
+        border-right: 1px solid #ccc;
+        text-transform: capitalize;
+        text-align: left;
+        white-space: nowrap;
+      }
+
+      .stats-row {
+        display: flex;
+        gap: 0;
+        width: 100%;
+      }
+
+      .stat-box {
+        flex: 1;
+        text-align: center;
+        padding: 6px 8px;
+        border-left: 1px solid #ccc;
+      }
+
+      .stat-box span {
+        font-size: 15px;
+        font-weight: normal;
+      }
+
+      /* ---------------- SCOREBOARD ---------------- */
+
+      .scoreboard {
+        position: absolute;
+        bottom: 3%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 733px;
+        height: 76px;
+        background: rgba(0, 0, 0, 0);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+        z-index: 15;
+      }
+
+      .team {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex: 1;
+        height: 100%;
+      }
+
+      .team.left {
+        background: #581ba1;
+        justify-content: flex-end;
+        padding-right: 10px;
+      }
+
+      .team.right {
+        background: #060339;
+        justify-content: flex-start;
+        padding-left: 10px;
+      }
+
+      .team img {
+        width: 68px;
+        height: 68px;
+        border-radius: 50%;
+        object-fit: contain;
+        background: #000;
+        border: 2px solid #fff;
+      }
+
+      .team-name {
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 0 6px;
+        color: #fff;
+        font-size: 26px;
+        width: auto;
+        text-align: center;
+        min-width: 50px;
+      }
+
+      .score-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: bold;
+        font-size: 48px;
+        font-family: "Segoe UI";
+        color: #222;
+        background: #f0f0f0;
+
+        padding: 0 15px;
+        height: 100%;
+      }
+
+      .score {
+        min-width: 50px;
+        text-align: center;
+      }
+
+      .divider {
+        width: 2px;
+        background: #222;
+        height: 60%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- PLAYER POPUP -->
+    <div id="playerStatsPopup" class="player-stats">
+      <div class="stats-content">
+        <img id="playerPhoto" src="" />
+
+        <div id="playerName" class="player-name"></div>
+
+        <div class="stats-row">
+          <div class="stat-box">PTS<br /><span id="statPTS"></span></div>
+          <div class="stat-box">
+            <b id="statShotType"></b><br /><span id="statShot"></span>
+          </div>
+          <div class="stat-box">FG<br /><span id="statFG"></span></div>
+          <div class="stat-box">REB O/D<br /><span id="statREB"></span></div>
+          <div class="stat-box">AST<br /><span id="statAST"></span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCOREBOARD -->
+    <div class="scoreboard">
+      <div class="team left">
+        <img id="teamALogo" src="" />
+        <div class="team-name" id="teamAName">---</div>
+      </div>
+
+      <div class="score-container">
+        <div class="score" id="scoreA">0</div>
+        <div class="divider"></div>
+        <div class="score" id="scoreB">0</div>
+      </div>
+
+      <div class="team right">
+        <div class="team-name" id="teamBName">---</div>
+        <img id="teamBLogo" src="" />
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+      import {
+        getDatabase,
+        ref,
+        onValue,
+      } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyBrMu0mjZw1SIh-0KgEVaKoPURdN1PhC0w",
+        authDomain: "kk-panthers-39d91.firebaseapp.com",
+        databaseURL:
+          "https://kk-panthers-39d91-default-rtdb.europe-west1.firebasedatabase.app",
+        projectId: "kk-panthers-39d91",
+        storageBucket: "kk-panthers-39d91.appspot.com",
+        messagingSenderId: "605710897252",
+        appId: "1:605710897252:web:9469a8022065af45748f71",
+        measurementId: "G-KL6BJPX04S",
+      };
+
+      const app = initializeApp(firebaseConfig);
+      const db = getDatabase(app);
+
+      function getQueryParam(param) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);
+      }
+
+      const gameId = getQueryParam("id");
+      if (!gameId) {
+        document.body.innerHTML = "<p>No game selected.</p>";
+        throw new Error("No game ID provided in URL");
+      }
+
+      const gameRef = ref(db, `games/${gameId}`);
+
+      let popupTimer = null;
+      let lastPopupTimestamp = 0;
+
+      function showPlayerStats(player, shot) {
+        document.getElementById("playerName").textContent =
+          player.name.charAt(0).toUpperCase() + player.name.slice(1);
+
+        document.getElementById("statPTS").textContent = player.points ?? 0;
+        const off = player.rebounds_off ?? 0;
+        const def = player.rebounds_def ?? 0;
+        const total = off + def;
+
+        document.getElementById(
+          "statREB"
+        ).textContent = `${total} (${off} / ${def})`;
+
+        document.getElementById("statAST").textContent = player.assists ?? 0;
+
+        const fgMade = player.fg_made ?? 0;
+        const fgAttempts = player.fg_attempts ?? 0;
+        const fgPerc =
+          fgAttempts > 0 ? Math.round((fgMade / fgAttempts) * 100) : 0;
+        document.getElementById(
+          "statFG"
+        ).textContent = `${fgMade}/${fgAttempts} (${fgPerc}%)`;
+
+        let shotLabel = "";
+        let shotValue = "";
+
+        if (shot === "FT") {
+          shotLabel = "FT";
+          const m = player.ft_made ?? 0;
+          const a = player.ft_attempts ?? 0;
+          const p = a ? Math.round((m / a) * 100) : 0;
+          shotValue = `${m}/${a} (${p}%)`;
+        }
+
+        if (shot === "2PT") {
+          shotLabel = "2PT";
+          const m = player.two_made ?? 0;
+          const a = player.two_attempts ?? 0;
+          const p = a ? Math.round((m / a) * 100) : 0;
+          shotValue = `${m}/${a} (${p}%)`;
+        }
+
+        if (shot === "3PT") {
+          shotLabel = "3PT";
+          const m = player.three_made ?? 0;
+          const a = player.three_attempts ?? 0;
+          const p = a ? Math.round((m / a) * 100) : 0;
+          shotValue = `${m}/${a} (${p}%)`;
+        }
+
+        document.getElementById("statShotType").textContent = shotLabel;
+        document.getElementById("statShot").textContent = shotValue;
+
+        document.getElementById("playerPhoto").src = player.photo
+          ? "team_logo/" + player.photo
+          : "team_logo/default_player.png";
+
+        const popup = document.getElementById("playerStatsPopup");
+        popup.classList.add("show");
+
+        clearTimeout(popupTimer);
+        popupTimer = setTimeout(() => popup.classList.remove("show"), 5000);
+      }
+
+      onValue(gameRef, (snapshot) => {
+        const data = snapshot.val();
+        if (!data) return;
+
+        const info = data.gameInfo;
+        const teams = data.teams;
+
+        const teamA = info.teamA;
+        const teamB = info.teamB;
+
+        document.getElementById("teamAName").textContent = teamA
+          .substring(0, 3)
+          .toUpperCase();
+        document.getElementById("teamBName").textContent = teamB
+          .substring(0, 3)
+          .toUpperCase();
+
+        document.getElementById("teamALogo").src =
+          "team_logo/" + teams[teamA].logo;
+
+        document.getElementById("teamBLogo").src =
+          "team_logo/" + teams[teamB].logo;
+
+        document.getElementById("scoreA").textContent = info.scoreA ?? 0;
+        document.getElementById("scoreB").textContent = info.scoreB ?? 0;
+
+        const lastScore = data.lastScore;
+
+        if (
+          lastScore &&
+          lastScore.player &&
+          lastScore.shotType &&
+          ["FT", "2PT", "3PT"].includes(lastScore.shotType) &&
+          lastScore.timestamp > lastPopupTimestamp
+        ) {
+          lastPopupTimestamp = lastScore.timestamp;
+
+          const t = lastScore.team;
+          const pid = lastScore.player;
+
+          const base = data.teams[t].players[pid];
+
+          const player = {
+            ...base.stats,
+            name: base.name,
+            photo: base.photo,
+          };
+
+          const shot = lastScore.shotType;
+
+          showPlayerStats(player, shot);
+        }
+      });
+    </script>
+  </body>
+</html>

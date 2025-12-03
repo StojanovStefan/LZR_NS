@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>League Homepage</title>
+
+    <style>
+      body {
+        background: #f3f4f6;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+      }
+
+      @media (max-width: 600px) {
+        body {
+          zoom: 1.25;
+        }
+      }
+
+      @media (max-width: 400px) {
+        body {
+          zoom: 1.5;
+        }
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 25px;
+        font-size: 28px;
+      }
+
+      #gamesList .game-card:first-child {
+        margin-top: 40px;
+      }
+
+      .game-card {
+        width: 100%;
+        background: white;
+        border-radius: 12px;
+        display: flex;
+        overflow: hidden;
+        margin-bottom: 18px;
+        cursor: pointer;
+        transition: 0.2s;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .game-card:hover {
+        transform: scale(1.01);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      }
+
+      .left-info {
+        width: 160px;
+        background: #4b4b4b;
+        color: white;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 15px;
+      }
+
+      .left-info div {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        background: #606060;
+        padding: 5px 10px;
+        border-radius: 8px;
+        font-size: 13px;
+        width: fit-content;
+      }
+
+      .date-time {
+        font-size: 17px;
+        font-weight: bold;
+        background: none !important;
+        padding: 0 !important;
+      }
+
+      .center-content {
+        flex: 1;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+      }
+
+      .teams-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+      }
+
+      .team {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 20px;
+      }
+
+      .team img {
+        width: 110px;
+        height: 110px;
+        object-fit: cover;
+        border-radius: 50%;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+        background: white;
+      }
+
+      .score {
+        font-size: 26px;
+        white-space: nowrap;
+        color: black;
+      }
+
+      @media (max-width: 600px) {
+        body {
+          padding: 10px;
+        }
+
+        h1 {
+          font-size: 22px;
+          margin-bottom: 15px;
+        }
+
+        .game-card {
+          flex-direction: column;
+          border-radius: 14px;
+        }
+
+        .left-info {
+          width: 100%;
+          padding: 10px;
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 6px;
+          justify-content: space-between;
+          font-size: 14px;
+        }
+
+        .left-info div {
+          font-size: 12px;
+          padding: 4px 8px;
+        }
+
+        .date-time {
+          font-size: 15px;
+          width: 100%;
+          text-align: center;
+        }
+
+        .center-content {
+          padding: 18px 12px;
+        }
+
+        .teams-row {
+          flex-direction: row;
+          justify-content: space-between;
+          gap: 10px;
+        }
+
+        .team {
+          flex-direction: column;
+          font-size: 19px;
+          gap: 6px;
+        }
+
+        .team img {
+          width: 95px;
+          height: 95px;
+        }
+
+        .score {
+          font-size: 28px;
+          min-width: 60px;
+          text-align: center;
+          white-space: nowrap;
+        }
+      }
+
+      @media (max-width: 400px) {
+        .team img {
+          width: 85px;
+          height: 85px;
+        }
+
+        .team {
+          font-size: 18px;
+          gap: 6px;
+        }
+
+        .score {
+          font-size: 26px;
+          min-width: 55px;
+          text-align: center;
+          white-space: nowrap;
+        }
+        .left-info {
+          font-size: 13px;
+          padding: 8px;
+        }
+
+        .left-info div {
+          font-size: 11px;
+          padding: 3px 6px;
+        }
+
+        .date-time {
+          font-size: 14px;
+        }
+
+        .teams-row {
+          gap: 12px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="gamesList"></div>
+
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+      import {
+        getDatabase,
+        ref,
+        get,
+      } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyBrMu0mjZw1SIh-0KgEVaKoPURdN1PhC0w",
+        authDomain: "kk-panthers-39d91.firebaseapp.com",
+        databaseURL:
+          "https://kk-panthers-39d91-default-rtdb.europe-west1.firebasedatabase.app/",
+        projectId: "kk-panthers-39d91",
+        storageBucket: "kk-panthers-39d91.appspot.com",
+        messagingSenderId: "605710897252",
+        appId: "1:605710897252:web:9469a8022065af45748f71",
+        measurementId: "G-KL6BJPX04S",
+      };
+
+      const app = initializeApp(firebaseConfig);
+      const db = getDatabase(app);
+
+      const gamesRef = ref(db, "games");
+
+      get(gamesRef).then((snapshot) => {
+        if (!snapshot.exists()) {
+          document.getElementById("gamesList").innerHTML =
+            "<p>No games found.</p>";
+          return;
+        }
+
+        const games = snapshot.val();
+        const gameKeys = Object.keys(games);
+        gameKeys.sort((a, b) => {
+          const dateA = a.split("_")[0].split("-");
+          const dateB = b.split("_")[0].split("-");
+
+          const timestampA = new Date(
+            `${dateA[2]}-${dateA[1]}-${dateA[0]}`
+          ).getTime();
+          const timestampB = new Date(
+            `${dateB[2]}-${dateB[1]}-${dateB[0]}`
+          ).getTime();
+
+          return timestampB - timestampA;
+        });
+
+        const list = document.getElementById("gamesList");
+
+        gameKeys.forEach((key) => {
+          const game = games[key];
+          const info = game.gameInfo || {};
+
+          const teamA = info.teamA || "Team A";
+          const teamB = info.teamB || "Team B";
+
+          const logoA = info.teamA_logo;
+          const logoB = info.teamB_logo;
+
+          const scoreA = info.scoreA ?? "-";
+          const scoreB = info.scoreB ?? "-";
+
+          const date = info.date || key.split("_")[0];
+          const startTime = info.startTime || "";
+          const location = info.location || "";
+          const season = info.season || "";
+          const league = info.league || "";
+
+          const card = document.createElement("div");
+          card.className = "game-card";
+          card.onclick = () => {
+            window.location.href = `stats.html?id=${key}`;
+          };
+
+          card.innerHTML = `
+          <div class="left-info">
+            <div class="date-time">📅 ${date} • 🕒 ${startTime}</div>
+            <div>📍 ${location}</div>
+            <div>${league}</div>
+            <div>${season}</div>
+          </div>
+
+          <div class="center-content">
+            <div class="teams-row">
+              <div class="team">
+                <img src="team_logo/${logoA}">
+                <span>${teamA}</span>
+              </div>
+
+              <div class="score">${scoreA} : ${scoreB}</div>
+
+              <div class="team">
+                <span>${teamB}</span>
+                <img src="team_logo/${logoB}">
+              </div>
+            </div>
+
+          </div>
+        `;
+
+          list.appendChild(card);
+        });
+      });
+    </script>
+  </body>
+</html>
