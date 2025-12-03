@@ -448,9 +448,36 @@
         .teamStats {
           padding: 8px;
         }
+
+        #teamTotals {
+          padding: 10px 0;
+          border-radius: 14px;
+        }
+
+        .stat-row {
+          padding: 8px 10px;
+        }
+
+        .stat-row div:first-child {
+          font-size: 14px;
+          width: 60px;
+        }
+
+        .stat-row div:last-child {
+          font-size: 14px;
+          width: 60px;
+        }
+
+        .bar-container {
+          margin: 0 10px;
+          height: 7px;
+        }
+
+        #teamTotals strong {
+          font-size: 14px;
+        }
       }
 
-      /* Veoma mali ekrani – max 400px */
       @media (max-width: 400px) {
         .big-logo {
           width: 95px;
@@ -487,13 +514,11 @@
       </button>
       <button id="btnTimeline" class="switch-btn">TOK UTAKMICE</button>
     </div>
-
-    <div id="teamTotals"></div>
     <div class="scale-wrapper">
+      <div id="teamTotals"></div>
       <div id="statsContainer"></div>
+      <div id="timelineContainer"></div>
     </div>
-    <div id="timelineContainer"></div>
-
     <script type="module">
       import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
       import {
