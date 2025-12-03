@@ -89,6 +89,7 @@
         align-items: center;
         gap: 10px;
         font-size: 20px;
+        flex-direction: column;
       }
 
       .team img {
@@ -124,17 +125,36 @@
         .left-info {
           width: 100%;
           padding: 10px;
-          flex-direction: row;
-          flex-wrap: wrap;
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 6px;
-          align-items: center;
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
         }
 
-        .left-info .date-time {
-          grid-column: span 2;
+        .left-info .date-time,
+        .left-info div:nth-child(2) {
+          font-size: 14px;
           text-align: center;
+        }
+
+        .left-info .date-time::after {
+          content: " • ";
+        }
+
+        .left-info .date-time,
+        .left-info div:nth-child(2) {
+          display: inline;
+        }
+
+        .left-info div:nth-child(3),
+        .left-info div:nth-child(4) {
+          display: inline-block;
+          font-size: 13px;
+          margin: 0 5px;
+          text-align: center;
+        }
+
+        .left-info div:nth-child(3)::after {
+          content: "";
         }
 
         .left-info div {
