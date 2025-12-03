@@ -13,14 +13,18 @@
       }
 
       @media (max-width: 600px) {
-        body {
-          zoom: 1.25;
+        .scale-wrapper {
+          transform: scale(1.25);
+          transform-origin: top left;
+          width: 80%;
         }
       }
 
       @media (max-width: 400px) {
-        body {
-          zoom: 1.5;
+        .scale-wrapper {
+          transform: scale(1.4);
+          transform-origin: top left;
+          width: 72%;
         }
       }
 
@@ -222,7 +226,9 @@
   </head>
 
   <body>
-    <div id="gamesList"></div>
+    <div class="scale-wrapper">
+      <div id="gamesList"></div>
+    </div>
 
     <script type="module">
       import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
