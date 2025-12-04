@@ -1,94 +1,3297 @@
 {
   "games": {
     "2025-12-03_panthers_vs_grizzlies": {
+      "events": {
+        "-OfaeMl1UR205MNkTiIN": {
+          "player": "2",
+          "playerName": "Rajačić Filip",
+          "team": "Panthers",
+          "timestamp": 1764806457257,
+          "type": "turnovers"
+        },
+        "-OfaeOS3ABALXDHHM8xa": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764806464172,
+          "type": "steals"
+        },
+        "-OfaeOjazRESmfycfhhI": {
+          "player": "8",
+          "playerName": "Dobrić Ognjen",
+          "team": "Grizzlies",
+          "timestamp": 1764806465358,
+          "type": "turnovers"
+        },
+        "-OfaePu2tHlNgNTu3KFD": {
+          "player": "2",
+          "playerName": "Rajačić Filip",
+          "team": "Panthers",
+          "timestamp": 1764806470123,
+          "type": "miss_3"
+        },
+        "-OfaeSOeV9MrSluZiL49": {
+          "player": "30",
+          "playerName": "Keskenović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764806480338,
+          "type": "points_2"
+        },
+        "-OfaeTIsCEEioi0RwqHH": {
+          "player": "8",
+          "playerName": "Dobrić Ognjen",
+          "team": "Grizzlies",
+          "timestamp": 1764806484064,
+          "type": "assists"
+        },
+        "-OfaeWj3vfh2WAGdXJDG": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764806498092,
+          "type": "miss_3"
+        },
+        "-OfaeYiPjiW2X7i-z3A8": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764806506242,
+          "type": "rebounds_def"
+        },
+        "-OfaeaJng7N01d2bznlK": {
+          "player": "1",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1764806516891,
+          "type": "miss_3"
+        },
+        "-OfaecHTFNMXzpzMhnt0": {
+          "player": "30",
+          "playerName": "Keskenović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764806524934,
+          "type": "rebounds_off"
+        },
+        "-Ofaed0sHqI46MtvOCr8": {
+          "player": "30",
+          "playerName": "Keskenović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764806527968,
+          "type": "miss_2"
+        },
+        "-Ofaeh3aMi04-qEb2Tbr": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764806544526,
+          "type": "turnovers"
+        },
+        "-OfaehNsk2hpJgJxZ53r": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764806545823,
+          "type": "steals"
+        },
+        "-OfagAyUAimY1jduQJL2": {
+          "player": "8",
+          "playerName": "Dobrić Ognjen",
+          "team": "Grizzlies",
+          "timestamp": 1764806933255,
+          "type": "miss_3"
+        },
+        "-OfagDCRSOERLwxpCJTA": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764806942404,
+          "type": "rebounds_def"
+        },
+        "-OfagD_55o6XB8q9BO0D": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764806943918,
+          "type": "miss_3"
+        },
+        "-OfagF-9k1ceyWkUPst6": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764806949746,
+          "type": "rebounds_def"
+        },
+        "-OfagGydks6k8zPDJfqn": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764806957841,
+          "type": "turnovers"
+        },
+        "-OfagK0wmd2pPX3bqgIE": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764806970340,
+          "type": "points_2"
+        },
+        "-OfagQuRLWfVNUX2NmCy": {
+          "player": "8",
+          "playerName": "Dobrić Ognjen",
+          "team": "Grizzlies",
+          "timestamp": 1764806998532,
+          "type": "miss_3"
+        },
+        "-OfagS4Bx1GS9syhb1_z": {
+          "player": "30",
+          "playerName": "Keskenović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764807003316,
+          "type": "rebounds_off"
+        },
+        "-OfagSKIFQ27EqZrVg-I": {
+          "player": "30",
+          "playerName": "Keskenović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764807004347,
+          "type": "turnovers"
+        },
+        "-OfagUPHfth9JCTuzi4_": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764807012858,
+          "type": "rebounds_def"
+        },
+        "-OfagUgSPdVVxB6vAFja": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764807014021,
+          "type": "miss_2"
+        },
+        "-Ofagcw0u-Oj-rczX-r_": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764807051881,
+          "type": "rebounds_def"
+        },
+        "-OfageUz_f0w6Ip8B4oW": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764807058279,
+          "type": "miss_3"
+        },
+        "-OfagenZGyzafgDkgVvz": {
+          "player": "1",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1764807059532,
+          "type": "rebounds_off"
+        },
+        "-OfagmlEGtG_I49wIExq": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764807092151,
+          "type": "miss_2"
+        },
+        "-OfagnrepXosTtSX2Kvg": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764807096658,
+          "type": "rebounds_def"
+        },
+        "-Ofagou9sCM8QPmsA7Xf": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764807100914,
+          "type": "points_2"
+        },
+        "-Ofagp8KRX63ZKPwOC_2": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764807101885,
+          "type": "assists"
+        },
+        "-OfagvXbUqM0D2oG760V": {
+          "player": "30",
+          "playerName": "Keskenović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764807128078,
+          "type": "points_3"
+        },
+        "-Ofah0yg3j15twMTgp8Y": {
+          "player": "13",
+          "playerName": "Stanković Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764807154452,
+          "type": "turnovers"
+        },
+        "-Ofah6HkMhdTvN_i4xa0": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764807176216,
+          "type": "turnovers"
+        },
+        "-OfahKXqkmOk6h-8jwb6": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764807234590,
+          "type": "miss_2"
+        },
+        "-OfahL6gfO5Qzt4rs5_m": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764807236948,
+          "type": "rebounds_def"
+        },
+        "-OfahPUHoZRunt-n66EJ": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764807254842,
+          "type": "turnovers"
+        },
+        "-OfahSJmbG1-jKAiHeSD": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764807266458,
+          "type": "steals"
+        },
+        "-OfahW0cWTM6CGRmJYVi": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764807281616,
+          "type": "points_2"
+        },
+        "-OfahWHrBYXM--1sl9Dn": {
+          "player": "13",
+          "playerName": "Stanković Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764807282719,
+          "type": "assists"
+        },
+        "-OfahaSjulmuyPA4Tg41": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764807303895,
+          "type": "miss_2"
+        },
+        "-OfahhAQwDhpnDiNwRK_": {
+          "player": "13",
+          "playerName": "Stanković Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764807331395,
+          "type": "points_3"
+        },
+        "-OfahhohvWDUiExgzC9R": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764807334037,
+          "type": "assists"
+        },
+        "-Ofahr6a1IVWzxGzWmb9": {
+          "player": "8",
+          "playerName": "Dobrić Ognjen",
+          "team": "Grizzlies",
+          "timestamp": 1764807372110,
+          "type": "miss_3"
+        },
+        "-OfahrkS1RjTwuNqye_3": {
+          "player": "13",
+          "playerName": "Stanković Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764807374725,
+          "type": "rebounds_def"
+        },
+        "-OfahvBPorTNyqmbpgsK": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764807388802,
+          "type": "miss_2"
+        },
+        "-OfahvdFDIlYXGPEYr_B": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764807390647,
+          "type": "rebounds_off"
+        },
+        "-Ofahvs4lWvzPZ0IWBly": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764807391597,
+          "type": "points_2"
+        },
+        "-Ofai11ZXU0iShgG0P1M": {
+          "player": "30",
+          "playerName": "Keskenović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764807416844,
+          "type": "turnovers"
+        },
+        "-OfaiDMNEDCc1McJpXLG": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764807467328,
+          "type": "miss_2"
+        },
+        "-OfaiFwgcRG-ujch5SVc": {
+          "player": "8",
+          "playerName": "Dobrić Ognjen",
+          "team": "Grizzlies",
+          "timestamp": 1764807477908,
+          "type": "rebounds_def"
+        },
+        "-OfaiJuSdz4dZ8-t0mfQ": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764807494149,
+          "type": "turnovers"
+        },
+        "-OfaiM89dn1LPAYTQLpE": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764807503282,
+          "type": "turnovers"
+        },
+        "-OfaiQkNSGFZQJpypync": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764807522176,
+          "type": "turnovers"
+        },
+        "-OfaiRYaEvtZkaXiyg5M": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764807525454,
+          "type": "steals"
+        },
+        "-OfaiVfiyh_4ba9e9BS9": {
+          "player": "13",
+          "playerName": "Stanković Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764807542358,
+          "type": "points_3"
+        },
+        "-OfaiVtLQ5Zca3kYh95j": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764807543230,
+          "type": "assists"
+        },
+        "-OfaifUd7J4CboOkhs4A": {
+          "player": "30",
+          "playerName": "Keskenović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764807586641,
+          "type": "miss_3"
+        },
+        "-Ofaio8TA5cgGTwMyoup": {
+          "player": "2",
+          "playerName": "Rajačić Filip",
+          "team": "Panthers",
+          "timestamp": 1764807622086,
+          "type": "miss_3"
+        },
+        "-OfaipfSm57CWD_dsZ_7": {
+          "player": "1",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1764807628357,
+          "type": "rebounds_def"
+        },
+        "-OfaiwMf27TRinAMCDkS": {
+          "player": "1",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1764807655763,
+          "type": "turnovers"
+        },
+        "-Ofaj5THm6xZnLX4sR4m": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764807697146,
+          "type": "points_2"
+        },
+        "-Ofaj6XkXV3lR-y4Y1yQ": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764807701528,
+          "type": "assists"
+        },
+        "-OfajGg58tJm7STHWCcG": {
+          "player": "8",
+          "playerName": "Dobrić Ognjen",
+          "team": "Grizzlies",
+          "timestamp": 1764807743086,
+          "type": "points_3"
+        },
+        "-OfajH6WpVRtD6yzJbYo": {
+          "player": "1",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1764807744841,
+          "type": "assists"
+        },
+        "-OfajLddIq0eq-9l4obl": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764807763409,
+          "type": "miss_3"
+        },
+        "-OfajM1DNq4MfplEV6_Q": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764807764982,
+          "type": "rebounds_def"
+        },
+        "-OfajSepA_f9RuEvf-g0": {
+          "player": "8",
+          "playerName": "Dobrić Ognjen",
+          "team": "Grizzlies",
+          "timestamp": 1764807792157,
+          "type": "points_3"
+        },
+        "-OfajTUYTTYQftsAloC4": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764807795531,
+          "type": "assists"
+        },
+        "-OfajgisggAQ8MmUDAMG": {
+          "player": "13",
+          "playerName": "Stanković Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764807853856,
+          "type": "points_2"
+        },
+        "-OfajnNFxx6Q5iqUWgEi": {
+          "player": "30",
+          "playerName": "Keskenović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764807881080,
+          "type": "miss_2"
+        },
+        "-OfajoMY1uFI2WDsEGhg": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764807885131,
+          "type": "rebounds_def"
+        },
+        "-OfajsBDa8tinWCuD4kC": {
+          "player": "30",
+          "playerName": "Keskenović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764807900790,
+          "type": "steals"
+        },
+        "-OfajuYtj1SuHBd-1nNF": {
+          "player": "1",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1764807910497,
+          "type": "points_2"
+        },
+        "-Ofajv7D1wzJFMcRgn6X": {
+          "player": "30",
+          "playerName": "Keskenović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764807912822,
+          "type": "assists"
+        },
+        "-Ofak1LcBTrNUBrKtMRv": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764807942416,
+          "type": "turnovers"
+        },
+        "-Ofak1iQQdeDNTbj8yxB": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764807943939,
+          "type": "steals"
+        },
+        "-Ofak99AX3x52DwQIHGu": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764807974387,
+          "type": "points_3"
+        },
+        "-OfakDehXWPLFufi9xHD": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764807992853,
+          "type": "miss_2"
+        },
+        "-OfakPu1zsB8i0PznP5B": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764808042986,
+          "type": "rebounds_def"
+        },
+        "-OfakQOrBUAAKJtQ237U": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764808045023,
+          "type": "points_3"
+        },
+        "-OfakQre1FJBFvAg9hnJ": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764808046930,
+          "type": "assists"
+        },
+        "-OfakaMJjU-qdXvWCpO9": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764808089916,
+          "type": "miss_2"
+        },
+        "-Ofakb-QedYwzEFCYjLN": {
+          "player": "8",
+          "playerName": "Dobrić Ognjen",
+          "team": "Grizzlies",
+          "timestamp": 1764808092547,
+          "type": "rebounds_def"
+        },
+        "-OfaknnsUDp5gwMEspOf": {
+          "player": "8",
+          "playerName": "Dobrić Ognjen",
+          "team": "Grizzlies",
+          "timestamp": 1764808144992,
+          "type": "points_2"
+        },
+        "-Ofako0AelEMfZ0-BYC6": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764808145843,
+          "type": "assists"
+        },
+        "-Ofal5bdkvrgaOH2v3Es": {
+          "player": "13",
+          "playerName": "Stanković Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764808222033,
+          "type": "turnovers"
+        },
+        "-Ofal9R_tAl6mTrY4cYv": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764808237709,
+          "type": "steals"
+        },
+        "-Ofal9yKVjTQTe4qpb2b": {
+          "player": "8",
+          "playerName": "Dobrić Ognjen",
+          "team": "Grizzlies",
+          "timestamp": 1764808239869,
+          "type": "points_2"
+        },
+        "-OfalAChOmwY5BZdggo3": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764808240853,
+          "type": "assists"
+        },
+        "-OfalI6VD3ekIzfIjOJ2": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764808273224,
+          "type": "miss_3"
+        },
+        "-OfalIKR0xJDD7B7p7mB": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764808274116,
+          "type": "rebounds_off"
+        },
+        "-OfalL8ODcGDwHy36bHD": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764808285633,
+          "type": "miss_3"
+        },
+        "-Ofalc6n96UvSsTMLdPK": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764808359259,
+          "type": "points_3"
+        },
+        "-Ofalcf4Jw81NllLOaip": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764808361517,
+          "type": "assists"
+        },
+        "-OfaljODL0SKq-BPZsZs": {
+          "player": "13",
+          "playerName": "Stanković Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764808389046,
+          "type": "points_2"
+        },
+        "-OfaloaeUlc-ivWVPfYf": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764808410386,
+          "type": "miss_3"
+        },
+        "-OfalqgMeFSqLR3fPckE": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764808418943,
+          "type": "rebounds_off"
+        },
+        "-OfalsigfnMsPY0jHnL4": {
+          "player": "1",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1764808427284,
+          "type": "points_2"
+        },
+        "-Ofalt1cSXocI5XqFWcK": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764808428560,
+          "type": "assists"
+        },
+        "-Ofam3fxb_oEcosozDJQ": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764808476261,
+          "type": "points_2"
+        },
+        "-OfamC9sdpz12VhvJTZA": {
+          "player": "8",
+          "playerName": "Dobrić Ognjen",
+          "team": "Grizzlies",
+          "timestamp": 1764808511008,
+          "type": "miss_3"
+        },
+        "-OfamHld3dIf84FzuoI1": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764808533969,
+          "type": "points_2"
+        },
+        "-OfamIIwkfB2VN3qt8rg": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764808536164,
+          "type": "assists"
+        },
+        "-OfamV-X6Xxasi5WqQgF": {
+          "player": "8",
+          "playerName": "Dobrić Ognjen",
+          "team": "Grizzlies",
+          "timestamp": 1764808588170,
+          "type": "miss_2"
+        },
+        "-OfamY8VmNPUHma6nxju": {
+          "player": "13",
+          "playerName": "Stanković Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764808601032,
+          "type": "rebounds_def"
+        },
+        "-Ofamcmv1NNddp0Wnh5J": {
+          "player": "13",
+          "playerName": "Stanković Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764808624163,
+          "type": "miss_3"
+        },
+        "-OfamdB-uD1wJfoEnTn0": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764808625768,
+          "type": "rebounds_def"
+        },
+        "-OfamjdGKG3YkHpWpKct": {
+          "player": "1",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1764808652217,
+          "type": "turnovers"
+        },
+        "-Ofamp0bRc8DwQKiL-Js": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764808674255,
+          "type": "miss_3"
+        },
+        "-Ofampb67aGwTZ-450aJ": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764808676655,
+          "type": "rebounds_def"
+        },
+        "-OfamuE0kinBxGMY7ZnG": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764808695593,
+          "type": "miss_2"
+        },
+        "-Ofamzt3_WjBho3EC8ZF": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764808718764,
+          "type": "points_2"
+        },
+        "-OfanByGwykR6UqMIknH": {
+          "player": "30",
+          "playerName": "Keskenović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764808772345,
+          "type": "miss_2"
+        },
+        "-OfanC_MdtH6E4IQfEb3": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764808774847,
+          "type": "rebounds_def"
+        },
+        "-OfanJ4yFelpIzfWYDlH": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764808801510,
+          "type": "miss_3"
+        },
+        "-OfanSUZfWARllzQ5eje": {
+          "player": "1",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1764808840012,
+          "type": "points_3"
+        },
+        "-OfanSyxG3eQNQGKs9T2": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764808842021,
+          "type": "assists"
+        },
+        "-OfanikVbYQvQu-1UkcU": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764808910728,
+          "type": "miss_3"
+        },
+        "-Ofanm5m8S7MvaAFrCh4": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764808924442,
+          "type": "rebounds_off"
+        },
+        "-Ofant4tC-VqPUS_ICvC": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764808953057,
+          "type": "points_2"
+        },
+        "-OfantbjE4avI70tnBWp": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764808955223,
+          "type": "assists"
+        },
+        "-Ofao4KAjVif6xvtJpgE": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764809003187,
+          "type": "points_3"
+        },
+        "-Ofao50rDzVbF8Pvduky": {
+          "player": "30",
+          "playerName": "Keskenović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764809006047,
+          "type": "assists"
+        },
+        "-OfaoBbcc5LnqEN_y3nn": {
+          "player": "13",
+          "playerName": "Stanković Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764809033040,
+          "type": "points_2"
+        },
+        "-OfaoBoxVoAPQJnfymBd": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764809033893,
+          "type": "assists"
+        },
+        "-OfaoHn_A99T5TZ1luPP": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764809058381,
+          "type": "miss_3"
+        },
+        "-OfaoIRC8pTKQ0rhrNYI": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764809060981,
+          "type": "rebounds_def"
+        },
+        "-OfaoQ-Xu9LqolTZcYFe": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764809091978,
+          "type": "points_2"
+        },
+        "-OfaoQZvGs0k21dpfwjQ": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764809094307,
+          "type": "assists"
+        },
+        "-OfaobW5zKYK0TEPatLL": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764809143214,
+          "type": "points_2"
+        },
+        "-Ofaobvhp08vdE4dSH6m": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764809144917,
+          "type": "assists"
+        },
+        "-Ofaof4WVYSAV1YoDcYe": {
+          "player": "13",
+          "playerName": "Stanković Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764809157833,
+          "type": "miss_3"
+        },
+        "-OfaofLktPUZfWV_kMAr": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764809158936,
+          "type": "rebounds_def"
+        },
+        "-OfaoiKrU9ims0OfnH32": {
+          "player": "1",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1764809171167,
+          "type": "miss_2"
+        },
+        "-OfaoimOGoyelzKTL-mf": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764809172993,
+          "type": "rebounds_def"
+        },
+        "-OfaomgeolTwlE5eZxJh": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764809189009,
+          "type": "points_2"
+        },
+        "-Ofaovj6lwtZy8DRvROF": {
+          "player": "30",
+          "playerName": "Keskenović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764809226031,
+          "type": "turnovers"
+        },
+        "-Ofaowe4C0PUJ7RgWfyP": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764809229805,
+          "type": "steals"
+        },
+        "-Ofap2PTAydybc9n3xLA": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764809257478,
+          "type": "turnovers"
+        },
+        "-Ofap2kVbB178d3KZqM-": {
+          "player": "30",
+          "playerName": "Keskenović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764809258888,
+          "type": "steals"
+        },
+        "-Ofap6MnMIwq2B38SARq": {
+          "player": "30",
+          "playerName": "Keskenović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764809273691,
+          "type": "points_2"
+        },
+        "-OfapBB3KhLQNnKrUV4a": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764809293419,
+          "type": "miss_3"
+        },
+        "-OfapCT7KPF4pCgvJ-sl": {
+          "player": "13",
+          "playerName": "Stanković Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764809298672,
+          "type": "rebounds_off"
+        },
+        "-OfapE4yiw29hkMu3dbu": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764809305318,
+          "type": "points_2"
+        },
+        "-OfapEGHArIN3KP9c4dp": {
+          "player": "13",
+          "playerName": "Stanković Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764809306042,
+          "type": "assists"
+        },
+        "-OfapNiSnfz4hnBB-476": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764809344772,
+          "type": "miss_3"
+        },
+        "-OfapQ2qwyJF-4Gy8V5s": {
+          "player": "13",
+          "playerName": "Stanković Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764809354334,
+          "type": "rebounds_def"
+        },
+        "-OfapSgaZeSXooW2Hzo5": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764809365134,
+          "type": "points_2"
+        },
+        "-OfapSt9rNJCetgbfEF8": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764809365938,
+          "type": "assists"
+        },
+        "-Ofapcw6dfl_X6xif2Ek": {
+          "player": "1",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1764809411183,
+          "type": "points_2"
+        },
+        "-OfapdElAAc8gc6am59F": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764809412440,
+          "type": "assists"
+        },
+        "-OfapjAPqGMnB1hoPMDR": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764809436738,
+          "type": "miss_3"
+        },
+        "-OfapjnrVH4-_hojiXit": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764809439327,
+          "type": "rebounds_off"
+        },
+        "-OfapmS_JXxv4-ejCKVk": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764809450189,
+          "type": "miss_2"
+        },
+        "-Ofapovjlyp_n8EebXg0": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764809460311,
+          "type": "rebounds_def"
+        },
+        "-Ofapv-nPjKKlD7j8piA": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764809485211,
+          "type": "miss_2"
+        },
+        "-OfapvV5bLsJUT-6111w": {
+          "player": "30",
+          "playerName": "Keskenović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764809487214,
+          "type": "rebounds_off"
+        },
+        "-Ofaq-sXvaDoHOiP--f8": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764809509258,
+          "type": "miss_3"
+        },
+        "-Ofaq48viC9j2JKvvoS8": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764809526755,
+          "type": "rebounds_def"
+        },
+        "-Ofaq6mvUhPCvezsxEec": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764809537571,
+          "type": "miss_2"
+        },
+        "-Ofaq7Jq-7U-vRb_fG3Z": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764809539742,
+          "type": "rebounds_off"
+        },
+        "-OfaqAbAqw-3-u3GgltW": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764809553203,
+          "type": "miss_3"
+        },
+        "-OfaqAyNc0TwibcW0qlA": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764809554688,
+          "type": "rebounds_def"
+        },
+        "-OfaqNV11euKMleF7pxy": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764809605994,
+          "type": "points_3"
+        },
+        "-OfaqO5jtVJqF9e5Ecou": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764809608471,
+          "type": "assists"
+        },
+        "-OfaqVU1aaWFzKi6h6sE": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764809638698,
+          "type": "points_2"
+        },
+        "-OfaqW-WSCTKWSv3UCcd": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764809640841,
+          "type": "assists"
+        },
+        "-OfaqeIcDBqwtpbRlQyM": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764809678928,
+          "type": "turnovers"
+        },
+        "-OfaqezAQNHsi5swqTQ_": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764809681715,
+          "type": "steals"
+        },
+        "-OfaqfETtHskDlzouUqq": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764809682758,
+          "type": "points_2"
+        },
+        "-Ofaqq1AemRZHHtO80Pb": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764809726963,
+          "type": "points_3"
+        },
+        "-OfaqqUDbEp31aDHEeM-": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764809728822,
+          "type": "assists"
+        },
+        "-OfaqwWozDlw5eKiarOC": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764809753564,
+          "type": "miss_2"
+        },
+        "-OfaqwuxJEMJEJzMYlBZ": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764809755173,
+          "type": "blocks"
+        },
+        "-Ofaqx8LlzcITQp61k6c": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764809756094,
+          "type": "rebounds_def"
+        },
+        "-Ofar34Hxc3hXq1PjWBS": {
+          "player": "30",
+          "playerName": "Keskenović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764809784506,
+          "type": "miss_3"
+        },
+        "-Ofar3bTDNADCMbfVe33": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764809786694,
+          "type": "rebounds_def"
+        },
+        "-OfarGoWFWz6AT-nohxb": {
+          "player": "13",
+          "playerName": "Stanković Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764809840777,
+          "type": "turnovers"
+        },
+        "-OfarIn34HU4uJ1rdsbM": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764809848876,
+          "type": "turnovers"
+        },
+        "-OfarJ7J56A8E3q8rQ_5": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764809850236,
+          "type": "steals"
+        },
+        "-OfarLak5u5H5_TahMuz": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764809860376,
+          "type": "miss_2"
+        },
+        "-OfarLwkGzCbAsBDUffF": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764809861784,
+          "type": "rebounds_off"
+        },
+        "-OfarOTeN2_40Rjz6bJm": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764809872146,
+          "type": "points_2"
+        },
+        "-OfarUI8rd08-5zVcTu2": {
+          "player": "1",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1764809895985,
+          "type": "miss_2"
+        },
+        "-OfarUbyCYNXKWi688OW": {
+          "player": "30",
+          "playerName": "Keskenović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764809897318,
+          "type": "rebounds_off"
+        },
+        "-OfarUyuZFhVMCD2UORq": {
+          "player": "30",
+          "playerName": "Keskenović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764809898786,
+          "type": "points_2"
+        },
+        "-OfarazbgQIaofLTiMIv": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764809927502,
+          "type": "miss_3"
+        },
+        "-OfarbN3ZJZ5vv70T-Wf": {
+          "player": "1",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1764809929068,
+          "type": "rebounds_def"
+        },
+        "-Ofarm-Rze-P1BZUSk4x": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764809972612,
+          "type": "points_3"
+        },
+        "-OfarmHQWw-2i-O9e8b1": {
+          "player": "1",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1764809973763,
+          "type": "assists"
+        },
+        "-OfartQtZhm2_vlClyGK": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764810003041,
+          "type": "miss_3"
+        },
+        "-OfartuePfJCtCIkxSv0": {
+          "player": "1",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1764810005010,
+          "type": "rebounds_def"
+        },
+        "-Ofas-NZ5l1-l5cQfG0_": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764810031500,
+          "type": "miss_3"
+        },
+        "-Ofas-pVWfvvg06vtQoD": {
+          "player": "13",
+          "playerName": "Stanković Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764810033352,
+          "type": "rebounds_def"
+        },
+        "-Ofas3Qm17t9uel3ir7A": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764810048089,
+          "type": "miss_2"
+        },
+        "-Ofas4wDWkZgc5wXmued": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764810054262,
+          "type": "rebounds_off"
+        },
+        "-Ofas58pbNbFOCGB9cAR": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764810055133,
+          "type": "points_2"
+        },
+        "-OfasI1-G8stuxhVcVPe": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764810107880,
+          "type": "miss_3"
+        },
+        "-OfasQ9EyEJHtbUvRmTD": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764810141174,
+          "type": "miss_2"
+        },
+        "-OfasTtIvLZNGM19kgkY": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764810156475,
+          "type": "rebounds_def"
+        },
+        "-OfasYj4JlUn7FR24YUL": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764810176301,
+          "type": "points_2"
+        },
+        "-OfasYv5Oc3pZv0nQblV": {
+          "player": "1",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1764810177070,
+          "type": "assists"
+        },
+        "-OfasqpFpVhBHpi_VYjb": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764810254520,
+          "type": "miss_2"
+        },
+        "-OfasraDtIk99WG-u_CI": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764810257654,
+          "type": "rebounds_def"
+        },
+        "-Ofat2aVZb97xJ7-DTZB": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764810306823,
+          "type": "turnovers"
+        },
+        "-Ofat3Cnbf5KD4RzhS3R": {
+          "player": "13",
+          "playerName": "Stanković Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764810309339,
+          "type": "points_2"
+        },
+        "-OfatBGBUSutzlDzawVO": {
+          "player": "1",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1764810342324,
+          "type": "points_2"
+        },
+        "-OfatBeV50iTZ08hwteD": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764810343944,
+          "type": "assists"
+        },
+        "-OfatLH5F1H5bNnLKZSo": {
+          "player": "13",
+          "playerName": "Stanković Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764810383342,
+          "type": "points_2"
+        },
+        "-Ofat_54N8Q1n1E2CLLn": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764810444013,
+          "type": "points_3"
+        },
+        "-Ofat_MwM0tHd-qk05Vy": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764810445156,
+          "type": "assists"
+        },
+        "-Ofatel-CNNzUTZ62C8f": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764810467240,
+          "type": "points_2"
+        },
+        "-Ofatwhf9VGpzGHJ39IJ": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764810540755,
+          "type": "points_3"
+        },
+        "-Ofatx-4s3lCIMOTGL-v": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764810541932,
+          "type": "assists"
+        },
+        "-Ofau1stmdijgdnEukF8": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764810566049,
+          "type": "miss_3"
+        },
+        "-Ofau40gCplRlLx1VwIm": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764810574804,
+          "type": "rebounds_def"
+        },
+        "-OfauC3AzumlrR1mPa9I": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764810607731,
+          "type": "miss_2"
+        },
+        "-OfauQrBTbtLO3dqJknV": {
+          "player": "13",
+          "playerName": "Stanković Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764810668340,
+          "type": "miss_3"
+        },
+        "-OfauReM2rW0QozYHN5R": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764810671615,
+          "type": "rebounds_def"
+        },
+        "-OfaujGVFr95ol2FaYf9": {
+          "player": "1",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1764810747848,
+          "type": "miss_2"
+        },
+        "-OfaujeR-W-9CL8_BLqa": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764810749444,
+          "type": "rebounds_def"
+        },
+        "-OfauoTd9dzJrMlYPSQJ": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764810769169,
+          "type": "miss_3"
+        },
+        "-Ofaup0Lo9_sQkGYFJ9p": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764810771390,
+          "type": "rebounds_def"
+        },
+        "-OfauscZR5Hw-phEaM6l": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764810786188,
+          "type": "miss_2"
+        },
+        "-OfauwUxSFsXb6fPRMty": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764810802021,
+          "type": "rebounds_def"
+        },
+        "-Ofav2Jb3HmF4D6B8Akz": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764810829967,
+          "type": "turnovers"
+        },
+        "-Ofav2sSYMX61UL7qs5_": {
+          "player": "30",
+          "playerName": "Keskenović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764810832261,
+          "type": "steals"
+        },
+        "-Ofav3-lqkUH8nCIwyP0": {
+          "player": "30",
+          "playerName": "Keskenović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764810832793,
+          "type": "turnovers"
+        },
+        "-Ofav6TreKGZPkBiigT6": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764810847007,
+          "type": "miss_2"
+        },
+        "-Ofav6okIj7gzUkPTbvr": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764810848408,
+          "type": "rebounds_def"
+        },
+        "-OfavAo-MYDg6uxOh-Aa": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764810864744,
+          "type": "miss_3"
+        },
+        "-OfavBTsnh7Gtsip6IrY": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764810867488,
+          "type": "rebounds_off"
+        },
+        "-OfavDfjIe6UgMjgxS1T": {
+          "player": "30",
+          "playerName": "Keskenović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764810876503,
+          "type": "turnovers"
+        },
+        "-OfavENl-wKgysCygaim": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764810879385,
+          "type": "steals"
+        },
+        "-OfavIpZpTg5p3S1ZK1y": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764810897612,
+          "type": "points_2"
+        },
+        "-OfavJD-c1AMQ5al9BWu": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764810899176,
+          "type": "assists"
+        },
+        "-OfavSFhr59SFc_-L_Ka": {
+          "player": "1",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1764810936213,
+          "type": "miss_2"
+        },
+        "-OfavSkYI6xZMacv0KBm": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764810938251,
+          "type": "rebounds_off"
+        },
+        "-OfavSyI0HkyHUr1cYmA": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764810939131,
+          "type": "miss_2"
+        },
+        "-OfavUyMSCR59NLaPtKe": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764810947327,
+          "type": "rebounds_def"
+        },
+        "-OfavYRDvmzH9-8EUGKZ": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764810961526,
+          "type": "miss_3"
+        },
+        "-Ofavi9TxWrwhMfUchLt": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764811005446,
+          "type": "miss_3"
+        },
+        "-OfaviRWxYNrabhDC1GN": {
+          "player": "30",
+          "playerName": "Keskenović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764811006601,
+          "type": "rebounds_off"
+        },
+        "-Ofavm6r2JeQfgCZf2yK": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764811021663,
+          "type": "points_2"
+        },
+        "-OfavmX5G8BCQlcNZZ9U": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764811023342,
+          "type": "assists"
+        },
+        "-OfavqHRsIuATcKigi4H": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764811038724,
+          "type": "turnovers"
+        },
+        "-OfavxD_DOUBVWEYTwau": {
+          "player": "1",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1764811067149,
+          "type": "miss_3"
+        },
+        "-Ofavxm4Ds6aIKD0YOrF": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764811069421,
+          "type": "rebounds_def"
+        },
+        "-Ofaw2_rVQOr510fINjv": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764811093215,
+          "type": "points_2"
+        },
+        "-OfawCtOBmh3UqX-SA_h": {
+          "player": "30",
+          "playerName": "Keskenović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764811135425,
+          "type": "points_2"
+        },
+        "-OfawD5-lj_2XMGxZdb4": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764811136232,
+          "type": "assists"
+        },
+        "-OfawK1s7yHGJgsyh6LU": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764811164704,
+          "type": "turnovers"
+        },
+        "-OfawKUK6Fu0EJsAfTPM": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764811166525,
+          "type": "steals"
+        },
+        "-OfawNmCU0HoxL4nLFp0": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764811180021,
+          "type": "points_3"
+        },
+        "-OfawO0NtCxexo_kyc8Q": {
+          "player": "1",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1764811180992,
+          "type": "assists"
+        },
+        "-OfawVAM-N1gdP3L-rlh": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764811210303,
+          "type": "miss_3"
+        },
+        "-OfawVlf8tk2mLt3HvlS": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764811212755,
+          "type": "rebounds_off"
+        },
+        "-OfawZ8DoMN5LQnD9Rzt": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764811226550,
+          "type": "miss_3"
+        },
+        "-OfawZZAWl5uwm96fd55": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764811228275,
+          "type": "rebounds_off"
+        },
+        "-OfawZlClCfdNNUCSQci": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764811229109,
+          "type": "points_2"
+        },
+        "-OfaweocrcGoDP96fK7j": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764811253904,
+          "type": "miss_2"
+        },
+        "-OfawfIWGbmYg4FX1Tc1": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764811255881,
+          "type": "rebounds_off"
+        },
+        "-OfawfV8kFIeowoswGh4": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764811256689,
+          "type": "points_2"
+        },
+        "-OfawmvbYUEbPp_eVaB6": {
+          "player": "13",
+          "playerName": "Stanković Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764811287119,
+          "type": "miss_3"
+        },
+        "-OfawwrDYbqBTAGSN55d": {
+          "player": "30",
+          "playerName": "Keskenović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764811327798,
+          "type": "points_2"
+        },
+        "-Ofawx91MyCfHKUa2Clf": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764811329002,
+          "type": "assists"
+        },
+        "-Ofax29vLzgxuxM7p60B": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764811353635,
+          "type": "points_2"
+        },
+        "-Ofax2RdebBM4JHSXqPf": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764811354769,
+          "type": "assists"
+        },
+        "-Ofax9lC35VIY_3UAfnu": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764811384757,
+          "type": "miss_3"
+        },
+        "-OfaxA7jZnHsoJdwjcDS": {
+          "player": "30",
+          "playerName": "Keskenović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764811386263,
+          "type": "rebounds_off"
+        },
+        "-OfaxC7NCYog1RuqEadS": {
+          "player": "30",
+          "playerName": "Keskenović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764811394432,
+          "type": "points_2"
+        },
+        "-OfaxHmeeIrG97sAO_RQ": {
+          "player": "13",
+          "playerName": "Stanković Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764811417618,
+          "type": "points_2"
+        },
+        "-OfaxMhunnC7OBhCnLr3": {
+          "player": "1",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1764811437794,
+          "type": "points_3"
+        },
+        "-OfaxN6qwXLNTUtC6SNV": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764811439454,
+          "type": "assists"
+        },
+        "-OfaxWOpirVSH74HCtci": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764811477468,
+          "type": "points_2"
+        },
+        "-OfaxXYFiGxdVWE1b03C": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764811482168,
+          "type": "assists"
+        },
+        "-OfaxhpBFF7oMF7j8YFB": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764811528372,
+          "type": "points_3"
+        },
+        "-Ofaxm_RwIGBIotXP_w5": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764811547844,
+          "type": "points_2"
+        },
+        "-OfaxmbgKsmBaI-lIVYl": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764811547988,
+          "type": "assists"
+        },
+        "-Ofaxq1yghvQE-pw1WYi": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764811562022,
+          "type": "miss_3"
+        },
+        "-OfaxqMnrrtjkic3GFyw": {
+          "player": "30",
+          "playerName": "Keskenović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764811563355,
+          "type": "rebounds_off"
+        },
+        "-OfaxvWUJL13-FUq_tGh": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764811584455,
+          "type": "miss_2"
+        },
+        "-Ofaxw1c7x5f58Kzti0Z": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764811586576,
+          "type": "rebounds_def"
+        },
+        "-OfaxzGysWu1aju5UMUC": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764811599846,
+          "type": "points_2"
+        },
+        "-OfaxzcJLJfBXYsXQh5v": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764811601276,
+          "type": "assists"
+        },
+        "-Ofay8o5f4FqrfDUAG3c": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764811642990,
+          "type": "points_2"
+        },
+        "-Ofay97PTdkCvXCPc9IB": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764811644290,
+          "type": "assists"
+        },
+        "-OfayKFqg0mqDOs8iNaa": {
+          "player": "13",
+          "playerName": "Stanković Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764811689886,
+          "type": "miss_3"
+        },
+        "-OfayKvLYNc7S_M7NEHg": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764811692606,
+          "type": "rebounds_def"
+        },
+        "-OfayPKRnJ1lvh0FpV0r": {
+          "player": "30",
+          "playerName": "Keskenović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764811710660,
+          "type": "miss_3"
+        },
+        "-OfayPoprIKjlxWFYwhz": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764811712669,
+          "type": "rebounds_def"
+        },
+        "-OfayUkZhmuEyLq_QjP-": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764811732876,
+          "type": "miss_3"
+        },
+        "-OfayW5JskLgW7kHfBLx": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764811738364,
+          "type": "rebounds_off"
+        },
+        "-OfayZnh8_G_Qw_6j9H2": {
+          "player": "13",
+          "playerName": "Stanković Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764811753557,
+          "type": "points_2"
+        },
+        "-OfaygZsX-3Yr7lt6Pi6": {
+          "player": "1",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1764811785376,
+          "type": "miss_3"
+        },
+        "-Ofayh44VbgsjdPfSlKN": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764811787437,
+          "type": "rebounds_def"
+        },
+        "-Ofayp_nT_LD3USQCyC9": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764811822299,
+          "type": "turnovers"
+        },
+        "-OfaypqHZPaF__542CF0": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764811823354,
+          "type": "steals"
+        },
+        "-Ofayuroc0bLetyHkEFW": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764811843932,
+          "type": "points_3"
+        },
+        "-OfayvGCTqTNzoD353N2": {
+          "player": "30",
+          "playerName": "Keskenović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764811845557,
+          "type": "assists"
+        },
+        "-Ofaz5egpPDcNTv6Qr6W": {
+          "player": "13",
+          "playerName": "Stanković Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764811892244,
+          "type": "turnovers"
+        },
+        "-Ofaz9AUpbrs7O3sVhdg": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764811906631,
+          "type": "points_3"
+        },
+        "-Ofaz9dFQ81DFALltRN2": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764811908536,
+          "type": "assists"
+        },
+        "-OfazDkFdjjm-iIfch2r": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764811925368,
+          "type": "points_2"
+        },
+        "-OfazDxZ_LAdD-my5tFR": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764811926220,
+          "type": "assists"
+        },
+        "-OfazHPNlTn5H4REl6gt": {
+          "player": "1",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1764811940352,
+          "type": "points_2"
+        },
+        "-OfazJhvAbspIVFOQotX": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764811949795,
+          "type": "points_2"
+        },
+        "-OfazPK4WAVx3xrceW6G": {
+          "player": "30",
+          "playerName": "Keskenović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764811972780,
+          "type": "turnovers"
+        },
+        "-OfazWATBhQ6st6RT10y": {
+          "player": "13",
+          "playerName": "Stanković Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764812000838,
+          "type": "miss_3"
+        },
+        "-OfazfAEC5HSKxnb3D7g": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764812041783,
+          "type": "miss_3"
+        },
+        "-OfazgFULfyQKxdXjs1W": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764812046215,
+          "type": "rebounds_def"
+        },
+        "-Ofazmaex51ZBPVUosoy": {
+          "player": "13",
+          "playerName": "Stanković Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764812072210,
+          "type": "miss_2"
+        },
+        "-OfaznGe7bWPVbOCNga4": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764812074962,
+          "type": "rebounds_def"
+        },
+        "-OfazqMTVIHRdG4tltY0": {
+          "player": "1",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1764812087622,
+          "type": "miss_2"
+        },
+        "-OfazqzRn-rbzarH4LMJ": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764812090180,
+          "type": "rebounds_off"
+        },
+        "-OfazsWo79jHzKmFlBBr": {
+          "player": "1",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1764812096476,
+          "type": "points_2"
+        },
+        "-OfazszOz2wDL-jFeSdi": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764812098369,
+          "type": "assists"
+        },
+        "-Ofazzvo8q5x2DVNE_Sd": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764812126812,
+          "type": "points_2"
+        },
+        "-Ofb-6KceuOlE9OUUn1J": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764812157136,
+          "type": "points_3"
+        },
+        "-Ofb-6blpVe7UFSSkHSt": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764812158297,
+          "type": "assists"
+        },
+        "-Ofb-BL56rQXb6ZGtiau": {
+          "player": "13",
+          "playerName": "Stanković Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764812177646,
+          "type": "miss_2"
+        },
+        "-Ofb-Bh45Ew0oQZycnAf": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764812179117,
+          "type": "rebounds_def"
+        },
+        "-Ofb-H0lqoAFm3KuxdIH": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764812200921,
+          "type": "miss_3"
+        },
+        "-Ofb-HKReB39R_C0npMb": {
+          "player": "13",
+          "playerName": "Stanković Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764812202180,
+          "type": "rebounds_def"
+        },
+        "-Ofb-K_MELMux26PKgW3": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764812215487,
+          "type": "points_2"
+        },
+        "-Ofb-QgGiGiIRYk85B9j": {
+          "player": "30",
+          "playerName": "Keskenović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764812240505,
+          "type": "miss_2"
+        },
+        "-Ofb-R-YQ3tvTo4qRBDs": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764812241803,
+          "type": "rebounds_off"
+        },
+        "-Ofb-YAit5FgbFPlbIKd": {
+          "player": "1",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1764812271190,
+          "type": "miss_2"
+        },
+        "-Ofb-YbDYz-6FRaWPfN2": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764812272950,
+          "type": "rebounds_def"
+        },
+        "-Ofb-bTrGzWuzgub99Ju": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764812288799,
+          "type": "miss_2"
+        },
+        "-Ofb-c4xXAXj4410FP27": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764812291301,
+          "type": "rebounds_def"
+        },
+        "-Ofb-gq5JMfsmx3Xt58c": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764812310766,
+          "type": "miss_3"
+        },
+        "-Ofb-h58jXcQHq8PA5IE": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764812311793,
+          "type": "rebounds_off"
+        },
+        "-Ofb-jFmy7Trp5pTvSui": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764812320666,
+          "type": "miss_2"
+        },
+        "-Ofb-jbWIucyM2ts3uZz": {
+          "player": "13",
+          "playerName": "Stanković Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764812322121,
+          "type": "rebounds_def"
+        },
+        "-Ofb-mXtzl5Z3fv08J1P": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764812334113,
+          "type": "miss_2"
+        },
+        "-Ofb-mkFxbrYJkrL17_0": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764812334968,
+          "type": "rebounds_off"
+        },
+        "-Ofb-nBDGxlZQu9tG_2r": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764812336758,
+          "type": "points_2"
+        },
+        "-Ofb-nJTEY9fudxt628s": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764812337286,
+          "type": "assists"
+        },
+        "-Ofb-t2HNWmC2UY5aDBE": {
+          "player": "30",
+          "playerName": "Keskenović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764812360762,
+          "type": "points_2"
+        },
+        "-Ofb-tEaXuE5g_i843Ph": {
+          "player": "1",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1764812361550,
+          "type": "assists"
+        },
+        "-Ofb-x2DBxxygjWsy7h4": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764812377142,
+          "type": "miss_2"
+        },
+        "-Ofb-xOxdy-H57eN7scP": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764812378597,
+          "type": "rebounds_off"
+        },
+        "-Ofb-xdR62JW-l07vcPu": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764812379588,
+          "type": "points_2"
+        },
+        "-Ofb00saSige9-kq4gC3": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764812396942,
+          "type": "turnovers"
+        },
+        "-Ofb06tvtdgumHhS6Xhg": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764812421603,
+          "type": "miss_2"
+        },
+        "-Ofb0793FY7_JUdhxp7W": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764812422636,
+          "type": "rebounds_off"
+        },
+        "-Ofb07M-rhEQMCgRzkVJ": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764812423464,
+          "type": "miss_2"
+        },
+        "-Ofb07d0zfELOznAwDup": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764812424617,
+          "type": "rebounds_def"
+        },
+        "-Ofb0Ad6dQCqwb-1jqrP": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764812436911,
+          "type": "miss_3"
+        },
+        "-Ofb0B1BtAbo9j3EyWdF": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764812438516,
+          "type": "rebounds_def"
+        },
+        "-Ofb0ELpUvCV-9NGP7TL": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764812452125,
+          "type": "points_2"
+        },
+        "-Ofb0JRZmC4wi-eKtrfu": {
+          "player": "1",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1764812472972,
+          "type": "turnovers"
+        },
+        "-Ofb0JvV_B-VjJsfbyfJ": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764812474952,
+          "type": "steals"
+        },
+        "-Ofb0NAjw5J0dpUqF849": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764812488279,
+          "type": "points_2"
+        },
+        "-Ofb0NTF-iK_9dEekm98": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764812489464,
+          "type": "assists"
+        },
+        "-Ofb0UJgYXS6G3ZSSTTH": {
+          "player": "30",
+          "playerName": "Keskenović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764812517524,
+          "type": "points_2"
+        },
+        "-Ofb0UWWFeNAxhmx2cIc": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764812518345,
+          "type": "assists"
+        },
+        "-Ofb0ZzEfSrZiWCUF9_o": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764812540727,
+          "type": "miss_2"
+        },
+        "-Ofb0_F6K9lYewJr4O-t": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764812541807,
+          "type": "rebounds_off"
+        },
+        "-Ofb0_UIm80NG6J8-wDq": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764812542779,
+          "type": "miss_2"
+        },
+        "-Ofb0_i-MCcokgKSZvJT": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764812543720,
+          "type": "rebounds_off"
+        },
+        "-Ofb0_wfGZ9PYTDxzXja": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764812544659,
+          "type": "points_2"
+        },
+        "-Ofb0fmMiufIhL9k9BIG": {
+          "player": "1",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1764812568575,
+          "type": "miss_3"
+        },
+        "-Ofb0gEHGNKUcl7j23XL": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764812570426,
+          "type": "rebounds_def"
+        },
+        "-Ofb0jTl2z1xySAt7876": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764812583705,
+          "type": "points_2"
+        },
+        "-Ofb0oCvoDwV3aXeilzk": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764812603107,
+          "type": "points_3"
+        },
+        "-Ofb0oL_YGhxavnduxU5": {
+          "player": "30",
+          "playerName": "Keskenović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764812603661,
+          "type": "assists"
+        },
+        "-Ofb0xQ8RD_1sXu9DX21": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764812640817,
+          "type": "points_3"
+        },
+        "-Ofb0xZyyVFgFkirzYOb": {
+          "player": "13",
+          "playerName": "Stanković Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764812641446,
+          "type": "assists"
+        },
+        "-Ofb11WdMHjmLehfHZcq": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764812661713,
+          "type": "miss_3"
+        },
+        "-Ofb17IaE88M_cLXGYh6": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764812685390,
+          "type": "miss_3"
+        },
+        "-Ofb17mOrfT7z4jlISRi": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764812687361,
+          "type": "rebounds_off"
+        },
+        "-Ofb1D5flQ6_OrPpUMVw": {
+          "player": "13",
+          "playerName": "Stanković Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764812709139,
+          "type": "points_3"
+        },
+        "-Ofb1DNYIOUX82Cslhr2": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764812710283,
+          "type": "assists"
+        },
+        "-Ofb1UjxJswS7T3w8vQb": {
+          "player": "1",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1764812781413,
+          "type": "miss_2"
+        },
+        "-Ofb1Wojx_kj-atRZp0r": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764812789911,
+          "type": "rebounds_def"
+        },
+        "-Ofb1Z2bOYiNscUZC5M_": {
+          "player": "13",
+          "playerName": "Stanković Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764812799055,
+          "type": "points_2"
+        },
+        "-Ofb1ZGBxEDTiFGHJkxD": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764812799924,
+          "type": "assists"
+        },
+        "-Ofb1iETlGYNpEISwV4O": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764812840774,
+          "type": "points_3"
+        },
+        "-Ofb1ib30YgHBzdUnm3N": {
+          "player": "30",
+          "playerName": "Keskenović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764812842284,
+          "type": "assists"
+        },
+        "-Ofb1odS5Mk6zTytYQqm": {
+          "player": "13",
+          "playerName": "Stanković Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764812867013,
+          "type": "miss_3"
+        },
+        "-Ofb1ovaAOJZdovC9pMH": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764812868174,
+          "type": "rebounds_def"
+        },
+        "-Ofb1uSlf93-eRyrYTya": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764812890841,
+          "type": "points_3"
+        },
+        "-Ofb1ubwTmlwpcFQnAHf": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764812891492,
+          "type": "assists"
+        },
+        "-Ofb214ys5jJd9fvm6w4": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764812922086,
+          "type": "miss_3"
+        },
+        "-Ofb21Od9zjFIc9GYnQI": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764812923345,
+          "type": "rebounds_off"
+        },
+        "-Ofb24cYVVSJtL7B32-M": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764812936587,
+          "type": "points_2"
+        },
+        "-Ofb24uYPAJo8B827_TA": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764812937739,
+          "type": "assists"
+        },
+        "-Ofb2CTL5FGhP1dPR04x": {
+          "player": "1",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1764812968701,
+          "type": "miss_3"
+        },
+        "-Ofb2Cjl-MKL9__NZ2Pn": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764812969817,
+          "type": "rebounds_off"
+        },
+        "-Ofb2GYGhIXQYwLW5seo": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764812985401,
+          "type": "miss_2"
+        },
+        "-Ofb2HdbFN-CCO00dfp_": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764812989903,
+          "type": "rebounds_def"
+        },
+        "-Ofb2QYVknYwGBQE0F_b": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764813026376,
+          "type": "points_2"
+        },
+        "-Ofb2VbP3hVb7HULwDjm": {
+          "player": "30",
+          "playerName": "Keskenović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764813047106,
+          "type": "miss_3"
+        },
+        "-Ofb2VzXLEEDT9sMfFkK": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764813048650,
+          "type": "rebounds_def"
+        },
+        "-Ofb2a7jJRP7oCSdWaMP": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764813069719,
+          "type": "points_2"
+        },
+        "-Ofb2aKpQpCs4TyEOw7B": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764813070557,
+          "type": "assists"
+        },
+        "-Ofb2eGZVv5O-LFensdH": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764813086668,
+          "type": "miss_3"
+        },
+        "-Ofb2e_L2WCbiCdMYFoX": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764813087934,
+          "type": "rebounds_def"
+        },
+        "-Ofb2ip1vgFcUrGa_PoE": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764813105322,
+          "type": "miss_2"
+        },
+        "-Ofb2o__sW0SsUTy4TBA": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764813128909,
+          "type": "rebounds_off"
+        },
+        "-Ofb2ooo0PlzyvqO8STX": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764813129884,
+          "type": "miss_2"
+        },
+        "-Ofb2pEqbuISe0QNAGKU": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764813131614,
+          "type": "rebounds_def"
+        },
+        "-Ofb2zNDlc3Q1JGxWkgu": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764813173110,
+          "type": "points_3"
+        },
+        "-Ofb2zcw2O1fCdXgsbhJ": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764813174180,
+          "type": "assists"
+        },
+        "-Ofb320qmzrWaDvsCN2n": {
+          "player": "13",
+          "playerName": "Stanković Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764813188062,
+          "type": "turnovers"
+        },
+        "-Ofb32ctDfhBuPfCVkG4": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764813190561,
+          "type": "steals"
+        },
+        "-Ofb35ylvib9ech_hESa": {
+          "player": "30",
+          "playerName": "Keskenović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764813204249,
+          "type": "turnovers"
+        },
+        "-Ofb3FS4mEI0q1VbzvEB": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764813243053,
+          "type": "turnovers"
+        },
+        "-Ofb3M2QgBEQrCPYfUEL": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764813270083,
+          "type": "miss_3"
+        },
+        "-Ofb3MJ3zp0BfLq5yyf-": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764813271148,
+          "type": "rebounds_off"
+        },
+        "-Ofb3RWY2EtA6X2SByX_": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764813292491,
+          "type": "miss_2"
+        },
+        "-Ofb3TOwAnze1ujZG-vv": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764813300196,
+          "type": "rebounds_def"
+        },
+        "-Ofb3WiWBx2dm6PfwXJl": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764813313801,
+          "type": "miss_3"
+        },
+        "-Ofb3XLwXVPmBgeu9pwi": {
+          "player": "13",
+          "playerName": "Stanković Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764813316388,
+          "type": "rebounds_def"
+        },
+        "-Ofb3cenOep-euOLZNdf": {
+          "player": "42",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764813342235,
+          "type": "miss_2"
+        },
+        "-Ofb3knoyTRmKvooUmJT": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764813375580,
+          "type": "rebounds_off"
+        },
+        "-Ofb3lAWr5SEkwuPl92p": {
+          "player": "13",
+          "playerName": "Stanković Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764813377097,
+          "type": "points_2"
+        },
+        "-Ofb3lKv56p5XRtXszUl": {
+          "player": "3",
+          "playerName": "Stanković Dušan",
+          "team": "Panthers",
+          "timestamp": 1764813377763,
+          "type": "assists"
+        },
+        "-Ofb3sn-H2zAcdTnQaV2": {
+          "player": "1",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1764813408296,
+          "type": "miss_3"
+        },
+        "-Ofb3svsrt2t6a_i5PMD": {
+          "player": "1",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1764813408864,
+          "type": "rebounds_off"
+        },
+        "-Ofb3wZXehIto0ZrbDdw": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764813423754,
+          "type": "miss_3"
+        },
+        "-Ofb3wxp4o69o24d3xS_": {
+          "player": "30",
+          "playerName": "Keskenović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764813425373,
+          "type": "rebounds_off"
+        },
+        "-Ofb3zcpjBIVMCq_yb6P": {
+          "player": "1",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1764813436316,
+          "type": "miss_3"
+        },
+        "-Ofb41au_HTLtArw2H8s": {
+          "player": "13",
+          "playerName": "Stanković Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1764813448482,
+          "type": "points_2"
+        },
+        "-Ofb489mcFXVu3pjhe7G": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764813475354,
+          "type": "points_3"
+        },
+        "-Ofb4AuRBhhH0gr6yaHA": {
+          "player": "1",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1764813486596,
+          "type": "assists"
+        },
+        "-Ofb4F-xEigLsYVvdMqi": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764813503397,
+          "type": "turnovers"
+        },
+        "-Ofb4FcKRXwqlF16jLFF": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764813505917,
+          "type": "steals"
+        },
+        "-Ofb4K-m3w0D-PXTlgiG": {
+          "player": "5",
+          "playerName": "Simidžija Nikola",
+          "team": "Grizzlies",
+          "timestamp": 1764813523866,
+          "type": "miss_3"
+        },
+        "-Ofb4LDET84quew4X-J6": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764813528823,
+          "type": "rebounds_def"
+        },
+        "-Ofb4O4NqX0pczPLa0jI": {
+          "player": "16",
+          "playerName": "Peruničić Mladen",
+          "team": "Panthers",
+          "timestamp": 1764813540544,
+          "type": "turnovers"
+        },
+        "-Ofb4dh4jPvg9aWR5ViD": {
+          "player": "31",
+          "playerName": "Merdović Stefan",
+          "team": "Grizzlies",
+          "timestamp": 1764813608621,
+          "type": "points_2"
+        },
+        "-Ofb4dzjiJftrR_-A--1": {
+          "player": "1",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1764813609815,
+          "type": "assists"
+        }
+      },
       "gameInfo": {
-        "gameId": "2025-12-03_panthers_vs_grizzlies",
-        "status": "live",
-        "league": "prijateljske",
-        "season": "2025/26",
-        "round": 1,
-
-        "quarter": 1,
-        "time": "10:00",
-        "location": "SC Meridiana 1",
         "date": "03.12.2025",
+        "gameId": "2025-12-10_panthers_vs_grizzlies",
+        "league": "prijateljske",
+        "location": "SC Meridiana 1",
+        "ytLink": "https://www.youtube.com/watch?v=LKoOKdnceHw",
+        "quarter": 1,
+        "round": 1,
+        "scoreA": 108,
+        "scoreB": 116,
+        "season": "2025/26",
         "startTime": "22:00",
-
+        "status": "finished",
         "teamA": "Panthers",
-        "teamB": "Grizzlies",
-
         "teamA_logo": "Panthers.png",
+        "teamB": "Grizzlies",
         "teamB_logo": "Grizzlies.png",
-
-        "scoreA": 0,
-        "scoreB": 0
+        "time": "10:00"
+      },
+      "lastScore": {
+        "player": "31",
+        "playerName": "Merdović Stefan",
+        "points": 2,
+        "shotType": "2PT",
+        "team": "Grizzlies",
+        "timestamp": 1764813608480
       },
       "teams": {
+        "Grizzlies": {
+          "color": "#0a1d4d",
+          "logo": "Grizzlies.png",
+          "players": {
+            "1": {
+              "name": "Vujić Marko",
+              "number": 1,
+              "stats": {
+                "assists": 7,
+                "blocks": 0,
+                "efficiency": 0,
+                "fg_attempts": 22,
+                "fg_made": 8,
+                "fouls": 0,
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 18,
+                "rebounds_def": 3,
+                "rebounds_off": 2,
+                "steals": 0,
+                "three_attempts": 9,
+                "three_made": 2,
+                "turnovers": 3,
+                "two_attempts": 13,
+                "two_made": 6
+              }
+            },
+            "5": {
+              "name": "Simidžija Nikola",
+              "number": 5,
+              "stats": {
+                "assists": 4,
+                "blocks": 1,
+                "efficiency": 0,
+                "fg_attempts": 38,
+                "fg_made": 21,
+                "fouls": 0,
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 59,
+                "rebounds_def": 7,
+                "rebounds_off": 2,
+                "steals": 3,
+                "three_attempts": 31,
+                "three_made": 17,
+                "turnovers": 4,
+                "two_attempts": 7,
+                "two_made": 4
+              }
+            },
+            "8": {
+              "name": "Dobrić Ognjen",
+              "number": 8,
+              "stats": {
+                "assists": 1,
+                "blocks": 0,
+                "efficiency": 0,
+                "fg_attempts": 9,
+                "fg_made": 4,
+                "fouls": 0,
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 10,
+                "rebounds_def": 2,
+                "rebounds_off": 0,
+                "steals": 0,
+                "three_attempts": 6,
+                "three_made": 2,
+                "turnovers": 1,
+                "two_attempts": 3,
+                "two_made": 2
+              }
+            },
+            "30": {
+              "name": "Keskenović Stefan",
+              "number": 30,
+              "stats": {
+                "assists": 5,
+                "blocks": 0,
+                "efficiency": 0,
+                "fg_attempts": 17,
+                "fg_made": 9,
+                "fouls": 0,
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 19,
+                "rebounds_def": 0,
+                "rebounds_off": 8,
+                "steals": 3,
+                "three_attempts": 5,
+                "three_made": 1,
+                "turnovers": 7,
+                "two_attempts": 12,
+                "two_made": 8
+              }
+            },
+            "31": {
+              "name": "Merdović Stefan",
+              "number": 31,
+              "stats": {
+                "assists": 21,
+                "blocks": 0,
+                "efficiency": 0,
+                "fg_attempts": 18,
+                "fg_made": 4,
+                "fouls": 0,
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 10,
+                "rebounds_def": 19,
+                "rebounds_off": 6,
+                "steals": 5,
+                "three_attempts": 8,
+                "three_made": 2,
+                "turnovers": 5,
+                "two_attempts": 10,
+                "two_made": 2
+              }
+            }
+          },
+          "team_stats": {
+            "assists": 38,
+            "blocks": 1,
+            "fg_attempts": 104,
+            "fg_made": 46,
+            "ft_attempts": 0,
+            "ft_made": 0,
+            "points": 116,
+            "rebounds_def": 31,
+            "rebounds_off": 18,
+            "steals": 11,
+            "three_attempts": 59,
+            "three_made": 24,
+            "turnovers": 20,
+            "two_attempts": 45,
+            "two_made": 22
+          }
+        },
         "Panthers": {
           "color": "#6a0dad",
           "logo": "Panthers.png",
-          "team_stats": {
-            "points": 0,
-            "fg_attempts": 0,
-            "fg_made": 0,
-            "two_attempts": 0,
-            "two_made": 0,
-            "three_attempts": 0,
-            "three_made": 0,
-            "ft_attempts": 0,
-            "ft_made": 0,
-            "rebounds_off": 0,
-            "rebounds_def": 0,
-            "assists": 0,
-            "steals": 0,
-            "blocks": 0,
-            "turnovers": 0
-          },
           "players": {
             "2": {
-              "name": "Šubara Lazar",
+              "name": "Rajačić Filip",
               "number": 2,
               "stats": {
-                "points": 0,
-                "fg_made": 0,
-                "fg_attempts": 0,
-                "two_made": 0,
-                "two_attempts": 0,
-                "three_made": 0,
-                "three_attempts": 0,
-                "ft_made": 0,
-                "ft_attempts": 0,
-                "rebounds_off": 0,
-                "rebounds_def": 0,
                 "assists": 0,
-                "steals": 0,
                 "blocks": 0,
-                "turnovers": 0,
+                "efficiency": 0,
+                "fg_attempts": 2,
+                "fg_made": 0,
                 "fouls": 0,
-                "efficiency": 0
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 0,
+                "rebounds_def": 0,
+                "rebounds_off": 0,
+                "steals": 0,
+                "three_attempts": 2,
+                "three_made": 0,
+                "turnovers": 1,
+                "two_attempts": 0,
+                "two_made": 0
               }
             },
             "3": {
-              "name": "Stanković Dimitrije",
+              "name": "Stanković Dušan",
               "number": 3,
               "stats": {
-                "points": 0,
-                "fg_made": 0,
-                "fg_attempts": 0,
-                "two_made": 0,
-                "two_attempts": 0,
-                "three_made": 0,
-                "three_attempts": 0,
-                "ft_made": 0,
-                "ft_attempts": 0,
-                "rebounds_off": 0,
-                "rebounds_def": 0,
-                "assists": 0,
-                "steals": 0,
+                "assists": 9,
                 "blocks": 0,
-                "turnovers": 0,
+                "efficiency": 0,
+                "fg_attempts": 38,
+                "fg_made": 15,
                 "fouls": 0,
-                "efficiency": 0
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 31,
+                "rebounds_def": 4,
+                "rebounds_off": 7,
+                "steals": 1,
+                "three_attempts": 14,
+                "three_made": 1,
+                "turnovers": 4,
+                "two_attempts": 24,
+                "two_made": 14
+              }
+            },
+            "13": {
+              "name": "Stanković Dimitrije",
+              "number": 13,
+              "stats": {
+                "assists": 3,
+                "blocks": 0,
+                "efficiency": 0,
+                "fg_attempts": 22,
+                "fg_made": 13,
+                "fouls": 0,
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 29,
+                "rebounds_def": 7,
+                "rebounds_off": 1,
+                "steals": 0,
+                "three_attempts": 10,
+                "three_made": 3,
+                "turnovers": 5,
+                "two_attempts": 12,
+                "two_made": 10
               }
             },
             "16": {
@@ -96,215 +3299,68 @@
               "number": 16,
               "photo": "Perunicic_Mladen.png",
               "stats": {
-                "points": 0,
-                "fg_made": 0,
-                "fg_attempts": 0,
-                "two_made": 0,
-                "two_attempts": 0,
-                "three_made": 0,
-                "three_attempts": 0,
-                "ft_made": 0,
-                "ft_attempts": 0,
-                "rebounds_off": 0,
-                "rebounds_def": 0,
-                "assists": 0,
-                "steals": 0,
+                "assists": 11,
                 "blocks": 0,
-                "turnovers": 0,
+                "efficiency": 0,
+                "fg_attempts": 18,
+                "fg_made": 13,
                 "fouls": 0,
-                "efficiency": 0
-              }
-            },
-            "38": {
-              "name": "Lazarević Srdjan",
-              "number": 38,
-              "stats": {
-                "points": 0,
-                "fg_made": 0,
-                "fg_attempts": 0,
-                "two_made": 0,
-                "two_attempts": 0,
-                "three_made": 0,
-                "three_attempts": 0,
-                "ft_made": 0,
                 "ft_attempts": 0,
-                "rebounds_off": 0,
-                "rebounds_def": 0,
-                "assists": 0,
-                "steals": 0,
-                "blocks": 0,
-                "turnovers": 0,
-                "fouls": 0,
-                "efficiency": 0
+                "ft_made": 0,
+                "points": 26,
+                "rebounds_def": 8,
+                "rebounds_off": 10,
+                "steals": 2,
+                "three_attempts": 2,
+                "three_made": 0,
+                "turnovers": 6,
+                "two_attempts": 16,
+                "two_made": 13
               }
             },
             "42": {
               "name": "Maleš Dimitrije",
               "number": 42,
               "stats": {
-                "points": 0,
-                "fg_made": 0,
-                "fg_attempts": 0,
-                "two_made": 0,
-                "two_attempts": 0,
-                "three_made": 0,
-                "three_attempts": 0,
-                "ft_made": 0,
-                "ft_attempts": 0,
-                "rebounds_off": 0,
-                "rebounds_def": 0,
-                "assists": 0,
-                "steals": 0,
+                "assists": 3,
                 "blocks": 0,
-                "turnovers": 0,
+                "efficiency": 0,
+                "fg_attempts": 30,
+                "fg_made": 11,
                 "fouls": 0,
-                "efficiency": 0
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 22,
+                "rebounds_def": 13,
+                "rebounds_off": 3,
+                "steals": 4,
+                "three_attempts": 7,
+                "three_made": 0,
+                "turnovers": 1,
+                "two_attempts": 23,
+                "two_made": 11
               }
             }
-          }
-        },
-        "Grizzlies": {
-          "color": "#0a1d4d",
-          "logo": "Grizzlies.png",
-
+          },
           "team_stats": {
-            "points": 0,
-            "fg_attempts": 0,
-            "fg_made": 0,
-            "two_attempts": 0,
-            "two_made": 0,
-            "three_attempts": 0,
-            "three_made": 0,
+            "assists": 26,
+            "blocks": 0,
+            "fg_attempts": 110,
+            "fg_made": 52,
             "ft_attempts": 0,
             "ft_made": 0,
-            "rebounds_off": 0,
-            "rebounds_def": 0,
-            "assists": 0,
-            "steals": 0,
-            "blocks": 0,
-            "turnovers": 0
-          },
-
-          "players": {
-            "1": {
-              "name": "Vujić Marko",
-              "number": 1,
-              "stats": {
-                "points": 0,
-                "fg_made": 0,
-                "fg_attempts": 0,
-                "two_made": 0,
-                "two_attempts": 0,
-                "three_made": 0,
-                "three_attempts": 0,
-                "ft_made": 0,
-                "ft_attempts": 0,
-                "rebounds_off": 0,
-                "rebounds_def": 0,
-                "assists": 0,
-                "steals": 0,
-                "blocks": 0,
-                "turnovers": 0,
-                "fouls": 0,
-                "efficiency": 0
-              }
-            },
-            "15": {
-              "name": "Rajačić Filip",
-              "number": 15,
-              "stats": {
-                "points": 0,
-                "fg_made": 0,
-                "fg_attempts": 0,
-                "two_made": 0,
-                "two_attempts": 0,
-                "three_made": 0,
-                "three_attempts": 0,
-                "ft_made": 0,
-                "ft_attempts": 0,
-                "rebounds_off": 0,
-                "rebounds_def": 0,
-                "assists": 0,
-                "steals": 0,
-                "blocks": 0,
-                "turnovers": 0,
-                "fouls": 0,
-                "efficiency": 0
-              }
-            },
-            "30": {
-              "name": "Keskenović Stefan",
-              "number": 30,
-              "stats": {
-                "points": 0,
-                "fg_made": 0,
-                "fg_attempts": 0,
-                "two_made": 0,
-                "two_attempts": 0,
-                "three_made": 0,
-                "three_attempts": 0,
-                "ft_made": 0,
-                "ft_attempts": 0,
-                "rebounds_off": 0,
-                "rebounds_def": 0,
-                "assists": 0,
-                "steals": 0,
-                "blocks": 0,
-                "turnovers": 0,
-                "fouls": 0,
-                "efficiency": 0
-              }
-            },
-            "31": {
-              "name": "Merdović Stefan",
-              "number": 31,
-              "stats": {
-                "points": 0,
-                "fg_made": 0,
-                "fg_attempts": 0,
-                "two_made": 0,
-                "two_attempts": 0,
-                "three_made": 0,
-                "three_attempts": 0,
-                "ft_made": 0,
-                "ft_attempts": 0,
-                "rebounds_off": 0,
-                "rebounds_def": 0,
-                "assists": 0,
-                "steals": 0,
-                "blocks": 0,
-                "turnovers": 0,
-                "fouls": 0,
-                "efficiency": 0
-              }
-            },
-            "77": {
-              "name": "Stojanov Stefan",
-              "number": 77,
-              "stats": {
-                "points": 0,
-                "fg_made": 0,
-                "fg_attempts": 0,
-                "two_made": 0,
-                "two_attempts": 0,
-                "three_made": 0,
-                "three_attempts": 0,
-                "ft_made": 0,
-                "ft_attempts": 0,
-                "rebounds_off": 0,
-                "rebounds_def": 0,
-                "assists": 0,
-                "steals": 0,
-                "blocks": 0,
-                "turnovers": 0,
-                "fouls": 0,
-                "efficiency": 0
-              }
-            }
+            "points": 108,
+            "rebounds_def": 32,
+            "rebounds_off": 21,
+            "steals": 7,
+            "three_attempts": 35,
+            "three_made": 4,
+            "turnovers": 17,
+            "two_attempts": 75,
+            "two_made": 48
           }
         }
-      },
-      "events": {}
+      }
     },
     "2025-12-10_panthers_vs_grizzlies": {
       "gameInfo": {
@@ -517,7 +3573,6 @@
             "16": {
               "name": "Peruničić Mladen",
               "number": 16,
-              "photo": "Perunicic_Mladen.png",
               "stats": {
                 "points": 0,
                 "fg_made": 0,

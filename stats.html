@@ -29,11 +29,19 @@
         background: white;
         border-radius: 16px;
         overflow: hidden;
-        font-size: 16px;
+        font-size: 17px;
       }
 
       th {
         color: white;
+        padding: 14px 10px;
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+      }
+      td {
+        padding: 12px 10px;
+        border-bottom: 1px solid #e5e7eb;
       }
       th,
       td {
@@ -50,6 +58,30 @@
       .player-name {
         text-align: left;
       }
+
+      .player-cell {
+        text-align: left;
+        padding-left: 14px;
+      }
+
+      .player-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .player-img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .player-name {
+        font-size: 17px;
+        white-space: nowrap;
+      }
+
       .team-header {
         display: flex;
         align-items: center;
@@ -321,6 +353,15 @@
         transition: transform 0.2s;
       }
 
+      .yt-broadcast {
+        cursor: pointer;
+        font-size: 1em;
+      }
+      .yt-broadcast:hover {
+        transform: scale(1.2);
+        transition: transform 0.2s;
+      }
+
       .mvp-block {
         text-align: center;
         margin-top: 15px;
@@ -373,15 +414,6 @@
         margin-bottom: 5px;
         color: black;
         white-space: nowrap;
-      }
-
-      .player-img {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        object-fit: cover;
-        vertical-align: middle;
-        margin-right: 5px;
       }
 
       @media (max-width: 600px) {
@@ -475,6 +507,19 @@
 
         #teamTotals strong {
           font-size: 14px;
+        }
+
+        .player-img {
+          width: 28px;
+          height: 28px;
+        }
+
+        .player-name {
+          font-size: 13px;
+        }
+
+        .player-wrapper {
+          gap: 6px;
         }
       }
 
@@ -684,7 +729,8 @@
       📍 ${info.location || "Nepoznato"} •
       📅 ${date} •
       🕒 ${startTime} •
-      <span class="live-broadcast">🎦</span>
+      <span class="live-broadcast">🎦</span> •
+      ${info.ytLink ? '<span class="yt-broadcast">📺</span>' : ""}
     </div>
 
     <div class="teams">
@@ -719,6 +765,13 @@
         const broadcastIcon = container.querySelector(".live-broadcast");
         if (broadcastIcon) {
           broadcastIcon.addEventListener("click", copyBroadcastLink);
+        }
+
+        const YTbroadcastIcon = container.querySelector(".yt-broadcast");
+        if (YTbroadcastIcon && info.ytLink) {
+          YTbroadcastIcon.addEventListener("click", () => {
+            window.open(info.ytLink, "_blank");
+          });
         }
       }
 
@@ -809,7 +862,10 @@
             row.appendChild(tdNumber);
 
             const tdName = document.createElement("td");
-            tdName.className = "player-name";
+            tdName.className = "player-cell";
+
+            const playerWrapper = document.createElement("div");
+            playerWrapper.className = "player-wrapper";
 
             const playerImg = document.createElement("img");
             playerImg.src = `team_logo/${p.photo || "default_player.png"}`;
@@ -819,8 +875,13 @@
               this.src = "team_logo/default_player.png";
             };
 
-            tdName.appendChild(playerImg);
-            tdName.appendChild(document.createTextNode(" " + p.name));
+            const nameSpan = document.createElement("span");
+            nameSpan.className = "player-name";
+            nameSpan.textContent = p.name;
+
+            playerWrapper.appendChild(playerImg);
+            playerWrapper.appendChild(nameSpan);
+            tdName.appendChild(playerWrapper);
             row.appendChild(tdName);
 
             const eff =
@@ -1021,7 +1082,7 @@
             <img src="team_logo/${logo}" class="event-logo">
             <div class="event-text">
               <div class="event-player">${ev.playerName} ${""}</div>
-              <div class="event-type">${text} (${time})</div>
+              <div class="event-type">${text}</div>
             </div>
           `;
 

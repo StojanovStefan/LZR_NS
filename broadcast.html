@@ -248,6 +248,31 @@
       let lastPopupTimestamp = 0;
 
       function showPlayerStats(player, shot) {
+        if (shot === "FT") player.points = (player.points ?? 0) + 1;
+        if (shot === "2PT") player.points = (player.points ?? 0) + 2;
+        if (shot === "3PT") player.points = (player.points ?? 0) + 3;
+
+        if (shot === "FT") {
+          player.ft_attempts = (player.ft_attempts ?? 0) + 1;
+          player.ft_made = (player.ft_made ?? 0) + 1;
+        }
+
+        if (shot === "2PT") {
+          player.two_attempts = (player.two_attempts ?? 0) + 1;
+          player.two_made = (player.two_made ?? 0) + 1;
+
+          player.fg_attempts = (player.fg_attempts ?? 0) + 1;
+          player.fg_made = (player.fg_made ?? 0) + 1;
+        }
+
+        if (shot === "3PT") {
+          player.three_attempts = (player.three_attempts ?? 0) + 1;
+          player.three_made = (player.three_made ?? 0) + 1;
+
+          player.fg_attempts = (player.fg_attempts ?? 0) + 1;
+          player.fg_made = (player.fg_made ?? 0) + 1;
+        }
+
         document.getElementById("playerName").textContent =
           player.name.charAt(0).toUpperCase() + player.name.slice(1);
 
