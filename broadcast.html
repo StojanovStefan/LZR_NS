@@ -19,7 +19,7 @@
 
       .player-stats {
         position: absolute;
-        bottom: 16%;
+        bottom: 12%;
         left: 50%;
         transform: translateX(-50%) translateY(20px);
         width: 860px;
@@ -248,85 +248,84 @@
       let lastPopupTimestamp = 0;
 
       function showPlayerStats(player, shot) {
-        if (shot === "FT") player.points = (player.points ?? 0) + 1;
-        if (shot === "2PT") player.points = (player.points ?? 0) + 2;
-        if (shot === "3PT") player.points = (player.points ?? 0) + 3;
+        let p = { ...player };
 
         if (shot === "FT") {
-          player.ft_attempts = (player.ft_attempts ?? 0) + 1;
-          player.ft_made = (player.ft_made ?? 0) + 1;
+          p.points++;
+          p.ft_attempts++;
+          p.ft_made++;
         }
 
         if (shot === "2PT") {
-          player.two_attempts = (player.two_attempts ?? 0) + 1;
-          player.two_made = (player.two_made ?? 0) + 1;
-
-          player.fg_attempts = (player.fg_attempts ?? 0) + 1;
-          player.fg_made = (player.fg_made ?? 0) + 1;
+          p.points += 2;
+          p.two_attempts++;
+          p.two_made++;
+          p.fg_attempts++;
+          p.fg_made++;
         }
 
         if (shot === "3PT") {
-          player.three_attempts = (player.three_attempts ?? 0) + 1;
-          player.three_made = (player.three_made ?? 0) + 1;
-
-          player.fg_attempts = (player.fg_attempts ?? 0) + 1;
-          player.fg_made = (player.fg_made ?? 0) + 1;
+          p.points += 3;
+          p.three_attempts++;
+          p.three_made++;
+          p.fg_attempts++;
+          p.fg_made++;
         }
 
         document.getElementById("playerName").textContent =
-          player.name.charAt(0).toUpperCase() + player.name.slice(1);
+          p.name.charAt(0).toUpperCase() + p.name.slice(1);
 
-        document.getElementById("statPTS").textContent = player.points ?? 0;
-        const off = player.rebounds_off ?? 0;
-        const def = player.rebounds_def ?? 0;
+        document.getElementById("statPTS").textContent = p.points ?? 0;
+
+        const off = p.rebounds_off ?? 0;
+        const def = p.rebounds_def ?? 0;
         const total = off + def;
 
         document.getElementById(
           "statREB"
         ).textContent = `${total} (${off} / ${def})`;
 
-        document.getElementById("statAST").textContent = player.assists ?? 0;
+        document.getElementById("statAST").textContent = p.assists ?? 0;
 
-        const fgMade = player.fg_made ?? 0;
-        const fgAttempts = player.fg_attempts ?? 0;
         const fgPerc =
-          fgAttempts > 0 ? Math.round((fgMade / fgAttempts) * 100) : 0;
+          p.fg_attempts > 0 ? Math.round((p.fg_made / p.fg_attempts) * 100) : 0;
+
         document.getElementById(
           "statFG"
-        ).textContent = `${fgMade}/${fgAttempts} (${fgPerc}%)`;
+        ).textContent = `${p.fg_made}/${p.fg_attempts} (${fgPerc}%)`;
 
         let shotLabel = "";
         let shotValue = "";
 
         if (shot === "FT") {
           shotLabel = "FT";
-          const m = player.ft_made ?? 0;
-          const a = player.ft_attempts ?? 0;
-          const p = a ? Math.round((m / a) * 100) : 0;
-          shotValue = `${m}/${a} (${p}%)`;
+          const m = p.ft_made ?? 0;
+          const a = p.ft_attempts ?? 0;
+          const perc = a ? Math.round((m / a) * 100) : 0;
+          shotValue = `${m}/${a} (${perc}%)`;
         }
 
         if (shot === "2PT") {
           shotLabel = "2PT";
-          const m = player.two_made ?? 0;
-          const a = player.two_attempts ?? 0;
-          const p = a ? Math.round((m / a) * 100) : 0;
-          shotValue = `${m}/${a} (${p}%)`;
+          const m = p.two_made ?? 0;
+          const a = p.two_attempts ?? 0;
+          const perc = a ? Math.round((m / a) * 100) : 0;
+          shotValue = `${m}/${a} (${perc}%)`;
         }
 
         if (shot === "3PT") {
           shotLabel = "3PT";
-          const m = player.three_made ?? 0;
-          const a = player.three_attempts ?? 0;
-          const p = a ? Math.round((m / a) * 100) : 0;
-          shotValue = `${m}/${a} (${p}%)`;
+          const m = p.three_made ?? 0;
+          const a = p.three_attempts ?? 0;
+          const perc = a ? Math.round((m / a) * 100) : 0;
+          shotValue = `${m}/${a} (${perc}%)`;
         }
 
         document.getElementById("statShotType").textContent = shotLabel;
         document.getElementById("statShot").textContent = shotValue;
 
-        document.getElementById("playerPhoto").src = player.photo
-          ? "team_logo/" + player.photo
+        document.getElementById("playerPhoto").src = p.photo
+          ? "team_logo/" + p.photo
           : "team_logo/default_player.png";
 
         const popup = document.getElementById("playerStatsPopup");
