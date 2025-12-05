@@ -5,7 +5,6 @@
     <title>Broadcast Score</title>
 
     <style>
-      /* GLOBAL TRANSPARENT BACKGROUND */
       html,
       body {
         margin: 0;
@@ -14,8 +13,6 @@
         font-family: Arial, sans-serif;
         overflow: hidden;
       }
-
-      /* ---------------- PLAYER POPUP ---------------- */
 
       .player-stats {
         position: absolute;
@@ -83,8 +80,6 @@
         font-size: 15px;
         font-weight: normal;
       }
-
-      /* ---------------- SCOREBOARD ---------------- */
 
       .scoreboard {
         position: absolute;
@@ -169,7 +164,6 @@
   </head>
 
   <body>
-    <!-- PLAYER POPUP -->
     <div id="playerStatsPopup" class="player-stats">
       <div class="stats-content">
         <img id="playerPhoto" src="" />
@@ -188,7 +182,6 @@
       </div>
     </div>
 
-    <!-- SCOREBOARD -->
     <div class="scoreboard">
       <div class="team left">
         <img id="teamALogo" src="" />
@@ -207,7 +200,6 @@
       </div>
     </div>
 
-    <!-- JS -->
     <script type="module">
       import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
       import {
@@ -250,28 +242,6 @@
       function showPlayerStats(player, shot) {
         let p = { ...player };
 
-        if (shot === "FT") {
-          p.points++;
-          p.ft_attempts++;
-          p.ft_made++;
-        }
-
-        if (shot === "2PT") {
-          p.points += 2;
-          p.two_attempts++;
-          p.two_made++;
-          p.fg_attempts++;
-          p.fg_made++;
-        }
-
-        if (shot === "3PT") {
-          p.points += 3;
-          p.three_attempts++;
-          p.three_made++;
-          p.fg_attempts++;
-          p.fg_made++;
-        }
-
         document.getElementById("playerName").textContent =
           p.name.charAt(0).toUpperCase() + p.name.slice(1);
 
@@ -294,35 +264,28 @@
           "statFG"
         ).textContent = `${p.fg_made}/${p.fg_attempts} (${fgPerc}%)`;
 
-        let shotLabel = "";
-        let shotValue = "";
+        let shotLabel = shot;
+        document.getElementById("statShotType").textContent = shotLabel;
+
+        let m = 0;
+        let a = 0;
 
         if (shot === "FT") {
-          shotLabel = "FT";
-          const m = p.ft_made ?? 0;
-          const a = p.ft_attempts ?? 0;
-          const perc = a ? Math.round((m / a) * 100) : 0;
-          shotValue = `${m}/${a} (${perc}%)`;
+          m = p.ft_made ?? 0;
+          a = p.ft_attempts ?? 0;
+        } else if (shot === "2PT") {
+          m = p.two_made ?? 0;
+          a = p.two_attempts ?? 0;
+        } else if (shot === "3PT") {
+          m = p.three_made ?? 0;
+          a = p.three_attempts ?? 0;
         }
 
-        if (shot === "2PT") {
-          shotLabel = "2PT";
-          const m = p.two_made ?? 0;
-          const a = p.two_attempts ?? 0;
-          const perc = a ? Math.round((m / a) * 100) : 0;
-          shotValue = `${m}/${a} (${perc}%)`;
-        }
+        const perc = a ? Math.round((m / a) * 100) : 0;
 
-        if (shot === "3PT") {
-          shotLabel = "3PT";
-          const m = p.three_made ?? 0;
-          const a = p.three_attempts ?? 0;
-          const perc = a ? Math.round((m / a) * 100) : 0;
-          shotValue = `${m}/${a} (${perc}%)`;
-        }
-
-        document.getElementById("statShotType").textContent = shotLabel;
-        document.getElementById("statShot").textContent = shotValue;
+        document.getElementById(
+          "statShot"
+        ).textContent = `${m}/${a} (${perc}%)`;
 
         document.getElementById("playerPhoto").src = p.photo
           ? "team_logo/" + p.photo
@@ -334,6 +297,9 @@
         clearTimeout(popupTimer);
         popupTimer = setTimeout(() => popup.classList.remove("show"), 5000);
       }
+
+      let previousPlayerStats = {};
+      let lastShownShot = null;
 
       onValue(gameRef, (snapshot) => {
         const data = snapshot.val();
@@ -363,29 +329,57 @@
 
         const lastScore = data.lastScore;
 
-        if (
-          lastScore &&
-          lastScore.player &&
-          lastScore.shotType &&
-          ["FT", "2PT", "3PT"].includes(lastScore.shotType) &&
-          lastScore.timestamp > lastPopupTimestamp
-        ) {
-          lastPopupTimestamp = lastScore.timestamp;
+        if (lastScore && ["FT", "2PT", "3PT"].includes(lastScore.shotType)) {
+          const teamId = lastScore.team;
+          const playerId = lastScore.player;
 
-          const t = lastScore.team;
-          const pid = lastScore.player;
+          const base = data.teams[teamId].players[playerId];
 
-          const base = data.teams[t].players[pid];
+          const currentStats = { ...base.stats };
+          const shotType = lastScore.shotType;
+
+          if (!previousPlayerStats[playerId]) {
+            previousPlayerStats[playerId] = currentStats;
+            return;
+          }
+
+          const oldStats = previousPlayerStats[playerId];
+
+          let updated = false;
+
+          if (
+            shotType === "2PT" &&
+            currentStats.two_attempts > oldStats.two_attempts
+          )
+            updated = true;
+
+          if (
+            shotType === "3PT" &&
+            currentStats.three_attempts > oldStats.three_attempts
+          )
+            updated = true;
+
+          if (
+            shotType === "FT" &&
+            currentStats.ft_attempts > oldStats.ft_attempts
+          )
+            updated = true;
+
+          if (!updated) return;
+
+          previousPlayerStats[playerId] = currentStats;
+
+          const uniqueShotId = lastScore.timestamp + "_" + playerId;
+          if (lastShownShot === uniqueShotId) return;
+          lastShownShot = uniqueShotId;
 
           const player = {
-            ...base.stats,
+            ...currentStats,
             name: base.name,
             photo: base.photo,
           };
 
-          const shot = lastScore.shotType;
-
-          showPlayerStats(player, shot);
+          showPlayerStats(player, shotType);
         }
       });
     </script>
