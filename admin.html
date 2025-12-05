@@ -304,6 +304,10 @@
           const pts = parseInt(action.split("_")[1]);
           made(pts);
 
+          // Uzmi trenutne stats igrača iz baze
+          const playerStatsSnap = await get(playerStatsRef);
+          const playerStats = playerStatsSnap.val() || {};
+
           const lastScoreRef = ref(db, `games/${gameId}/lastScore`);
           await update(lastScoreRef, {
             player,
@@ -312,6 +316,23 @@
             points: pts,
             shotType: pts === 1 ? "FT" : pts === 2 ? "2PT" : "3PT",
             timestamp: Date.now(),
+            stats: {
+              points: playerStats.points ?? 0,
+              two_made: playerStats.two_made ?? 0,
+              two_attempts: playerStats.two_attempts ?? 0,
+              three_made: playerStats.three_made ?? 0,
+              three_attempts: playerStats.three_attempts ?? 0,
+              ft_made: playerStats.ft_made ?? 0,
+              ft_attempts: playerStats.ft_attempts ?? 0,
+              rebounds_off: playerStats.rebounds_off ?? 0,
+              rebounds_def: playerStats.rebounds_def ?? 0,
+              assists: playerStats.assists ?? 0,
+              fg_made: playerStats.fg_made ?? 0,
+              fg_attempts: playerStats.fg_attempts ?? 0,
+              steals: playerStats.steals ?? 0,
+              blocks: playerStats.blocks ?? 0,
+              turnovers: playerStats.turnovers ?? 0,
+            },
           });
         } else if (action.startsWith("miss_")) {
           const m = parseInt(action.split("_")[1]);

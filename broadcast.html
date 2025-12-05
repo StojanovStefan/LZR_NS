@@ -240,7 +240,8 @@
       let lastPopupTimestamp = 0;
 
       function showPlayerStats(player, shot) {
-        let p = { ...player };
+        // player treba da bude stats **nakon poena**
+        const p = { ...player };
 
         document.getElementById("playerName").textContent =
           p.name.charAt(0).toUpperCase() + p.name.slice(1);
@@ -250,7 +251,6 @@
         const off = p.rebounds_off ?? 0;
         const def = p.rebounds_def ?? 0;
         const total = off + def;
-
         document.getElementById(
           "statREB"
         ).textContent = `${total} (${off} / ${def})`;
@@ -259,17 +259,14 @@
 
         const fgPerc =
           p.fg_attempts > 0 ? Math.round((p.fg_made / p.fg_attempts) * 100) : 0;
-
         document.getElementById(
           "statFG"
         ).textContent = `${p.fg_made}/${p.fg_attempts} (${fgPerc}%)`;
 
-        let shotLabel = shot;
-        document.getElementById("statShotType").textContent = shotLabel;
+        document.getElementById("statShotType").textContent = shot;
 
         let m = 0;
         let a = 0;
-
         if (shot === "FT") {
           m = p.ft_made ?? 0;
           a = p.ft_attempts ?? 0;
@@ -282,7 +279,6 @@
         }
 
         const perc = a ? Math.round((m / a) * 100) : 0;
-
         document.getElementById(
           "statShot"
         ).textContent = `${m}/${a} (${perc}%)`;
@@ -328,34 +324,28 @@
         document.getElementById("scoreA").textContent = info.scoreA ?? 0;
         document.getElementById("scoreB").textContent = info.scoreB ?? 0;
 
-        // Prođi kroz sve timove i igrače i proveri da li stats porasli
-        for (const teamId in teams) {
-          const team = teams[teamId];
-          for (const playerId in team.players) {
-            const player = team.players[playerId];
-            if (!previousPlayerStats[playerId]) {
-              previousPlayerStats[playerId] = { ...player.stats };
-              continue;
-            }
+        const lastScore = data.lastScore;
+        if (!lastScore) return;
 
-            const old = previousPlayerStats[playerId];
-            const newStats = player.stats;
+        const uniqueShotId = lastScore.timestamp + "_" + lastScore.player;
+        if (lastShownShot === uniqueShotId) return; // već prikazano
+        lastShownShot = uniqueShotId;
 
-            // Proveri koji tip šuta je porastao
-            let shotType = null;
-            if (newStats.two_attempts > old.two_attempts) shotType = "2PT";
-            else if (newStats.three_attempts > old.three_attempts)
-              shotType = "3PT";
-            else if (newStats.ft_attempts > old.ft_attempts) shotType = "FT";
-
-            if (shotType) {
-              showPlayerStats(
-                { ...newStats, name: player.name, photo: player.photo },
-                shotType
-              );
-              previousPlayerStats[playerId] = { ...newStats };
-            }
-          }
+        // Prikaži popup koristeći stats iz lastScore
+        if (
+          lastScore.stats &&
+          ["FT", "2PT", "3PT"].includes(lastScore.shotType)
+        ) {
+          showPlayerStats(
+            {
+              ...lastScore.stats,
+              name: lastScore.playerName,
+              photo:
+                teams[lastScore.team]?.players[lastScore.player]?.photo ||
+                "default_player.png",
+            },
+            lastScore.shotType
+          );
         }
       });
     </script>
