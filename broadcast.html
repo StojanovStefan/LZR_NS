@@ -300,6 +300,7 @@
 
       let previousPlayerStats = {};
       let lastShownShot = null;
+      let lastScoreEvent = null;
 
       onValue(gameRef, (snapshot) => {
         const data = snapshot.val();
@@ -328,58 +329,48 @@
         document.getElementById("scoreB").textContent = info.scoreB ?? 0;
 
         const lastScore = data.lastScore;
-
         if (lastScore && ["FT", "2PT", "3PT"].includes(lastScore.shotType)) {
-          const teamId = lastScore.team;
-          const playerId = lastScore.player;
+          lastScoreEvent = lastScore;
+        }
+
+        if (lastScoreEvent) {
+          const teamId = lastScoreEvent.team;
+          const playerId = lastScoreEvent.player;
+          const shotType = lastScoreEvent.shotType;
 
           const base = data.teams[teamId].players[playerId];
+          const stats = base.stats;
 
-          const currentStats = { ...base.stats };
-          const shotType = lastScore.shotType;
-
+          // inicijalizuj previous stats ako ne postoji
           if (!previousPlayerStats[playerId]) {
-            previousPlayerStats[playerId] = currentStats;
+            previousPlayerStats[playerId] = { ...stats };
             return;
           }
 
-          const oldStats = previousPlayerStats[playerId];
+          const shouldPopup =
+            (shotType === "2PT" &&
+              stats.two_attempts >
+                previousPlayerStats[playerId].two_attempts) ||
+            (shotType === "3PT" &&
+              stats.three_attempts >
+                previousPlayerStats[playerId].three_attempts) ||
+            (shotType === "FT" &&
+              stats.ft_attempts > previousPlayerStats[playerId].ft_attempts);
 
-          let updated = false;
+          if (shouldPopup) {
+            showPlayerStats(
+              {
+                ...stats,
+                name: base.name,
+                photo: base.photo,
+              },
+              shotType
+            );
 
-          if (
-            shotType === "2PT" &&
-            currentStats.two_attempts > oldStats.two_attempts
-          )
-            updated = true;
-
-          if (
-            shotType === "3PT" &&
-            currentStats.three_attempts > oldStats.three_attempts
-          )
-            updated = true;
-
-          if (
-            shotType === "FT" &&
-            currentStats.ft_attempts > oldStats.ft_attempts
-          )
-            updated = true;
-
-          if (!updated) return;
-
-          previousPlayerStats[playerId] = currentStats;
-
-          const uniqueShotId = lastScore.timestamp + "_" + playerId;
-          if (lastShownShot === uniqueShotId) return;
-          lastShownShot = uniqueShotId;
-
-          const player = {
-            ...currentStats,
-            name: base.name,
-            photo: base.photo,
-          };
-
-          showPlayerStats(player, shotType);
+            // Ažuriraj prethodne stats nakon prikaza popup-a
+            previousPlayerStats[playerId] = { ...stats };
+            lastScoreEvent = null; // konzumirano
+          }
         }
       });
     </script>
