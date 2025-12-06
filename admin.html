@@ -304,36 +304,32 @@
           const pts = parseInt(action.split("_")[1]);
           made(pts);
 
-          // Uzmi trenutne stats igrača iz baze
-          const playerStatsSnap = await get(playerStatsRef);
-          const playerStats = playerStatsSnap.val() || {};
+          await update(playerStatsRef, playerUpdates);
+          await update(teamStatsRef, teamUpdates);
+          await update(gameInfoRef, gameUpdates);
 
-          const lastScoreRef = ref(db, `games/${gameId}/lastScore`);
-          await update(lastScoreRef, {
+          const updatedSnap = await get(playerStatsRef);
+          const fullStats = updatedSnap.val() || {};
+
+          await update(ref(db, `games/${gameId}/lastScore`), {
             player,
             playerName,
             team,
             points: pts,
             shotType: pts === 1 ? "FT" : pts === 2 ? "2PT" : "3PT",
             timestamp: Date.now(),
-            stats: {
-              points: playerStats.points ?? 0,
-              two_made: playerStats.two_made ?? 0,
-              two_attempts: playerStats.two_attempts ?? 0,
-              three_made: playerStats.three_made ?? 0,
-              three_attempts: playerStats.three_attempts ?? 0,
-              ft_made: playerStats.ft_made ?? 0,
-              ft_attempts: playerStats.ft_attempts ?? 0,
-              rebounds_off: playerStats.rebounds_off ?? 0,
-              rebounds_def: playerStats.rebounds_def ?? 0,
-              assists: playerStats.assists ?? 0,
-              fg_made: playerStats.fg_made ?? 0,
-              fg_attempts: playerStats.fg_attempts ?? 0,
-              steals: playerStats.steals ?? 0,
-              blocks: playerStats.blocks ?? 0,
-              turnovers: playerStats.turnovers ?? 0,
-            },
+            stats: fullStats,
           });
+
+          await push(ref(db, `games/${gameId}/events`), {
+            player,
+            playerName,
+            team,
+            type: action,
+            timestamp: Date.now(),
+          });
+
+          return;
         } else if (action.startsWith("miss_")) {
           const m = parseInt(action.split("_")[1]);
           if (m === 1) {
@@ -370,12 +366,8 @@
           teamUpdates.blocks = increment(1);
         }
 
-        if (Object.keys(playerUpdates).length)
-          await update(playerStatsRef, playerUpdates);
-        if (Object.keys(teamUpdates).length)
-          await update(teamStatsRef, teamUpdates);
-        if (Object.keys(gameUpdates).length)
-          await update(gameInfoRef, gameUpdates);
+        await update(playerStatsRef, playerUpdates);
+        await update(teamStatsRef, teamUpdates);
 
         await push(ref(db, `games/${gameId}/events`), {
           player,
@@ -522,14 +514,27 @@
           teamUpdates.blocks = increment(-1);
         }
 
+        await remove(ref(db, `games/${gameId}/events/${lastKey}`));
+
         if (Object.keys(playerUpdates).length)
           await update(playerStatsRef, playerUpdates);
+
         if (Object.keys(teamUpdates).length)
           await update(teamStatsRef, teamUpdates);
+
         if (Object.keys(gameUpdates).length)
           await update(gameInfoRef, gameUpdates);
 
-        await remove(ref(db, `games/${gameId}/events/${lastKey}`));
+        const lastScoreRef = ref(db, `games/${gameId}/lastScore`);
+        await update(lastScoreRef, {
+          player: null,
+          playerName: null,
+          team: null,
+          points: 0,
+          shotType: null,
+          stats: {},
+          timestamp: 0,
+        });
 
         let actionText = "";
         switch (type) {
