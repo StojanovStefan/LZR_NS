@@ -300,14 +300,16 @@
           <div class="center-content">
             <div class="teams-row">
               <div class="team">
-                <img src="team_logo/${logoA}">
+                  <img src="team_logo/${logoA}"
+                        onclick="event.stopPropagation(); window.location.href='teamProfile.html?id=${teamA}'">
                 <span>${teamA}</span>
               </div>
 
               <div class="score">${scoreA} : ${scoreB}</div>
 
               <div class="team">
-                <img src="team_logo/${logoB}">
+                <img src="team_logo/${logoB}"
+                      onclick="event.stopPropagation(); window.location.href='teamProfile.html?id=${teamB}'">
                 <span>${teamB}</span>
               </div>
             </div>
