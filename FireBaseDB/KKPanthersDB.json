@@ -3,7 +3,7 @@
     "2025-12-03_panthers_vs_grizzlies": {
       "events": {
         "-OfaeMl1UR205MNkTiIN": {
-          "player": "2",
+          "player": "15",
           "playerName": "Rajačić Filip",
           "team": "Panthers",
           "timestamp": 1764806457257,
@@ -24,7 +24,7 @@
           "type": "turnovers"
         },
         "-OfaePu2tHlNgNTu3KFD": {
-          "player": "2",
+          "player": "15",
           "playerName": "Rajačić Filip",
           "team": "Panthers",
           "timestamp": 1764806470123,
@@ -45,7 +45,7 @@
           "type": "assists"
         },
         "-OfaeWj3vfh2WAGdXJDG": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764806498092,
@@ -80,7 +80,7 @@
           "type": "miss_2"
         },
         "-Ofaeh3aMi04-qEb2Tbr": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764806544526,
@@ -101,14 +101,14 @@
           "type": "miss_3"
         },
         "-OfagDCRSOERLwxpCJTA": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764806942404,
           "type": "rebounds_def"
         },
         "-OfagD_55o6XB8q9BO0D": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764806943918,
@@ -129,7 +129,7 @@
           "type": "turnovers"
         },
         "-OfagK0wmd2pPX3bqgIE": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764806970340,
@@ -199,7 +199,7 @@
           "type": "miss_2"
         },
         "-OfagnrepXosTtSX2Kvg": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764807096658,
@@ -213,7 +213,7 @@
           "type": "points_2"
         },
         "-Ofagp8KRX63ZKPwOC_2": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764807101885,
@@ -262,14 +262,14 @@
           "type": "turnovers"
         },
         "-OfahSJmbG1-jKAiHeSD": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764807266458,
           "type": "steals"
         },
         "-OfahW0cWTM6CGRmJYVi": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764807281616,
@@ -318,7 +318,7 @@
           "type": "rebounds_def"
         },
         "-OfahvBPorTNyqmbpgsK": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764807388802,
@@ -367,7 +367,7 @@
           "type": "turnovers"
         },
         "-OfaiM89dn1LPAYTQLpE": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764807503282,
@@ -395,7 +395,7 @@
           "type": "points_3"
         },
         "-OfaiVtLQ5Zca3kYh95j": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764807543230,
@@ -409,7 +409,7 @@
           "type": "miss_3"
         },
         "-Ofaio8TA5cgGTwMyoup": {
-          "player": "2",
+          "player": "15",
           "playerName": "Rajačić Filip",
           "team": "Panthers",
           "timestamp": 1764807622086,
@@ -430,7 +430,7 @@
           "type": "turnovers"
         },
         "-Ofaj5THm6xZnLX4sR4m": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764807697146,
@@ -549,7 +549,7 @@
           "type": "points_3"
         },
         "-OfakDehXWPLFufi9xHD": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764807992853,
@@ -633,21 +633,21 @@
           "type": "assists"
         },
         "-OfalI6VD3ekIzfIjOJ2": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764808273224,
           "type": "miss_3"
         },
         "-OfalIKR0xJDD7B7p7mB": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764808274116,
           "type": "rebounds_off"
         },
         "-OfalL8ODcGDwHy36bHD": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764808285633,
@@ -717,7 +717,7 @@
           "type": "miss_3"
         },
         "-OfamHld3dIf84FzuoI1": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764808533969,
@@ -787,7 +787,7 @@
           "type": "miss_2"
         },
         "-Ofamzt3_WjBho3EC8ZF": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764808718764,
@@ -801,14 +801,14 @@
           "type": "miss_2"
         },
         "-OfanC_MdtH6E4IQfEb3": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764808774847,
           "type": "rebounds_def"
         },
         "-OfanJ4yFelpIzfWYDlH": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764808801510,
@@ -850,7 +850,7 @@
           "type": "points_2"
         },
         "-OfantbjE4avI70tnBWp": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764808955223,
@@ -878,7 +878,7 @@
           "type": "points_2"
         },
         "-OfaoBoxVoAPQJnfymBd": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764809033893,
@@ -899,7 +899,7 @@
           "type": "rebounds_def"
         },
         "-OfaoQ-Xu9LqolTZcYFe": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764809091978,
@@ -1130,14 +1130,14 @@
           "type": "miss_2"
         },
         "-Ofaq7Jq-7U-vRb_fG3Z": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764809539742,
           "type": "rebounds_off"
         },
         "-OfaqAbAqw-3-u3GgltW": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764809553203,
@@ -1172,7 +1172,7 @@
           "type": "points_2"
         },
         "-OfaqW-WSCTKWSv3UCcd": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764809640841,
@@ -1214,7 +1214,7 @@
           "type": "assists"
         },
         "-OfaqwWozDlw5eKiarOC": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764809753564,
@@ -1340,7 +1340,7 @@
           "type": "assists"
         },
         "-OfartQtZhm2_vlClyGK": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764810003041,
@@ -1368,7 +1368,7 @@
           "type": "rebounds_def"
         },
         "-Ofas3Qm17t9uel3ir7A": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764810048089,
@@ -1487,7 +1487,7 @@
           "type": "assists"
         },
         "-Ofatel-CNNzUTZ62C8f": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764810467240,
@@ -1508,7 +1508,7 @@
           "type": "assists"
         },
         "-Ofau1stmdijgdnEukF8": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764810566049,
@@ -1606,7 +1606,7 @@
           "type": "turnovers"
         },
         "-Ofav6TreKGZPkBiigT6": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764810847007,
@@ -1648,7 +1648,7 @@
           "type": "steals"
         },
         "-OfavIpZpTg5p3S1ZK1y": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764810897612,
@@ -1683,14 +1683,14 @@
           "type": "miss_2"
         },
         "-OfavUyMSCR59NLaPtKe": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764810947327,
           "type": "rebounds_def"
         },
         "-OfavYRDvmzH9-8EUGKZ": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764810961526,
@@ -1725,7 +1725,7 @@
           "type": "assists"
         },
         "-OfavqHRsIuATcKigi4H": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764811038724,
@@ -1746,7 +1746,7 @@
           "type": "rebounds_def"
         },
         "-Ofaw2_rVQOr510fINjv": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764811093215,
@@ -1767,7 +1767,7 @@
           "type": "assists"
         },
         "-OfawK1s7yHGJgsyh6LU": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764811164704,
@@ -1795,7 +1795,7 @@
           "type": "assists"
         },
         "-OfawVAM-N1gdP3L-rlh": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764811210303,
@@ -1809,7 +1809,7 @@
           "type": "rebounds_off"
         },
         "-OfawZ8DoMN5LQnD9Rzt": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764811226550,
@@ -1935,7 +1935,7 @@
           "type": "points_2"
         },
         "-OfaxXYFiGxdVWE1b03C": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764811482168,
@@ -1956,7 +1956,7 @@
           "type": "points_2"
         },
         "-OfaxmbgKsmBaI-lIVYl": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764811547988,
@@ -1991,7 +1991,7 @@
           "type": "rebounds_def"
         },
         "-OfaxzGysWu1aju5UMUC": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764811599846,
@@ -2054,7 +2054,7 @@
           "type": "miss_3"
         },
         "-OfayW5JskLgW7kHfBLx": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764811738364,
@@ -2152,7 +2152,7 @@
           "type": "points_2"
         },
         "-OfazJhvAbspIVFOQotX": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764811949795,
@@ -2229,7 +2229,7 @@
           "type": "assists"
         },
         "-Ofazzvo8q5x2DVNE_Sd": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764812126812,
@@ -2355,14 +2355,14 @@
           "type": "rebounds_def"
         },
         "-Ofb-mXtzl5Z3fv08J1P": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764812334113,
           "type": "miss_2"
         },
         "-Ofb-mkFxbrYJkrL17_0": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764812334968,
@@ -2376,7 +2376,7 @@
           "type": "points_2"
         },
         "-Ofb-nJTEY9fudxt628s": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764812337286,
@@ -2397,7 +2397,7 @@
           "type": "assists"
         },
         "-Ofb-x2DBxxygjWsy7h4": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764812377142,
@@ -2425,21 +2425,21 @@
           "type": "turnovers"
         },
         "-Ofb06tvtdgumHhS6Xhg": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764812421603,
           "type": "miss_2"
         },
         "-Ofb0793FY7_JUdhxp7W": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764812422636,
           "type": "rebounds_off"
         },
         "-Ofb07M-rhEQMCgRzkVJ": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764812423464,
@@ -2586,7 +2586,7 @@
           "type": "assists"
         },
         "-Ofb0xQ8RD_1sXu9DX21": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764812640817,
@@ -2607,7 +2607,7 @@
           "type": "miss_3"
         },
         "-Ofb17IaE88M_cLXGYh6": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764812685390,
@@ -2705,7 +2705,7 @@
           "type": "assists"
         },
         "-Ofb214ys5jJd9fvm6w4": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764812922086,
@@ -2719,7 +2719,7 @@
           "type": "rebounds_off"
         },
         "-Ofb24cYVVSJtL7B32-M": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764812936587,
@@ -2761,7 +2761,7 @@
           "type": "rebounds_def"
         },
         "-Ofb2QYVknYwGBQE0F_b": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764813026376,
@@ -2817,14 +2817,14 @@
           "type": "miss_2"
         },
         "-Ofb2o__sW0SsUTy4TBA": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764813128909,
           "type": "rebounds_off"
         },
         "-Ofb2ooo0PlzyvqO8STX": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764813129884,
@@ -2929,7 +2929,7 @@
           "type": "miss_2"
         },
         "-Ofb3knoyTRmKvooUmJT": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764813375580,
@@ -2943,7 +2943,7 @@
           "type": "points_2"
         },
         "-Ofb3lKv56p5XRtXszUl": {
-          "player": "3",
+          "player": "19",
           "playerName": "Stanković Dušan",
           "team": "Panthers",
           "timestamp": 1764813377763,
@@ -3225,52 +3225,6 @@
           "color": "#6a0dad",
           "logo": "Panthers.png",
           "players": {
-            "2": {
-              "name": "Rajačić Filip",
-              "number": 2,
-              "stats": {
-                "assists": 0,
-                "blocks": 0,
-                "efficiency": 0,
-                "fg_attempts": 2,
-                "fg_made": 0,
-                "fouls": 0,
-                "ft_attempts": 0,
-                "ft_made": 0,
-                "points": 0,
-                "rebounds_def": 0,
-                "rebounds_off": 0,
-                "steals": 0,
-                "three_attempts": 2,
-                "three_made": 0,
-                "turnovers": 1,
-                "two_attempts": 0,
-                "two_made": 0
-              }
-            },
-            "3": {
-              "name": "Stanković Dušan",
-              "number": 3,
-              "stats": {
-                "assists": 9,
-                "blocks": 0,
-                "efficiency": 0,
-                "fg_attempts": 38,
-                "fg_made": 15,
-                "fouls": 0,
-                "ft_attempts": 0,
-                "ft_made": 0,
-                "points": 31,
-                "rebounds_def": 4,
-                "rebounds_off": 7,
-                "steals": 1,
-                "three_attempts": 14,
-                "three_made": 1,
-                "turnovers": 4,
-                "two_attempts": 24,
-                "two_made": 14
-              }
-            },
             "13": {
               "name": "Stanković Dimitrije",
               "number": 13,
@@ -3292,6 +3246,29 @@
                 "turnovers": 5,
                 "two_attempts": 12,
                 "two_made": 10
+              }
+            },
+            "15": {
+              "name": "Rajačić Filip",
+              "number": 15,
+              "stats": {
+                "assists": 0,
+                "blocks": 0,
+                "efficiency": 0,
+                "fg_attempts": 2,
+                "fg_made": 0,
+                "fouls": 0,
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 0,
+                "rebounds_def": 0,
+                "rebounds_off": 0,
+                "steals": 0,
+                "three_attempts": 2,
+                "three_made": 0,
+                "turnovers": 1,
+                "two_attempts": 0,
+                "two_made": 0
               }
             },
             "16": {
@@ -3316,6 +3293,29 @@
                 "turnovers": 6,
                 "two_attempts": 16,
                 "two_made": 13
+              }
+            },
+            "19": {
+              "name": "Stanković Dušan",
+              "number": 19,
+              "stats": {
+                "assists": 9,
+                "blocks": 0,
+                "efficiency": 0,
+                "fg_attempts": 38,
+                "fg_made": 15,
+                "fouls": 0,
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 31,
+                "rebounds_def": 4,
+                "rebounds_off": 7,
+                "steals": 1,
+                "three_attempts": 14,
+                "three_made": 1,
+                "turnovers": 4,
+                "two_attempts": 24,
+                "two_made": 14
               }
             },
             "42": {
@@ -3407,52 +3407,6 @@
             "turnovers": 0
           },
           "players": {
-            "8": {
-              "name": "Dobrić Ognjen",
-              "number": 8,
-              "stats": {
-                "points": 0,
-                "fg_made": 0,
-                "fg_attempts": 0,
-                "two_made": 0,
-                "two_attempts": 0,
-                "three_made": 0,
-                "three_attempts": 0,
-                "ft_made": 0,
-                "ft_attempts": 0,
-                "rebounds_off": 0,
-                "rebounds_def": 0,
-                "assists": 0,
-                "steals": 0,
-                "blocks": 0,
-                "turnovers": 0,
-                "fouls": 0,
-                "efficiency": 0
-              }
-            },
-            "11": {
-              "name": "Ilić Nikola",
-              "number": 11,
-              "stats": {
-                "points": 0,
-                "fg_made": 0,
-                "fg_attempts": 0,
-                "two_made": 0,
-                "two_attempts": 0,
-                "three_made": 0,
-                "three_attempts": 0,
-                "ft_made": 0,
-                "ft_attempts": 0,
-                "rebounds_off": 0,
-                "rebounds_def": 0,
-                "assists": 0,
-                "steals": 0,
-                "blocks": 0,
-                "turnovers": 0,
-                "fouls": 0,
-                "efficiency": 0
-              }
-            },
             "13": {
               "name": "Stanković Dimitrije",
               "number": 13,
@@ -3502,6 +3456,53 @@
             "33": {
               "name": "Cvetinović Nikola",
               "number": 33,
+              "stats": {
+                "points": 0,
+                "fg_made": 0,
+                "fg_attempts": 0,
+                "two_made": 0,
+                "two_attempts": 0,
+                "three_made": 0,
+                "three_attempts": 0,
+                "ft_made": 0,
+                "ft_attempts": 0,
+                "rebounds_off": 0,
+                "rebounds_def": 0,
+                "assists": 0,
+                "steals": 0,
+                "blocks": 0,
+                "turnovers": 0,
+                "fouls": 0,
+                "efficiency": 0
+              }
+            },
+            "42": {
+              "name": "Maleš Dimitrije",
+              "number": 42,
+              "stats": {
+                "points": 0,
+                "fg_made": 0,
+                "fg_attempts": 0,
+                "two_made": 0,
+                "two_attempts": 0,
+                "three_made": 0,
+                "three_attempts": 0,
+                "ft_made": 0,
+                "ft_attempts": 0,
+                "rebounds_off": 0,
+                "rebounds_def": 0,
+                "assists": 0,
+                "steals": 0,
+                "blocks": 0,
+                "turnovers": 0,
+                "fouls": 0,
+                "efficiency": 0
+              }
+            },
+
+            "77": {
+              "name": "Stojanov Stefan",
+              "number": 77,
               "stats": {
                 "points": 0,
                 "fg_made": 0,
@@ -3593,9 +3594,9 @@
                 "efficiency": 0
               }
             },
-            "15": {
-              "name": "Rajačić Filip",
-              "number": 15,
+            "14": {
+              "name": "Đurnić Jovana",
+              "number": 14,
               "stats": {
                 "points": 0,
                 "fg_made": 0,

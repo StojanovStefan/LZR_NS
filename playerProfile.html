@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team Profile</title>
+
+    <style>
+      body {
+        background: #f5f5f7;
+        font-family: "Inter", Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 1100px;
+        margin: auto;
+      }
+
+      .player-header {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        background: #fff;
+        padding: 25px;
+        border-radius: 16px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+        margin-bottom: 25px;
+      }
+
+      .player-card {
+        display: flex;
+        flex-direction: row; /* slika i tekst u jednom redu */
+        align-items: center;
+        gap: 20px; /* razmak između slike i imena */
+      }
+
+      /* Blok sa imenom i timom da bude kolona */
+      .player-info-block {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .player-photo {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        object-fit: cover;
+        background: white;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .player-name {
+        font-size: 32px;
+        font-weight: 300;
+      }
+
+      /* ---- TEAM INFO ---- */
+
+      .team-info {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        background: #f8f8f8;
+        padding: 10px 16px;
+        border-radius: 12px;
+      }
+
+      .team-logo {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .team-name {
+        font-size: 18px;
+        font-weight: 300;
+      }
+
+      /* ---- TABS ---- */
+
+      .tabs {
+        display: flex;
+        gap: 12px;
+        margin-bottom: 25px;
+      }
+
+      .tab-btn {
+        padding: 10px 24px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        background: #e5e7eb;
+        font-size: 17px;
+        transition: background 0.25s;
+      }
+
+      .tab-btn.active {
+        background: #fbbf24;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.18);
+      }
+
+      /* GRID LAYOUT – 4 kolone na desktopu */
+      .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 18px;
+      }
+
+      /* Stat kartica */
+      .stat-card {
+        background: #ffffff;
+        border-radius: 12px;
+        padding: 0;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+
+      /* Naslov kartice (Proskečno / Ukupno) */
+      .stat-card h3 {
+        text-align: center;
+        padding: 12px 0;
+        color: #f59e0b;
+        font-size: 20px;
+        margin: 0;
+        font-weight: 700;
+      }
+
+      /* Wrapper za dve kolone FGM/FGA i sl. */
+      .stat-columns {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+      }
+
+      /* Leva i desna kolona */
+      .stat-col {
+        width: 50%;
+      }
+
+      /* Naslov kolone (FGM / FGA) */
+      .stat-col-title {
+        text-align: center;
+        font-weight: 600;
+        color: #f59e0b;
+        margin-bottom: 10px;
+      }
+
+      /* Wrapper za sve redove */
+      .stat-rows {
+        padding: 10px 20px;
+      }
+
+      /* Jedan red (npr: Points – 23) */
+      .stat-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 4px 0;
+        font-size: 16px;
+      }
+
+      /* Header red (below titles) */
+      .stat-row.header {
+        font-weight: 700;
+        color: #f59e0b;
+        margin-bottom: 6px;
+      }
+
+      /* Svaki broj u redu */
+      .stat-row span {
+        width: 80px; /* identično kao team page */
+        text-align: center;
+      }
+
+      /* Procente (FG%, 3P%, FT%) */
+      .stat-percent {
+        background: linear-gradient(90deg, #ffb100, #ff8c00);
+        text-align: center;
+        padding: 14px 0;
+        font-size: 22px;
+        font-weight: bold;
+        color: white;
+        margin-top: 10px;
+      }
+
+      @media (max-width: 600px) {
+        body {
+          padding: 12px;
+        }
+
+        h1 {
+          font-size: 22px;
+          margin-bottom: 16px;
+        }
+
+        .container {
+          padding: 0 12px;
+        }
+
+        .player-header {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          gap: 15px;
+          padding: 20px;
+        }
+
+        /* PLAYER CARD */
+
+        .player-card {
+          flex-direction: column; /* slika iznad imena */
+          align-items: center;
+          gap: 12px;
+        }
+        .player-photo {
+          width: 120px;
+          height: 120px;
+          object-fit: cover;
+          border-radius: 50%;
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .player-name {
+          font-size: 22px;
+          font-weight: 700;
+        }
+
+        .player-info-block {
+          align-items: center; /* centrirano */
+          gap: 10px;
+        }
+
+        /* TEAM INFO INSIDE PLAYER CARD */
+        .team-info {
+          flex-direction: column; /* logo iznad imena */
+          align-items: center;
+          gap: 6px;
+          background-color: #fff;
+          padding: 12px 16px;
+          border-radius: 14px;
+        }
+
+        .team-logo {
+          width: 55px; /* manji logo */
+          height: 55px;
+          border-radius: 50%;
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+          border: 1px solid #fff;
+        }
+
+        .team-name {
+          font-size: 16px;
+          font-weight: 300;
+        }
+
+        /* TABS */
+        .tabs {
+          flex-direction: column;
+          gap: 8px;
+          margin-top: 15px;
+        }
+
+        .tab-btn {
+          width: 100%;
+          padding: 10px;
+          font-size: 16px;
+        }
+
+        /* STATS GRID */
+        .stats-grid {
+          grid-template-columns: 1fr;
+          gap: 14px;
+        }
+
+        .stat-card {
+          padding: 14px;
+        }
+
+        .stat-card h3 {
+          font-size: 18px;
+          padding-bottom: 8px;
+        }
+
+        /* ROWS INSIDE STAT BOXES */
+        .stat-row {
+          font-size: 14px;
+          gap: 12px;
+        }
+
+        .stat-row span {
+          width: 70px;
+          font-size: 14px;
+        }
+
+        .stat-percent {
+          font-size: 18px;
+          padding: 10px 0;
+        }
+      }
+
+      /* ---- GAMES LIST GRID ---- */
+
+      .players-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+        gap: 20px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="playerContainer" class="player-header"></div>
+
+      <div class="tabs">
+        <button id="btnTotals" class="tab-btn active">Pregled</button>
+        <button id="btnPlayers" class="tab-btn">Utakmice</button>
+      </div>
+
+      <div id="playersTotals">
+        <div class="stats-grid" id="statsGrid"></div>
+      </div>
+
+      <div id="playersSection">
+        <div id="playersList" class="players-grid"></div>
+      </div>
+    </div>
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+      import {
+        getDatabase,
+        ref,
+        get,
+      } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyBrMu0mjZw1SIh-0KgEVaKoPURdN1PhC0w",
+        authDomain: "kk-panthers-39d91.firebaseapp.com",
+        databaseURL:
+          "https://kk-panthers-39d91-default-rtdb.europe-west1.firebasedatabase.app/",
+        projectId: "kk-panthers-39d91",
+        storageBucket: "kk-panthers-39d91.appspot.com",
+        messagingSenderId: "605710897252",
+        appId: "1:605710897252:web:9469a8022065af45748f71",
+      };
+
+      const app = initializeApp(firebaseConfig);
+      const db = getDatabase(app);
+
+      const urlParams = new URLSearchParams(window.location.search);
+      const playerID = urlParams.get("id");
+      const playerContainer = document.getElementById("playerContainer");
+      const statsGrid = document.getElementById("statsGrid");
+
+      const sectionTotals = document.getElementById("playersTotals");
+      const sectionGames = document.getElementById("playersSection");
+
+      const btnTotals = document.getElementById("btnTotals");
+      const btnPlayers = document.getElementById("btnPlayers");
+
+      btnTotals.onclick = () => {
+        btnTotals.classList.add("active");
+        btnPlayers.classList.remove("active");
+
+        document.getElementById("playersTotals").style.display = "block";
+        document.getElementById("playersSection").style.display = "none";
+      };
+
+      btnPlayers.onclick = () => {
+        btnPlayers.classList.add("active");
+        btnTotals.classList.remove("active");
+
+        document.getElementById("playersTotals").style.display = "none";
+        document.getElementById("playersSection").style.display = "block";
+      };
+
+      const gamesRef = ref(db, "games");
+
+      get(gamesRef).then((snapshot) => {
+        if (!snapshot.exists()) {
+          playerContainer.innerHTML = "<p>No games found.</p>";
+          return;
+        }
+
+        const games = snapshot.val();
+
+        let teamInfo = null;
+        let playerData = null;
+
+        // Nađi igrača i njegov tim
+        Object.values(games).some((game) => {
+          const info = game.gameInfo || {};
+          const teams = game.teams || {};
+
+          for (const teamID in teams) {
+            const players = teams[teamID].players || {};
+
+            if (players[playerID]) {
+              // našli smo igrača!
+              playerData = players[playerID];
+              teamInfo = {
+                logo: teamID === info.teamA ? info.teamA_logo : info.teamB_logo,
+                name: teamID === info.teamA ? info.teamA : info.teamB,
+              };
+              return true;
+            }
+          }
+          return false;
+        });
+
+        if (!playerData || !teamInfo) {
+          playerContainer.innerHTML = "<p>Player not found.</p>";
+          return;
+        }
+
+        const playerPhoto =
+          playerData.photo && playerData.photo !== ""
+            ? `team_logo/${playerData.photo}`
+            : "team_logo/default_player.png";
+        const playerName = playerData.name || "Unknown Player";
+
+        const logoPath = teamInfo.logo
+          ? `team_logo/${teamInfo.logo}`
+          : "team_logo/default.png";
+
+        playerContainer.innerHTML = `
+   <div class="player-card">
+    <img class="player-photo" src="${playerPhoto}">
+
+  <div class="player-info-block">
+    <div class="player-name">${playerName}</div>
+
+    <div class="team-info">
+        <img class="team-logo" src="${logoPath}">
+        <span class="team-name">${teamInfo.name}</span>
+        </div>
+        </div>
+    </div>
+  `;
+      });
+
+      function calculatePlayerTotals(games, playerID) {
+        const totals = {
+          gamesPlayed: 0,
+          points: 0,
+          two_made: 0,
+          two_attempts: 0,
+          three_made: 0,
+          three_attempts: 0,
+          ft_made: 0,
+          ft_attempts: 0,
+          rebounds_off: 0,
+          rebounds_def: 0,
+          assists: 0,
+          steals: 0,
+          blocks: 0,
+          turnovers: 0,
+          eff: 0,
+        };
+
+        Object.values(games).forEach((game) => {
+          const teams = game.teams || {};
+
+          for (const teamID in teams) {
+            const players = teams[teamID].players || {};
+
+            if (players[playerID]) {
+              const p = players[playerID].stats || {};
+
+              totals.gamesPlayed++;
+
+              totals.points += p.points || 0;
+
+              totals.two_made += p.two_made || 0;
+              totals.two_attempts += p.two_attempts || 0;
+
+              totals.three_made += p.three_made || 0;
+              totals.three_attempts += p.three_attempts || 0;
+
+              totals.ft_made += p.ft_made || 0;
+              totals.ft_attempts += p.ft_attempts || 0;
+
+              totals.rebounds_off += p.rebounds_off || 0;
+              totals.rebounds_def += p.rebounds_def || 0;
+
+              totals.assists += p.assists || 0;
+              totals.steals += p.steals || 0;
+              totals.blocks += p.blocks || 0;
+
+              totals.turnovers += p.turnovers || 0;
+
+              const eff =
+                (p.points || 0) +
+                (p.rebounds_off || 0) +
+                (p.rebounds_def || 0) +
+                (p.assists || 0) +
+                (p.steals || 0) +
+                (p.blocks || 0) -
+                ((p.two_attempts || 0) +
+                  (p.three_attempts || 0) -
+                  ((p.two_made || 0) + (p.three_made || 0))) -
+                ((p.ft_attempts || 0) - (p.ft_made || 0)) -
+                (p.turnovers || 0);
+
+              totals.eff += eff;
+            }
+          }
+        });
+
+        return totals;
+      }
+
+      function renderPlayerStats(totals) {
+        const gp = totals.gamesPlayed || 1;
+
+        const stats = [
+          {
+            title: "FG",
+            labels: ["FGA", "FGM"],
+            avgVals: [
+              ((totals.two_attempts + totals.three_attempts) / gp).toFixed(1),
+              ((totals.two_made + totals.three_made) / gp).toFixed(1),
+            ],
+            totalVals: [
+              totals.two_attempts + totals.three_attempts,
+              totals.two_made + totals.three_made,
+            ],
+            percent:
+              totals.two_attempts + totals.three_attempts
+                ? (
+                    ((totals.two_made + totals.three_made) /
+                      (totals.two_attempts + totals.three_attempts)) *
+                    100
+                  ).toFixed(2)
+                : "0",
+          },
+
+          {
+            title: "2P",
+            labels: ["2PTA", "2PTM"],
+            avgVals: [
+              (totals.two_attempts / gp).toFixed(1),
+              (totals.two_made / gp).toFixed(1),
+            ],
+            totalVals: [totals.two_attempts, totals.two_made],
+            percent: totals.two_attempts
+              ? ((totals.two_made / totals.two_attempts) * 100).toFixed(2)
+              : "0",
+          },
+
+          {
+            title: "3P",
+            labels: ["3PTA", "3PTM"],
+            avgVals: [
+              (totals.three_attempts / gp).toFixed(1),
+              (totals.three_made / gp).toFixed(1),
+            ],
+            totalVals: [totals.three_attempts, totals.three_made],
+            percent: totals.three_attempts
+              ? ((totals.three_made / totals.three_attempts) * 100).toFixed(2)
+              : "0",
+          },
+
+          /*{
+          title: "FT",
+          labels: ["FTA", "FTM"],
+          avgVals: [
+            (totals.ft_attempts / gp).toFixed(1),
+            (totals.ft_made / gp).toFixed(1),
+          ],
+          totalVals: [totals.ft_attempts, totals.ft_made],
+          percent: totals.ft_attempts
+            ? ((totals.ft_made / totals.ft_attempts) * 100).toFixed(2)
+            : "0",
+        },*/
+
+          {
+            title: "REB O/D",
+            labels: ["ORB", "DRB"],
+            avgVals: [
+              (totals.rebounds_off / gp).toFixed(1),
+              (totals.rebounds_def / gp).toFixed(1),
+            ],
+            totalVals: [totals.rebounds_off, totals.rebounds_def],
+          },
+
+          {
+            title: "EFF",
+            labels: [""],
+            avgVals: [(totals.eff / gp).toFixed(1)],
+            totalVals: [totals.eff],
+          },
+
+          {
+            title: "PTS",
+            labels: [""],
+            avgVals: [(totals.points / gp).toFixed(1)],
+            totalVals: [totals.points],
+          },
+
+          {
+            title: "AST",
+            labels: [""],
+            avgVals: [(totals.assists / gp).toFixed(1)],
+            totalVals: [totals.assists],
+          },
+
+          {
+            title: "TO",
+            labels: [""],
+            avgVals: [(totals.turnovers / gp).toFixed(1)],
+            totalVals: [totals.turnovers],
+          },
+
+          {
+            title: "STL",
+            labels: [""],
+            avgVals: [(totals.steals / gp).toFixed(1)],
+            totalVals: [totals.steals],
+          },
+
+          /*{
+          title: "BLK",
+          labels: [""],
+          avgVals: [(totals.blocks / gp).toFixed(1)],
+          totalVals: [totals.blocks],
+        },*/
+        ];
+
+        statsGrid.innerHTML = "";
+
+        stats.forEach((s) => {
+          let rowsCombined = `
+            <div class="stat-row header">
+                <span>Prosečno</span>
+                <span>Ukupno</span>
+            </div>
+        `;
+
+          s.labels.forEach((label, i) => {
+            rowsCombined += `
+                <div class="stat-row">
+                    <span>${label}</span>
+                    <span>${label}</span>
+                </div>
+                <div class="stat-row">
+                    <span>${s.avgVals[i]}</span>
+                    <span>${s.totalVals[i]}</span>
+                </div>
+            `;
+          });
+
+          statsGrid.innerHTML += `
+            <div class="stat-card">
+                <h3>${s.title}</h3>
+
+                <div class="stat-rows">
+                    ${rowsCombined}
+                </div>
+
+                ${
+                  s.percent
+                    ? `<div class="stat-percent">${s.percent}%</div>`
+                    : ""
+                }
+            </div>
+        `;
+        });
+      }
+
+      get(gamesRef).then((snapshot) => {
+        if (!snapshot.exists()) {
+          console.log("No games found.");
+          return;
+        }
+
+        const games = snapshot.val();
+
+        const totals = calculatePlayerTotals(games, playerID);
+
+        renderPlayerStats(totals);
+      });
+    </script>
+  </body>
+</html>
