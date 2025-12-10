@@ -402,20 +402,41 @@
         }
 
         .game-card {
-          padding: 12px;
+          padding: 14px;
+          border-radius: 16px !important;
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
         }
 
-        .game-card img {
-          width: 45px !important;
-          height: 45px !important;
+        .game-card > div {
+          flex-direction: column !important;
+          align-items: center !important;
+          text-align: center !important;
+          gap: 12px !important;
         }
 
-        .game-card div {
+        .game-card div:first-child > div {
           font-size: 14px;
         }
 
-        .game-card div[style*="font-size"] {
-          font-size: 18px !important;
+        .game-card img {
+          width: 70px !important;
+          height: 70px !important;
+        }
+
+        .game-card div[style*="font-size:22px"] {
+          font-size: 26px !important;
+          margin: 8px 0;
+        }
+
+        .game-card div[style*="text-align:center"] div {
+          margin-top: 6px;
+          font-size: 15px;
+        }
+
+        .game-card {
+          margin-bottom: 14px;
         }
 
         .players-container {
