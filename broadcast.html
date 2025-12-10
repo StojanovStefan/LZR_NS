@@ -111,7 +111,7 @@
       }
 
       .team.right {
-        background: #060339;
+        background: #35b2f3;
         justify-content: flex-start;
         padding-left: 10px;
       }
@@ -240,7 +240,6 @@
       let lastPopupTimestamp = 0;
 
       function showPlayerStats(player, shot) {
-        // player treba da bude stats **nakon poena**
         const p = { ...player };
 
         document.getElementById("playerName").textContent =
@@ -328,10 +327,9 @@
         if (!lastScore) return;
 
         const uniqueShotId = lastScore.timestamp + "_" + lastScore.player;
-        if (lastShownShot === uniqueShotId) return; // već prikazano
+        if (lastShownShot === uniqueShotId) return;
         lastShownShot = uniqueShotId;
 
-        // Prikaži popup koristeći stats iz lastScore
         if (
           lastScore.stats &&
           ["FT", "2PT", "3PT"].includes(lastScore.shotType)
