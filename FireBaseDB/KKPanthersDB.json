@@ -3407,29 +3407,6 @@
             "turnovers": 0
           },
           "players": {
-            "3": {
-              "name": "Stanković Dimitrije",
-              "number": 3,
-              "stats": {
-                "points": 0,
-                "fg_made": 0,
-                "fg_attempts": 0,
-                "two_made": 0,
-                "two_attempts": 0,
-                "three_made": 0,
-                "three_attempts": 0,
-                "ft_made": 0,
-                "ft_attempts": 0,
-                "rebounds_off": 0,
-                "rebounds_def": 0,
-                "assists": 0,
-                "steals": 0,
-                "blocks": 0,
-                "turnovers": 0,
-                "fouls": 0,
-                "efficiency": 0
-              }
-            },
             "8": {
               "name": "Dobrić Ognjen",
               "number": 8,
@@ -3456,6 +3433,29 @@
             "11": {
               "name": "Ilić Nikola",
               "number": 11,
+              "stats": {
+                "points": 0,
+                "fg_made": 0,
+                "fg_attempts": 0,
+                "two_made": 0,
+                "two_attempts": 0,
+                "three_made": 0,
+                "three_attempts": 0,
+                "ft_made": 0,
+                "ft_attempts": 0,
+                "rebounds_off": 0,
+                "rebounds_def": 0,
+                "assists": 0,
+                "steals": 0,
+                "blocks": 0,
+                "turnovers": 0,
+                "fouls": 0,
+                "efficiency": 0
+              }
+            },
+            "13": {
+              "name": "Stanković Dimitrije",
+              "number": 13,
               "stats": {
                 "points": 0,
                 "fg_made": 0,

@@ -113,6 +113,7 @@
         height: 140px;
         border-radius: 50%;
         object-fit: cover;
+        cursor: pointer;
         border: 3px solid white;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
       }
@@ -736,9 +737,13 @@
 
     <div class="teams">
       <div class="team-block">
-        <img src="team_logo/${
-          info.teamA_logo || "default.png"
-        }" class="big-logo">
+         <img 
+      src="team_logo/${info.teamA_logo || "default.png"}" 
+      class="big-logo"
+      onclick="event.stopPropagation(); window.location.href='teamProfile.html?id=${
+        info.teamA
+      }'"
+    >
         <div class="team-name-large">${info.teamA}</div>
       </div>
 
@@ -752,9 +757,13 @@
 </div>
 
       <div class="team-block">
-        <img src="team_logo/${
-          info.teamB_logo || "default.png"
-        }" class="big-logo">
+       <img 
+      src="team_logo/${info.teamB_logo || "default.png"}" 
+      class="big-logo"
+      onclick="event.stopPropagation(); window.location.href='teamProfile.html?id=${
+        info.teamB
+      }'"
+    >
         <div class="team-name-large">${info.teamB}</div>
       </div>
     </div>
