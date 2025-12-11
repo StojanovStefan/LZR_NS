@@ -3072,7 +3072,8 @@
         "teamB": "Grizzlies",
         "teamB_logo": "Grizzlies.png",
         "time": "10:00",
-        "ytLink": "https://www.youtube.com/watch?v=LKoOKdnceHw"
+        "ytLink": "https://www.youtube.com/watch?v=LKoOKdnceHw",
+        "mvpPlayerId": "simidzija_nikola_1999_1"
       },
       "lastScore": {
         "player": "merdovic_stefan_2002_1",
@@ -3091,6 +3092,8 @@
               "playerId": "vujic_marko_1999",
               "name": "Vujić Marko",
               "number": 1,
+              "mvp_games": [],
+              "mvp_count": 0,
               "birth_year": 1999,
               "stats": {
                 "assists": 7,
@@ -3117,6 +3120,8 @@
               "name": "Simidžija Nikola",
               "number": 5,
               "birth_year": 1999,
+              "mvp_games": ["2025-12-03_panthers_vs_grizzlies"],
+              "mvp_count": 1,
               "stats": {
                 "assists": 4,
                 "blocks": 1,
@@ -3142,6 +3147,8 @@
               "name": "Dobrić Ognjen",
               "number": 8,
               "birth_year": 2002,
+              "mvp_games": [],
+              "mvp_count": 0,
               "stats": {
                 "assists": 1,
                 "blocks": 0,
@@ -3167,6 +3174,8 @@
               "name": "Keskenović Stefan",
               "number": 30,
               "birth_year": 2000,
+              "mvp_games": [],
+              "mvp_count": 0,
               "stats": {
                 "assists": 5,
                 "blocks": 0,
@@ -3192,6 +3201,8 @@
               "name": "Merdović Stefan",
               "number": 31,
               "birth_year": 2002,
+              "mvp_games": [],
+              "mvp_count": 0,
               "stats": {
                 "assists": 21,
                 "blocks": 0,
@@ -3240,6 +3251,8 @@
               "name": "Stanković Dimitrije",
               "number": 13,
               "birth_year": 2007,
+              "mvp_games": [],
+              "mvp_count": 0,
               "stats": {
                 "assists": 3,
                 "blocks": 0,
@@ -3265,6 +3278,8 @@
               "name": "Rajačić Filip",
               "number": 15,
               "birth_year": 2000,
+              "mvp_games": [],
+              "mvp_count": 0,
               "stats": {
                 "assists": 0,
                 "blocks": 0,
@@ -3291,6 +3306,8 @@
               "number": 16,
               "photo": "Perunicic_Mladen.png",
               "birth_year": 1985,
+              "mvp_games": [],
+              "mvp_count": 0,
               "stats": {
                 "assists": 11,
                 "blocks": 0,
@@ -3316,6 +3333,8 @@
               "name": "Stanković Dušan",
               "number": 19,
               "birth_year": 1999,
+              "mvp_games": [],
+              "mvp_count": 0,
               "stats": {
                 "assists": 9,
                 "blocks": 0,
@@ -3341,6 +3360,8 @@
               "name": "Maleš Dimitrije",
               "number": 42,
               "birth_year": 1999,
+              "mvp_games": [],
+              "mvp_count": 0,
               "stats": {
                 "assists": 3,
                 "blocks": 0,
@@ -5845,7 +5866,8 @@
         "teamB": "Grizzlies",
         "teamB_logo": "Grizzlies.png",
         "time": "10:00",
-        "ytLink": "https://www.youtube.com/watch?v=3ZZbpSXRnJw"
+        "ytLink": "https://www.youtube.com/watch?v=3ZZbpSXRnJw",
+        "mvpPlayerId": "perunicic_mladen_1985"
       },
       "lastScore": {
         "points": 0,
@@ -5861,6 +5883,8 @@
               "name": "Vujić Marko",
               "number": 1,
               "birth_year": 1999,
+              "mvp_games": [],
+              "mvp_count": 0,
               "stats": {
                 "assists": 9,
                 "blocks": 0,
@@ -5886,6 +5910,8 @@
               "name": "Ivošev Marko",
               "number": 2,
               "birth_year": 2001,
+              "mvp_games": [],
+              "mvp_count": 0,
               "stats": {
                 "assists": 5,
                 "blocks": 0,
@@ -5911,6 +5937,8 @@
               "name": "Đurnić Jovana",
               "number": 14,
               "birth_year": 1984,
+              "mvp_games": [],
+              "mvp_count": 0,
               "stats": {
                 "assists": 0,
                 "blocks": 0,
@@ -5937,6 +5965,8 @@
               "number": 16,
               "photo": "Perunicic_Mladen.png",
               "birth_year": 1985,
+              "mvp_games": ["2025-12-10_panthers_vs_grizzlies"],
+              "mvp_count": 1,
               "stats": {
                 "assists": 2,
                 "blocks": 0,
@@ -5962,6 +5992,8 @@
               "name": "Lazarević Srdjan",
               "number": 38,
               "birth_year": 2000,
+              "mvp_games": [],
+              "mvp_count": 0,
               "stats": {
                 "assists": 7,
                 "blocks": 0,
@@ -6010,6 +6042,8 @@
               "name": "Stanković Dimitrije",
               "number": 13,
               "birth_year": 2007,
+              "mvp_games": [],
+              "mvp_count": 0,
               "stats": {
                 "assists": 4,
                 "blocks": 0,
@@ -6035,6 +6069,8 @@
               "name": "Keskenović Stefan",
               "number": 30,
               "birth_year": 2000,
+              "mvp_games": [],
+              "mvp_count": 0,
               "stats": {
                 "assists": 3,
                 "blocks": 1,
@@ -6060,6 +6096,8 @@
               "name": "Cvetinović Nikola",
               "number": 33,
               "birth_year": 2002,
+              "mvp_games": [],
+              "mvp_count": 0,
               "stats": {
                 "assists": 7,
                 "blocks": 0,
@@ -6085,6 +6123,8 @@
               "name": "Maleš Dimitrije",
               "number": 42,
               "birth_year": 1999,
+              "mvp_games": [],
+              "mvp_count": 0,
               "stats": {
                 "assists": 5,
                 "blocks": 0,
@@ -6110,6 +6150,8 @@
               "name": "Stojanov Stefan",
               "number": 77,
               "birth_year": 1999,
+              "mvp_games": [],
+              "mvp_count": 0,
               "stats": {
                 "assists": 6,
                 "blocks": 0,

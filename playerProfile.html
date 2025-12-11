@@ -316,6 +316,32 @@
           font-size: 12px;
           margin-left: 1px;
         }
+
+        .mvp-badge {
+          margin-top: 6px;
+          padding: 4px 8px;
+          font-size: 12px;
+          border-radius: 4px;
+        }
+
+        .mvp-badge-td {
+          background: #f4c400;
+          color: black;
+          font-weight: bold;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          font-size: 9px;
+        }
+        .mvp-badge-td {
+          width: 24px;
+          height: 24px;
+          font-size: 7px;
+          border-radius: 50%;
+        }
       }
 
       #playersList {
@@ -359,8 +385,8 @@
 
       .game-btn {
         display: inline-flex;
-        width: 28px;
-        height: 28px;
+        width: 30px;
+        height: 30px;
         border-radius: 50%;
         background: #f37e12;
         color: white;
@@ -408,6 +434,33 @@
       }
       .win-loss-indicator.loss {
         background-color: #ef4444;
+      }
+
+      .mvp-badge {
+        margin-top: 8px;
+        background-color: #f3c74a;
+        color: #6b4e00;
+        font-weight: 700;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        border-radius: 6px;
+        padding: 6px 12px;
+        font-size: 14px;
+        box-shadow: 0 2px 6px rgb(0 0 0 / 0.15);
+        user-select: none;
+      }
+
+      .mvp-badge-td {
+        background: #f4c400;
+        color: black;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        font-size: 9px;
       }
     </style>
   </head>
@@ -524,6 +577,11 @@
           ? `team_logo/${teamInfo.logo}`
           : "team_logo/default.png";
 
+        const mvpHtml =
+          playerData.mvp_count > 0
+            ? `<div class="mvp-badge">⭐ ${playerData.mvp_count}X MVP Utakmice ⭐</div>`
+            : "";
+
         playerContainer.innerHTML = `
    <div class="player-card">
     <img class="player-photo" src="${playerPhoto}">
@@ -535,6 +593,7 @@
         <img class="team-logo" src="${logoPath}">
         <span class="team-name">${teamInfo.name}</span>
         </div>
+         ${mvpHtml}
         </div>
     </div>
   `;
@@ -863,7 +922,17 @@
             const row = document.createElement("tr");
 
             const tdBtn = document.createElement("td");
-            tdBtn.innerHTML = `<span class="game-btn">➜</span>`;
+            const isMvp = info.mvpPlayerId === playerID;
+            const mvpBadge = isMvp
+              ? `<span class="mvp-badge-td">MVP</span>`
+              : "";
+
+            tdBtn.innerHTML = `
+              <div style="display:flex; align-items:center; gap:6px;">
+                    ${mvpBadge}
+                    <span class="game-btn" style="cursor:pointer;">➜</span>
+              </div>
+            `;
             tdBtn.style.cursor = "pointer";
             tdBtn.onclick = () =>
               (window.location.href = `stats.html?id=${gameID}`);
