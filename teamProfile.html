@@ -856,17 +856,21 @@
         const gameKeys = Object.keys(games);
 
         gameKeys.sort((a, b) => {
-          const dateA = a.split("_")[0].split("-");
-          const dateB = b.split("_")[0].split("-");
+          const infoA = games[a].gameInfo;
+          const infoB = games[b].gameInfo;
 
-          const timestampA = new Date(
-            `${dateA[2]}-${dateA[1]}-${dateA[0]}`
-          ).getTime();
-          const timestampB = new Date(
-            `${dateB[2]}-${dateB[1]}-${dateB[0]}`
-          ).getTime();
+          const dateStrA = infoA?.date || a.split("_")[0];
+          const dateStrB = infoB?.date || b.split("_")[0];
 
-          return timestampB - timestampA;
+          const dateA = dateStrA.includes(".")
+            ? new Date(dateStrA.split(".").reverse().join("-"))
+            : new Date(dateStrA);
+
+          const dateB = dateStrB.includes(".")
+            ? new Date(dateStrB.split(".").reverse().join("-"))
+            : new Date(dateStrB);
+
+          return dateB - dateA;
         });
 
         gameKeys.forEach((gameID) => {

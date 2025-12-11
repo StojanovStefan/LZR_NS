@@ -862,9 +862,19 @@
         table.appendChild(thead);
 
         const gamesArray = Object.entries(games);
+
         gamesArray.sort((a, b) => {
-          const dateA = new Date(a[1].gameInfo?.date || 0);
-          const dateB = new Date(b[1].gameInfo?.date || 0);
+          const dA = a[1].gameInfo?.date;
+          const dB = b[1].gameInfo?.date;
+
+          const dateA = dA?.includes(".")
+            ? new Date(dA.split(".").reverse().join("-"))
+            : new Date(dA);
+
+          const dateB = dB?.includes(".")
+            ? new Date(dB.split(".").reverse().join("-"))
+            : new Date(dB);
+
           return dateB - dateA;
         });
 
