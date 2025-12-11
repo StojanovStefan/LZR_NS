@@ -1,0 +1,557 @@
+body {
+  background: #e5e7eb;
+  color: black;
+  font-family: Arial;
+  padding: 20px;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.teamStats {
+  overflow-x: auto;
+  margin-bottom: 35px;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  font-size: 17px;
+}
+
+th {
+  color: white;
+  padding: 14px 10px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+td {
+  padding: 12px 10px;
+  border-bottom: 1px solid #e5e7eb;
+}
+th,
+td {
+  padding: 6px;
+  border: 1px solid #d1d5db;
+  text-align: center;
+}
+th {
+  background: #6b7280;
+}
+td {
+  background: white;
+}
+.player-name {
+  text-align: left;
+}
+
+.player-cell {
+  text-align: left;
+  padding-left: 14px;
+}
+
+.player-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: filter 0.2s ease;
+}
+
+.player-wrapper:hover {
+  filter: brightness(1.05);
+}
+
+.mvp-player:hover {
+  filter: brightness(1.03);
+}
+
+.player-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.player-name {
+  font-size: 17px;
+  white-space: nowrap;
+}
+
+.team-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.team-header img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid;
+}
+
+.game-header {
+  background: #d1d5db;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.game-header .teams {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.big-logo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  border: 3px solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.team-block {
+  text-align: center;
+  width: 45%;
+}
+
+.team-name-large {
+  margin-top: 10px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.score-big {
+  font-size: 48px;
+  white-space: nowrap;
+  min-width: 60px;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .score-big {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .score-big {
+    font-size: 28px;
+  }
+}
+
+.game-info {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #444;
+}
+
+.top-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.switch-btn {
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #d1d5db;
+  font-weight: normal;
+}
+
+.switch-btn.active {
+  background: #fbbf24;
+}
+
+#teamTotals {
+  display: none;
+  background-color: white;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+#teamTotals strong {
+  color: #f37e12;
+}
+.stat-row {
+  display: flex;
+  font-size: larger;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+}
+.stat-row div:first-child {
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+.stat-row div:last-child {
+  padding-right: 20px;
+  font-weight: bold;
+}
+.bar-container {
+  flex: 1;
+  height: 8px;
+  background: #eef2f6;
+  border-radius: 5px;
+  margin: 0 12px;
+  overflow: hidden;
+}
+.bar-primary {
+  height: 100%;
+  background: #fbbf24;
+}
+
+.bar-secondary {
+  height: 100%;
+  background: #9ca3af;
+}
+
+#timelineContainer {
+  position: relative;
+  display: none;
+  margin-top: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+
+#timelineContainer::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background: #d1d5db;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+.event-card {
+  display: flex;
+  position: relative;
+  width: 45%;
+  margin: 10px 0;
+  padding: 10px 15px;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+
+.event-left {
+  margin-right: auto;
+  border-left: 4px solid #6a0dad;
+  flex-direction: row;
+}
+
+.event-right {
+  margin-left: auto;
+  border-right: 4px solid #35b2f3;
+  flex-direction: row-reverse;
+}
+
+.event-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.event-right .event-logo {
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+.event-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.event-player {
+  font-weight: bold;
+  margin: 0;
+}
+
+.event-type {
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+}
+
+.timeline-score {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fbbf24;
+  color: black;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  margin-top: 5px;
+  z-index: 1;
+}
+
+@media (max-width: 1200px) {
+  .event-card {
+    width: 90% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .timeline-score {
+    position: relative !important;
+    left: 0 !important;
+    transform: none !important;
+    margin: 10px auto !important;
+    display: block !important;
+    width: fit-content !important;
+    z-index: 10 !important;
+  }
+
+  .event-left {
+    border-left: 4px solid #6a0dad !important;
+    border-right: none !important;
+  }
+
+  .event-right {
+    border-right: 4px solid #35b2f3 !important;
+    border-left: none !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .timeline-score {
+    padding: 6px 14px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .timeline-score {
+    padding: 8px 16px;
+  }
+}
+
+.live-broadcast {
+  cursor: pointer;
+  font-size: 1em;
+}
+.live-broadcast:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s;
+}
+
+.yt-broadcast {
+  cursor: pointer;
+  font-size: 1em;
+}
+.yt-broadcast:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s;
+}
+
+.mvp-block {
+  text-align: center;
+  margin-top: 15px;
+  background: linear-gradient(135deg, #d1d5db, #9ca3af);
+  color: black;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  padding: 15px;
+  border-radius: 12px;
+  border: 0 solid #d4d9e0;
+  box-sizing: border-box;
+  min-width: 250px;
+}
+
+.mvp-title {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.mvp-player {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #e5e7eb, #cbd5e1);
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.mvp-player img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.mvp-player-name {
+  font-size: 16px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.mvp-player-name span {
+  font-weight: normal;
+  font-weight: bold;
+  white-space: nowrap;
+}
+.final-result-text {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: black;
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .big-logo {
+    width: 90px;
+    height: 90px;
+    max-width: 100%;
+  }
+
+  .game-header {
+    padding: 12px;
+  }
+
+  .team-name-large {
+    font-size: 18px;
+    margin-top: 6px;
+  }
+
+  .score-big {
+    font-size: 32px;
+  }
+
+  .top-buttons {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .switch-btn {
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  table {
+    font-size: 15px;
+    border-radius: 12px;
+  }
+
+  th,
+  td {
+    padding: 8px;
+    border: 1px solid #d8d8d8;
+    font-size: 15px;
+  }
+
+  .team-header img {
+    width: 38px;
+    height: 38px;
+  }
+
+  .teamStats {
+    padding: 8px;
+  }
+
+  #teamTotals {
+    padding: 10px 0;
+    border-radius: 14px;
+  }
+
+  .stat-row {
+    padding: 8px 10px;
+  }
+
+  .stat-row div:first-child {
+    font-size: 14px;
+    width: 60px;
+  }
+
+  .stat-row div:last-child {
+    font-size: 14px;
+    width: 60px;
+  }
+
+  .bar-container {
+    margin: 0 10px;
+    height: 7px;
+  }
+
+  #teamTotals strong {
+    font-size: 14px;
+  }
+
+  .player-img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .player-name {
+    font-size: 15px;
+  }
+
+  .player-wrapper {
+    gap: 10px;
+  }
+
+  .final-result-text {
+    font-size: 16px;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 400px) {
+  .big-logo {
+    width: 95px;
+    height: 95px;
+  }
+
+  .score-big {
+    font-size: 26px;
+  }
+
+  table {
+    font-size: 12px;
+  }
+
+  th,
+  td {
+    padding: 4px;
+  }
+
+  .switch-btn {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,155 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: rgba(0, 0, 0, 0) !important;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.player-stats {
+  position: absolute;
+  bottom: 14%;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  width: 860px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 12px;
+  display: flex;
+  padding: 8px 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 20;
+  transition: opacity 0.45s ease, transform 0.45s ease;
+}
+
+.player-stats.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0px);
+  pointer-events: auto;
+}
+
+.stats-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+#playerPhoto {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #ddd;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  margin-right: 12px;
+}
+
+.player-name {
+  font-size: 22px;
+  min-width: 180px;
+  padding: 6px 10px;
+  border-right: 1px solid #ccc;
+  text-transform: capitalize;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.stats-row {
+  display: flex;
+  gap: 0;
+  width: 100%;
+}
+
+.stat-box {
+  flex: 1;
+  text-align: center;
+  padding: 6px 8px;
+  border-left: 1px solid #ccc;
+}
+
+.stat-box span {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.scoreboard {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 733px;
+  height: 76px;
+  background: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  z-index: 15;
+}
+
+.team {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  height: 100%;
+}
+
+.team.left {
+  background: #581ba1;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.team.right {
+  background: #35b2f3;
+  justify-content: flex-start;
+  padding-left: 10px;
+}
+
+.team img {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  object-fit: contain;
+  background: #000;
+  border: 2px solid #fff;
+}
+
+.team-name {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 6px;
+  color: #fff;
+  font-size: 26px;
+  width: auto;
+  text-align: center;
+  min-width: 50px;
+}
+
+.score-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 48px;
+  font-family: "Segoe UI";
+  color: black;
+  background: #f0f0f0;
+
+  padding: 4px 10px;
+  height: 100%;
+}
+
+.score {
+  min-width: 50px;
+  text-align: center;
+}
+
+.divider {
+  width: 2px;
+  background: black;
+  height: 60%;
+}

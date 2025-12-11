@@ -1,0 +1,117 @@
+body {
+  font-family: Arial;
+  background: #e5e7eb;
+  color: black;
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  body {
+    transform: scale(0.8);
+    transform-origin: top left;
+    width: 125%;
+  }
+}
+
+.teamContainer {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+}
+.teamBox {
+  width: 48%;
+  background: #d1d5db;
+  padding: 20px;
+  border-radius: 10px;
+}
+#teamA_name,
+#teamB_name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.teamLogo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+h2 {
+  margin-top: 0;
+}
+.playerBox {
+  background: #8b8f96;
+  color: #ececec;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.playerBox:hover {
+  background: #8b8f96;
+  color: #1f2937;
+}
+.actions {
+  margin-top: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.actionBtn {
+  padding: 5px 8px;
+  border: none;
+  border-radius: 5px;
+  background: #4b5563;
+  color: white;
+  cursor: pointer;
+}
+.actionBtn:hover {
+  background: #fbbf24;
+  color: black;
+}
+#undoBtn {
+  display: block;
+  margin: 50px auto;
+  padding: 12px 25px;
+  background: #4b5563;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+  width: 200px;
+  text-align: center;
+}
+
+#undoBtn:hover {
+  background: #fbbf24;
+  color: black;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.25);
+}
+
+#finishBtn {
+  display: block;
+  margin: 170px auto;
+  padding: 12px 25px;
+  background: #4b5563;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+  width: 200px;
+  text-align: center;
+}
+#finishBtn:hover {
+  background: #fbbf24;
+  color: black;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.25);
+}
