@@ -214,8 +214,8 @@
           const box = document.getElementById(boxId);
           box.innerHTML = "";
 
-          for (let number in players) {
-            const p = players[number];
+          for (let playerId in players) {
+            const p = players[playerId];
             const div = document.createElement("div");
             div.className = "playerBox";
             div.innerHTML = `<strong>${p.name}</strong> (#${p.number})`;
@@ -242,7 +242,8 @@
               const btn = document.createElement("button");
               btn.className = "actionBtn";
               btn.textContent = a.label;
-              btn.onclick = () => applyAction(team, number, a.value, p.name);
+              btn.onclick = () =>
+                applyAction(team, p.playerId, a.value, p.name);
               actionsDiv.appendChild(btn);
             });
 

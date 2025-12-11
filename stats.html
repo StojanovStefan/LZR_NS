@@ -68,6 +68,15 @@
         display: flex;
         align-items: center;
         gap: 12px;
+        transition: filter 0.2s ease;
+      }
+
+      .player-wrapper:hover {
+        filter: brightness(1.05);
+      }
+
+      .mvp-player:hover {
+        filter: brightness(1.03);
       }
 
       .player-img {
@@ -92,6 +101,7 @@
         width: 50px;
         object-fit: cover;
         border-radius: 50%;
+        border: 1px solid;
       }
 
       .game-header {
@@ -689,6 +699,7 @@
 
           const players = globalTeams[winnerTeam].players || {};
           let bestPlayer = null;
+          let bestPlayerId = null;
           let maxEff = -Infinity;
 
           for (const number in players) {
@@ -709,7 +720,11 @@
 
             if (eff > maxEff) {
               maxEff = eff;
-              bestPlayer = p;
+              bestPlayer = {
+                playerId: p.playerId,
+                name: p.name,
+                photo: p.photo || "default_player.png",
+              };
             }
           }
 
@@ -717,7 +732,10 @@
             mvpHtml = `
       <div class="mvp-block">
         <div class="mvp-title">Igrač utakmice</div>
-        <div class="mvp-player">
+         <div class="mvp-player" style="cursor:pointer;" 
+           onclick="window.location.href='playerprofile.html?id=${
+             bestPlayer.playerId
+           }'">
           <img src="team_logo/${
             bestPlayer.photo || "default_player.png"
           }" alt="${bestPlayer.name}">
@@ -819,6 +837,10 @@
           const team = teams[teamName];
           const players = team.players || {};
 
+          const playersArray = Object.values(players).sort(
+            (a, b) => (a.number || 0) - (b.number || 0)
+          );
+
           const div = document.createElement("div");
           div.className = "teamStats";
 
@@ -828,6 +850,11 @@
 
           const logo = document.createElement("img");
           logo.src = "team_logo/" + (team.logo || "default.png");
+
+          logo.style.cursor = "pointer";
+          logo.onclick = () => {
+            window.location.href = `teamProfile.html?id=${teamName}`;
+          };
 
           headerDiv.appendChild(logo);
           headerDiv.appendChild(document.createTextNode(teamName));
@@ -865,8 +892,7 @@
 
           const tbody = document.createElement("tbody");
 
-          for (const number in players) {
-            const p = players[number];
+          for (const p of playersArray) {
             const s = p.stats || {};
 
             const row = document.createElement("tr");
@@ -880,6 +906,11 @@
 
             const playerWrapper = document.createElement("div");
             playerWrapper.className = "player-wrapper";
+            playerWrapper.style.cursor = "pointer";
+
+            playerWrapper.onclick = () => {
+              window.location.href = `playerProfile.html?id=${p.playerId}`;
+            };
 
             const playerImg = document.createElement("img");
             playerImg.src = `team_logo/${p.photo || "default_player.png"}`;

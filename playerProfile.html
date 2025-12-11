@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Team Profile</title>
+    <title>Player Profile</title>
 
     <style>
       body {
@@ -31,12 +30,11 @@
 
       .player-card {
         display: flex;
-        flex-direction: row; /* slika i tekst u jednom redu */
+        flex-direction: row;
         align-items: center;
-        gap: 20px; /* razmak između slike i imena */
+        gap: 20px;
       }
 
-      /* Blok sa imenom i timom da bude kolona */
       .player-info-block {
         display: flex;
         flex-direction: column;
@@ -55,8 +53,6 @@
         font-size: 32px;
         font-weight: 300;
       }
-
-      /* ---- TEAM INFO ---- */
 
       .team-info {
         display: flex;
@@ -79,8 +75,6 @@
         font-weight: 300;
       }
 
-      /* ---- TABS ---- */
-
       .tabs {
         display: flex;
         gap: 12px;
@@ -102,14 +96,12 @@
         box-shadow: 0 3px 10px rgba(0, 0, 0, 0.18);
       }
 
-      /* GRID LAYOUT – 4 kolone na desktopu */
       .stats-grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
         gap: 18px;
       }
 
-      /* Stat kartica */
       .stat-card {
         background: #ffffff;
         border-radius: 12px;
@@ -118,7 +110,6 @@
         overflow: hidden;
       }
 
-      /* Naslov kartice (Proskečno / Ukupno) */
       .stat-card h3 {
         text-align: center;
         padding: 12px 0;
@@ -128,19 +119,16 @@
         font-weight: 700;
       }
 
-      /* Wrapper za dve kolone FGM/FGA i sl. */
       .stat-columns {
         display: flex;
         justify-content: space-between;
         padding: 10px 20px;
       }
 
-      /* Leva i desna kolona */
       .stat-col {
         width: 50%;
       }
 
-      /* Naslov kolone (FGM / FGA) */
       .stat-col-title {
         text-align: center;
         font-weight: 600;
@@ -148,12 +136,10 @@
         margin-bottom: 10px;
       }
 
-      /* Wrapper za sve redove */
       .stat-rows {
         padding: 10px 20px;
       }
 
-      /* Jedan red (npr: Points – 23) */
       .stat-row {
         display: flex;
         justify-content: center;
@@ -163,20 +149,17 @@
         font-size: 16px;
       }
 
-      /* Header red (below titles) */
       .stat-row.header {
         font-weight: 700;
         color: #f59e0b;
         margin-bottom: 6px;
       }
 
-      /* Svaki broj u redu */
       .stat-row span {
-        width: 80px; /* identično kao team page */
+        width: 80px;
         text-align: center;
       }
 
-      /* Procente (FG%, 3P%, FT%) */
       .stat-percent {
         background: linear-gradient(90deg, #ffb100, #ff8c00);
         text-align: center;
@@ -209,10 +192,8 @@
           padding: 20px;
         }
 
-        /* PLAYER CARD */
-
         .player-card {
-          flex-direction: column; /* slika iznad imena */
+          flex-direction: column;
           align-items: center;
           gap: 12px;
         }
@@ -226,17 +207,16 @@
 
         .player-name {
           font-size: 22px;
-          font-weight: 700;
+          font-weight: 100;
         }
 
         .player-info-block {
-          align-items: center; /* centrirano */
+          align-items: center;
           gap: 10px;
         }
 
-        /* TEAM INFO INSIDE PLAYER CARD */
         .team-info {
-          flex-direction: column; /* logo iznad imena */
+          flex-direction: column;
           align-items: center;
           gap: 6px;
           background-color: #fff;
@@ -245,7 +225,7 @@
         }
 
         .team-logo {
-          width: 55px; /* manji logo */
+          width: 55px;
           height: 55px;
           border-radius: 50%;
           box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
@@ -257,7 +237,6 @@
           font-weight: 300;
         }
 
-        /* TABS */
         .tabs {
           flex-direction: column;
           gap: 8px;
@@ -270,7 +249,6 @@
           font-size: 16px;
         }
 
-        /* STATS GRID */
         .stats-grid {
           grid-template-columns: 1fr;
           gap: 14px;
@@ -285,7 +263,6 @@
           padding-bottom: 8px;
         }
 
-        /* ROWS INSIDE STAT BOXES */
         .stat-row {
           font-size: 14px;
           gap: 12px;
@@ -300,15 +277,137 @@
           font-size: 18px;
           padding: 10px 0;
         }
+
+        #playersList {
+          padding: 10px;
+          margin-bottom: 20px;
+        }
+
+        #playersList table {
+          font-size: 15px;
+        }
+
+        #playersList th {
+          padding: 8px;
+          border: 1px solid #d8d8d8;
+          font-size: 15px;
+        }
+
+        #playersList td {
+          padding: 8px;
+          border: 1px solid #d8d8d8;
+          font-size: 15px;
+        }
+
+        .game-btn {
+          width: 24px;
+          height: 24px;
+          font-size: 15px;
+        }
+
+        .opp-wrapper img {
+          width: 30px;
+          height: 30px;
+        }
+
+        .win-loss-indicator {
+          width: 24px;
+          height: 24px;
+          font-size: 12px;
+          margin-left: 1px;
+        }
       }
 
-      /* ---- GAMES LIST GRID ---- */
+      #playersList {
+        overflow-x: auto;
+        margin-bottom: 35px;
+        padding: 20px;
+        border-radius: 12px;
+      }
 
-      .players-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
-        gap: 20px;
-        padding: 10px;
+      #playersList table {
+        width: 100%;
+        border-collapse: collapse;
+        background: white;
+        border-radius: 0;
+        overflow: hidden;
+        font-size: 17px;
+      }
+
+      #playersList th {
+        color: white;
+        padding: 14px 10px;
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        background: #6b7280;
+        border: 1px solid #d1d5db;
+        text-align: center;
+      }
+
+      #playersList td {
+        padding: 12px 10px;
+        border-bottom: 1px solid #e5e7eb;
+        background: white;
+        border: 1px solid #d1d5db;
+        text-align: center;
+      }
+
+      #playersList tr:hover {
+        background: #f9fafb;
+      }
+
+      .game-btn {
+        display: inline-flex;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background: #f37e12;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.15s;
+      }
+
+      .game-btn:hover {
+        background: orange;
+        transform: scale(1.1);
+      }
+
+      .opp-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        justify-content: center;
+      }
+
+      .opp-wrapper img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .win-loss-indicator {
+        width: 30px;
+        height: 30px;
+        border-radius: 4px;
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 8px;
+        user-select: none;
+      }
+      .win-loss-indicator.win {
+        background-color: #22c55e;
+      }
+      .win-loss-indicator.loss {
+        background-color: #ef4444;
       }
     </style>
   </head>
@@ -325,7 +424,7 @@
         <div class="stats-grid" id="statsGrid"></div>
       </div>
 
-      <div id="playersSection">
+      <div id="playersSection" style="display: none">
         <div id="playersList" class="players-grid"></div>
       </div>
     </div>
@@ -391,7 +490,6 @@
         let teamInfo = null;
         let playerData = null;
 
-        // Nađi igrača i njegov tim
         Object.values(games).some((game) => {
           const info = game.gameInfo || {};
           const teams = game.teams || {};
@@ -400,7 +498,6 @@
             const players = teams[teamID].players || {};
 
             if (players[playerID]) {
-              // našli smo igrača!
               playerData = players[playerID];
               teamInfo = {
                 logo: teamID === info.teamA ? info.teamA_logo : info.teamB_logo,
@@ -672,6 +769,166 @@
         });
       }
 
+      function renderPlayerGames(games, playerID) {
+        const list = document.getElementById("playersList");
+        list.innerHTML = "";
+
+        const table = document.createElement("table");
+
+        const thead = document.createElement("thead");
+        const headerRow = document.createElement("tr");
+
+        const headers = [
+          "",
+          "VS",
+          "EFF",
+          "FG",
+          "2P",
+          "3P",
+          "REB O/D",
+          "AST",
+          "TO",
+          "STL",
+          "BLK",
+          "PTS",
+        ];
+
+        headers.forEach((h) => {
+          const th = document.createElement("th");
+          th.textContent = h;
+          headerRow.appendChild(th);
+        });
+
+        thead.appendChild(headerRow);
+        table.appendChild(thead);
+
+        const gamesArray = Object.entries(games);
+        gamesArray.sort((a, b) => {
+          const dateA = new Date(a[1].gameInfo?.date || 0);
+          const dateB = new Date(b[1].gameInfo?.date || 0);
+          return dateB - dateA;
+        });
+
+        const tbody = document.createElement("tbody");
+
+        gamesArray.forEach(([gameID, game]) => {
+          const info = game.gameInfo || {};
+          const teams = game.teams || {};
+
+          for (const teamID in teams) {
+            const players = teams[teamID].players || {};
+            if (!players[playerID]) continue;
+
+            const p = players[playerID].stats || {};
+
+            const points = p.points ?? 0;
+
+            const reboundsOff = p.rebounds_off ?? 0;
+            const reboundsDef = p.rebounds_def ?? 0;
+            const reboundsTotal = reboundsOff + reboundsDef;
+
+            const fgMade = (p.two_made ?? 0) + (p.three_made ?? 0);
+            const fgAtt = (p.two_attempts ?? 0) + (p.three_attempts ?? 0);
+
+            const fgMiss = fgAtt - fgMade;
+            const ftMiss = (p.ft_attempts ?? 0) - (p.ft_made ?? 0);
+
+            const eff =
+              points +
+              reboundsTotal +
+              (p.assists ?? 0) +
+              (p.steals ?? 0) +
+              (p.blocks ?? 0) -
+              fgMiss -
+              ftMiss -
+              (p.turnovers ?? 0);
+
+            const fgPct = fgAtt
+              ? Math.round((fgMade / fgAtt) * 100) + "%"
+              : "0%";
+            const twoPct = p.two_attempts
+              ? Math.round((p.two_made / p.two_attempts) * 100) + "%"
+              : "0%";
+            const threePct = p.three_attempts
+              ? Math.round((p.three_made / p.three_attempts) * 100) + "%"
+              : "0%";
+            const ftPct = p.ft_attempts
+              ? Math.round((p.ft_made / p.ft_attempts) * 100) + "%"
+              : "0%";
+
+            const opponentID = teamID === info.teamA ? info.teamB : info.teamA;
+            const opponentLogo =
+              teamID === info.teamA ? info.teamB_logo : info.teamA_logo;
+
+            const row = document.createElement("tr");
+
+            const tdBtn = document.createElement("td");
+            tdBtn.innerHTML = `<span class="game-btn">➜</span>`;
+            tdBtn.style.cursor = "pointer";
+            tdBtn.onclick = () =>
+              (window.location.href = `stats.html?id=${gameID}`);
+            row.appendChild(tdBtn);
+
+            const scoreA = info.scoreA ?? 0;
+            const scoreB = info.scoreB ?? 0;
+
+            let isWin = false;
+            if (teamID === info.teamA) {
+              isWin = scoreA > scoreB;
+            } else if (teamID === info.teamB) {
+              isWin = scoreB > scoreA;
+            }
+
+            const tdOpp = document.createElement("td");
+            tdOpp.innerHTML = `
+        <div class="opp-wrapper" style="display: flex; align-items: center;">
+          <div class="win-loss-indicator ${isWin ? "win" : "loss"}">
+            ${isWin ? "W" : "L"}
+          </div>
+          <img src="team_logo/${opponentLogo}" style="width: 40px; height: 40px; border-radius: 50%;">
+          <span style="margin-left: 8px;">${opponentID}</span>
+        </div>
+      `;
+            row.appendChild(tdOpp);
+
+            row.appendChild(createTD(eff));
+
+            row.appendChild(createTD(`${fgMade}/${fgAtt} ${fgPct}`));
+
+            row.appendChild(
+              createTD(`${p.two_made ?? 0}/${p.two_attempts ?? 0} ${twoPct}`)
+            );
+
+            row.appendChild(
+              createTD(
+                `${p.three_made ?? 0}/${p.three_attempts ?? 0} ${threePct}`
+              )
+            );
+
+            row.appendChild(
+              createTD(`${reboundsTotal}  ${reboundsOff}/${reboundsDef}`)
+            );
+
+            ["assists", "turnovers", "steals", "blocks", "points"].forEach(
+              (stat) => {
+                row.appendChild(createTD(p[stat] ?? 0));
+              }
+            );
+
+            tbody.appendChild(row);
+          }
+        });
+
+        table.appendChild(tbody);
+        list.appendChild(table);
+
+        function createTD(value) {
+          const td = document.createElement("td");
+          td.textContent = value;
+          return td;
+        }
+      }
+
       get(gamesRef).then((snapshot) => {
         if (!snapshot.exists()) {
           console.log("No games found.");
@@ -681,8 +938,8 @@
         const games = snapshot.val();
 
         const totals = calculatePlayerTotals(games, playerID);
-
         renderPlayerStats(totals);
+        renderPlayerGames(games, playerID);
       });
     </script>
   </body>
