@@ -3056,12 +3056,13 @@
         }
       },
       "gameInfo": {
-        "date": "03.12.2025",
         "gameId": "2025-12-10_panthers_vs_grizzlies",
+        "date": "03.12.2025",
         "league": "prijateljske",
         "location": "SC Meridiana 1",
-        "quarter": 1,
         "round": 1,
+        "quarter": 1,
+        "time": "10:00",
         "scoreA": 108,
         "scoreB": 116,
         "season": "2025/26",
@@ -3071,9 +3072,8 @@
         "teamA_logo": "Panthers.png",
         "teamB": "Grizzlies",
         "teamB_logo": "Grizzlies.png",
-        "time": "10:00",
-        "ytLink": "https://www.youtube.com/watch?v=LKoOKdnceHw",
-        "mvpPlayerId": "simidzija_nikola_1999_1"
+        "mvpPlayerId": "simidzija_nikola_1999_1",
+        "ytLink": "https://www.youtube.com/watch?v=LKoOKdnceHw"
       },
       "lastScore": {
         "player": "merdovic_stefan_2002_1",
@@ -3088,67 +3088,12 @@
           "color": "#0a1d4d",
           "logo": "Grizzlies.png",
           "players": {
-            "vujic_marko_1999": {
-              "playerId": "vujic_marko_1999",
-              "name": "Vujić Marko",
-              "number": 1,
-              "mvp_games": [],
-              "mvp_count": 0,
-              "birth_year": 1999,
-              "stats": {
-                "assists": 7,
-                "blocks": 0,
-                "efficiency": 0,
-                "fg_attempts": 22,
-                "fg_made": 8,
-                "fouls": 0,
-                "ft_attempts": 0,
-                "ft_made": 0,
-                "points": 18,
-                "rebounds_def": 3,
-                "rebounds_off": 2,
-                "steals": 0,
-                "three_attempts": 9,
-                "three_made": 2,
-                "turnovers": 3,
-                "two_attempts": 13,
-                "two_made": 6
-              }
-            },
-            "simidzija_nikola_1999_1": {
-              "playerId": "simidzija_nikola_1999_1",
-              "name": "Simidžija Nikola",
-              "number": 5,
-              "birth_year": 1999,
-              "mvp_games": ["2025-12-03_panthers_vs_grizzlies"],
-              "mvp_count": 1,
-              "stats": {
-                "assists": 4,
-                "blocks": 1,
-                "efficiency": 0,
-                "fg_attempts": 38,
-                "fg_made": 21,
-                "fouls": 0,
-                "ft_attempts": 0,
-                "ft_made": 0,
-                "points": 59,
-                "rebounds_def": 7,
-                "rebounds_off": 2,
-                "steals": 3,
-                "three_attempts": 31,
-                "three_made": 17,
-                "turnovers": 4,
-                "two_attempts": 7,
-                "two_made": 4
-              }
-            },
             "dobric_ognjen_2002_1": {
-              "playerId": "dobric_ognjen_2002_1",
+              "birth_year": 2002,
+              "mvp_count": 0,
               "name": "Dobrić Ognjen",
               "number": 8,
-              "birth_year": 2002,
-              "mvp_games": [],
-              "mvp_count": 0,
+              "playerId": "dobric_ognjen_2002_1",
               "stats": {
                 "assists": 1,
                 "blocks": 0,
@@ -3170,12 +3115,11 @@
               }
             },
             "keskenovic_stefan_2000_1": {
-              "playerId": "keskenovic_stefan_2000_1",
+              "birth_year": 2000,
+              "mvp_count": 0,
               "name": "Keskenović Stefan",
               "number": 30,
-              "birth_year": 2000,
-              "mvp_games": [],
-              "mvp_count": 0,
+              "playerId": "keskenovic_stefan_2000_1",
               "stats": {
                 "assists": 5,
                 "blocks": 0,
@@ -3197,12 +3141,11 @@
               }
             },
             "merdovic_stefan_2002_1": {
-              "playerId": "merdovic_stefan_2002_1",
+              "birth_year": 2002,
+              "mvp_count": 0,
               "name": "Merdović Stefan",
               "number": 31,
-              "birth_year": 2002,
-              "mvp_games": [],
-              "mvp_count": 0,
+              "playerId": "merdovic_stefan_2002_1",
               "stats": {
                 "assists": 21,
                 "blocks": 0,
@@ -3221,6 +3164,59 @@
                 "turnovers": 5,
                 "two_attempts": 10,
                 "two_made": 2
+              }
+            },
+            "simidzija_nikola_1999_1": {
+              "birth_year": 1999,
+              "mvp_count": 1,
+              "mvp_games": ["2025-12-03_panthers_vs_grizzlies"],
+              "name": "Simidžija Nikola",
+              "number": 5,
+              "playerId": "simidzija_nikola_1999_1",
+              "stats": {
+                "assists": 4,
+                "blocks": 1,
+                "efficiency": 0,
+                "fg_attempts": 38,
+                "fg_made": 21,
+                "fouls": 0,
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 59,
+                "rebounds_def": 7,
+                "rebounds_off": 2,
+                "steals": 3,
+                "three_attempts": 31,
+                "three_made": 17,
+                "turnovers": 4,
+                "two_attempts": 7,
+                "two_made": 4
+              }
+            },
+            "vujic_marko_1999": {
+              "birth_year": 1999,
+              "mvp_count": 0,
+              "name": "Vujić Marko",
+              "number": 1,
+              "playerId": "vujic_marko_1999",
+              "stats": {
+                "assists": 7,
+                "blocks": 0,
+                "efficiency": 0,
+                "fg_attempts": 22,
+                "fg_made": 8,
+                "fouls": 0,
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 18,
+                "rebounds_def": 3,
+                "rebounds_off": 2,
+                "steals": 0,
+                "three_attempts": 9,
+                "three_made": 2,
+                "turnovers": 3,
+                "two_attempts": 13,
+                "two_made": 6
               }
             }
           },
@@ -3246,68 +3242,39 @@
           "color": "#6a0dad",
           "logo": "Panthers.png",
           "players": {
-            "stankovic_dimitrije_2007": {
-              "playerId": "stankovic_dimitrije_2007",
-              "name": "Stanković Dimitrije",
-              "number": 13,
-              "birth_year": 2007,
-              "mvp_games": [],
+            "males_dimitrije_1999": {
+              "birth_year": 1999,
               "mvp_count": 0,
+              "name": "Maleš Dimitrije",
+              "number": 42,
+              "playerId": "males_dimitrije_1999",
               "stats": {
                 "assists": 3,
                 "blocks": 0,
                 "efficiency": 0,
-                "fg_attempts": 22,
-                "fg_made": 13,
+                "fg_attempts": 30,
+                "fg_made": 11,
                 "fouls": 0,
                 "ft_attempts": 0,
                 "ft_made": 0,
-                "points": 29,
-                "rebounds_def": 7,
-                "rebounds_off": 1,
-                "steals": 0,
-                "three_attempts": 10,
-                "three_made": 3,
-                "turnovers": 5,
-                "two_attempts": 12,
-                "two_made": 10
-              }
-            },
-            "rajacic_filip_2000_1": {
-              "playerId": "rajacic_filip_2000_1",
-              "name": "Rajačić Filip",
-              "number": 15,
-              "birth_year": 2000,
-              "mvp_games": [],
-              "mvp_count": 0,
-              "stats": {
-                "assists": 0,
-                "blocks": 0,
-                "efficiency": 0,
-                "fg_attempts": 2,
-                "fg_made": 0,
-                "fouls": 0,
-                "ft_attempts": 0,
-                "ft_made": 0,
-                "points": 0,
-                "rebounds_def": 0,
-                "rebounds_off": 0,
-                "steals": 0,
-                "three_attempts": 2,
+                "points": 22,
+                "rebounds_def": 13,
+                "rebounds_off": 3,
+                "steals": 4,
+                "three_attempts": 7,
                 "three_made": 0,
                 "turnovers": 1,
-                "two_attempts": 0,
-                "two_made": 0
+                "two_attempts": 23,
+                "two_made": 11
               }
             },
             "perunicic_mladen_1985_1": {
-              "playerId": "perunicic_mladen_1985_1",
+              "birth_year": 1985,
+              "mvp_count": 0,
               "name": "Peruničić Mladen",
               "number": 16,
               "photo": "Perunicic_Mladen.png",
-              "birth_year": 1985,
-              "mvp_games": [],
-              "mvp_count": 0,
+              "playerId": "perunicic_mladen_1985_1",
               "stats": {
                 "assists": 11,
                 "blocks": 0,
@@ -3328,13 +3295,64 @@
                 "two_made": 13
               }
             },
+            "rajacic_filip_2000_1": {
+              "birth_year": 2000,
+              "mvp_count": 0,
+              "name": "Rajačić Filip",
+              "number": 15,
+              "playerId": "rajacic_filip_2000_1",
+              "stats": {
+                "assists": 0,
+                "blocks": 0,
+                "efficiency": 0,
+                "fg_attempts": 2,
+                "fg_made": 0,
+                "fouls": 0,
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 0,
+                "rebounds_def": 0,
+                "rebounds_off": 0,
+                "steals": 0,
+                "three_attempts": 2,
+                "three_made": 0,
+                "turnovers": 1,
+                "two_attempts": 0,
+                "two_made": 0
+              }
+            },
+            "stankovic_dimitrije_2007": {
+              "birth_year": 2007,
+              "mvp_count": 0,
+              "name": "Stanković Dimitrije",
+              "number": 13,
+              "playerId": "stankovic_dimitrije_2007",
+              "stats": {
+                "assists": 3,
+                "blocks": 0,
+                "efficiency": 0,
+                "fg_attempts": 22,
+                "fg_made": 13,
+                "fouls": 0,
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 29,
+                "rebounds_def": 7,
+                "rebounds_off": 1,
+                "steals": 0,
+                "three_attempts": 10,
+                "three_made": 3,
+                "turnovers": 5,
+                "two_attempts": 12,
+                "two_made": 10
+              }
+            },
             "stankovic_dusan_1999": {
-              "playerId": "stankovic_dusan_1999",
+              "birth_year": 1999,
+              "mvp_count": 0,
               "name": "Stanković Dušan",
               "number": 19,
-              "birth_year": 1999,
-              "mvp_games": [],
-              "mvp_count": 0,
+              "playerId": "stankovic_dusan_1999",
               "stats": {
                 "assists": 9,
                 "blocks": 0,
@@ -3353,33 +3371,6 @@
                 "turnovers": 4,
                 "two_attempts": 24,
                 "two_made": 14
-              }
-            },
-            "males_dimitrije_1999": {
-              "playerId": "males_dimitrije_1999",
-              "name": "Maleš Dimitrije",
-              "number": 42,
-              "birth_year": 1999,
-              "mvp_games": [],
-              "mvp_count": 0,
-              "stats": {
-                "assists": 3,
-                "blocks": 0,
-                "efficiency": 0,
-                "fg_attempts": 30,
-                "fg_made": 11,
-                "fouls": 0,
-                "ft_attempts": 0,
-                "ft_made": 0,
-                "points": 22,
-                "rebounds_def": 13,
-                "rebounds_off": 3,
-                "steals": 4,
-                "three_attempts": 7,
-                "three_made": 0,
-                "turnovers": 1,
-                "two_attempts": 23,
-                "two_made": 11
               }
             }
           },
@@ -5850,12 +5841,13 @@
         }
       },
       "gameInfo": {
-        "date": "10.12.2025",
         "gameId": "2025-12-10_panthers_vs_grizzlies",
+        "date": "10.12.2025",
         "league": "prijateljske",
         "location": "SC Meridiana 1",
-        "quarter": 1,
         "round": 2,
+        "quarter": 1,
+        "time": "10:00",
         "scoreA": 80,
         "scoreB": 86,
         "season": "2025/26",
@@ -5865,9 +5857,8 @@
         "teamA_logo": "Panthers.png",
         "teamB": "Grizzlies",
         "teamB_logo": "Grizzlies.png",
-        "time": "10:00",
-        "ytLink": "https://www.youtube.com/watch?v=3ZZbpSXRnJw",
-        "mvpPlayerId": "perunicic_mladen_1985"
+        "mvpPlayerId": "perunicic_mladen_1985",
+        "ytLink": "https://www.youtube.com/watch?v=3ZZbpSXRnJw"
       },
       "lastScore": {
         "points": 0,
@@ -5878,67 +5869,12 @@
           "color": "#0a1d4d",
           "logo": "Grizzlies.png",
           "players": {
-            "vujic_marko_1999": {
-              "playerId": "vujic_marko_1999",
-              "name": "Vujić Marko",
-              "number": 1,
-              "birth_year": 1999,
-              "mvp_games": [],
-              "mvp_count": 0,
-              "stats": {
-                "assists": 9,
-                "blocks": 0,
-                "efficiency": 0,
-                "fg_attempts": 18,
-                "fg_made": 7,
-                "fouls": 0,
-                "ft_attempts": 0,
-                "ft_made": 0,
-                "points": 17,
-                "rebounds_def": 2,
-                "rebounds_off": 1,
-                "steals": 2,
-                "three_attempts": 11,
-                "three_made": 3,
-                "turnovers": 1,
-                "two_attempts": 7,
-                "two_made": 4
-              }
-            },
-            "ivosev_marko_2001": {
-              "playerId": "ivosev_marko_2001",
-              "name": "Ivošev Marko",
-              "number": 2,
-              "birth_year": 2001,
-              "mvp_games": [],
-              "mvp_count": 0,
-              "stats": {
-                "assists": 5,
-                "blocks": 0,
-                "efficiency": 0,
-                "fg_attempts": 23,
-                "fg_made": 11,
-                "fouls": 0,
-                "ft_attempts": 0,
-                "ft_made": 0,
-                "points": 26,
-                "rebounds_def": 9,
-                "rebounds_off": 2,
-                "steals": 6,
-                "three_attempts": 9,
-                "three_made": 4,
-                "turnovers": 1,
-                "two_attempts": 14,
-                "two_made": 7
-              }
-            },
             "djurnic_jovana_1984": {
-              "playerId": "djurnic_jovana_1984",
+              "birth_year": 1984,
+              "mvp_count": 0,
               "name": "Đurnić Jovana",
               "number": 14,
-              "birth_year": 1984,
-              "mvp_games": [],
-              "mvp_count": 0,
+              "playerId": "djurnic_jovana_1984",
               "stats": {
                 "assists": 0,
                 "blocks": 0,
@@ -5959,14 +5895,66 @@
                 "two_made": 2
               }
             },
+            "ivosev_marko_2001": {
+              "birth_year": 2001,
+              "mvp_count": 0,
+              "name": "Ivošev Marko",
+              "number": 2,
+              "playerId": "ivosev_marko_2001",
+              "stats": {
+                "assists": 5,
+                "blocks": 0,
+                "efficiency": 0,
+                "fg_attempts": 23,
+                "fg_made": 11,
+                "fouls": 0,
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 26,
+                "rebounds_def": 9,
+                "rebounds_off": 2,
+                "steals": 6,
+                "three_attempts": 9,
+                "three_made": 4,
+                "turnovers": 1,
+                "two_attempts": 14,
+                "two_made": 7
+              }
+            },
+            "lazarevic_srdjan_2000": {
+              "birth_year": 2000,
+              "mvp_count": 0,
+              "name": "Lazarević Srdjan",
+              "number": 38,
+              "playerId": "lazarevic_srdjan_2000",
+              "stats": {
+                "assists": 7,
+                "blocks": 0,
+                "efficiency": 0,
+                "fg_attempts": 17,
+                "fg_made": 5,
+                "fouls": 0,
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 10,
+                "rebounds_def": 2,
+                "rebounds_off": 6,
+                "steals": 0,
+                "three_attempts": 2,
+                "three_made": 0,
+                "turnovers": 2,
+                "two_attempts": 15,
+                "two_made": 5
+              }
+            },
             "perunicic_mladen_1985": {
-              "playerId": "perunicic_mladen_1985",
+              "birth_year": 1985,
+              "mvp_count": 1,
+              "mvp_games": ["2025-12-10_panthers_vs_grizzlies"],
               "name": "Peruničić Mladen",
               "number": 16,
               "photo": "Perunicic_Mladen.png",
-              "birth_year": 1985,
-              "mvp_games": ["2025-12-10_panthers_vs_grizzlies"],
-              "mvp_count": 1,
+              "playerId": "perunicic_mladen_1985",
               "stats": {
                 "assists": 2,
                 "blocks": 0,
@@ -5987,31 +5975,30 @@
                 "two_made": 13
               }
             },
-            "lazarevic_srdjan_2000": {
-              "playerId": "lazarevic_srdjan_2000",
-              "name": "Lazarević Srdjan",
-              "number": 38,
-              "birth_year": 2000,
-              "mvp_games": [],
+            "vujic_marko_1999": {
+              "birth_year": 1999,
               "mvp_count": 0,
+              "name": "Vujić Marko",
+              "number": 1,
+              "playerId": "vujic_marko_1999",
               "stats": {
-                "assists": 7,
+                "assists": 9,
                 "blocks": 0,
                 "efficiency": 0,
-                "fg_attempts": 17,
-                "fg_made": 5,
+                "fg_attempts": 18,
+                "fg_made": 7,
                 "fouls": 0,
                 "ft_attempts": 0,
                 "ft_made": 0,
-                "points": 10,
+                "points": 17,
                 "rebounds_def": 2,
-                "rebounds_off": 6,
-                "steals": 0,
-                "three_attempts": 2,
-                "three_made": 0,
-                "turnovers": 2,
-                "two_attempts": 15,
-                "two_made": 5
+                "rebounds_off": 1,
+                "steals": 2,
+                "three_attempts": 11,
+                "three_made": 3,
+                "turnovers": 1,
+                "two_attempts": 7,
+                "two_made": 4
               }
             }
           },
@@ -6037,67 +6024,12 @@
           "color": "#6a0dad",
           "logo": "Panthers.png",
           "players": {
-            "stankovic_dimitrije_2007": {
-              "playerId": "stankovic_dimitrije_2007",
-              "name": "Stanković Dimitrije",
-              "number": 13,
-              "birth_year": 2007,
-              "mvp_games": [],
-              "mvp_count": 0,
-              "stats": {
-                "assists": 4,
-                "blocks": 0,
-                "efficiency": 0,
-                "fg_attempts": 15,
-                "fg_made": 7,
-                "fouls": 0,
-                "ft_attempts": 0,
-                "ft_made": 0,
-                "points": 15,
-                "rebounds_def": 7,
-                "rebounds_off": 0,
-                "steals": 2,
-                "three_attempts": 5,
-                "three_made": 1,
-                "turnovers": 1,
-                "two_attempts": 10,
-                "two_made": 6
-              }
-            },
-            "keskenovic_stefan_2000": {
-              "playerId": "keskenovic_stefan_2000",
-              "name": "Keskenović Stefan",
-              "number": 30,
-              "birth_year": 2000,
-              "mvp_games": [],
-              "mvp_count": 0,
-              "stats": {
-                "assists": 3,
-                "blocks": 1,
-                "efficiency": 0,
-                "fg_attempts": 20,
-                "fg_made": 8,
-                "fouls": 0,
-                "ft_attempts": 0,
-                "ft_made": 0,
-                "points": 21,
-                "rebounds_def": 4,
-                "rebounds_off": 4,
-                "steals": 2,
-                "three_attempts": 14,
-                "three_made": 5,
-                "turnovers": 4,
-                "two_attempts": 6,
-                "two_made": 3
-              }
-            },
             "cvetinovic_nikola_2002": {
-              "playerId": "cvetinovic_nikola_2002",
+              "birth_year": 2002,
+              "mvp_count": 0,
               "name": "Cvetinović Nikola",
               "number": 33,
-              "birth_year": 2002,
-              "mvp_games": [],
-              "mvp_count": 0,
+              "playerId": "cvetinovic_nikola_2002",
               "stats": {
                 "assists": 7,
                 "blocks": 0,
@@ -6118,13 +6050,38 @@
                 "two_made": 1
               }
             },
+            "keskenovic_stefan_2000": {
+              "birth_year": 2000,
+              "mvp_count": 0,
+              "name": "Keskenović Stefan",
+              "number": 30,
+              "playerId": "keskenovic_stefan_2000",
+              "stats": {
+                "assists": 3,
+                "blocks": 1,
+                "efficiency": 0,
+                "fg_attempts": 20,
+                "fg_made": 8,
+                "fouls": 0,
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 21,
+                "rebounds_def": 4,
+                "rebounds_off": 4,
+                "steals": 2,
+                "three_attempts": 14,
+                "three_made": 5,
+                "turnovers": 4,
+                "two_attempts": 6,
+                "two_made": 3
+              }
+            },
             "males_dimitrije_1999": {
-              "playerId": "males_dimitrije_1999",
+              "birth_year": 1999,
+              "mvp_count": 0,
               "name": "Maleš Dimitrije",
               "number": 42,
-              "birth_year": 1999,
-              "mvp_games": [],
-              "mvp_count": 0,
+              "playerId": "males_dimitrije_1999",
               "stats": {
                 "assists": 5,
                 "blocks": 0,
@@ -6145,13 +6102,38 @@
                 "two_made": 6
               }
             },
+            "stankovic_dimitrije_2007": {
+              "birth_year": 2007,
+              "mvp_count": 0,
+              "name": "Stanković Dimitrije",
+              "number": 13,
+              "playerId": "stankovic_dimitrije_2007",
+              "stats": {
+                "assists": 4,
+                "blocks": 0,
+                "efficiency": 0,
+                "fg_attempts": 15,
+                "fg_made": 7,
+                "fouls": 0,
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 15,
+                "rebounds_def": 7,
+                "rebounds_off": 0,
+                "steals": 2,
+                "three_attempts": 5,
+                "three_made": 1,
+                "turnovers": 1,
+                "two_attempts": 10,
+                "two_made": 6
+              }
+            },
             "stojanov_stefan_1999": {
-              "playerId": "stojanov_stefan_1999",
+              "birth_year": 1999,
+              "mvp_count": 0,
               "name": "Stojanov Stefan",
               "number": 77,
-              "birth_year": 1999,
-              "mvp_games": [],
-              "mvp_count": 0,
+              "playerId": "stojanov_stefan_1999",
               "stats": {
                 "assists": 6,
                 "blocks": 0,
@@ -6189,6 +6171,3553 @@
             "turnovers": 11,
             "two_attempts": 43,
             "two_made": 19
+          }
+        }
+      }
+    },
+    "2025-12-17_panthers_vs_grizzlies": {
+      "events": {
+        "-Oh7ROaG9NK_YFLzasRk": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766446961999,
+          "type": "miss_2"
+        },
+        "-Oh7ROqupwVocnLnwqmN": {
+          "player": "males_dimitrije_1999",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1766446963064,
+          "type": "rebounds_def"
+        },
+        "-Oh7RUBbS1ucXsfe_zA2": {
+          "player": "ilic_nikola_2005",
+          "playerName": "Ilić Nikola",
+          "team": "Panthers",
+          "timestamp": 1766446984933,
+          "type": "points_2"
+        },
+        "-Oh7RUIk3SsaWx-h613k": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766446985390,
+          "type": "assists"
+        },
+        "-Oh7R_9fir5eBfaxGDqx": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Grizzlies",
+          "timestamp": 1766447009385,
+          "type": "miss_3"
+        },
+        "-Oh7R_uCrHQ4LrA2j5cQ": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766447012427,
+          "type": "rebounds_def"
+        },
+        "-Oh7RaEwNYUyjzNGs_Ld": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766447013818,
+          "type": "points_2"
+        },
+        "-Oh7RaVjpM-AklYreGeK": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766447014893,
+          "type": "assists"
+        },
+        "-Oh7Rlx-iYEc6Dc8iv6N": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766447061758,
+          "type": "miss_3"
+        },
+        "-Oh7RmVJOaXKAsEajWrs": {
+          "player": "males_dimitrije_1999",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1766447064018,
+          "type": "rebounds_def"
+        },
+        "-Oh7RtFTtYEyNac8Kart": {
+          "player": "males_dimitrije_1999",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1766447091676,
+          "type": "miss_2"
+        },
+        "-Oh7RthsdDrgAvsenL1N": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Grizzlies",
+          "timestamp": 1766447093558,
+          "type": "rebounds_def"
+        },
+        "-Oh7S2aFT1ltP-mPiQNr": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Grizzlies",
+          "timestamp": 1766447134030,
+          "type": "points_3"
+        },
+        "-Oh7S3PoAlR-kC-TuCfE": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Grizzlies",
+          "timestamp": 1766447137394,
+          "type": "assists"
+        },
+        "-Oh7TDL2xOMfXfMKeEac": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766447440193,
+          "type": "miss_3"
+        },
+        "-Oh7TE-POy-W2Y4qLNAf": {
+          "player": "males_dimitrije_1999",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1766447442904,
+          "type": "rebounds_off"
+        },
+        "-Oh7TGHRq7e9vaMIU5gv": {
+          "player": "ilic_nikola_2005",
+          "playerName": "Ilić Nikola",
+          "team": "Panthers",
+          "timestamp": 1766447452250,
+          "type": "miss_3"
+        },
+        "-Oh7TGeYFzJBVDeMplBl": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766447453793,
+          "type": "rebounds_def"
+        },
+        "-Oh7TJc0WgU6lqUeXt6O": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766447465919,
+          "type": "miss_2"
+        },
+        "-Oh7TKAv3HDG60L-rJ1L": {
+          "player": "ilic_nikola_2005",
+          "playerName": "Ilić Nikola",
+          "team": "Panthers",
+          "timestamp": 1766447468217,
+          "type": "rebounds_def"
+        },
+        "-Oh7TQzA-k-Q_yiITDPt": {
+          "player": "males_dimitrije_1999",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1766447496073,
+          "type": "points_2"
+        },
+        "-Oh7TRUG2XT9Fw1l_YXa": {
+          "player": "ilic_nikola_2005",
+          "playerName": "Ilić Nikola",
+          "team": "Panthers",
+          "timestamp": 1766447498127,
+          "type": "assists"
+        },
+        "-Oh7TjeqDVj2EZF9AB_g": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766447576692,
+          "type": "turnovers"
+        },
+        "-Oh7TkSTkvrahHAp0mGP": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766447579932,
+          "type": "steals"
+        },
+        "-Oh7TkZKHa9OhRUBxiI8": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766447580371,
+          "type": "turnovers"
+        },
+        "-Oh7Tl7nZch89VfrFQSu": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Grizzlies",
+          "timestamp": 1766447582705,
+          "type": "steals"
+        },
+        "-Oh7Tqg2Mf3Jy8NOWxAC": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766447605441,
+          "type": "miss_2"
+        },
+        "-Oh7TwyTM-uVFJjOt3a1": {
+          "player": "males_dimitrije_1999",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1766447631196,
+          "type": "miss_2"
+        },
+        "-Oh7TxLGwVzhysOsvGzA": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766447632719,
+          "type": "rebounds_def"
+        },
+        "-Oh7UAHawQXJaOCXhqZi": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Grizzlies",
+          "timestamp": 1766447689828,
+          "type": "points_2"
+        },
+        "-Oh7UAZWU0lxUITuyP1L": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766447690975,
+          "type": "assists"
+        },
+        "-Oh7UIsfJX3v1cUwvshK": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766447725033,
+          "type": "miss_3"
+        },
+        "-Oh7UJBqY2Z29Oy0lfAr": {
+          "player": "keskenovic_stefan_2000",
+          "playerName": "Keskenović Stefan",
+          "team": "Panthers",
+          "timestamp": 1766447726324,
+          "type": "rebounds_off"
+        },
+        "-Oh7UQ0DT4S1zommvKOj": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766447754252,
+          "type": "points_2"
+        },
+        "-Oh7UQWW3k3N4_c3UyTD": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766447756319,
+          "type": "assists"
+        },
+        "-Oh7UVuAxbymNeT-Oezv": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766447778377,
+          "type": "miss_3"
+        },
+        "-Oh7UWXwxui5nJwC8t1Y": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Grizzlies",
+          "timestamp": 1766447780986,
+          "type": "rebounds_off"
+        },
+        "-Oh7UYpS6XLCKVZx5WlB": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Grizzlies",
+          "timestamp": 1766447790363,
+          "type": "turnovers"
+        },
+        "-Oh7UZVGTeUM1WxfCO86": {
+          "player": "males_dimitrije_1999",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1766447793103,
+          "type": "steals"
+        },
+        "-Oh7UdmkiuP2a7Bs61hw": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766447814766,
+          "type": "turnovers"
+        },
+        "-Oh7UeFcLjlFJpUykGuL": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766447816678,
+          "type": "steals"
+        },
+        "-Oh7UpHydVL2HNcofpd_": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Grizzlies",
+          "timestamp": 1766447861884,
+          "type": "miss_3"
+        },
+        "-Oh7UpqjoeUMkwCF1zKN": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766447864173,
+          "type": "rebounds_def"
+        },
+        "-Oh7UurcaLWgf0lMnDFC": {
+          "player": "ilic_nikola_2005",
+          "playerName": "Ilić Nikola",
+          "team": "Panthers",
+          "timestamp": 1766447884710,
+          "type": "points_2"
+        },
+        "-Oh7Uv28ZbgGIslKClIJ": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766447885447,
+          "type": "assists"
+        },
+        "-Oh7V6wCKvye3H80f1rm": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Grizzlies",
+          "timestamp": 1766447938251,
+          "type": "miss_2"
+        },
+        "-Oh7V7IEt1ycAEubwWxE": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Grizzlies",
+          "timestamp": 1766447939725,
+          "type": "rebounds_off"
+        },
+        "-Oh7V7XNiE9BFNdBR1bP": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Grizzlies",
+          "timestamp": 1766447940694,
+          "type": "miss_3"
+        },
+        "-Oh7VA6iz5aOgEN61hzK": {
+          "player": "males_dimitrije_1999",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1766447951276,
+          "type": "rebounds_def"
+        },
+        "-Oh7VIr-bsQwI8SbSuEX": {
+          "player": "ilic_nikola_2005",
+          "playerName": "Ilić Nikola",
+          "team": "Panthers",
+          "timestamp": 1766447987070,
+          "type": "points_2"
+        },
+        "-Oh7VJ4PntsFhG3_tWbB": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766447987992,
+          "type": "assists"
+        },
+        "-Oh7VZErEfoYpUW1W7QE": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766448054197,
+          "type": "miss_2"
+        },
+        "-Oh7VZmdUy3bV47vFPhx": {
+          "player": "males_dimitrije_1999",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1766448056423,
+          "type": "rebounds_def"
+        },
+        "-Oh7VbGE2ezkvj3O3g3L": {
+          "player": "ilic_nikola_2005",
+          "playerName": "Ilić Nikola",
+          "team": "Panthers",
+          "timestamp": 1766448066573,
+          "type": "turnovers"
+        },
+        "-Oh7VbiB7ms1EYy_QP06": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Grizzlies",
+          "timestamp": 1766448068426,
+          "type": "steals"
+        },
+        "-Oh7VosACVnuUSDh7N4I": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Grizzlies",
+          "timestamp": 1766448122313,
+          "type": "points_2"
+        },
+        "-Oh7VpFL8J8GWj2i7Xy1": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Grizzlies",
+          "timestamp": 1766448123860,
+          "type": "assists"
+        },
+        "-Oh7VxoT0OkE51so0ML-": {
+          "player": "ilic_nikola_2005",
+          "playerName": "Ilić Nikola",
+          "team": "Panthers",
+          "timestamp": 1766448158940,
+          "type": "miss_3"
+        },
+        "-Oh7VyAa8PLzxiR3uUQy": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766448160420,
+          "type": "rebounds_def"
+        },
+        "-Oh7W3nqhXllfdYNaQNS": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766448187572,
+          "type": "points_2"
+        },
+        "-Oh7W43MkDFmlKgp3UB6": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766448188629,
+          "type": "assists"
+        },
+        "-Oh7WKRRTE8_I9Xy2BHD": {
+          "player": "keskenovic_stefan_2000",
+          "playerName": "Keskenović Stefan",
+          "team": "Panthers",
+          "timestamp": 1766448255706,
+          "type": "miss_3"
+        },
+        "-Oh7WKlb2EQvLFH_y41q": {
+          "player": "males_dimitrije_1999",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1766448257061,
+          "type": "rebounds_off"
+        },
+        "-Oh7WO-p8m7n28jG7ULu": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766448270323,
+          "type": "turnovers"
+        },
+        "-Oh7WOaC2QMjZMIEfUMS": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Grizzlies",
+          "timestamp": 1766448272715,
+          "type": "steals"
+        },
+        "-Oh7WOqENKYcHP6ml6Hu": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Grizzlies",
+          "timestamp": 1766448273741,
+          "type": "points_2"
+        },
+        "-Oh7WXMeEaO1a_J5Efft": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766448308648,
+          "type": "points_2"
+        },
+        "-Oh7WXjnRxcXzzIV_poR": {
+          "player": "males_dimitrije_1999",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1766448310193,
+          "type": "assists"
+        },
+        "-Oh7WbuS4Cfg6FVOIhjz": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Grizzlies",
+          "timestamp": 1766448331355,
+          "type": "turnovers"
+        },
+        "-Oh7Wi-YNicS3pw3u827": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766448356321,
+          "type": "miss_3"
+        },
+        "-Oh7WiiAPTTVmqwic1Yj": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Grizzlies",
+          "timestamp": 1766448359241,
+          "type": "rebounds_def"
+        },
+        "-Oh7Wj8STqjr9fsrKTZY": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766448360987,
+          "type": "points_2"
+        },
+        "-Oh7WjL8t268VJKst1Vh": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Grizzlies",
+          "timestamp": 1766448361799,
+          "type": "assists"
+        },
+        "-Oh7WosEgbl3d7uEGATU": {
+          "player": "ilic_nikola_2005",
+          "playerName": "Ilić Nikola",
+          "team": "Panthers",
+          "timestamp": 1766448384461,
+          "type": "points_2"
+        },
+        "-Oh7Wp8WLb-FYPWW8hRU": {
+          "player": "males_dimitrije_1999",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1766448385567,
+          "type": "assists"
+        },
+        "-Oh7X1Qcrc_ykQSFQi2U": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Grizzlies",
+          "timestamp": 1766448439974,
+          "type": "points_3"
+        },
+        "-Oh7X1dxYNH3ZZ8yM1_G": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Grizzlies",
+          "timestamp": 1766448440891,
+          "type": "assists"
+        },
+        "-Oh7XBnk2W4o9V515X1X": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766448482478,
+          "type": "points_2"
+        },
+        "-Oh7XQrAkyGuS6Dgud0D": {
+          "player": "ivetic_zeljko_2002",
+          "playerName": "Ivetić Željko",
+          "team": "Grizzlies",
+          "timestamp": 1766448544137,
+          "type": "miss_3"
+        },
+        "-Oh7XRbSax74vlxaQ1Ad": {
+          "player": "ilic_nikola_2005",
+          "playerName": "Ilić Nikola",
+          "team": "Panthers",
+          "timestamp": 1766448547227,
+          "type": "rebounds_def"
+        },
+        "-Oh7XUq4MbZCd9YM4M9G": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766448560451,
+          "type": "turnovers"
+        },
+        "-Oh7XcONc8iwahlJMT-Z": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Grizzlies",
+          "timestamp": 1766448595478,
+          "type": "miss_2"
+        },
+        "-Oh7XcwluNAlNQ8k68ny": {
+          "player": "keskenovic_stefan_2000",
+          "playerName": "Keskenović Stefan",
+          "team": "Panthers",
+          "timestamp": 1766448597743,
+          "type": "rebounds_def"
+        },
+        "-Oh7XiLmjI_X6ylS5WUJ": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766448619888,
+          "type": "miss_3"
+        },
+        "-Oh7XigeJq8gNpWTYMQO": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766448621288,
+          "type": "rebounds_def"
+        },
+        "-Oh7XpsAj1truIDlHqKO": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Grizzlies",
+          "timestamp": 1766448650697,
+          "type": "points_2"
+        },
+        "-Oh7XqMr3UoEJNDv_9CC": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766448652725,
+          "type": "assists"
+        },
+        "-Oh7XxeyZfbJRrKIYz-x": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766448682620,
+          "type": "turnovers"
+        },
+        "-Oh7Xy0RrmRxBoVjrqaC": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766448684058,
+          "type": "steals"
+        },
+        "-Oh7Y1GSbVbLwmC5zdsd": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766448701467,
+          "type": "turnovers"
+        },
+        "-Oh7Y1aLfTLXoL_UrgnD": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766448702804,
+          "type": "steals"
+        },
+        "-Oh7Y782uJmM41Pch2J3": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766448725505,
+          "type": "turnovers"
+        },
+        "-Oh7Y7Z5-k8kdDmGyipd": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766448727236,
+          "type": "steals"
+        },
+        "-Oh7Y7pkJDI0N3Qww-k3": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766448728366,
+          "type": "points_2"
+        },
+        "-Oh7YD6HM1GDCfyxTCzH": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766448749968,
+          "type": "turnovers"
+        },
+        "-Oh7YDqEDAgWYpcRP6ql": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Grizzlies",
+          "timestamp": 1766448752973,
+          "type": "steals"
+        },
+        "-Oh7YE-JB4PHpSdeCpr5": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Grizzlies",
+          "timestamp": 1766448753618,
+          "type": "turnovers"
+        },
+        "-Oh7YM9FFz-930Fx3doL": {
+          "player": "keskenovic_stefan_2000",
+          "playerName": "Keskenović Stefan",
+          "team": "Panthers",
+          "timestamp": 1766448787022,
+          "type": "miss_3"
+        },
+        "-Oh7YNVhbZ3QW7KRofAA": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766448792555,
+          "type": "rebounds_def"
+        },
+        "-Oh7YWPo_M3lKqbWey6I": {
+          "player": "ivetic_zeljko_2002",
+          "playerName": "Ivetić Željko",
+          "team": "Grizzlies",
+          "timestamp": 1766448829042,
+          "type": "miss_2"
+        },
+        "-Oh7YWqbcKlCdH8XhfdR": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766448830821,
+          "type": "rebounds_off"
+        },
+        "-Oh7YX6NQxMzULq-XSkA": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766448831894,
+          "type": "miss_2"
+        },
+        "-Oh7YXWjpmP-sn4-qUmg": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766448833581,
+          "type": "rebounds_def"
+        },
+        "-Oh7YexyjL92LXLncW79": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766448868156,
+          "type": "miss_3"
+        },
+        "-Oh7YfJu3repS_VEif77": {
+          "player": "ilic_nikola_2005",
+          "playerName": "Ilić Nikola",
+          "team": "Panthers",
+          "timestamp": 1766448869623,
+          "type": "rebounds_off"
+        },
+        "-Oh7YjAhz9jT0wwOmFwB": {
+          "player": "males_dimitrije_1999",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1766448885419,
+          "type": "turnovers"
+        },
+        "-Oh7YjWaJKB5rEYLqGyV": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Grizzlies",
+          "timestamp": 1766448886820,
+          "type": "steals"
+        },
+        "-Oh7YmkqI2Z7sBh0OKWZ": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Grizzlies",
+          "timestamp": 1766448900084,
+          "type": "points_2"
+        },
+        "-Oh7Yt3QjN0E2K48U5EZ": {
+          "player": "ilic_nikola_2005",
+          "playerName": "Ilić Nikola",
+          "team": "Panthers",
+          "timestamp": 1766448925913,
+          "type": "miss_2"
+        },
+        "-Oh7Ytd4TjKS6uXw4qbQ": {
+          "player": "ivetic_zeljko_2002",
+          "playerName": "Ivetić Željko",
+          "team": "Grizzlies",
+          "timestamp": 1766448928259,
+          "type": "rebounds_def"
+        },
+        "-Oh7Z0KNZKEA9GGYOfAs": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766448959766,
+          "type": "turnovers"
+        },
+        "-Oh7Z0e0_QpBNECRIOSk": {
+          "player": "ilic_nikola_2005",
+          "playerName": "Ilić Nikola",
+          "team": "Panthers",
+          "timestamp": 1766448961087,
+          "type": "steals"
+        },
+        "-Oh7Z51M-xMoWSNitoYu": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766448979029,
+          "type": "miss_3"
+        },
+        "-Oh7Z8ARsqRUF9kbmHzn": {
+          "player": "males_dimitrije_1999",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1766448991898,
+          "type": "rebounds_off"
+        },
+        "-Oh7ZCgrjPZfbIa2pKzw": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766449010421,
+          "type": "miss_3"
+        },
+        "-Oh7ZDAfI3tqhjI8XoJF": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766449012393,
+          "type": "rebounds_def"
+        },
+        "-Oh7ZMArhwGq3olp73V5": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766449049269,
+          "type": "points_2"
+        },
+        "-Oh7ZMmGemYFqYFKrX5z": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766449051727,
+          "type": "assists"
+        },
+        "-Oh7ZVo4OhMTKKYUPWs3": {
+          "player": "ilic_nikola_2005",
+          "playerName": "Ilić Nikola",
+          "team": "Panthers",
+          "timestamp": 1766449088707,
+          "type": "miss_3"
+        },
+        "-Oh7ZW2vEpi4PscuW2FT": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766449089721,
+          "type": "rebounds_def"
+        },
+        "-Oh7ZdpBhK2V3JHZLWFo": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Grizzlies",
+          "timestamp": 1766449125642,
+          "type": "points_3"
+        },
+        "-Oh7Ze8-knIxcm1VEjPg": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766449126910,
+          "type": "assists"
+        },
+        "-Oh7ZwaJtBBJAVwvfvo3": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766449202514,
+          "type": "miss_2"
+        },
+        "-Oh7Zx-ud1T855cKaACo": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766449204216,
+          "type": "rebounds_off"
+        },
+        "-Oh7ZxB5zq3pmwAECwmd": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766449204932,
+          "type": "points_2"
+        },
+        "-Oh7_-zRe3BBi__ft3JN": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766449220506,
+          "type": "points_3"
+        },
+        "-Oh7_21UUrcYnUnDbYtg": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Grizzlies",
+          "timestamp": 1766449228893,
+          "type": "assists"
+        },
+        "-Oh7_6Cib2nRWt4DgHdu": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766449245996,
+          "type": "turnovers"
+        },
+        "-Oh7_6bcOMMzQaogg3xC": {
+          "player": "ivetic_zeljko_2002",
+          "playerName": "Ivetić Željko",
+          "team": "Grizzlies",
+          "timestamp": 1766449247654,
+          "type": "steals"
+        },
+        "-Oh7_6rC2TGved7arB91": {
+          "player": "ivetic_zeljko_2002",
+          "playerName": "Ivetić Željko",
+          "team": "Grizzlies",
+          "timestamp": 1766449248651,
+          "type": "points_2"
+        },
+        "-Oh7_JbDM4cQmaQT7jH0": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766449300876,
+          "type": "miss_3"
+        },
+        "-Oh7_Jdg9OzrU-NRWwtt": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766449301034,
+          "type": "rebounds_off"
+        },
+        "-Oh7_JvmxNW_Yys9oUp3": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766449302192,
+          "type": "points_2"
+        },
+        "-Oh7_O2NT2zCc2gv8zWP": {
+          "player": "ivetic_zeljko_2002",
+          "playerName": "Ivetić Željko",
+          "team": "Grizzlies",
+          "timestamp": 1766449319062,
+          "type": "turnovers"
+        },
+        "-Oh7_OpWaa-wme0gI7v8": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766449322271,
+          "type": "steals"
+        },
+        "-Oh7_SSdGbIrw-6Jl0_e": {
+          "player": "ilic_nikola_2005",
+          "playerName": "Ilić Nikola",
+          "team": "Panthers",
+          "timestamp": 1766449337127,
+          "type": "miss_3"
+        },
+        "-Oh7_TA0gUxGxwxt3oEF": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Grizzlies",
+          "timestamp": 1766449340031,
+          "type": "rebounds_def"
+        },
+        "-Oh7_Yv49yuMTPamXC-U": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766449363587,
+          "type": "miss_3"
+        },
+        "-Oh7_ZCQPsKebi8IjOGE": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766449364761,
+          "type": "rebounds_def"
+        },
+        "-Oh7_brCDf-SSEyxNliT": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766449379723,
+          "type": "miss_3"
+        },
+        "-Oh7_c5KUQE2PV-jH9pu": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766449380691,
+          "type": "rebounds_off"
+        },
+        "-Oh7_eD67huFpaCyHmBD": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766449389381,
+          "type": "points_3"
+        },
+        "-Oh7_efoVPQocXQ0Qenu": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766449391282,
+          "type": "assists"
+        },
+        "-Oh7_nMncykuXAJkXkKs": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Grizzlies",
+          "timestamp": 1766449426865,
+          "type": "points_2"
+        },
+        "-Oh7_nbhHu_fubLQWIxj": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766449427883,
+          "type": "assists"
+        },
+        "-Oh7_seNGinbNrlwPpjS": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766449448534,
+          "type": "miss_3"
+        },
+        "-Oh7a-5G8hzW4w9hvw9u": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766449478991,
+          "type": "miss_3"
+        },
+        "-Oh7a-RRDxG-qwrsSuws": {
+          "player": "ilic_nikola_2005",
+          "playerName": "Ilić Nikola",
+          "team": "Panthers",
+          "timestamp": 1766449480410,
+          "type": "rebounds_off"
+        },
+        "-Oh7a204jAqkh1fEVfYH": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766449490947,
+          "type": "points_3"
+        },
+        "-Oh7a2kLcVL9-lMcjKDq": {
+          "player": "ilic_nikola_2005",
+          "playerName": "Ilić Nikola",
+          "team": "Panthers",
+          "timestamp": 1766449493972,
+          "type": "assists"
+        },
+        "-Oh7a9mZyrTMxNvP-9H6": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Grizzlies",
+          "timestamp": 1766449522786,
+          "type": "miss_2"
+        },
+        "-Oh7aA7mW9RA3DENnjWF": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766449524208,
+          "type": "rebounds_off"
+        },
+        "-Oh7aAO3zn4D3IGr037A": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766449525250,
+          "type": "points_2"
+        },
+        "-Oh7aGKwUdpdfs5MqG8f": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766449549626,
+          "type": "points_3"
+        },
+        "-Oh7aGX-d-1Ak251zEWE": {
+          "player": "males_dimitrije_1999",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1766449550398,
+          "type": "assists"
+        },
+        "-Oh7aPMnyJLpte4SE8Gv": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Grizzlies",
+          "timestamp": 1766449586609,
+          "type": "turnovers"
+        },
+        "-Oh7aVfG09mh45AtE25S": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766449612431,
+          "type": "turnovers"
+        },
+        "-Oh7aVzasrjHQyMA7wle": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766449613732,
+          "type": "steals"
+        },
+        "-Oh7aWErYfQyTsTNOOIz": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766449614773,
+          "type": "points_2"
+        },
+        "-Oh7aZmzHSNkboD7vTsR": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766449629309,
+          "type": "turnovers"
+        },
+        "-Oh7a_aGATM_Avfd8N8C": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Grizzlies",
+          "timestamp": 1766449632591,
+          "type": "steals"
+        },
+        "-Oh7a_u-6Vr44q53dEkH": {
+          "player": "ivetic_zeljko_2002",
+          "playerName": "Ivetić Željko",
+          "team": "Grizzlies",
+          "timestamp": 1766449633854,
+          "type": "miss_2"
+        },
+        "-Oh7aaDrLjvPvTtkV2jA": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Grizzlies",
+          "timestamp": 1766449635189,
+          "type": "rebounds_off"
+        },
+        "-Oh7acigi2th6WkHfDc8": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766449645418,
+          "type": "miss_3"
+        },
+        "-Oh7ad_rmX_GXYownWMI": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766449648949,
+          "type": "rebounds_def"
+        },
+        "-Oh7al29TfAPWi8EPXEQ": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766449679496,
+          "type": "points_3"
+        },
+        "-Oh7alOJEyEXB3fdD58V": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766449680914,
+          "type": "assists"
+        },
+        "-Oh7arjwbuPou6Dzvwvf": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766449706938,
+          "type": "miss_2"
+        },
+        "-Oh7as5ZmfPQrIuYUry_": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766449708386,
+          "type": "rebounds_def"
+        },
+        "-Oh7axExyr6dTxni562d": {
+          "player": "males_dimitrije_1999",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1766449729467,
+          "type": "miss_2"
+        },
+        "-Oh7axdnkj7_MWUjvLR0": {
+          "player": "ilic_nikola_2005",
+          "playerName": "Ilić Nikola",
+          "team": "Panthers",
+          "timestamp": 1766449731121,
+          "type": "rebounds_off"
+        },
+        "-Oh7b0tthiVHTdzwOkJx": {
+          "player": "keskenovic_stefan_2000",
+          "playerName": "Keskenović Stefan",
+          "team": "Panthers",
+          "timestamp": 1766449748534,
+          "type": "miss_2"
+        },
+        "-Oh7b27VSvKq9IrPjcmr": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766449753566,
+          "type": "rebounds_def"
+        },
+        "-Oh7b6THx3v8wN25Hm5Z": {
+          "player": "ivetic_zeljko_2002",
+          "playerName": "Ivetić Željko",
+          "team": "Grizzlies",
+          "timestamp": 1766449771344,
+          "type": "miss_2"
+        },
+        "-Oh7b70ODF61j4-D10VQ": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766449773591,
+          "type": "rebounds_def"
+        },
+        "-Oh7bCCgF1ifBAUZQ-oS": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766449794858,
+          "type": "turnovers"
+        },
+        "-Oh7bKVE1kzCby0LKPkI": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Grizzlies",
+          "timestamp": 1766449828813,
+          "type": "miss_3"
+        },
+        "-Oh7bKv5NqAoN4RMcZWP": {
+          "player": "ivetic_zeljko_2002",
+          "playerName": "Ivetić Željko",
+          "team": "Grizzlies",
+          "timestamp": 1766449830532,
+          "type": "rebounds_off"
+        },
+        "-Oh7bLAhhtn0cA5RQeyJ": {
+          "player": "ivetic_zeljko_2002",
+          "playerName": "Ivetić Željko",
+          "team": "Grizzlies",
+          "timestamp": 1766449831595,
+          "type": "miss_2"
+        },
+        "-Oh7bNT59gt-h7UXSLcX": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766449840964,
+          "type": "miss_2"
+        },
+        "-Oh7bNvAgtpJUlnYBhVD": {
+          "player": "ilic_nikola_2005",
+          "playerName": "Ilić Nikola",
+          "team": "Panthers",
+          "timestamp": 1766449842825,
+          "type": "blocks"
+        },
+        "-Oh7bPIHn_XRmEZrGpzF": {
+          "player": "males_dimitrije_1999",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1766449848464,
+          "type": "rebounds_def"
+        },
+        "-Oh7bWisiEO0BwPt3F_9": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766449878902,
+          "type": "points_3"
+        },
+        "-Oh7bXLe9FDkLI7LipdM": {
+          "player": "keskenovic_stefan_2000",
+          "playerName": "Keskenović Stefan",
+          "team": "Panthers",
+          "timestamp": 1766449881448,
+          "type": "assists"
+        },
+        "-Oh7bdleUB9XZcEVR_mS": {
+          "player": "ivetic_zeljko_2002",
+          "playerName": "Ivetić Željko",
+          "team": "Grizzlies",
+          "timestamp": 1766449911848,
+          "type": "miss_3"
+        },
+        "-Oh7beaUeyy85F4qmCnH": {
+          "player": "keskenovic_stefan_2000",
+          "playerName": "Keskenović Stefan",
+          "team": "Panthers",
+          "timestamp": 1766449915229,
+          "type": "rebounds_def"
+        },
+        "-Oh7bik4voJUaNqSY8D7": {
+          "player": "males_dimitrije_1999",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1766449932227,
+          "type": "turnovers"
+        },
+        "-Oh7bri1bGapX51FFteH": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766449968959,
+          "type": "points_3"
+        },
+        "-Oh7bs7Gm_0arolKYxmw": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Grizzlies",
+          "timestamp": 1766449970639,
+          "type": "assists"
+        },
+        "-Oh7bvn5GKNAisRijHFv": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766449985668,
+          "type": "turnovers"
+        },
+        "-Oh7bw8UA4EsVUVd9T25": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Grizzlies",
+          "timestamp": 1766449987101,
+          "type": "steals"
+        },
+        "-Oh7bwKIVGqcHJX0lGom": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Grizzlies",
+          "timestamp": 1766449987857,
+          "type": "points_2"
+        },
+        "-Oh7c082BRFLQErgokwW": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766450007553,
+          "type": "turnovers"
+        },
+        "-Oh7c4qPcOW5tn6ONMbF": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Grizzlies",
+          "timestamp": 1766450026840,
+          "type": "turnovers"
+        },
+        "-Oh7c59xwTXxH3zXWVGZ": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766450028155,
+          "type": "steals"
+        },
+        "-Oh7cAlB15_qbYcfhVnt": {
+          "player": "males_dimitrije_1999",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1766450051082,
+          "type": "miss_3"
+        },
+        "-Oh7cVSAI1B9pPSJg-yW": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766450135817,
+          "type": "miss_3"
+        },
+        "-Oh7cVlK1ynZJLpcS4Oc": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766450137107,
+          "type": "rebounds_def"
+        },
+        "-Oh7c__axhv6u05JPB5x": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766450156836,
+          "type": "points_3"
+        },
+        "-Oh7cgU8bWe45zlvELrT": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Grizzlies",
+          "timestamp": 1766450185095,
+          "type": "miss_2"
+        },
+        "-Oh7cjo-0dtycCgx5knS": {
+          "player": "ivetic_zeljko_2002",
+          "playerName": "Ivetić Željko",
+          "team": "Grizzlies",
+          "timestamp": 1766450198718,
+          "type": "points_2"
+        },
+        "-Oh7ck4caoVv19OxxjdM": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Grizzlies",
+          "timestamp": 1766450199846,
+          "type": "assists"
+        },
+        "-Oh7cqJLDaVZjxXlcZcq": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766450225364,
+          "type": "miss_3"
+        },
+        "-Oh7cvl_FKM2XvbppMpX": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Grizzlies",
+          "timestamp": 1766450247715,
+          "type": "miss_3"
+        },
+        "-Oh7d1gdrENRh3MWavcG": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766450276070,
+          "type": "miss_3"
+        },
+        "-Oh7d2ilKXwSLVhDQ2qk": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766450280303,
+          "type": "rebounds_def"
+        },
+        "-Oh7d5G08i7bpGUI6iau": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Grizzlies",
+          "timestamp": 1766450290687,
+          "type": "points_2"
+        },
+        "-Oh7d5w9LMOjIV_PgNAm": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766450293448,
+          "type": "assists"
+        },
+        "-Oh7d9roRe0j3FEReCm_": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766450309554,
+          "type": "miss_3"
+        },
+        "-Oh7dB6gr0zsUZZeRSeM": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766450314666,
+          "type": "rebounds_def"
+        },
+        "-Oh7dEEiuLHGwq7jP5XR": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766450327468,
+          "type": "points_2"
+        },
+        "-Oh7dWRdS9AhZKjNYiGu": {
+          "player": "ilic_nikola_2005",
+          "playerName": "Ilić Nikola",
+          "team": "Panthers",
+          "timestamp": 1766450402023,
+          "type": "miss_3"
+        },
+        "-Oh7dX5jQ6nmO37GeEXC": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Grizzlies",
+          "timestamp": 1766450404717,
+          "type": "rebounds_def"
+        },
+        "-Oh7dcWE5944kWhT_Zo8": {
+          "player": "keskenovic_stefan_2000",
+          "playerName": "Keskenović Stefan",
+          "team": "Panthers",
+          "timestamp": 1766450430989,
+          "type": "turnovers"
+        },
+        "-Oh7dhh9JQ-xm7s8T6-P": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Grizzlies",
+          "timestamp": 1766450452232,
+          "type": "points_3"
+        },
+        "-Oh7diLG3xygtPtFVhBq": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Grizzlies",
+          "timestamp": 1766450454863,
+          "type": "assists"
+        },
+        "-Oh7dnM70McPP-lgbhce": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766450475398,
+          "type": "miss_2"
+        },
+        "-Oh7dnxhjAlXzSvVOUid": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Grizzlies",
+          "timestamp": 1766450477867,
+          "type": "rebounds_def"
+        },
+        "-Oh7dqF-aKNFnANA0tXJ": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766450487230,
+          "type": "turnovers"
+        },
+        "-Oh7dqYUhQJmv80u4wBl": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766450488476,
+          "type": "steals"
+        },
+        "-Oh7dwRxFAp622cCMheC": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766450512635,
+          "type": "miss_3"
+        },
+        "-Oh7dyF2-Ty7pjfubo4Y": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Grizzlies",
+          "timestamp": 1766450520001,
+          "type": "rebounds_def"
+        },
+        "-Oh7dzfiFAkEAENn6gAG": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Grizzlies",
+          "timestamp": 1766450525868,
+          "type": "turnovers"
+        },
+        "-Oh7e-NQw0qfGmDf6w4i": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766450528729,
+          "type": "steals"
+        },
+        "-Oh7e1jULsuSyvbW0U3Q": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766450538397,
+          "type": "miss_3"
+        },
+        "-Oh7e3O24KflfNZvtfPa": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Grizzlies",
+          "timestamp": 1766450545153,
+          "type": "rebounds_def"
+        },
+        "-Oh7eGFAGlMrN_YT33QL": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766450597833,
+          "type": "miss_3"
+        },
+        "-Oh7eGfbZFZ3ZVSnPAYn": {
+          "player": "ivetic_zeljko_2002",
+          "playerName": "Ivetić Željko",
+          "team": "Grizzlies",
+          "timestamp": 1766450599589,
+          "type": "rebounds_off"
+        },
+        "-Oh7eGuDHfc8FGqIdNjL": {
+          "player": "ivetic_zeljko_2002",
+          "playerName": "Ivetić Željko",
+          "team": "Grizzlies",
+          "timestamp": 1766450600524,
+          "type": "miss_2"
+        },
+        "-Oh7eHJaTYyoJpKhXFPL": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Grizzlies",
+          "timestamp": 1766450602212,
+          "type": "rebounds_off"
+        },
+        "-Oh7eHXE1YwQHUKXaJMq": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Grizzlies",
+          "timestamp": 1766450603085,
+          "type": "points_2"
+        },
+        "-Oh7ePLkv7c6oyhz9VbB": {
+          "player": "keskenovic_stefan_2000",
+          "playerName": "Keskenović Stefan",
+          "team": "Panthers",
+          "timestamp": 1766450635118,
+          "type": "miss_3"
+        },
+        "-Oh7eTEI0rJ0RWIC3yC6": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766450651025,
+          "type": "miss_2"
+        },
+        "-Oh7eTfkQFVypRcWxKm7": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766450652846,
+          "type": "rebounds_def"
+        },
+        "-Oh7eYiwgLFUHU9wlXZH": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766450673530,
+          "type": "miss_3"
+        },
+        "-Oh7eZ1OdxOF0B0XkXzL": {
+          "player": "males_dimitrije_1999",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1766450674775,
+          "type": "rebounds_off"
+        },
+        "-Oh7e_YwCiHpBwYL-HOJ": {
+          "player": "ilic_nikola_2005",
+          "playerName": "Ilić Nikola",
+          "team": "Panthers",
+          "timestamp": 1766450681018,
+          "type": "miss_3"
+        },
+        "-Oh7e_ua8tfmQ1laGWcV": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Grizzlies",
+          "timestamp": 1766450682468,
+          "type": "rebounds_def"
+        },
+        "-Oh7ee4Wbzz5QqceWpRC": {
+          "player": "ivetic_zeljko_2002",
+          "playerName": "Ivetić Željko",
+          "team": "Grizzlies",
+          "timestamp": 1766450699551,
+          "type": "turnovers"
+        },
+        "-Oh7ehHDepqtuNxkp6CM": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766450712652,
+          "type": "miss_3"
+        },
+        "-Oh7eiVvSqmhVgf6Wsw0": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766450717689,
+          "type": "rebounds_def"
+        },
+        "-Oh7fKzC2owqdiOLTfdt": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766450879371,
+          "type": "turnovers"
+        },
+        "-Oh7fUXHphJ4rSgETz71": {
+          "player": "ilic_nikola_2005",
+          "playerName": "Ilić Nikola",
+          "team": "Panthers",
+          "timestamp": 1766450918480,
+          "type": "points_2"
+        },
+        "-Oh7fUqziKghR538wpxG": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766450919805,
+          "type": "assists"
+        },
+        "-Oh7fa5ioJ_oO0bBt5va": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Grizzlies",
+          "timestamp": 1766450945388,
+          "type": "points_2"
+        },
+        "-Oh7faOivmpWwBdQf8Zd": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Grizzlies",
+          "timestamp": 1766450946604,
+          "type": "assists"
+        },
+        "-Oh7fhGAVx96BRF6Em3B": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766450974729,
+          "type": "miss_2"
+        },
+        "-Oh7fhkKNWRwn9Nbx4Ps": {
+          "player": "keskenovic_stefan_2000",
+          "playerName": "Keskenović Stefan",
+          "team": "Panthers",
+          "timestamp": 1766450976723,
+          "type": "rebounds_off"
+        },
+        "-Oh7fhwzZ8-lyOoUCLur": {
+          "player": "keskenovic_stefan_2000",
+          "playerName": "Keskenović Stefan",
+          "team": "Panthers",
+          "timestamp": 1766450977533,
+          "type": "miss_2"
+        },
+        "-Oh7fkuDo08_XX_E4EYH": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Grizzlies",
+          "timestamp": 1766450989644,
+          "type": "miss_2"
+        },
+        "-Oh7flPt0dZrktpNxneu": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Grizzlies",
+          "timestamp": 1766450991735,
+          "type": "rebounds_off"
+        },
+        "-Oh7frdtmjgkWRNYYwBF": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Grizzlies",
+          "timestamp": 1766451017271,
+          "type": "miss_2"
+        },
+        "-Oh7frz1l9UGFU1KrFbL": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Grizzlies",
+          "timestamp": 1766451018624,
+          "type": "rebounds_off"
+        },
+        "-Oh7fsCbzzHUqZNIzm7m": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Grizzlies",
+          "timestamp": 1766451019557,
+          "type": "points_2"
+        },
+        "-Oh7g1TSLV-QF5x3Fb-k": {
+          "player": "ilic_nikola_2005",
+          "playerName": "Ilić Nikola",
+          "team": "Panthers",
+          "timestamp": 1766451061595,
+          "type": "points_3"
+        },
+        "-Oh7g2Fl2E5Ii9Lpg7cZ": {
+          "player": "males_dimitrije_1999",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1766451064815,
+          "type": "assists"
+        },
+        "-Oh7g7C4_dJdbKZLBKDD": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Grizzlies",
+          "timestamp": 1766451085059,
+          "type": "miss_3"
+        },
+        "-Oh7g7aV_eyOsv_1CV7B": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766451086686,
+          "type": "rebounds_def"
+        },
+        "-Oh7gAd12wkwlYO6qMJ4": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766451099136,
+          "type": "miss_3"
+        },
+        "-Oh7gB6jVtwuZ6f8yM4L": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766451101101,
+          "type": "rebounds_def"
+        },
+        "-Oh7gFj2fUmoXWM1mmaQ": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Grizzlies",
+          "timestamp": 1766451120001,
+          "type": "points_2"
+        },
+        "-Oh7gG2Icli-t-tXA7pq": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Grizzlies",
+          "timestamp": 1766451121297,
+          "type": "assists"
+        },
+        "-Oh7gJqLrgsrC_FIEV6U": {
+          "player": "ilic_nikola_2005",
+          "playerName": "Ilić Nikola",
+          "team": "Panthers",
+          "timestamp": 1766451136852,
+          "type": "miss_3"
+        },
+        "-Oh7gKhf23Tg52CcihLq": {
+          "player": "keskenovic_stefan_2000",
+          "playerName": "Keskenović Stefan",
+          "team": "Panthers",
+          "timestamp": 1766451140393,
+          "type": "rebounds_off"
+        },
+        "-Oh7gKwsp1N_LCbQv9vk": {
+          "player": "males_dimitrije_1999",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1766451141366,
+          "type": "points_2"
+        },
+        "-Oh7gL7KOc7beITWN984": {
+          "player": "keskenovic_stefan_2000",
+          "playerName": "Keskenović Stefan",
+          "team": "Panthers",
+          "timestamp": 1766451142099,
+          "type": "assists"
+        },
+        "-Oh7gTufEyw9QPOu_psQ": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Grizzlies",
+          "timestamp": 1766451178089,
+          "type": "miss_3"
+        },
+        "-Oh7gUeo_TrWdOgfGEWK": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766451181170,
+          "type": "rebounds_off"
+        },
+        "-Oh7gUvrUL3Ep6ho7tu0": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766451182261,
+          "type": "points_2"
+        },
+        "-Oh7gVATJSYTa4IRJVxm": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766451183260,
+          "type": "assists"
+        },
+        "-Oh7ghFXzNSEiRKk8gdj": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766451236832,
+          "type": "points_2"
+        },
+        "-Oh7gmnjEwYq1sI9IZIu": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Grizzlies",
+          "timestamp": 1766451259565,
+          "type": "points_3"
+        },
+        "-Oh7gn9PQwZtKREFOrUW": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Grizzlies",
+          "timestamp": 1766451261016,
+          "type": "assists"
+        },
+        "-Oh7gwRZJSbzTFtY3V-6": {
+          "player": "keskenovic_stefan_2000",
+          "playerName": "Keskenović Stefan",
+          "team": "Panthers",
+          "timestamp": 1766451299042,
+          "type": "miss_3"
+        },
+        "-Oh7gwxbHQTSAyuaGXP8": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Grizzlies",
+          "timestamp": 1766451301157,
+          "type": "rebounds_def"
+        },
+        "-Oh7h0IQyZhGjQyZN5fa": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Grizzlies",
+          "timestamp": 1766451318937,
+          "type": "miss_3"
+        },
+        "-Oh7h0t5V-xC5Um3HjIM": {
+          "player": "keskenovic_stefan_2000",
+          "playerName": "Keskenović Stefan",
+          "team": "Panthers",
+          "timestamp": 1766451321348,
+          "type": "rebounds_def"
+        },
+        "-Oh7hKi9wzbxDE39mXr8": {
+          "player": "ilic_nikola_2005",
+          "playerName": "Ilić Nikola",
+          "team": "Panthers",
+          "timestamp": 1766451402568,
+          "type": "miss_3"
+        },
+        "-Oh7hL8_u6nRTsWWfT_2": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766451404323,
+          "type": "rebounds_def"
+        },
+        "-Oh7hPte54VqRknq2OEZ": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766451423784,
+          "type": "miss_2"
+        },
+        "-Oh7hQCSux-8NzEVQGvV": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766451425050,
+          "type": "rebounds_def"
+        },
+        "-Oh7hT_Dz4vvP89leeeJ": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766451438860,
+          "type": "turnovers"
+        },
+        "-Oh7hU46R9ntz65c9AFE": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Grizzlies",
+          "timestamp": 1766451440901,
+          "type": "steals"
+        },
+        "-Oh7haIi9BD-BSU8fRO9": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766451470508,
+          "type": "points_2"
+        },
+        "-Oh7hapHCrnHubRzxW64": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Grizzlies",
+          "timestamp": 1766451472656,
+          "type": "assists"
+        },
+        "-Oh7hfd0NWAzPE8AGC4a": {
+          "player": "males_dimitrije_1999",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1766451492351,
+          "type": "points_2"
+        },
+        "-Oh7hgBDo5ECPOjPpR1M": {
+          "player": "ilic_nikola_2005",
+          "playerName": "Ilić Nikola",
+          "team": "Panthers",
+          "timestamp": 1766451494604,
+          "type": "assists"
+        },
+        "-Oh7hrgTwzfE-7Xe1Okn": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Grizzlies",
+          "timestamp": 1766451541724,
+          "type": "points_3"
+        },
+        "-Oh7hrzYhh3Vo_ZyjRTj": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766451542945,
+          "type": "assists"
+        },
+        "-Oh7hvuGS3fOidHOjzJd": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766451558991,
+          "type": "miss_3"
+        },
+        "-Oh7hwFgEJjRKu5gXZeM": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766451560426,
+          "type": "rebounds_def"
+        },
+        "-Oh7hzHiOq0SE5j5KRvS": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766451572844,
+          "type": "miss_3"
+        },
+        "-Oh7hzYmeBvohE1CQouS": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766451573936,
+          "type": "rebounds_def"
+        },
+        "-Oh7i1lNaHEwEUmQw18h": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766451587094,
+          "type": "points_2"
+        },
+        "-Oh7i2-eHf0u6Qwka681": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766451588072,
+          "type": "assists"
+        },
+        "-Oh7iBg2tiqCTylKJe29": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Grizzlies",
+          "timestamp": 1766451627713,
+          "type": "points_2"
+        },
+        "-Oh7iCAz2abCwkfrLXwr": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Grizzlies",
+          "timestamp": 1766451629757,
+          "type": "assists"
+        },
+        "-Oh7iNlptj3N-N8r_BEd": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766451677235,
+          "type": "points_3"
+        },
+        "-Oh7iO4ydKY_agZ8O-T_": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766451678524,
+          "type": "assists"
+        },
+        "-Oh7iXRyKTRTiRAzhZ5h": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Grizzlies",
+          "timestamp": 1766451716860,
+          "type": "miss_2"
+        },
+        "-Oh7iYPhm37hfrdIIJtR": {
+          "player": "males_dimitrije_1999",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1766451720811,
+          "type": "rebounds_def"
+        },
+        "-Oh7ibj5qH95fOqRxUrW": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766451738500,
+          "type": "miss_3"
+        },
+        "-Oh7icQO3ImP7v8juRgo": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Grizzlies",
+          "timestamp": 1766451741335,
+          "type": "rebounds_def"
+        },
+        "-Oh7ijzq-neOEMGgrWAd": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Grizzlies",
+          "timestamp": 1766451772340,
+          "type": "miss_2"
+        },
+        "-Oh7imYNkZwGGeNtPcN8": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766451782806,
+          "type": "rebounds_def"
+        },
+        "-Oh7irsPfm0pd1j99Bis": {
+          "player": "ilic_nikola_2005",
+          "playerName": "Ilić Nikola",
+          "team": "Panthers",
+          "timestamp": 1766451804632,
+          "type": "miss_2"
+        },
+        "-Oh7isUwqmxaoaU2WYR8": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766451807162,
+          "type": "rebounds_def"
+        },
+        "-Oh7iwDhnDOminnX2M9B": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766451822443,
+          "type": "miss_3"
+        },
+        "-Oh7j1qL_l164o6i07fi": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766451849556,
+          "type": "miss_3"
+        },
+        "-Oh7j26gYDP0QZNAVU4B": {
+          "player": "males_dimitrije_1999",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1766451850666,
+          "type": "rebounds_off"
+        },
+        "-Oh7j9TXxWCdqYzu6avm": {
+          "player": "ilic_nikola_2005",
+          "playerName": "Ilić Nikola",
+          "team": "Panthers",
+          "timestamp": 1766451880800,
+          "type": "points_3"
+        },
+        "-Oh7j9s5OGDzXd3UHN5X": {
+          "player": "males_dimitrije_1999",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1766451882436,
+          "type": "assists"
+        },
+        "-Oh7jR3HMcu0RGIj69Cf": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766451952848,
+          "type": "points_2"
+        },
+        "-Oh7jWvCmiBqC6jH0yNJ": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766451976843,
+          "type": "points_2"
+        },
+        "-Oh7jXURKDYB7K37Gc-I": {
+          "player": "ilic_nikola_2005",
+          "playerName": "Ilić Nikola",
+          "team": "Panthers",
+          "timestamp": 1766451979162,
+          "type": "assists"
+        },
+        "-Oh7ja9QhHGmylEqpNOF": {
+          "player": "ivetic_zeljko_2002",
+          "playerName": "Ivetić Željko",
+          "team": "Grizzlies",
+          "timestamp": 1766451994201,
+          "type": "miss_3"
+        },
+        "-Oh7jeGgEG8gQ0LC2gxQ": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766452011050,
+          "type": "miss_2"
+        },
+        "-Oh7jez3aJM3bkavVgSO": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766452013954,
+          "type": "rebounds_def"
+        },
+        "-Oh7jkMfBJvIXze0ts6b": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766452036009,
+          "type": "miss_2"
+        },
+        "-Oh7jm7UCwHon9vOFDmW": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766452043229,
+          "type": "rebounds_def"
+        },
+        "-Oh7jpWy3WW3eHbMkmwV": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766452057148,
+          "type": "miss_2"
+        },
+        "-Oh7jpzbomVR6ze3u1Hs": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Grizzlies",
+          "timestamp": 1766452059045,
+          "type": "rebounds_off"
+        },
+        "-Oh7jrXKPz6NJphKlUVc": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Grizzlies",
+          "timestamp": 1766452065363,
+          "type": "points_2"
+        },
+        "-Oh7jvY7dlsxCOFAjwmJ": {
+          "player": "keskenovic_stefan_2000",
+          "playerName": "Keskenović Stefan",
+          "team": "Panthers",
+          "timestamp": 1766452081798,
+          "type": "points_2"
+        },
+        "-Oh7jw1fm9oF2RRlB7JR": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766452083817,
+          "type": "assists"
+        },
+        "-Oh7k27E1WwueGO7C1Ks": {
+          "player": "ivetic_zeljko_2002",
+          "playerName": "Ivetić Željko",
+          "team": "Grizzlies",
+          "timestamp": 1766452112845,
+          "type": "miss_3"
+        },
+        "-Oh7k2VCenL6p1SfEs4h": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Grizzlies",
+          "timestamp": 1766452114379,
+          "type": "rebounds_off"
+        },
+        "-Oh7k2lSZ38V2UfYEeCz": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Grizzlies",
+          "timestamp": 1766452115483,
+          "type": "miss_2"
+        },
+        "-Oh7k55soG2MysC9C5tQ": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766452125046,
+          "type": "rebounds_def"
+        },
+        "-Oh7k9jdNC9AC1qIDztp": {
+          "player": "males_dimitrije_1999",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1766452144039,
+          "type": "points_2"
+        },
+        "-Oh7kALCji7C7v5Bp8wd": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766452146507,
+          "type": "assists"
+        },
+        "-Oh7kH2hc6LWqGBo0E6C": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Grizzlies",
+          "timestamp": 1766452173995,
+          "type": "miss_2"
+        },
+        "-Oh7kLBMJ65LaSXeav3n": {
+          "player": "keskenovic_stefan_2000",
+          "playerName": "Keskenović Stefan",
+          "team": "Panthers",
+          "timestamp": 1766452190933,
+          "type": "miss_3"
+        },
+        "-Oh7kXfF2OijxrgpbmAl": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766452242062,
+          "type": "rebounds_def"
+        },
+        "-Oh7kY1MolPjjmr4rMGB": {
+          "player": "ivetic_zeljko_2002",
+          "playerName": "Ivetić Željko",
+          "team": "Grizzlies",
+          "timestamp": 1766452243541,
+          "type": "points_2"
+        },
+        "-Oh7kYDhOhIhMuZfB2Cc": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766452244331,
+          "type": "assists"
+        },
+        "-Oh7kdE4XYX4bWv5TMjP": {
+          "player": "ilic_nikola_2005",
+          "playerName": "Ilić Nikola",
+          "team": "Panthers",
+          "timestamp": 1766452268931,
+          "type": "miss_2"
+        },
+        "-Oh7kdetR96KHoeHh-ur": {
+          "player": "males_dimitrije_1999",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1766452270711,
+          "type": "rebounds_off"
+        },
+        "-Oh7kdu-ezhehPJ-jb12": {
+          "player": "males_dimitrije_1999",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1766452271678,
+          "type": "turnovers"
+        },
+        "-Oh7kgEIM0lRJVU8HQSL": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Grizzlies",
+          "timestamp": 1766452281233,
+          "type": "miss_2"
+        },
+        "-Oh7kglMKeivXxVU3z0X": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766452283413,
+          "type": "rebounds_def"
+        },
+        "-Oh7kkIKp_MXPaHyeOk7": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766452297875,
+          "type": "turnovers"
+        },
+        "-Oh7klGSfo9OEv9CCLkw": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Grizzlies",
+          "timestamp": 1766452301851,
+          "type": "steals"
+        },
+        "-Oh7kovzSMZ1Xf-PT_AD": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766452316861,
+          "type": "points_2"
+        },
+        "-Oh7kpz7Ltb8glJ_JItt": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Grizzlies",
+          "timestamp": 1766452321158,
+          "type": "assists"
+        },
+        "-Oh7kuOi8RBy2ZmZjwBM": {
+          "player": "males_dimitrije_1999",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1766452339244,
+          "type": "turnovers"
+        },
+        "-Oh7kx3uaxIp2AeYeNWv": {
+          "player": "ivetic_zeljko_2002",
+          "playerName": "Ivetić Željko",
+          "team": "Grizzlies",
+          "timestamp": 1766452350200,
+          "type": "miss_2"
+        },
+        "-Oh7l07Nxev5BPGa4UaG": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766452366806,
+          "type": "rebounds_def"
+        },
+        "-Oh7l55yoIX2IXcv1QPg": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Grizzlies",
+          "timestamp": 1766452387196,
+          "type": "points_2"
+        },
+        "-Oh7l5MJUbBVzPOLxms9": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766452388242,
+          "type": "assists"
+        },
+        "-Oh7lDZi9eZa0Gl4FiIa": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766452421868,
+          "type": "points_3"
+        },
+        "-Oh7lHnU5f1BjWQQPAIT": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766452439197,
+          "type": "miss_2"
+        },
+        "-Oh7lI385m-Er4rI-8sQ": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766452440263,
+          "type": "rebounds_def"
+        },
+        "-Oh7lSTeVuHdFpeUdSn5": {
+          "player": "males_dimitrije_1999",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1766452482920,
+          "type": "miss_2"
+        },
+        "-Oh7lSj3dM7VjKHcENjI": {
+          "player": "males_dimitrije_1999",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1766452483970,
+          "type": "rebounds_off"
+        },
+        "-Oh7lTGPPeIz70xQvPdQ": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766452486168,
+          "type": "points_3"
+        },
+        "-Oh7lTT5zOe_xvrr1ARK": {
+          "player": "males_dimitrije_1999",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1766452486980,
+          "type": "assists"
+        },
+        "-Oh7lbUkbeVnTfx5FqP2": {
+          "player": "ivetic_zeljko_2002",
+          "playerName": "Ivetić Željko",
+          "team": "Grizzlies",
+          "timestamp": 1766452523950,
+          "type": "miss_3"
+        },
+        "-Oh7lht9dGIC_uuc1caq": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766452550152,
+          "type": "turnovers"
+        },
+        "-Oh7liHIYBRpVHckLg8Z": {
+          "player": "ilic_nikola_2005",
+          "playerName": "Ilić Nikola",
+          "team": "Panthers",
+          "timestamp": 1766452551761,
+          "type": "steals"
+        },
+        "-Oh7llhBZ1izdTR2Ntws": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766452565770,
+          "type": "miss_3"
+        },
+        "-Oh7llviZAP2nqpIk2hs": {
+          "player": "ilic_nikola_2005",
+          "playerName": "Ilić Nikola",
+          "team": "Panthers",
+          "timestamp": 1766452566700,
+          "type": "rebounds_off"
+        },
+        "-Oh7lrlD7_WV7RjEFa2i": {
+          "player": "ilic_nikola_2005",
+          "playerName": "Ilić Nikola",
+          "team": "Panthers",
+          "timestamp": 1766452590604,
+          "type": "miss_3"
+        },
+        "-Oh7ls4hWg88GvqJ_XDz": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766452591915,
+          "type": "rebounds_def"
+        },
+        "-Oh7lweHiqQKmczCIH_R": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766452610640,
+          "type": "miss_2"
+        },
+        "-Oh7m0-_ZQF0eWV2c8h_": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766452628451,
+          "type": "rebounds_def"
+        },
+        "-Oh7m4t1DPEHnDF59S9i": {
+          "player": "males_dimitrije_1999",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1766452648448,
+          "type": "points_2"
+        },
+        "-Oh7m5aVf53Evwrjc5UK": {
+          "player": "keskenovic_stefan_2000",
+          "playerName": "Keskenović Stefan",
+          "team": "Panthers",
+          "timestamp": 1766452651358,
+          "type": "assists"
+        },
+        "-Oh7mCGKoqoirODKmNEQ": {
+          "player": "ivetic_zeljko_2002",
+          "playerName": "Ivetić Željko",
+          "team": "Grizzlies",
+          "timestamp": 1766452678675,
+          "type": "points_2"
+        },
+        "-Oh7mCYYTxo21UPDOsfy": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Grizzlies",
+          "timestamp": 1766452679841,
+          "type": "assists"
+        },
+        "-Oh7mHwkM8NvUfthdRYd": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766452701934,
+          "type": "miss_2"
+        },
+        "-Oh7mIAalBNFQcfIQplK": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766452702884,
+          "type": "rebounds_off"
+        },
+        "-Oh7mI_DqK4nletF2iAC": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766452704524,
+          "type": "points_3"
+        },
+        "-Oh7mJ-aavg9G9Xkbl3n": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766452706276,
+          "type": "assists"
+        },
+        "-Oh7mRsetrN-2ChWTsoa": {
+          "player": "ivetic_zeljko_2002",
+          "playerName": "Ivetić Željko",
+          "team": "Grizzlies",
+          "timestamp": 1766452742632,
+          "type": "miss_3"
+        },
+        "-Oh7mSeR3mPj0NKng4H2": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766452745818,
+          "type": "rebounds_def"
+        },
+        "-Oh7mnOgujSit7RV8omR": {
+          "player": "ilic_nikola_2005",
+          "playerName": "Ilić Nikola",
+          "team": "Panthers",
+          "timestamp": 1766452834858,
+          "type": "turnovers"
+        },
+        "-Oh7mo8Wv3AuAdQBrv2Q": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Grizzlies",
+          "timestamp": 1766452837919,
+          "type": "turnovers"
+        },
+        "-Oh7mp4bCDp1zCL9KGv2": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766452841765,
+          "type": "steals"
+        },
+        "-Oh7muRtPyOK88aVu-32": {
+          "player": "males_dimitrije_1999",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1766452863735,
+          "type": "miss_2"
+        },
+        "-Oh7mv2j9DLTEAY3njSN": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Grizzlies",
+          "timestamp": 1766452866221,
+          "type": "rebounds_def"
+        },
+        "-Oh7myUnQbcBpTHAQsb1": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766452880305,
+          "type": "miss_2"
+        },
+        "-Oh7myzK1RH5ZsIYrc91": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766452882323,
+          "type": "rebounds_def"
+        },
+        "-Oh7n2UBTocM8fhOqzc7": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766452900746,
+          "type": "points_3"
+        },
+        "-Oh7n2jl4rluWbKUE1HF": {
+          "player": "ilic_nikola_2005",
+          "playerName": "Ilić Nikola",
+          "team": "Panthers",
+          "timestamp": 1766452901807,
+          "type": "assists"
+        },
+        "-Oh7n8Mp0LYjfmb3kLA6": {
+          "player": "ivetic_zeljko_2002",
+          "playerName": "Ivetić Željko",
+          "team": "Grizzlies",
+          "timestamp": 1766452924851,
+          "type": "miss_3"
+        },
+        "-Oh7n8dsfKAC2m8gPznm": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766452926006,
+          "type": "rebounds_def"
+        },
+        "-Oh7nEksHr5bUWCA5mRc": {
+          "player": "ilic_nikola_2005",
+          "playerName": "Ilić Nikola",
+          "team": "Panthers",
+          "timestamp": 1766452951030,
+          "type": "miss_3"
+        },
+        "-Oh7nFG_QiVdnZIUOSil": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Grizzlies",
+          "timestamp": 1766452953123,
+          "type": "rebounds_def"
+        },
+        "-Oh7nJ1mvm7G4QSQqHos": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766452968560,
+          "type": "miss_2"
+        },
+        "-Oh7nJUNtAzo6H5NHulQ": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766452970390,
+          "type": "rebounds_def"
+        },
+        "-Oh7nSVF18E0aQ1nERBZ": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766453007310,
+          "type": "miss_3"
+        },
+        "-Oh7nV6sXTZ6PjIOLzrY": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Grizzlies",
+          "timestamp": 1766453018038,
+          "type": "rebounds_def"
+        },
+        "-Oh7nastOSTPeP7JICLs": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Grizzlies",
+          "timestamp": 1766453045751,
+          "type": "turnovers"
+        },
+        "-Oh7ncLg4rFIkdxkhy5O": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766453051754,
+          "type": "steals"
+        },
+        "-Oh7nfqr02hNWWPCWLnj": {
+          "player": "ilic_nikola_2005",
+          "playerName": "Ilić Nikola",
+          "team": "Panthers",
+          "timestamp": 1766453066101,
+          "type": "points_2"
+        },
+        "-Oh7ng1W7AqmZtOAefbU": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766453066847,
+          "type": "assists"
+        },
+        "-Oh7npgh5lAJlxMXwkUM": {
+          "player": "ivetic_zeljko_2002",
+          "playerName": "Ivetić Željko",
+          "team": "Grizzlies",
+          "timestamp": 1766453106411,
+          "type": "miss_3"
+        },
+        "-Oh7nqekvaW2SIPU8sXt": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766453110382,
+          "type": "rebounds_def"
+        },
+        "-Oh7nuXekk1dz6I9EcOo": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766453126248,
+          "type": "turnovers"
+        },
+        "-Oh7nusTlDo0sh_7YF8Y": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Grizzlies",
+          "timestamp": 1766453127644,
+          "type": "steals"
+        },
+        "-Oh7nv3hp8e41ZXGkrbA": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Grizzlies",
+          "timestamp": 1766453128427,
+          "type": "miss_2"
+        },
+        "-Oh7nvMKE4hgJJ013mtk": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766453129619,
+          "type": "rebounds_def"
+        },
+        "-Oh7o-TiBqzX8A5cPPrW": {
+          "player": "ilic_nikola_2005",
+          "playerName": "Ilić Nikola",
+          "team": "Panthers",
+          "timestamp": 1766453150572,
+          "type": "turnovers"
+        },
+        "-Oh7o-rl_mf3hoS1nKUZ": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766453152175,
+          "type": "steals"
+        },
+        "-Oh7o2YgoNmaiwuLbznd": {
+          "player": "ivetic_zeljko_2002",
+          "playerName": "Ivetić Željko",
+          "team": "Grizzlies",
+          "timestamp": 1766453163178,
+          "type": "miss_2"
+        },
+        "-Oh7o2t0kLyzXe-5ucA-": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Grizzlies",
+          "timestamp": 1766453164543,
+          "type": "rebounds_off"
+        },
+        "-Oh7o39ckNQWA7J4vnR3": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Grizzlies",
+          "timestamp": 1766453165670,
+          "type": "points_2"
+        },
+        "-Oh7oFIi7HLiTIPo3NUr": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766453215404,
+          "type": "points_3"
+        },
+        "-Oh7oFWbKHayWwY5Lb_F": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766453216293,
+          "type": "assists"
+        },
+        "-Oh7oL0Im4hX5o9XqIvA": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766453238801,
+          "type": "points_2"
+        },
+        "-Oh7oOlshxZzqq9eKADM": {
+          "player": "males_dimitrije_1999",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1766453254198,
+          "type": "miss_2"
+        },
+        "-Oh7oP4ZpXMLySn0D-kq": {
+          "player": "males_dimitrije_1999",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1766453255458,
+          "type": "rebounds_off"
+        },
+        "-Oh7oPImDHrFv1fIhdW5": {
+          "player": "males_dimitrije_1999",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1766453256368,
+          "type": "points_2"
+        },
+        "-Oh7oVA9wBwZtB3wQR2Z": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766453280392,
+          "type": "points_3"
+        },
+        "-Oh7oVTy3xjMySjoVSf9": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766453281660,
+          "type": "assists"
+        },
+        "-Oh7oYuQteq-Kl-5aCYn": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766453295705,
+          "type": "points_2"
+        },
+        "-Oh7oZ7ylajq7kxD-St2": {
+          "player": "ilic_nikola_2005",
+          "playerName": "Ilić Nikola",
+          "team": "Panthers",
+          "timestamp": 1766453296636,
+          "type": "assists"
+        },
+        "-Oh7oaKcGazbiR4rjOAD": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766453305638,
+          "type": "turnovers"
+        },
+        "-Oh7oevks40tZsX5WKDB": {
+          "player": "keskenovic_stefan_2000",
+          "playerName": "Keskenović Stefan",
+          "team": "Panthers",
+          "timestamp": 1766453324462,
+          "type": "miss_3"
+        },
+        "-Oh7ofHkSH86pQlzLrW6": {
+          "player": "males_dimitrije_1999",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1766453325934,
+          "type": "rebounds_off"
+        },
+        "-Oh7ofWJTeinyPsbXnVc": {
+          "player": "males_dimitrije_1999",
+          "playerName": "Maleš Dimitrije",
+          "team": "Panthers",
+          "timestamp": 1766453326866,
+          "type": "miss_2"
+        },
+        "-Oh7ojxYuJONyTKw5OBl": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Grizzlies",
+          "timestamp": 1766453345057,
+          "type": "rebounds_def"
+        },
+        "-Oh7onr1whsNgmCyARe1": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Grizzlies",
+          "timestamp": 1766453361024,
+          "type": "points_2"
+        },
+        "-Oh7ooPAHqgNVDm0JOw6": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766453363273,
+          "type": "assists"
+        },
+        "-Oh7oxhCtwQhv51u79oL": {
+          "player": "ilic_nikola_2005",
+          "playerName": "Ilić Nikola",
+          "team": "Panthers",
+          "timestamp": 1766453401355,
+          "type": "miss_3"
+        },
+        "-Oh7oy3e_5aLw0pu2bHf": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766453402856,
+          "type": "rebounds_def"
+        },
+        "-Oh7p2YndFb6-_agp7Zj": {
+          "player": "ilic_nikola_2005",
+          "playerName": "Ilić Nikola",
+          "team": "Panthers",
+          "timestamp": 1766453425329,
+          "type": "turnovers"
+        },
+        "-Oh7p2v-MpT6YvtyC_Sz": {
+          "player": "ivetic_zeljko_2002",
+          "playerName": "Ivetić Željko",
+          "team": "Grizzlies",
+          "timestamp": 1766453426814,
+          "type": "steals"
+        },
+        "-Oh7p6oG66gWgu0m0ZXK": {
+          "player": "ivetic_zeljko_2002",
+          "playerName": "Ivetić Željko",
+          "team": "Grizzlies",
+          "timestamp": 1766453442767,
+          "type": "miss_2"
+        },
+        "-Oh7pJg4NoL7rq2qsyGJ": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766453495491,
+          "type": "miss_3"
+        },
+        "-Oh7pKShRf0KWsAhMGXq": {
+          "player": "keskenovic_stefan_2000",
+          "playerName": "Keskenović Stefan",
+          "team": "Panthers",
+          "timestamp": 1766453498667,
+          "type": "rebounds_off"
+        },
+        "-Oh7pLuoFQ5yZatSCF5G": {
+          "player": "keskenovic_stefan_2000",
+          "playerName": "Keskenović Stefan",
+          "team": "Panthers",
+          "timestamp": 1766453504626,
+          "type": "points_2"
+        },
+        "-Oh7pSk3popsQvlDMSt5": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Grizzlies",
+          "timestamp": 1766453532610,
+          "type": "miss_2"
+        },
+        "-Oh7pTALdfF3ChFZjfOV": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Grizzlies",
+          "timestamp": 1766453534356,
+          "type": "rebounds_off"
+        },
+        "-Oh7pWO1R4kHcS7_QNrk": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Grizzlies",
+          "timestamp": 1766453547520,
+          "type": "points_2"
+        },
+        "-Oh7pWlZD-tN1VEzKPgC": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766453549090,
+          "type": "assists"
+        },
+        "-Oh7pgrdhHhUpK08iZAC": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766453594535,
+          "type": "points_2"
+        },
+        "-Oh7pmpYtCBWgE__ig50": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766453618977,
+          "type": "points_2"
+        },
+        "-Oh7prxFJ71VRGCYUtDa": {
+          "player": "ilic_nikola_2005",
+          "playerName": "Ilić Nikola",
+          "team": "Panthers",
+          "timestamp": 1766453639950,
+          "type": "miss_2"
+        },
+        "-Oh7puGpqR7l0vi5GimB": {
+          "player": "ivosev_marko_2001",
+          "playerName": "Ivošev Marko",
+          "team": "Grizzlies",
+          "timestamp": 1766453649459,
+          "type": "miss_2"
+        },
+        "-Oh7pud1SP6IFuJhlLr3": {
+          "player": "ivetic_zeljko_2002",
+          "playerName": "Ivetić Željko",
+          "team": "Grizzlies",
+          "timestamp": 1766453650944,
+          "type": "rebounds_off"
+        },
+        "-Oh7puoSaTNmF04H7NR6": {
+          "player": "ivetic_zeljko_2002",
+          "playerName": "Ivetić Željko",
+          "team": "Grizzlies",
+          "timestamp": 1766453651675,
+          "type": "miss_2"
+        },
+        "-Oh7pvnHXX3MRKXkp1pX": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766453655696,
+          "type": "rebounds_def"
+        },
+        "-Oh7pzpmuncfKAr90eLS": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766453672240,
+          "type": "miss_3"
+        },
+        "-Oh7q-K8klfNBPi1X0RM": {
+          "player": "keskenovic_stefan_2000",
+          "playerName": "Keskenović Stefan",
+          "team": "Panthers",
+          "timestamp": 1766453674247,
+          "type": "rebounds_off"
+        },
+        "-Oh7q2KfkT5GU_9gJ7F9": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766453686569,
+          "type": "points_3"
+        },
+        "-Oh7q2VVkILA-KEEh3S_": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Panthers",
+          "timestamp": 1766453687262,
+          "type": "assists"
+        },
+        "-Oh7q8BQkTry_4vd_BI1": {
+          "player": "ivetic_zeljko_2002",
+          "playerName": "Ivetić Željko",
+          "team": "Grizzlies",
+          "timestamp": 1766453710553,
+          "type": "turnovers"
+        },
+        "-Oh7q8U8VsAj2KRFGJlm": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766453711751,
+          "type": "steals"
+        },
+        "-Oh7qCMO0sCKJaZjIHqG": {
+          "player": "simidzija_nikola_1999",
+          "playerName": "Simidžija Nikola",
+          "team": "Panthers",
+          "timestamp": 1766453727639,
+          "type": "miss_3"
+        }
+      },
+      "gameInfo": {
+        "gameId": "2025-12-17_panthers_vs_grizzlies",
+        "date": "17.12.2025",
+        "league": "prijateljske",
+        "location": "SC Meridiana 1",
+        "round": 3,
+        "quarter": 1,
+        "startTime": "22:00",
+        "scoreA": 95,
+        "scoreB": 97,
+        "season": "2025/26",
+        "status": "finished",
+        "teamA": "Panthers",
+        "teamA_logo": "Panthers.png",
+        "teamB": "Grizzlies",
+        "teamB_logo": "Grizzlies.png",
+        "time": "10:00",
+        "mvpPlayerId": "perunicic_mladen_1985",
+        "ytLink": "https://www.youtube.com/watch?v=MRyQRuIcnYY"
+      },
+      "lastScore": {
+        "player": "simidzija_nikola_1999",
+        "playerName": "Simidžija Nikola",
+        "points": 3,
+        "shotType": "3PT",
+        "stats": {
+          "assists": 8,
+          "blocks": 0,
+          "efficiency": 0,
+          "fg_attempts": 27,
+          "fg_made": 14,
+          "fouls": 0,
+          "ft_attempts": 0,
+          "ft_made": 0,
+          "points": 40,
+          "rebounds_def": 14,
+          "rebounds_off": 1,
+          "steals": 5,
+          "three_attempts": 25,
+          "three_made": 12,
+          "turnovers": 8,
+          "two_attempts": 2,
+          "two_made": 2
+        },
+        "team": "Panthers",
+        "timestamp": 1766453686534
+      },
+      "teams": {
+        "Grizzlies": {
+          "color": "#0a1d4d",
+          "logo": "Grizzlies.png",
+          "players": {
+            "ivetic_zeljko_2002": {
+              "birth_year": 2002,
+              "mvp_count": 0,
+              "name": "Ivetić Željko",
+              "number": 9,
+              "playerId": "ivetic_zeljko_2002",
+              "stats": {
+                "assists": 0,
+                "blocks": 0,
+                "efficiency": 0,
+                "fg_attempts": 21,
+                "fg_made": 4,
+                "fouls": 0,
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 8,
+                "rebounds_def": 1,
+                "rebounds_off": 3,
+                "steals": 2,
+                "three_attempts": 8,
+                "three_made": 0,
+                "turnovers": 3,
+                "two_attempts": 13,
+                "two_made": 4
+              }
+            },
+            "ivosev_marko_2001": {
+              "birth_year": 2001,
+              "mvp_count": 0,
+              "name": "Ivošev Marko",
+              "number": 2,
+              "playerId": "ivosev_marko_2001",
+              "stats": {
+                "assists": 9,
+                "blocks": 0,
+                "efficiency": 0,
+                "fg_attempts": 27,
+                "fg_made": 10,
+                "fouls": 0,
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 21,
+                "rebounds_def": 19,
+                "rebounds_off": 2,
+                "steals": 5,
+                "three_attempts": 6,
+                "three_made": 1,
+                "turnovers": 3,
+                "two_attempts": 21,
+                "two_made": 9
+              }
+            },
+            "lazarevic_srdjan_2000": {
+              "birth_year": 2000,
+              "mvp_count": 0,
+              "name": "Lazarević Srdjan",
+              "number": 38,
+              "playerId": "lazarevic_srdjan_2000",
+              "stats": {
+                "assists": 8,
+                "blocks": 0,
+                "efficiency": 0,
+                "fg_attempts": 12,
+                "fg_made": 6,
+                "fouls": 0,
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 12,
+                "rebounds_def": 5,
+                "rebounds_off": 1,
+                "steals": 5,
+                "three_attempts": 1,
+                "three_made": 0,
+                "turnovers": 3,
+                "two_attempts": 11,
+                "two_made": 6
+              }
+            },
+            "perunicic_mladen_1985": {
+              "birth_year": 1985,
+              "mvp_count": 2,
+              "mvp_games": [
+                "2025-12-10_panthers_vs_grizzlies",
+                "2025-12-17_panthers_vs_grizzlies"
+              ],
+              "name": "Peruničić Mladen",
+              "number": 16,
+              "photo": "Perunicic_Mladen.png",
+              "playerId": "perunicic_mladen_1985",
+              "stats": {
+                "assists": 5,
+                "blocks": 0,
+                "efficiency": 0,
+                "fg_attempts": 14,
+                "fg_made": 10,
+                "fouls": 0,
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 22,
+                "rebounds_def": 9,
+                "rebounds_off": 8,
+                "steals": 3,
+                "three_attempts": 2,
+                "three_made": 2,
+                "turnovers": 5,
+                "two_attempts": 12,
+                "two_made": 8
+              }
+            },
+            "rajacic_filip_2000": {
+              "birth_year": 2000,
+              "mvp_count": 0,
+              "name": "Rajačić Filip",
+              "number": 15,
+              "playerId": "rajacic_filip_2000",
+              "stats": {
+                "assists": 2,
+                "blocks": 0,
+                "efficiency": 0,
+                "fg_attempts": 19,
+                "fg_made": 8,
+                "fouls": 0,
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 20,
+                "rebounds_def": 0,
+                "rebounds_off": 1,
+                "steals": 2,
+                "three_attempts": 11,
+                "three_made": 4,
+                "turnovers": 0,
+                "two_attempts": 8,
+                "two_made": 4
+              }
+            },
+            "vujic_marko_1999": {
+              "birth_year": 1999,
+              "mvp_count": 0,
+              "name": "Vujić Marko",
+              "number": 1,
+              "playerId": "vujic_marko_1999",
+              "stats": {
+                "assists": 5,
+                "blocks": 0,
+                "efficiency": 0,
+                "fg_attempts": 13,
+                "fg_made": 6,
+                "fouls": 0,
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 14,
+                "rebounds_def": 0,
+                "rebounds_off": 1,
+                "steals": 0,
+                "three_attempts": 5,
+                "three_made": 2,
+                "turnovers": 4,
+                "two_attempts": 8,
+                "two_made": 4
+              }
+            }
+          },
+          "team_stats": {
+            "assists": 29,
+            "blocks": 0,
+            "fg_attempts": 106,
+            "fg_made": 44,
+            "ft_attempts": 0,
+            "ft_made": 0,
+            "points": 97,
+            "rebounds_def": 34,
+            "rebounds_off": 16,
+            "steals": 17,
+            "three_attempts": 33,
+            "three_made": 9,
+            "turnovers": 18,
+            "two_attempts": 73,
+            "two_made": 35
+          }
+        },
+        "Panthers": {
+          "color": "#6a0dad",
+          "logo": "Panthers.png",
+          "players": {
+            "ilic_nikola_2005": {
+              "birth_year": 2005,
+              "mvp_count": 0,
+              "name": "Ilić Nikola",
+              "number": 10,
+              "playerId": "ilic_nikola_2005",
+              "stats": {
+                "assists": 6,
+                "blocks": 1,
+                "efficiency": 0,
+                "fg_attempts": 23,
+                "fg_made": 8,
+                "fouls": 0,
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 18,
+                "rebounds_def": 2,
+                "rebounds_off": 4,
+                "steals": 2,
+                "three_attempts": 13,
+                "three_made": 2,
+                "turnovers": 4,
+                "two_attempts": 10,
+                "two_made": 6
+              }
+            },
+            "keskenovic_stefan_2000": {
+              "birth_year": 2000,
+              "mvp_count": 0,
+              "name": "Keskenović Stefan",
+              "number": 30,
+              "playerId": "keskenovic_stefan_2000",
+              "stats": {
+                "assists": 3,
+                "blocks": 0,
+                "efficiency": 0,
+                "fg_attempts": 10,
+                "fg_made": 2,
+                "fouls": 0,
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 4,
+                "rebounds_def": 3,
+                "rebounds_off": 5,
+                "steals": 0,
+                "three_attempts": 6,
+                "three_made": 0,
+                "turnovers": 1,
+                "two_attempts": 4,
+                "two_made": 2
+              }
+            },
+            "males_dimitrije_1999": {
+              "birth_year": 1999,
+              "mvp_count": 0,
+              "name": "Maleš Dimitrije",
+              "number": 42,
+              "playerId": "males_dimitrije_1999",
+              "stats": {
+                "assists": 6,
+                "blocks": 0,
+                "efficiency": 0,
+                "fg_attempts": 14,
+                "fg_made": 6,
+                "fouls": 0,
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 12,
+                "rebounds_def": 6,
+                "rebounds_off": 9,
+                "steals": 1,
+                "three_attempts": 1,
+                "three_made": 0,
+                "turnovers": 4,
+                "two_attempts": 13,
+                "two_made": 6
+              }
+            },
+            "simidzija_nikola_1999": {
+              "birth_year": 1999,
+              "mvp_count": 0,
+              "name": "Simidžija Nikola",
+              "number": 5,
+              "playerId": "simidzija_nikola_1999",
+              "stats": {
+                "assists": 8,
+                "blocks": 0,
+                "efficiency": 0,
+                "fg_attempts": 28,
+                "fg_made": 14,
+                "fouls": 0,
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 40,
+                "rebounds_def": 14,
+                "rebounds_off": 1,
+                "steals": 6,
+                "three_attempts": 26,
+                "three_made": 12,
+                "turnovers": 8,
+                "two_attempts": 2,
+                "two_made": 2
+              }
+            },
+            "stojanov_stefan_1999": {
+              "birth_year": 1999,
+              "mvp_count": 0,
+              "name": "Stojanov Stefan",
+              "number": 77,
+              "playerId": "stojanov_stefan_1999",
+              "stats": {
+                "assists": 8,
+                "blocks": 0,
+                "efficiency": 0,
+                "fg_attempts": 28,
+                "fg_made": 10,
+                "fouls": 0,
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 21,
+                "rebounds_def": 12,
+                "rebounds_off": 3,
+                "steals": 3,
+                "three_attempts": 14,
+                "three_made": 1,
+                "turnovers": 8,
+                "two_attempts": 14,
+                "two_made": 9
+              }
+            }
+          },
+          "team_stats": {
+            "assists": 31,
+            "blocks": 1,
+            "fg_attempts": 103,
+            "fg_made": 40,
+            "ft_attempts": 0,
+            "ft_made": 0,
+            "points": 95,
+            "rebounds_def": 37,
+            "rebounds_off": 22,
+            "steals": 12,
+            "three_attempts": 60,
+            "three_made": 15,
+            "turnovers": 25,
+            "two_attempts": 43,
+            "two_made": 25
           }
         }
       }

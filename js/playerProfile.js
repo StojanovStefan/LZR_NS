@@ -83,10 +83,19 @@ get(gamesRef).then((snapshot) => {
     return;
   }
 
+  let mvpCount = 0;
+
+  Object.values(games).forEach((game) => {
+    if (game.gameInfo?.mvpPlayerId === playerID) {
+      mvpCount++;
+    }
+  });
+
   const playerPhoto =
     playerData.photo && playerData.photo !== ""
       ? `team_logo/${playerData.photo}`
       : "team_logo/default_player.png";
+
   const playerName = playerData.name || "Unknown Player";
 
   const logoPath = teamInfo.logo
@@ -94,30 +103,31 @@ get(gamesRef).then((snapshot) => {
     : "team_logo/default.png";
 
   const mvpHtml =
-    playerData.mvp_count > 0
-      ? `<div class="mvp-badge">⭐ ${playerData.mvp_count}X MVP Utakmice ⭐</div>`
+    mvpCount > 0
+      ? `<div class="mvp-badge">⭐ ${mvpCount}X MVP Utakmice ⭐</div>`
       : "";
 
   playerContainer.innerHTML = `
-   <div class="player-card">
-    <img class="player-photo" src="${playerPhoto}">
+    <div class="player-card">
+      <img class="player-photo" src="${playerPhoto}">
 
-  <div class="player-info-block">
-    <div class="player-name">${playerName}</div>
+      <div class="player-info-block">
+        <div class="player-name">${playerName}</div>
 
-    <div class="team-info">
-        <img 
+        <div class="team-info">
+          <img 
             class="team-logo" 
             src="${logoPath}" 
-            onclick="window.location.href = 'teamProfile.html?id=${encodeURIComponent(
+            onclick="window.location.href='teamProfile.html?id=${encodeURIComponent(
               teamInfo.name
             )}'"
             style="cursor:pointer;"
           >
-        <span class="team-name">${teamInfo.name}</span>
+          <span class="team-name">${teamInfo.name}</span>
         </div>
-         ${mvpHtml}
-        </div>
+
+        ${mvpHtml}
+      </div>
     </div>
   `;
 });

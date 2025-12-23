@@ -6272,11 +6272,11 @@
                 "two_made": 0
               }
             },
-            "djurnic_jovana_1984": {
-              "playerId": "djurnic_jovana_1984",
-              "name": "Đurnić Jovana",
-              "number": 14,
-              "birth_year": 1984,
+            "rajacic_filip_2000": {
+              "playerId": "rajacic_filip_2000",
+              "name": "Rajačić Filip",
+              "number": 15,
+              "birth_year": 2000,
               "mvp_games": [],
               "mvp_count": 0,
               "stats": {
@@ -6377,11 +6377,38 @@
           "color": "#6a0dad",
           "logo": "Panthers.png",
           "players": {
-            "stankovic_dimitrije_2007": {
-              "playerId": "stankovic_dimitrije_2007",
-              "name": "Stanković Dimitrije",
-              "number": 13,
-              "birth_year": 2007,
+            "simidzija_nikola_1999": {
+              "playerId": "simidzija_nikola_1999",
+              "name": "Simidžija Nikola",
+              "number": 5,
+              "birth_year": 1999,
+              "mvp_games": [],
+              "mvp_count": 0,
+              "stats": {
+                "assists": 0,
+                "blocks": 0,
+                "efficiency": 0,
+                "fg_attempts": 0,
+                "fg_made": 0,
+                "fouls": 0,
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 0,
+                "rebounds_def": 0,
+                "rebounds_off": 0,
+                "steals": 0,
+                "three_attempts": 0,
+                "three_made": 0,
+                "turnovers": 0,
+                "two_attempts": 0,
+                "two_made": 0
+              }
+            },
+            "ilic_nikola_2005": {
+              "playerId": "ilic_nikola_2005",
+              "name": "Ilić Nikola",
+              "number": 10,
+              "birth_year": 2005,
               "mvp_games": [],
               "mvp_count": 0,
               "stats": {
@@ -6409,33 +6436,6 @@
               "name": "Keskenović Stefan",
               "number": 30,
               "birth_year": 2000,
-              "mvp_games": [],
-              "mvp_count": 0,
-              "stats": {
-                "assists": 0,
-                "blocks": 0,
-                "efficiency": 0,
-                "fg_attempts": 0,
-                "fg_made": 0,
-                "fouls": 0,
-                "ft_attempts": 0,
-                "ft_made": 0,
-                "points": 0,
-                "rebounds_def": 0,
-                "rebounds_off": 0,
-                "steals": 0,
-                "three_attempts": 0,
-                "three_made": 0,
-                "turnovers": 0,
-                "two_attempts": 0,
-                "two_made": 0
-              }
-            },
-            "cvetinovic_nikola_2002": {
-              "playerId": "cvetinovic_nikola_2002",
-              "name": "Cvetinović Nikola",
-              "number": 33,
-              "birth_year": 2002,
               "mvp_games": [],
               "mvp_count": 0,
               "stats": {
