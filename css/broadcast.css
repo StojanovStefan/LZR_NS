@@ -100,13 +100,13 @@ body {
 }
 
 .team.left {
-  background: white;
+  background: #d5d7db;
   justify-content: flex-end;
   padding-right: 10px;
 }
 
 .team.right {
-  background: black;
+  background: #171329;
   justify-content: flex-start;
   padding-left: 10px;
 }
