@@ -56,7 +56,7 @@
               "mvp_count": 0,
               "name": "Stojanov Stefan",
               "number": 30,
-              "photo": "Stojov_Stefan.png",
+              "photo": "Stojanov_Stefan.png",
               "playerId": "stojanov_stefan_1999",
               "stats": {
                 "assists": 0,
@@ -184,6 +184,7 @@
               "mvp_count": 0,
               "name": "Cvetinović Nikola",
               "number": 33,
+              "photo": "Cvetinovic_Nikola.png",
               "playerId": "cvetinovic_nikola_2002",
               "stats": {
                 "assists": 0,
