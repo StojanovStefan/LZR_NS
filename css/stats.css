@@ -255,13 +255,13 @@ td {
 
 .event-left {
   margin-right: auto;
-  border-left: 4px solid #6a0dad;
+  border-left: 4px solid #171329;
   flex-direction: row;
 }
 
 .event-right {
   margin-left: auto;
-  border-right: 4px solid #35b2f3;
+  border-right: 4px solid #d5d7db;
   flex-direction: row-reverse;
 }
 
@@ -329,12 +329,12 @@ td {
   }
 
   .event-left {
-    border-left: 4px solid #6a0dad !important;
+    border-left: 4px solid #171329 !important;
     border-right: none !important;
   }
 
   .event-right {
-    border-right: 4px solid #35b2f3 !important;
+    border-right: 4px solid #d5d7db !important;
     border-left: none !important;
   }
 }
