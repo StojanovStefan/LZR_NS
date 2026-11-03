@@ -21,7 +21,9 @@ body {
   opacity: 0;
   pointer-events: none;
   z-index: 20;
-  transition: opacity 0.45s ease, transform 0.45s ease;
+  transition:
+    opacity 0.45s ease,
+    transform 0.45s ease;
 }
 
 .player-stats.show {
@@ -98,13 +100,13 @@ body {
 }
 
 .team.left {
-  background: #581ba1;
+  background: white;
   justify-content: flex-end;
   padding-right: 10px;
 }
 
 .team.right {
-  background: #35b2f3;
+  background: black;
   justify-content: flex-start;
   padding-left: 10px;
 }
