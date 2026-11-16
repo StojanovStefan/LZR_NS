@@ -255,28 +255,15 @@ function renderStats(teams) {
     const players = team.players || {};
 
     const playersArray = Object.values(players).sort(
-      (a, b) => (a.number || 0) - (b.number || 0)
+      (a, b) => (a.number || 0) - (b.number || 0),
     );
 
     const div = document.createElement("div");
     div.className = "teamStats";
 
-    const h2 = document.createElement("h2");
-    const headerDiv = document.createElement("div");
-    headerDiv.className = "team-header";
-
-    const logo = document.createElement("img");
-    logo.src = "team_logo/" + (team.logo || "default.png");
-
-    logo.style.cursor = "pointer";
-    logo.onclick = () => {
-      window.location.href = `teamProfile.html?id=${teamName}`;
-    };
-
-    headerDiv.appendChild(logo);
-    headerDiv.appendChild(document.createTextNode(teamName));
-    h2.appendChild(headerDiv);
-    div.appendChild(h2);
+    // =====================================
+    // TABELA
+    // =====================================
 
     const table = document.createElement("table");
     const thead = document.createElement("thead");
@@ -308,6 +295,172 @@ function renderStats(teams) {
     table.appendChild(thead);
 
     const tbody = document.createElement("tbody");
+
+    // =====================================
+    // UKUPNA STATISTIKA EKIPE
+    // =====================================
+
+    const teamTotal = playersArray.reduce(
+      (total, player) => {
+        const s = player.stats || {};
+
+        const fields = [
+          "fg_made",
+          "fg_attempts",
+          "two_made",
+          "two_attempts",
+          "three_made",
+          "three_attempts",
+          "ft_made",
+          "ft_attempts",
+          "rebounds_off",
+          "rebounds_def",
+          "assists",
+          "turnovers",
+          "steals",
+          "blocks",
+          "points",
+        ];
+
+        fields.forEach((field) => {
+          total[field] += Number(s[field] || 0);
+        });
+
+        return total;
+      },
+      {
+        fg_made: 0,
+        fg_attempts: 0,
+        two_made: 0,
+        two_attempts: 0,
+        three_made: 0,
+        three_attempts: 0,
+        ft_made: 0,
+        ft_attempts: 0,
+        rebounds_off: 0,
+        rebounds_def: 0,
+        assists: 0,
+        turnovers: 0,
+        steals: 0,
+        blocks: 0,
+        points: 0,
+      },
+    );
+
+    // PROCENTI ŠUTA
+    function teamPercentage(made, attempts) {
+      if (!attempts) return "0%";
+
+      return ((made / attempts) * 100).toFixed(1) + "%";
+    }
+
+    // =====================================
+    // PRVI RED - TIMSKA STATISTIKA
+    // =====================================
+
+    const teamRow = document.createElement("tr");
+    teamRow.className = "team-total-row";
+
+    // LOGO I NAZIV EKIPE
+    const teamCell = document.createElement("td");
+    teamCell.colSpan = 2;
+    teamCell.className = "team-total-name";
+
+    const teamWrapper = document.createElement("div");
+    teamWrapper.className = "team-total-wrapper";
+
+    const teamLogo = document.createElement("img");
+    teamLogo.src = "team_logo/" + (team.logo || "default.png");
+    teamLogo.className = "team-total-logo";
+
+    teamLogo.onerror = function () {
+      this.src = "team_logo/default.png";
+    };
+
+    teamLogo.style.cursor = "pointer";
+    teamLogo.onclick = () => {
+      window.location.href = `teamProfile.html?id=${teamName}`;
+    };
+
+    const teamNameSpan = document.createElement("span");
+    teamNameSpan.textContent = teamName;
+
+    teamWrapper.appendChild(teamLogo);
+    teamWrapper.appendChild(teamNameSpan);
+
+    teamCell.appendChild(teamWrapper);
+    teamRow.appendChild(teamCell);
+
+    // POMOĆNA FUNKCIJA ZA ĆELIJE
+    function addTeamCell(value) {
+      const td = document.createElement("td");
+      td.textContent = value;
+      teamRow.appendChild(td);
+    }
+
+    // EFF
+    addTeamCell("-");
+
+    // FG
+    addTeamCell(
+      `${teamTotal.fg_made}/${teamTotal.fg_attempts}\n${teamPercentage(
+        teamTotal.fg_made,
+        teamTotal.fg_attempts,
+      )}`,
+    );
+
+    // 2P
+    addTeamCell(
+      `${teamTotal.two_made}/${teamTotal.two_attempts}\n${teamPercentage(
+        teamTotal.two_made,
+        teamTotal.two_attempts,
+      )}`,
+    );
+
+    // 3P
+    addTeamCell(
+      `${teamTotal.three_made}/${teamTotal.three_attempts}\n${teamPercentage(
+        teamTotal.three_made,
+        teamTotal.three_attempts,
+      )}`,
+    );
+
+    // FT
+    addTeamCell(
+      `${teamTotal.ft_made}/${teamTotal.ft_attempts}\n${teamPercentage(
+        teamTotal.ft_made,
+        teamTotal.ft_attempts,
+      )}`,
+    );
+
+    // REB O/D
+    const totalRebounds = teamTotal.rebounds_off + teamTotal.rebounds_def;
+
+    addTeamCell(
+      `${totalRebounds}\n${teamTotal.rebounds_off} / ${teamTotal.rebounds_def}`,
+    );
+
+    // AST
+    addTeamCell(teamTotal.assists);
+
+    // TO
+    addTeamCell(teamTotal.turnovers);
+
+    // STL
+    addTeamCell(teamTotal.steals);
+
+    // BLK
+    addTeamCell(teamTotal.blocks);
+
+    // PTS
+    addTeamCell(teamTotal.points);
+
+    // UBACUJEMO TIMSKU STATISTIKU PRE IGRAČA
+    tbody.appendChild(teamRow);
+
+    // =====================================
+    // POSTOJEĆI PRIKAZ IGRAČA
+    // =====================================
 
     for (const p of playersArray) {
       const s = p.stats || {};
@@ -362,12 +515,15 @@ function renderStats(teams) {
       const fgPct = s.fg_attempts
         ? Math.round((s.fg_made / s.fg_attempts) * 100) + "%"
         : "0%";
+
       const twoPct = s.two_attempts
         ? Math.round((s.two_made / s.two_attempts) * 100) + "%"
         : "0%";
+
       const threePct = s.three_attempts
         ? Math.round((s.three_made / s.three_attempts) * 100) + "%"
         : "0%";
+
       const ftPct = s.ft_attempts
         ? Math.round((s.ft_made / s.ft_attempts) * 100) + "%"
         : "0%";
@@ -385,9 +541,7 @@ function renderStats(teams) {
       row.appendChild(tdTwo);
 
       const tdThree = document.createElement("td");
-      tdThree.textContent = `${s.three_made || 0}/${
-        s.three_attempts || 0
-      } ${threePct}`;
+      tdThree.textContent = `${s.three_made || 0}/${s.three_attempts || 0} ${threePct}`;
       row.appendChild(tdThree);
 
       const tdFT = document.createElement("td");
@@ -441,7 +595,7 @@ function renderTimeline(events) {
   container.innerHTML = "";
 
   const sortedEvents = Object.values(events).sort(
-    (a, b) => a.timestamp - b.timestamp
+    (a, b) => a.timestamp - b.timestamp,
   );
 
   function getTeamByPlayer(playerName) {
@@ -613,7 +767,7 @@ function renderTotals(teams) {
              "Šut iz igre %",
              pct(tA.fg_made, tA.fg_attempts),
              pct(tB.fg_made, tB.fg_attempts),
-             100
+             100,
            )}
 
            ${row("2 poena šut", tA.two_attempts, tB.two_attempts, 80)}
@@ -622,7 +776,7 @@ function renderTotals(teams) {
              "2 poena %",
              pct(tA.two_made, tA.two_attempts),
              pct(tB.two_made, tB.two_attempts),
-             100
+             100,
            )}
 
            ${row("3 poena šut", tA.three_attempts, tB.three_attempts, 60)}
@@ -631,21 +785,21 @@ function renderTotals(teams) {
              "3 poena %",
              pct(tA.three_made, tA.three_attempts),
              pct(tB.three_made, tB.three_attempts),
-             100
+             100,
            )}
 
            ${row(
              "Slobodna bacanja pokušaj",
              tA.ft_attempts,
              tB.ft_attempts,
-             50
+             50,
            )}
            ${row("Slobodna bacanja pogodak", tA.ft_made, tB.ft_made, 40)}
            ${row(
              "Slobodna bacanja %",
              pct(tA.ft_made, tA.ft_attempts),
              pct(tB.ft_made, tB.ft_attempts),
-             100
+             100,
            )}
 
            ${row("Ofanzivni skok", tA.rebounds_off, tB.rebounds_off, 30)}
@@ -654,7 +808,7 @@ function renderTotals(teams) {
            "Skok",
            tA.rebounds_off + tA.rebounds_def,
            tB.rebounds_off + tB.rebounds_def,
-           70
+           70,
          )}
 
            ${row("Asistencije", tA.assists, tB.assists, 40)}

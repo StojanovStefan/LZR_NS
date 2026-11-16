@@ -3080,7 +3080,6 @@
             },
             "stojanov_stefan_1999": {
               "birth_year": 1999,
-
               "mvp_count": 1,
               "mvp_games": ["2026-11-03_lions_vs_dragons"],
               "name": "Stojanov Stefan",
@@ -3129,10 +3128,3327 @@
       }
     },
     "2026-11-10_lions_vs_dragons": {
+      "events": {
+        "-P6D-usPLky5iE-puQM8": {
+          "player": "cvetinovic_nikola_2002",
+          "playerName": "Cvetinović Nikola",
+          "team": "Dragons",
+          "timestamp": 1794457704987,
+          "type": "miss_3"
+        },
+        "-P6D04w8yjeYu56lkhl_": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Lions",
+          "timestamp": 1794457750283,
+          "type": "miss_3"
+        },
+        "-P6D05Zs01usRjWngdPk": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Dragons",
+          "timestamp": 1794457752890,
+          "type": "rebounds_def"
+        },
+        "-P6D0A7HDtRWw-gJrpj9": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794457771540,
+          "type": "points_3"
+        },
+        "-P6D0Ac-h9GhLVhebqOE": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Dragons",
+          "timestamp": 1794457773570,
+          "type": "assists"
+        },
+        "-P6D0LXQo0EMgug1gl4Y": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794457818269,
+          "type": "miss_2"
+        },
+        "-P6D0M7_I3tufPrM65fm": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794457820711,
+          "type": "rebounds_def"
+        },
+        "-P6D0RC6nVElHG7iKssM": {
+          "player": "cvetinovic_nikola_2002",
+          "playerName": "Cvetinović Nikola",
+          "team": "Dragons",
+          "timestamp": 1794457841481,
+          "type": "miss_2"
+        },
+        "-P6D0RlmINzV2fE0Ftxs": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Lions",
+          "timestamp": 1794457843828,
+          "type": "rebounds_def"
+        },
+        "-P6D0Z0rPL8Ix1ASUdAJ": {
+          "player": "raskovic_marko_2009",
+          "playerName": "Rašković Marko",
+          "team": "Lions",
+          "timestamp": 1794457873529,
+          "type": "points_2"
+        },
+        "-P6D0ZG7K3-0Wt2cVH45": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Lions",
+          "timestamp": 1794457874506,
+          "type": "assists"
+        },
+        "-P6D1JALIpMFEzSqxrje": {
+          "player": "cvetinovic_nikola_2002",
+          "playerName": "Cvetinović Nikola",
+          "team": "Dragons",
+          "timestamp": 1794458070744,
+          "type": "points_3"
+        },
+        "-P6D1JIbDaOnbCNOFKyP": {
+          "player": "merdovic_luka_2000",
+          "playerName": "Merdović Luka",
+          "team": "Dragons",
+          "timestamp": 1794458071273,
+          "type": "assists"
+        },
+        "-P6D1VubrPXaqZVsHwEO": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794458122921,
+          "type": "turnovers"
+        },
+        "-P6D1bJAmM6jlclsgKh0": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Dragons",
+          "timestamp": 1794458149133,
+          "type": "miss_2"
+        },
+        "-P6D1ba-1nvvigL-atGo": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Lions",
+          "timestamp": 1794458150274,
+          "type": "rebounds_def"
+        },
+        "-P6D1q63F4Kyh5jm6ChO": {
+          "player": "raskovic_marko_2009",
+          "playerName": "Rašković Marko",
+          "team": "Lions",
+          "timestamp": 1794458209733,
+          "type": "miss_3"
+        },
+        "-P6D1qfqsWlPyv9lSukG": {
+          "player": "merdovic_luka_2000",
+          "playerName": "Merdović Luka",
+          "team": "Dragons",
+          "timestamp": 1794458212088,
+          "type": "rebounds_def"
+        },
+        "-P6D20KhyzQmZ3bb4_OF": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Dragons",
+          "timestamp": 1794458255727,
+          "type": "miss_3"
+        },
+        "-P6D20fYGqQNkgkV-F8E": {
+          "player": "dobric_ognjen_2002",
+          "playerName": "Dobrić Ognjen",
+          "team": "Lions",
+          "timestamp": 1794458257125,
+          "type": "rebounds_def"
+        },
+        "-P6D24BgarI0zwK_X8Sj": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Lions",
+          "timestamp": 1794458271534,
+          "type": "turnovers"
+        },
+        "-P6D2AhpwHko1NtgM317": {
+          "player": "merdovic_luka_2000",
+          "playerName": "Merdović Luka",
+          "team": "Dragons",
+          "timestamp": 1794458298231,
+          "type": "points_2"
+        },
+        "-P6D2Giy76LaIeJLQ09d": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Lions",
+          "timestamp": 1794458322880,
+          "type": "turnovers"
+        },
+        "-P6D2LE4Ec49CxQWNwTi": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Dragons",
+          "timestamp": 1794458341319,
+          "type": "turnovers"
+        },
+        "-P6D2OOcCxSLQ90jHREV": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Lions",
+          "timestamp": 1794458354282,
+          "type": "turnovers"
+        },
+        "-P6D2QGDTU7f0HRQ2MMk": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794458361936,
+          "type": "steals"
+        },
+        "-P6D2UUEQU6pX9ShQlCQ": {
+          "player": "cvetinovic_nikola_2002",
+          "playerName": "Cvetinović Nikola",
+          "team": "Dragons",
+          "timestamp": 1794458379217,
+          "type": "turnovers"
+        },
+        "-P6D2VGN2l9jQkt8DkJo": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794458382426,
+          "type": "steals"
+        },
+        "-P6D2ZwJRNyC1Sn4GgSj": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Lions",
+          "timestamp": 1794458401558,
+          "type": "miss_3"
+        },
+        "-P6D2_ANmJGUz5CfzetJ": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794458402522,
+          "type": "rebounds_off"
+        },
+        "-P6D2_OqgG6TgW1XjbrM": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794458403448,
+          "type": "points_2"
+        },
+        "-P6D2crzzfPsh4NNTp_J": {
+          "player": "cvetinovic_nikola_2002",
+          "playerName": "Cvetinović Nikola",
+          "team": "Dragons",
+          "timestamp": 1794458417665,
+          "type": "points_2"
+        },
+        "-P6D2d82KyTdNyr_6GAo": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Dragons",
+          "timestamp": 1794458418757,
+          "type": "assists"
+        },
+        "-P6D2ktkUQzSawtpWGuJ": {
+          "player": "raskovic_marko_2009",
+          "playerName": "Rašković Marko",
+          "team": "Lions",
+          "timestamp": 1794458450546,
+          "type": "points_3"
+        },
+        "-P6D2l4mv_IDE2Fp9sKx": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Lions",
+          "timestamp": 1794458451316,
+          "type": "assists"
+        },
+        "-P6D2ssWGRfRf1PTR4LU": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Dragons",
+          "timestamp": 1794458483235,
+          "type": "miss_3"
+        },
+        "-P6D2wCvDmIVEh6MB7q8": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Dragons",
+          "timestamp": 1794458496893,
+          "type": "miss_2"
+        },
+        "-P6D2xoJHJsdm102nzc5": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Dragons",
+          "timestamp": 1794458503446,
+          "type": "rebounds_off"
+        },
+        "-P6D3152VxhciwueedJw": {
+          "player": "cvetinovic_nikola_2002",
+          "playerName": "Cvetinović Nikola",
+          "team": "Dragons",
+          "timestamp": 1794458520965,
+          "type": "miss_3"
+        },
+        "-P6D35ZlOX-BbDUc9-hD": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794458539315,
+          "type": "rebounds_def"
+        },
+        "-P6D3BezpO-H-WEYl_cE": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794458564289,
+          "type": "miss_3"
+        },
+        "-P6D3CFc3M9gQXdC__te": {
+          "player": "merdovic_luka_2000",
+          "playerName": "Merdović Luka",
+          "team": "Dragons",
+          "timestamp": 1794458566698,
+          "type": "rebounds_def"
+        },
+        "-P6D3HG2EfP_yeuBxCzn": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794458587205,
+          "type": "points_2"
+        },
+        "-P6D3HUJHka6zkwn1z-o": {
+          "player": "merdovic_luka_2000",
+          "playerName": "Merdović Luka",
+          "team": "Dragons",
+          "timestamp": 1794458588118,
+          "type": "assists"
+        },
+        "-P6D3Q7rqcp5Hxgicngh": {
+          "player": "raskovic_marko_2009",
+          "playerName": "Rašković Marko",
+          "team": "Lions",
+          "timestamp": 1794458623545,
+          "type": "points_2"
+        },
+        "-P6D3QYvC_w2M-FYlMYC": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Lions",
+          "timestamp": 1794458625277,
+          "type": "assists"
+        },
+        "-P6D3aVPjzm__Qcuqx2N": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Dragons",
+          "timestamp": 1794458670108,
+          "type": "points_2"
+        },
+        "-P6D3amr0Z_fGa2pI7qO": {
+          "player": "merdovic_luka_2000",
+          "playerName": "Merdović Luka",
+          "team": "Dragons",
+          "timestamp": 1794458671289,
+          "type": "assists"
+        },
+        "-P6D3mkIoIwgzl-eUhZl": {
+          "player": "dobric_ognjen_2002",
+          "playerName": "Dobrić Ognjen",
+          "team": "Lions",
+          "timestamp": 1794458720277,
+          "type": "miss_3"
+        },
+        "-P6D3nIvxDIhYiXgGbFU": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794458722557,
+          "type": "rebounds_def"
+        },
+        "-P6D3t2oZ4jTNO9o9xml": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Dragons",
+          "timestamp": 1794458746102,
+          "type": "points_3"
+        },
+        "-P6D3tPlEWScUUZrYqYJ": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794458747571,
+          "type": "assists"
+        },
+        "-P6D42Qvc6tlW7zkndhi": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Lions",
+          "timestamp": 1794458788605,
+          "type": "points_3"
+        },
+        "-P6D42b0IF9kCAKX5laL": {
+          "player": "raskovic_marko_2009",
+          "playerName": "Rašković Marko",
+          "team": "Lions",
+          "timestamp": 1794458789314,
+          "type": "assists"
+        },
+        "-P6D4AHCw0o_GAgZmz5J": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Dragons",
+          "timestamp": 1794458820751,
+          "type": "miss_2"
+        },
+        "-P6D4Abf0nDUJyxlwFxt": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Lions",
+          "timestamp": 1794458822125,
+          "type": "rebounds_def"
+        },
+        "-P6D4HwnVP8Xf3xmpoLH": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Lions",
+          "timestamp": 1794458852149,
+          "type": "miss_3"
+        },
+        "-P6D4IJio8U3P36u1Ohe": {
+          "player": "raskovic_marko_2009",
+          "playerName": "Rašković Marko",
+          "team": "Lions",
+          "timestamp": 1794458853680,
+          "type": "rebounds_off"
+        },
+        "-P6D4MqUR2feVBUUhsZR": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Lions",
+          "timestamp": 1794458872225,
+          "type": "miss_2"
+        },
+        "-P6D4NAMvENnAc9Z48gX": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794458873561,
+          "type": "rebounds_off"
+        },
+        "-P6D4NPTWVP-84U5DYbM": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794458874528,
+          "type": "points_2"
+        },
+        "-P6D4bK2dl9dpOLdKIkL": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Dragons",
+          "timestamp": 1794458935621,
+          "type": "miss_2"
+        },
+        "-P6D4bZMCd1SocqLh_dM": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Lions",
+          "timestamp": 1794458936601,
+          "type": "rebounds_def"
+        },
+        "-P6D4dZLshN2l_I6WUSi": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Lions",
+          "timestamp": 1794458944792,
+          "type": "turnovers"
+        },
+        "-P6D4doqTmIsSqjS5dYY": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794458945848,
+          "type": "steals"
+        },
+        "-P6D4gVdEubxMm7FT5wL": {
+          "player": "cvetinovic_nikola_2002",
+          "playerName": "Cvetinović Nikola",
+          "team": "Dragons",
+          "timestamp": 1794458956843,
+          "type": "miss_2"
+        },
+        "-P6D4gwfJdZyWL0c5oAc": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Dragons",
+          "timestamp": 1794458958637,
+          "type": "rebounds_off"
+        },
+        "-P6D4kHsbCJT-XzLdRm3": {
+          "player": "merdovic_luka_2000",
+          "playerName": "Merdović Luka",
+          "team": "Dragons",
+          "timestamp": 1794458972346,
+          "type": "miss_3"
+        },
+        "-P6D4kX6x5MesGHh1LLy": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794458973321,
+          "type": "rebounds_off"
+        },
+        "-P6D4khoQbgxE5VI_5FI": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794458974070,
+          "type": "points_2"
+        },
+        "-P6D545s2ClZilMUkM5N": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794459057594,
+          "type": "miss_2"
+        },
+        "-P6D54Rg575XPahSghGp": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Lions",
+          "timestamp": 1794459058990,
+          "type": "rebounds_off"
+        },
+        "-P6D54jV8AaqIGeNJYXT": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Lions",
+          "timestamp": 1794459060194,
+          "type": "miss_2"
+        },
+        "-P6D553kwnx8OXGliH87": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Dragons",
+          "timestamp": 1794459061554,
+          "type": "rebounds_def"
+        },
+        "-P6D5CpfKoMIDxwnssI2": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794459093357,
+          "type": "points_2"
+        },
+        "-P6D5D6YnnFCU3wISqmq": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Dragons",
+          "timestamp": 1794459094501,
+          "type": "assists"
+        },
+        "-P6D5NWD8jQgopIO4mST": {
+          "player": "dobric_ognjen_2002",
+          "playerName": "Dobrić Ognjen",
+          "team": "Lions",
+          "timestamp": 1794459137104,
+          "type": "miss_3"
+        },
+        "-P6D5SfEcfC00GJZHbJR": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Dragons",
+          "timestamp": 1794459158225,
+          "type": "rebounds_def"
+        },
+        "-P6D5XlA9J9PSTgXOfph": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794459179085,
+          "type": "miss_2"
+        },
+        "-P6D5XzN6yjn-PkOBWgw": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794459179994,
+          "type": "rebounds_off"
+        },
+        "-P6D5YBrRfptHuSija6e": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794459180857,
+          "type": "points_2"
+        },
+        "-P6D5dFVFZjgSnf80uXR": {
+          "player": "raskovic_marko_2009",
+          "playerName": "Rašković Marko",
+          "team": "Lions",
+          "timestamp": 1794459205666,
+          "type": "miss_3"
+        },
+        "-P6D5dUx6ajqUc6stMmg": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794459206655,
+          "type": "rebounds_def"
+        },
+        "-P6D5lYbExcpBsu_JigW": {
+          "player": "cvetinovic_nikola_2002",
+          "playerName": "Cvetinović Nikola",
+          "team": "Dragons",
+          "timestamp": 1794459239657,
+          "type": "miss_3"
+        },
+        "-P6D5lvwdOS7lkzfGHzT": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Lions",
+          "timestamp": 1794459241214,
+          "type": "rebounds_def"
+        },
+        "-P6D5shQjOoV6DXq1RbJ": {
+          "player": "dobric_ognjen_2002",
+          "playerName": "Dobrić Ognjen",
+          "team": "Lions",
+          "timestamp": 1794459268957,
+          "type": "points_2"
+        },
+        "-P6D5swYb3YEaYfasoLh": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794459269925,
+          "type": "assists"
+        },
+        "-P6D5x4-TLYcaIJysrCj": {
+          "player": "merdovic_luka_2000",
+          "playerName": "Merdović Luka",
+          "team": "Dragons",
+          "timestamp": 1794459286850,
+          "type": "miss_2"
+        },
+        "-P6D5xJa6dBauwPfsP5A": {
+          "player": "merdovic_luka_2000",
+          "playerName": "Merdović Luka",
+          "team": "Dragons",
+          "timestamp": 1794459287848,
+          "type": "rebounds_off"
+        },
+        "-P6D5xdLi9QgPQwPNLb8": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794459289176,
+          "type": "points_2"
+        },
+        "-P6D5xr5YJ7Yc6a5QxOx": {
+          "player": "merdovic_luka_2000",
+          "playerName": "Merdović Luka",
+          "team": "Dragons",
+          "timestamp": 1794459290056,
+          "type": "assists"
+        },
+        "-P6D61WQ6-aSzz8XYGc-": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Lions",
+          "timestamp": 1794459309149,
+          "type": "miss_2"
+        },
+        "-P6D62MI-hpJJSToW14l": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Dragons",
+          "timestamp": 1794459312597,
+          "type": "rebounds_def"
+        },
+        "-P6D656tjkL2l8xMFX30": {
+          "player": "merdovic_luka_2000",
+          "playerName": "Merdović Luka",
+          "team": "Dragons",
+          "timestamp": 1794459323899,
+          "type": "points_2"
+        },
+        "-P6D65RUjOMStgWG2CtV": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Dragons",
+          "timestamp": 1794459325217,
+          "type": "assists"
+        },
+        "-P6D6C-ady9DPsAxkH70": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Lions",
+          "timestamp": 1794459352104,
+          "type": "miss_3"
+        },
+        "-P6D6KxX5U2Hhq02Cl3W": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Dragons",
+          "timestamp": 1794459388772,
+          "type": "turnovers"
+        },
+        "-P6D6LFIEvTtIR7Mt3dZ": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794459389973,
+          "type": "steals"
+        },
+        "-P6D6OSabkg19gpsmdtH": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Lions",
+          "timestamp": 1794459403112,
+          "type": "points_2"
+        },
+        "-P6D6OkgVeoqYDPS33xY": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794459404334,
+          "type": "assists"
+        },
+        "-P6D6YK72SeOgdM9O62s": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Dragons",
+          "timestamp": 1794459443529,
+          "type": "miss_3"
+        },
+        "-P6D6fCWtFS9MCXTQVAl": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794459475811,
+          "type": "turnovers"
+        },
+        "-P6D6fbokRXrqoeJ9aSK": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Dragons",
+          "timestamp": 1794459477494,
+          "type": "steals"
+        },
+        "-P6D6gTmX-pLaek1DxLj": {
+          "player": "cvetinovic_nikola_2002",
+          "playerName": "Cvetinović Nikola",
+          "team": "Dragons",
+          "timestamp": 1794459481012,
+          "type": "miss_2"
+        },
+        "-P6D6hx3kEwp1foxVJ-E": {
+          "player": "raskovic_marko_2009",
+          "playerName": "Rašković Marko",
+          "team": "Lions",
+          "timestamp": 1794459487046,
+          "type": "rebounds_def"
+        },
+        "-P6D7N73485HulhiDis5": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794459659782,
+          "type": "points_2"
+        },
+        "-P6D7NT4RLF5OvtR9A8p": {
+          "player": "dobric_ognjen_2002",
+          "playerName": "Dobrić Ognjen",
+          "team": "Lions",
+          "timestamp": 1794459661191,
+          "type": "assists"
+        },
+        "-P6D7Sz0rYFUcvcsrkO3": {
+          "player": "merdovic_luka_2000",
+          "playerName": "Merdović Luka",
+          "team": "Dragons",
+          "timestamp": 1794459683779,
+          "type": "points_2"
+        },
+        "-P6D7_WnsvIdc-hMao3P": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794459714677,
+          "type": "turnovers"
+        },
+        "-P6D7_l_w5XktO5snNqW": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794459715687,
+          "type": "steals"
+        },
+        "-P6D7brbqQW-allWDGGp": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Dragons",
+          "timestamp": 1794459724265,
+          "type": "points_2"
+        },
+        "-P6D7c6QGxgQ60btocLt": {
+          "player": "cvetinovic_nikola_2002",
+          "playerName": "Cvetinović Nikola",
+          "team": "Dragons",
+          "timestamp": 1794459725277,
+          "type": "assists"
+        },
+        "-P6D7gEap_GlzIdOq7qe": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794459742184,
+          "type": "points_2"
+        },
+        "-P6D7lFFE0QmRqwPhMei": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794459762706,
+          "type": "points_3"
+        },
+        "-P6D7lf6ssL5VEIB7tOU": {
+          "player": "cvetinovic_nikola_2002",
+          "playerName": "Cvetinović Nikola",
+          "team": "Dragons",
+          "timestamp": 1794459764425,
+          "type": "assists"
+        },
+        "-P6D7qqjL_L2MnzJ_htW": {
+          "player": "dobric_ognjen_2002",
+          "playerName": "Dobrić Ognjen",
+          "team": "Lions",
+          "timestamp": 1794459785649,
+          "type": "turnovers"
+        },
+        "-P6D7rFLP4ljJr9ZLHXR": {
+          "player": "merdovic_luka_2000",
+          "playerName": "Merdović Luka",
+          "team": "Dragons",
+          "timestamp": 1794459787288,
+          "type": "steals"
+        },
+        "-P6D7ucdiLJrQvFJMu3w": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794459801131,
+          "type": "points_2"
+        },
+        "-P6D85b1Fnx1ES9qvNyv": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Lions",
+          "timestamp": 1794459850180,
+          "type": "points_3"
+        },
+        "-P6D85kpCvZlGSaXQQdM": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Lions",
+          "timestamp": 1794459850807,
+          "type": "assists"
+        },
+        "-P6D8EhtI0A_oxpgQvSm": {
+          "player": "merdovic_luka_2000",
+          "playerName": "Merdović Luka",
+          "team": "Dragons",
+          "timestamp": 1794459887483,
+          "type": "miss_2"
+        },
+        "-P6D8Eyyafnl3MBtXTbv": {
+          "player": "dobric_ognjen_2002",
+          "playerName": "Dobrić Ognjen",
+          "team": "Lions",
+          "timestamp": 1794459888576,
+          "type": "rebounds_def"
+        },
+        "-P6D8GdQliQKJLb9IvzA": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794459895389,
+          "type": "miss_2"
+        },
+        "-P6D8H5q30HxIvQPFUs5": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794459897272,
+          "type": "rebounds_def"
+        },
+        "-P6D8M8rrH2Sl-HfYAe3": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Dragons",
+          "timestamp": 1794459917945,
+          "type": "turnovers"
+        },
+        "-P6D8Pl9FafG8-t4oYeG": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Lions",
+          "timestamp": 1794459932748,
+          "type": "steals"
+        },
+        "-P6D8PuI0Ia4CcmbWn_k": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Lions",
+          "timestamp": 1794459933333,
+          "type": "turnovers"
+        },
+        "-P6D8Vhgd5ZRcnf2ONj-": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Dragons",
+          "timestamp": 1794459957102,
+          "type": "miss_2"
+        },
+        "-P6D8W3lQ9qAB9GyYyuH": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Lions",
+          "timestamp": 1794459958579,
+          "type": "rebounds_def"
+        },
+        "-P6D8ZJeQgIQR39VRNCM": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Lions",
+          "timestamp": 1794459971884,
+          "type": "turnovers"
+        },
+        "-P6D8Z_7gT3lDIbje1af": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794459972938,
+          "type": "steals"
+        },
+        "-P6D8b9_jKdcSN6uKOY8": {
+          "player": "cvetinovic_nikola_2002",
+          "playerName": "Cvetinović Nikola",
+          "team": "Dragons",
+          "timestamp": 1794459983527,
+          "type": "miss_2"
+        },
+        "-P6D8bPeAbVrk2k6_Qu1": {
+          "player": "raskovic_marko_2009",
+          "playerName": "Rašković Marko",
+          "team": "Lions",
+          "timestamp": 1794459984556,
+          "type": "rebounds_def"
+        },
+        "-P6D8iT7DvAkKJjGMibK": {
+          "player": "raskovic_marko_2009",
+          "playerName": "Rašković Marko",
+          "team": "Lions",
+          "timestamp": 1794460013450,
+          "type": "turnovers"
+        },
+        "-P6D8ifjSUWTccB4B5Mv": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794460014321,
+          "type": "steals"
+        },
+        "-P6D8lpK7ZiDbTB7LK2o": {
+          "player": "cvetinovic_nikola_2002",
+          "playerName": "Cvetinović Nikola",
+          "team": "Dragons",
+          "timestamp": 1794460027223,
+          "type": "points_2"
+        },
+        "-P6D8m7BkBUlWJxlyhdX": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794460028430,
+          "type": "assists"
+        },
+        "-P6D8rMhe7F7rMepTAB1": {
+          "player": "dobric_ognjen_2002",
+          "playerName": "Dobrić Ognjen",
+          "team": "Lions",
+          "timestamp": 1794460049902,
+          "type": "miss_3"
+        },
+        "-P6D8ruMdaK6MzEYA_og": {
+          "player": "merdovic_luka_2000",
+          "playerName": "Merdović Luka",
+          "team": "Dragons",
+          "timestamp": 1794460052121,
+          "type": "rebounds_def"
+        },
+        "-P6D8zyjCe9ugE_okmu4": {
+          "player": "cvetinovic_nikola_2002",
+          "playerName": "Cvetinović Nikola",
+          "team": "Dragons",
+          "timestamp": 1794460085169,
+          "type": "points_2"
+        },
+        "-P6D9-EAp_q5YU-q77-k": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Dragons",
+          "timestamp": 1794460086221,
+          "type": "assists"
+        },
+        "-P6D9DtxKslmDh30fHrC": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794460146303,
+          "type": "points_2"
+        },
+        "-P6D9Hn2DoQPGAflOSyK": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Dragons",
+          "timestamp": 1794460162245,
+          "type": "miss_2"
+        },
+        "-P6D9I3RwYn6Z1iEL2Fd": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Lions",
+          "timestamp": 1794460163358,
+          "type": "rebounds_def"
+        },
+        "-P6D9NuXYtEhHrcXjx-q": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Lions",
+          "timestamp": 1794460187300,
+          "type": "turnovers"
+        },
+        "-P6D9ODzvXrRrDAybS00": {
+          "player": "cvetinovic_nikola_2002",
+          "playerName": "Cvetinović Nikola",
+          "team": "Dragons",
+          "timestamp": 1794460188608,
+          "type": "steals"
+        },
+        "-P6D9T1J388tDzlDgJhp": {
+          "player": "cvetinovic_nikola_2002",
+          "playerName": "Cvetinović Nikola",
+          "team": "Dragons",
+          "timestamp": 1794460208278,
+          "type": "miss_2"
+        },
+        "-P6D9TGXMA5pTOSx3utF": {
+          "player": "cvetinovic_nikola_2002",
+          "playerName": "Cvetinović Nikola",
+          "team": "Dragons",
+          "timestamp": 1794460209252,
+          "type": "rebounds_off"
+        },
+        "-P6D9TT6JGqCNeK1R2xp": {
+          "player": "cvetinovic_nikola_2002",
+          "playerName": "Cvetinović Nikola",
+          "team": "Dragons",
+          "timestamp": 1794460210057,
+          "type": "points_2"
+        },
+        "-P6D9YyqjAPtnC7Lpa8k": {
+          "player": "raskovic_marko_2009",
+          "playerName": "Rašković Marko",
+          "team": "Lions",
+          "timestamp": 1794460232632,
+          "type": "points_2"
+        },
+        "-P6D9eOrkozrnWUiW6ea": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Dragons",
+          "timestamp": 1794460258937,
+          "type": "turnovers"
+        },
+        "-P6D9kNkt11qbzubAjP4": {
+          "player": "dobric_ognjen_2002",
+          "playerName": "Dobrić Ognjen",
+          "team": "Lions",
+          "timestamp": 1794460283442,
+          "type": "miss_2"
+        },
+        "-P6D9kmJ8mFzGOu0Y9tq": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794460285078,
+          "type": "rebounds_def"
+        },
+        "-P6D9mgD3X5tCaLxuAgG": {
+          "player": "cvetinovic_nikola_2002",
+          "playerName": "Cvetinović Nikola",
+          "team": "Dragons",
+          "timestamp": 1794460292880,
+          "type": "points_2"
+        },
+        "-P6D9mrxxtEH_JUgePQE": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794460293631,
+          "type": "assists"
+        },
+        "-P6D9sn7kTvXFZxwyKa3": {
+          "player": "dobric_ognjen_2002",
+          "playerName": "Dobrić Ognjen",
+          "team": "Lions",
+          "timestamp": 1794460317898,
+          "type": "turnovers"
+        },
+        "-P6D9t5SgEraTomYwsSx": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Dragons",
+          "timestamp": 1794460319134,
+          "type": "steals"
+        },
+        "-P6D9zIx0NebXWcXmR9w": {
+          "player": "merdovic_luka_2000",
+          "playerName": "Merdović Luka",
+          "team": "Dragons",
+          "timestamp": 1794460344575,
+          "type": "turnovers"
+        },
+        "-P6DA-8UlUkiIJ3_aTcD": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794460348001,
+          "type": "steals"
+        },
+        "-P6DA5sDy5_FV38Ooc_T": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Lions",
+          "timestamp": 1794460375568,
+          "type": "miss_3"
+        },
+        "-P6DA6MB3ZLqOx34zJW2": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Dragons",
+          "timestamp": 1794460377550,
+          "type": "rebounds_def"
+        },
+        "-P6DAAbShhrI5RKe0Ge7": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Dragons",
+          "timestamp": 1794460394975,
+          "type": "miss_3"
+        },
+        "-P6DAAx9b-wvjnet7Gh6": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Dragons",
+          "timestamp": 1794460396364,
+          "type": "rebounds_off"
+        },
+        "-P6DABElh4LZSP8AFuhF": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Dragons",
+          "timestamp": 1794460397555,
+          "type": "miss_2"
+        },
+        "-P6DABUGy_5Yg3xbEkHH": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794460398546,
+          "type": "rebounds_off"
+        },
+        "-P6DABfK6-B3rcwCI9S8": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794460399319,
+          "type": "points_2"
+        },
+        "-P6DARKk2TudL9Ryi0Te": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794460463474,
+          "type": "points_2"
+        },
+        "-P6DARhAG0P4UDHBmjGr": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Lions",
+          "timestamp": 1794460464973,
+          "type": "assists"
+        },
+        "-P6DAXxLNUctbbtOjj4p": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794460490584,
+          "type": "turnovers"
+        },
+        "-P6DAYBXJ3nt1Qp6vulB": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794460491556,
+          "type": "steals"
+        },
+        "-P6DAclRALRy0qZqp7fi": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794460514398,
+          "type": "miss_2"
+        },
+        "-P6DAd386qPeYOJytJ5q": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Dragons",
+          "timestamp": 1794460515595,
+          "type": "rebounds_def"
+        },
+        "-P6DAfsNjbECs7RHnZTR": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Dragons",
+          "timestamp": 1794460527130,
+          "type": "points_2"
+        },
+        "-P6DAg5Bg3p31ZbTGeOC": {
+          "player": "merdovic_luka_2000",
+          "playerName": "Merdović Luka",
+          "team": "Dragons",
+          "timestamp": 1794460528014,
+          "type": "assists"
+        },
+        "-P6DAp5SDWwNr4c9oKDy": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794460564895,
+          "type": "points_2"
+        },
+        "-P6DB9IB0kxULaEBBImF": {
+          "player": "cvetinovic_nikola_2002",
+          "playerName": "Cvetinović Nikola",
+          "team": "Dragons",
+          "timestamp": 1794460651726,
+          "type": "turnovers"
+        },
+        "-P6DBFXQPlLfUB4crWgx": {
+          "player": "dobric_ognjen_2002",
+          "playerName": "Dobrić Ognjen",
+          "team": "Lions",
+          "timestamp": 1794460677277,
+          "type": "miss_3"
+        },
+        "-P6DBG5Ngr2e3_hqLc7Z": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Lions",
+          "timestamp": 1794460679578,
+          "type": "rebounds_off"
+        },
+        "-P6DBGIqQ8cbgHB9FzG7": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Lions",
+          "timestamp": 1794460680440,
+          "type": "turnovers"
+        },
+        "-P6DBGg3kvN6-gLlgSRi": {
+          "player": "merdovic_luka_2000",
+          "playerName": "Merdović Luka",
+          "team": "Dragons",
+          "timestamp": 1794460681990,
+          "type": "steals"
+        },
+        "-P6DBLYKtJdsrlZP-6Hl": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794460701911,
+          "type": "points_2"
+        },
+        "-P6DBLfuCttGTLCbN9q6": {
+          "player": "merdovic_luka_2000",
+          "playerName": "Merdović Luka",
+          "team": "Dragons",
+          "timestamp": 1794460702460,
+          "type": "assists"
+        },
+        "-P6DBi-TlJnjrMYTnFCM": {
+          "player": "raskovic_marko_2009",
+          "playerName": "Rašković Marko",
+          "team": "Lions",
+          "timestamp": 1794460797984,
+          "type": "points_2"
+        },
+        "-P6DBircWGUHpUYql2Mg": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794460801514,
+          "type": "assists"
+        },
+        "-P6DBpUuZlp_vLEoe9Tq": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Dragons",
+          "timestamp": 1794460828668,
+          "type": "points_2"
+        },
+        "-P6DBuHqZ7nxXUVhgjvC": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Lions",
+          "timestamp": 1794460848312,
+          "type": "miss_3"
+        },
+        "-P6DBusRrSpNPpHJe8bc": {
+          "player": "dobric_ognjen_2002",
+          "playerName": "Dobrić Ognjen",
+          "team": "Lions",
+          "timestamp": 1794460850717,
+          "type": "rebounds_off"
+        },
+        "-P6DBv7YNtkadrfN0zUJ": {
+          "player": "dobric_ognjen_2002",
+          "playerName": "Dobrić Ognjen",
+          "team": "Lions",
+          "timestamp": 1794460851749,
+          "type": "turnovers"
+        },
+        "-P6DBvSwrqw_rhh-PD8c": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Dragons",
+          "timestamp": 1794460853118,
+          "type": "steals"
+        },
+        "-P6DC0Xitg0WlzJoM7AB": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794460878000,
+          "type": "turnovers"
+        },
+        "-P6DC0sWjyaCpsurOre9": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794460879395,
+          "type": "steals"
+        },
+        "-P6DCFy0o8jhkhzGV735": {
+          "player": "dobric_ognjen_2002",
+          "playerName": "Dobrić Ognjen",
+          "team": "Lions",
+          "timestamp": 1794460941187,
+          "type": "points_2"
+        },
+        "-P6DCG8zKT-8-jgOVrGp": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Lions",
+          "timestamp": 1794460941953,
+          "type": "assists"
+        },
+        "-P6DCKVYpafQjBIN2k6l": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794460959781,
+          "type": "miss_2"
+        },
+        "-P6DCKreU8QS4UcgK_Gy": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794460961259,
+          "type": "rebounds_def"
+        },
+        "-P6DCQoJDKCTSYPKN9g6": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Lions",
+          "timestamp": 1794460985622,
+          "type": "miss_3"
+        },
+        "-P6DCR6IBTiepLxtOuJC": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794460986837,
+          "type": "rebounds_def"
+        },
+        "-P6DCUuX1iBq6Ua3uCG7": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794461002404,
+          "type": "turnovers"
+        },
+        "-P6DD-1S0vOaiATiu5XI": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794461133983,
+          "type": "points_2"
+        },
+        "-P6DD-QILjgFWj_6KGLk": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Lions",
+          "timestamp": 1794461135573,
+          "type": "assists"
+        },
+        "-P6DD2ayvL5pFMugDWaz": {
+          "player": "cvetinovic_nikola_2002",
+          "playerName": "Cvetinović Nikola",
+          "team": "Dragons",
+          "timestamp": 1794461148608,
+          "type": "miss_2"
+        },
+        "-P6DD2pefFNUXTh65xu4": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794461149548,
+          "type": "rebounds_def"
+        },
+        "-P6DDFmo60I_P3l5BdyN": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Lions",
+          "timestamp": 1794461202614,
+          "type": "miss_3"
+        },
+        "-P6DDGFLm3DEkRZOC3wk": {
+          "player": "merdovic_luka_2000",
+          "playerName": "Merdović Luka",
+          "team": "Dragons",
+          "timestamp": 1794461204504,
+          "type": "rebounds_def"
+        },
+        "-P6DDLMCb2plRVZCqinE": {
+          "player": "cvetinovic_nikola_2002",
+          "playerName": "Cvetinović Nikola",
+          "team": "Dragons",
+          "timestamp": 1794461225423,
+          "type": "miss_2"
+        },
+        "-P6DDLn_xGNvvOA5gVNn": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794461227239,
+          "type": "rebounds_off"
+        },
+        "-P6DDNkhRdJbvbQAVQFS": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794461235247,
+          "type": "miss_2"
+        },
+        "-P6DDPpquL_2Q7_jaFpt": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Dragons",
+          "timestamp": 1794461243768,
+          "type": "rebounds_off"
+        },
+        "-P6DDQ3jfaHbaRrrogsM": {
+          "player": "cvetinovic_nikola_2002",
+          "playerName": "Cvetinović Nikola",
+          "team": "Dragons",
+          "timestamp": 1794461244721,
+          "type": "points_2"
+        },
+        "-P6DDQNVxI0cHBfA1Mqg": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Dragons",
+          "timestamp": 1794461245986,
+          "type": "assists"
+        },
+        "-P6DEQRFa7NFBltEuhPY": {
+          "player": "dobric_ognjen_2002",
+          "playerName": "Dobrić Ognjen",
+          "team": "Lions",
+          "timestamp": 1794461508370,
+          "type": "miss_3"
+        },
+        "-P6DER6sn5wHrcKK3Z4L": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Dragons",
+          "timestamp": 1794461511162,
+          "type": "rebounds_def"
+        },
+        "-P6DEVVLUFdxKhNh5mZK": {
+          "player": "cvetinovic_nikola_2002",
+          "playerName": "Cvetinović Nikola",
+          "team": "Dragons",
+          "timestamp": 1794461529112,
+          "type": "turnovers"
+        },
+        "-P6DEW6SocqF2pGIpMaC": {
+          "player": "raskovic_marko_2009",
+          "playerName": "Rašković Marko",
+          "team": "Lions",
+          "timestamp": 1794461531615,
+          "type": "steals"
+        },
+        "-P6DEZGJ8aJp2q7ZwxWc": {
+          "player": "raskovic_marko_2009",
+          "playerName": "Rašković Marko",
+          "team": "Lions",
+          "timestamp": 1794461544534,
+          "type": "points_2"
+        },
+        "-P6DEZdJvQSE4yEjBPaP": {
+          "player": "dobric_ognjen_2002",
+          "playerName": "Dobrić Ognjen",
+          "team": "Lions",
+          "timestamp": 1794461546070,
+          "type": "assists"
+        },
+        "-P6DEeK-d1E1WoZNrLq6": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794461569345,
+          "type": "miss_2"
+        },
+        "-P6DEe_sMJ1eBgi1L7cF": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Dragons",
+          "timestamp": 1794461570426,
+          "type": "rebounds_off"
+        },
+        "-P6DEelOv4UwgCoKe-Zh": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Dragons",
+          "timestamp": 1794461571163,
+          "type": "miss_2"
+        },
+        "-P6DEf2U-XvBNubwmbYi": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794461572321,
+          "type": "rebounds_def"
+        },
+        "-P6DEitg0DJdVlO6bgEi": {
+          "player": "raskovic_marko_2009",
+          "playerName": "Rašković Marko",
+          "team": "Lions",
+          "timestamp": 1794461588077,
+          "type": "miss_2"
+        },
+        "-P6DEj42ZvlYB6CHSdG6": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Lions",
+          "timestamp": 1794461588805,
+          "type": "rebounds_off"
+        },
+        "-P6DEkMbjNeVrP_MnPCc": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794461594089,
+          "type": "turnovers"
+        },
+        "-P6DEkcIm5ZRNb5FBnw2": {
+          "player": "merdovic_luka_2000",
+          "playerName": "Merdović Luka",
+          "team": "Dragons",
+          "timestamp": 1794461595157,
+          "type": "steals"
+        },
+        "-P6DF0UgAEeOH_w4IojG": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Dragons",
+          "timestamp": 1794461664237,
+          "type": "points_3"
+        },
+        "-P6DF0fKevH87dfqjD9S": {
+          "player": "cvetinovic_nikola_2002",
+          "playerName": "Cvetinović Nikola",
+          "team": "Dragons",
+          "timestamp": 1794461664983,
+          "type": "assists"
+        },
+        "-P6DF57H2porUA9PZwnw": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Lions",
+          "timestamp": 1794461683220,
+          "type": "miss_3"
+        },
+        "-P6DF5__UWTG_MDhs0o8": {
+          "player": "cvetinovic_nikola_2002",
+          "playerName": "Cvetinović Nikola",
+          "team": "Dragons",
+          "timestamp": 1794461685095,
+          "type": "rebounds_def"
+        },
+        "-P6DF8MoDRzGvY-e6PmK": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Dragons",
+          "timestamp": 1794461696502,
+          "type": "turnovers"
+        },
+        "-P6DF8yVd734JCWBnKe6": {
+          "player": "dobric_ognjen_2002",
+          "playerName": "Dobrić Ognjen",
+          "team": "Lions",
+          "timestamp": 1794461698978,
+          "type": "steals"
+        },
+        "-P6DFCCATLtLNWVbz5mp": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Lions",
+          "timestamp": 1794461712205,
+          "type": "turnovers"
+        },
+        "-P6DFCTv7Id_FY22cQxg": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794461713341,
+          "type": "steals"
+        },
+        "-P6DFFMbB9IFXzIcBYKQ": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794461725161,
+          "type": "miss_2"
+        },
+        "-P6DFFu128lLpeuAYU46": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Dragons",
+          "timestamp": 1794461727364,
+          "type": "rebounds_off"
+        },
+        "-P6DFJFqsye2YbQu8ENh": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Dragons",
+          "timestamp": 1794461741112,
+          "type": "turnovers"
+        },
+        "-P6DFJWRphisWz36fPLQ": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794461742174,
+          "type": "steals"
+        },
+        "-P6DFOxNcManPFwTOxIs": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794461764442,
+          "type": "points_2"
+        },
+        "-P6DFTceo9G2xwz4Fr3E": {
+          "player": "merdovic_luka_2000",
+          "playerName": "Merdović Luka",
+          "team": "Dragons",
+          "timestamp": 1794461783596,
+          "type": "miss_2"
+        },
+        "-P6DFTwFdPD0PG6cBSHj": {
+          "player": "cvetinovic_nikola_2002",
+          "playerName": "Cvetinović Nikola",
+          "team": "Dragons",
+          "timestamp": 1794461784850,
+          "type": "rebounds_off"
+        },
+        "-P6DFW9w80CwT5xAaCPu": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794461793982,
+          "type": "miss_3"
+        },
+        "-P6DFWbUMXCDlpQD2Phw": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Lions",
+          "timestamp": 1794461795809,
+          "type": "rebounds_def"
+        },
+        "-P6DFYhuowBnJAregOSw": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794461804412,
+          "type": "points_2"
+        },
+        "-P6DFYuIteFMw8LcBMtv": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Lions",
+          "timestamp": 1794461805205,
+          "type": "assists"
+        },
+        "-P6DFczFWwuuQ1lq0K5q": {
+          "player": "cvetinovic_nikola_2002",
+          "playerName": "Cvetinović Nikola",
+          "team": "Dragons",
+          "timestamp": 1794461826002,
+          "type": "points_2"
+        },
+        "-P6DFdBtBOvV9-EZi8nv": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Dragons",
+          "timestamp": 1794461826875,
+          "type": "assists"
+        },
+        "-P6DFi00bFWH00LWKgWj": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794461846595,
+          "type": "points_2"
+        },
+        "-P6DFi8c0uS8heQ_ioej": {
+          "player": "dobric_ognjen_2002",
+          "playerName": "Dobrić Ognjen",
+          "team": "Lions",
+          "timestamp": 1794461847146,
+          "type": "assists"
+        },
+        "-P6DFn6FdNSbCKjhLnMH": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Dragons",
+          "timestamp": 1794461867474,
+          "type": "points_3"
+        },
+        "-P6DFnSDboM5r3dKgogg": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794461868879,
+          "type": "assists"
+        },
+        "-P6DGJ6u87CQl5hHoRxW": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Lions",
+          "timestamp": 1794462002684,
+          "type": "miss_3"
+        },
+        "-P6DGJVl9WgioFt0AP74": {
+          "player": "merdovic_luka_2000",
+          "playerName": "Merdović Luka",
+          "team": "Dragons",
+          "timestamp": 1794462004275,
+          "type": "blocks"
+        },
+        "-P6DGJw23UALyIk7Y7f7": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Lions",
+          "timestamp": 1794462006021,
+          "type": "rebounds_off"
+        },
+        "-P6DGMhpUVTRi7GRyFEe": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Lions",
+          "timestamp": 1794462017399,
+          "type": "miss_3"
+        },
+        "-P6DGN0dGsUHNFrkaLCA": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794462018667,
+          "type": "rebounds_off"
+        },
+        "-P6DGPsXLcL6tyc5roIC": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794462030372,
+          "type": "miss_3"
+        },
+        "-P6DGQTA7z-yBGOlNARC": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Lions",
+          "timestamp": 1794462032781,
+          "type": "rebounds_off"
+        },
+        "-P6DGQz-ERN97x62S7_R": {
+          "player": "raskovic_marko_2009",
+          "playerName": "Rašković Marko",
+          "team": "Lions",
+          "timestamp": 1794462034882,
+          "type": "miss_3"
+        },
+        "-P6DGUFINMJAR6yBYN5q": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Lions",
+          "timestamp": 1794462048277,
+          "type": "rebounds_off"
+        },
+        "-P6DGUS4NP5g-DWAdj2B": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Lions",
+          "timestamp": 1794462049095,
+          "type": "points_2"
+        },
+        "-P6DG_2rY62Y7eOEnRaf": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Dragons",
+          "timestamp": 1794462072057,
+          "type": "turnovers"
+        },
+        "-P6DG_NN9Z9uUXMb71AN": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794462073370,
+          "type": "steals"
+        },
+        "-P6DGf6AICDoeZqddvjr": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794462096845,
+          "type": "miss_2"
+        },
+        "-P6DGfXz68jlsZ3B8Ziv": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794462098625,
+          "type": "rebounds_def"
+        },
+        "-P6DGmhV8IlrVrbFTfEk": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Dragons",
+          "timestamp": 1794462127970,
+          "type": "miss_2"
+        },
+        "-P6DGn0mn3s1TdHBNWmz": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Dragons",
+          "timestamp": 1794462129268,
+          "type": "rebounds_off"
+        },
+        "-P6DGnCwoGb1bDahIN2L": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Dragons",
+          "timestamp": 1794462130046,
+          "type": "points_2"
+        },
+        "-P6DH0dOD26VNWLGz-s7": {
+          "player": "dobric_ognjen_2002",
+          "playerName": "Dobrić Ognjen",
+          "team": "Lions",
+          "timestamp": 1794462189147,
+          "type": "points_2"
+        },
+        "-P6DH0ovaJZGAbbCsJvm": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Lions",
+          "timestamp": 1794462189885,
+          "type": "assists"
+        },
+        "-P6DH5ezXIAsCWI_SEM9": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Dragons",
+          "timestamp": 1794462209729,
+          "type": "points_2"
+        },
+        "-P6DH9CVAZ1Dzu-c_FMp": {
+          "player": "dobric_ognjen_2002",
+          "playerName": "Dobrić Ognjen",
+          "team": "Lions",
+          "timestamp": 1794462224226,
+          "type": "miss_3"
+        },
+        "-P6DHDZdM6kPafVZlxob": {
+          "player": "dobric_ognjen_2002",
+          "playerName": "Dobrić Ognjen",
+          "team": "Lions",
+          "timestamp": 1794462242090,
+          "type": "rebounds_off"
+        },
+        "-P6DHDqkRy1YXts42NfU": {
+          "player": "dobric_ognjen_2002",
+          "playerName": "Dobrić Ognjen",
+          "team": "Lions",
+          "timestamp": 1794462243250,
+          "type": "miss_2"
+        },
+        "-P6DHE5gYePvaO2JvIjR": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794462244270,
+          "type": "rebounds_def"
+        },
+        "-P6DHLDtia04ZhK83ZdH": {
+          "player": "cvetinovic_nikola_2002",
+          "playerName": "Cvetinović Nikola",
+          "team": "Dragons",
+          "timestamp": 1794462273467,
+          "type": "miss_2"
+        },
+        "-P6DHLYXYZxncnFw8tUA": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Lions",
+          "timestamp": 1794462274788,
+          "type": "rebounds_def"
+        },
+        "-P6DHRENKXXhEkCPOKMv": {
+          "player": "dobric_ognjen_2002",
+          "playerName": "Dobrić Ognjen",
+          "team": "Lions",
+          "timestamp": 1794462298074,
+          "type": "turnovers"
+        },
+        "-P6DHUoaHvsMggPvucG3": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Dragons",
+          "timestamp": 1794462312744,
+          "type": "turnovers"
+        },
+        "-P6DHVX_kmj1XLb05Q2e": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Lions",
+          "timestamp": 1794462315687,
+          "type": "steals"
+        },
+        "-P6DHXo1c-EQjL8g4OnD": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794462324996,
+          "type": "points_2"
+        },
+        "-P6DHYhhEgaD05k0RjFE": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Lions",
+          "timestamp": 1794462328687,
+          "type": "assists"
+        },
+        "-P6DHcHw3V1Y-48ZWyPl": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794462347454,
+          "type": "points_3"
+        },
+        "-P6DHeRKxvjY-_cTiwOr": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Dragons",
+          "timestamp": 1794462356247,
+          "type": "assists"
+        },
+        "-P6DHku3YDgYGZpOPWdh": {
+          "player": "raskovic_marko_2009",
+          "playerName": "Rašković Marko",
+          "team": "Lions",
+          "timestamp": 1794462382726,
+          "type": "miss_3"
+        },
+        "-P6DHlE_LnU1k_4ltnmU": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794462384103,
+          "type": "rebounds_off"
+        },
+        "-P6DHlTh4eZab250uVs4": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Lions",
+          "timestamp": 1794462385071,
+          "type": "points_2"
+        },
+        "-P6DHlfAb2iRc9noA1aT": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794462385869,
+          "type": "assists"
+        },
+        "-P6DHoMFDSr8cjkOACHB": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Dragons",
+          "timestamp": 1794462396882,
+          "type": "turnovers"
+        },
+        "-P6DHofssBSbYug48Hir": {
+          "player": "raskovic_marko_2009",
+          "playerName": "Rašković Marko",
+          "team": "Lions",
+          "timestamp": 1794462398202,
+          "type": "steals"
+        },
+        "-P6DHr4nPEt2o6QKhyho": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794462408053,
+          "type": "miss_3"
+        },
+        "-P6DHrRF4Ym-4WgRg3Mv": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Dragons",
+          "timestamp": 1794462409490,
+          "type": "rebounds_def"
+        },
+        "-P6DHuFeX79iMIzBsKm5": {
+          "player": "merdovic_luka_2000",
+          "playerName": "Merdović Luka",
+          "team": "Dragons",
+          "timestamp": 1794462421036,
+          "type": "turnovers"
+        },
+        "-P6DHue8ju0uAtuNeuOe": {
+          "player": "dobric_ognjen_2002",
+          "playerName": "Dobrić Ognjen",
+          "team": "Lions",
+          "timestamp": 1794462422667,
+          "type": "steals"
+        },
+        "-P6DHxo_K2BwJDCG8CJ5": {
+          "player": "raskovic_marko_2009",
+          "playerName": "Rašković Marko",
+          "team": "Lions",
+          "timestamp": 1794462435623,
+          "type": "miss_2"
+        },
+        "-P6DHy8Nvttd95KuJduZ": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794462436954,
+          "type": "rebounds_def"
+        },
+        "-P6DI9K457VMBNfbQceC": {
+          "player": "cvetinovic_nikola_2002",
+          "playerName": "Cvetinović Nikola",
+          "team": "Dragons",
+          "timestamp": 1794462486855,
+          "type": "points_2"
+        },
+        "-P6DI9cOhLAag0Dybyma": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794462488091,
+          "type": "assists"
+        },
+        "-P6DICHK7Q_8Wg7BbM2k": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Lions",
+          "timestamp": 1794462498967,
+          "type": "turnovers"
+        },
+        "-P6DIFA2k7b6YjFKsFDC": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794462510789,
+          "type": "steals"
+        },
+        "-P6DII0SWoQ0N_AOYBhi": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Dragons",
+          "timestamp": 1794462522463,
+          "type": "points_2"
+        },
+        "-P6DIID0heyOA-pgxSvj": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794462523267,
+          "type": "assists"
+        },
+        "-P6DIMIp63Hcp1fSBxP1": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794462540023,
+          "type": "miss_3"
+        },
+        "-P6DIM_cNK08ygLbqWSq": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Dragons",
+          "timestamp": 1794462541162,
+          "type": "rebounds_def"
+        },
+        "-P6DIXC2rDmVjorBA5E3": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Dragons",
+          "timestamp": 1794462584645,
+          "type": "miss_2"
+        },
+        "-P6DI_3_Vdlg3qis0O3D": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794462596391,
+          "type": "rebounds_off"
+        },
+        "-P6DI_GDADjW3RRXDCfw": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794462597200,
+          "type": "miss_2"
+        },
+        "-P6DI_Urze37_6yTtWL3": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794462598137,
+          "type": "rebounds_off"
+        },
+        "-P6DIjf6Ra5H02GimnAm": {
+          "player": "merdovic_luka_2000",
+          "playerName": "Merdović Luka",
+          "team": "Dragons",
+          "timestamp": 1794462639817,
+          "type": "miss_2"
+        },
+        "-P6DIjz_4TrKpSSDV9pI": {
+          "player": "cvetinovic_nikola_2002",
+          "playerName": "Cvetinović Nikola",
+          "team": "Dragons",
+          "timestamp": 1794462641127,
+          "type": "rebounds_off"
+        },
+        "-P6DIl6AbQx4tRIhFj9U": {
+          "player": "cvetinovic_nikola_2002",
+          "playerName": "Cvetinović Nikola",
+          "team": "Dragons",
+          "timestamp": 1794462645709,
+          "type": "points_2"
+        },
+        "-P6DIpgVUoQeQpsgx86r": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Lions",
+          "timestamp": 1794462664482,
+          "type": "turnovers"
+        },
+        "-P6DIwxuI6v858-4BPID": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Dragons",
+          "timestamp": 1794462694268,
+          "type": "turnovers"
+        },
+        "-P6DIxGGs6V5g9sQ4MIz": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794462695507,
+          "type": "steals"
+        },
+        "-P6DJ1P1jGIJ_DmkcYuz": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794462716548,
+          "type": "miss_2"
+        },
+        "-P6DJ1c9GRMoZXd5lrs7": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794462717452,
+          "type": "rebounds_off"
+        },
+        "-P6DJ21R2v8oJP12PFd-": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794462719134,
+          "type": "points_2"
+        },
+        "-P6DJ8DqxJ9nvJyjV1Rf": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Dragons",
+          "timestamp": 1794462744504,
+          "type": "miss_3"
+        },
+        "-P6DJ8maXHOylAW4oF9e": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794462746792,
+          "type": "rebounds_off"
+        },
+        "-P6DJCH26SdFwK-umUTw": {
+          "player": "merdovic_luka_2000",
+          "playerName": "Merdović Luka",
+          "team": "Dragons",
+          "timestamp": 1794462761093,
+          "type": "miss_3"
+        },
+        "-P6DJCTarlhALMoUtPMJ": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794462761896,
+          "type": "rebounds_off"
+        },
+        "-P6DJF9lXRaDmXYcNOXq": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Dragons",
+          "timestamp": 1794462772915,
+          "type": "miss_3"
+        },
+        "-P6DJFQhqengGjKDFQxC": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794462773998,
+          "type": "rebounds_off"
+        },
+        "-P6DJFdUwYeTTOUAAdLK": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794462774881,
+          "type": "points_2"
+        },
+        "-P6DJUPeRj0MJSCBUcu5": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Lions",
+          "timestamp": 1794462835372,
+          "type": "miss_3"
+        },
+        "-P6DJUsJ98m-jDgpIooc": {
+          "player": "merdovic_luka_2000",
+          "playerName": "Merdović Luka",
+          "team": "Dragons",
+          "timestamp": 1794462837270,
+          "type": "rebounds_def"
+        },
+        "-P6DJ_tCHBbyyfcIjC8E": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Dragons",
+          "timestamp": 1794462861903,
+          "type": "miss_2"
+        },
+        "-P6DJaAxnend4jQ-X5z_": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Lions",
+          "timestamp": 1794462863103,
+          "type": "blocks"
+        },
+        "-P6DJbmHeaFObJ_xCAR5": {
+          "player": "dobric_ognjen_2002",
+          "playerName": "Dobrić Ognjen",
+          "team": "Lions",
+          "timestamp": 1794462869652,
+          "type": "rebounds_def"
+        },
+        "-P6DJfGngCFyCQLFdHY0": {
+          "player": "raskovic_marko_2009",
+          "playerName": "Rašković Marko",
+          "team": "Lions",
+          "timestamp": 1794462883957,
+          "type": "miss_3"
+        },
+        "-P6DJg8xnrJEmE3RwRay": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794462887551,
+          "type": "rebounds_def"
+        },
+        "-P6DJhta_ac0mtiMnq0p": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794462894696,
+          "type": "turnovers"
+        },
+        "-P6DJsO_wZkKjBOAK2V6": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Lions",
+          "timestamp": 1794462937703,
+          "type": "miss_3"
+        },
+        "-P6DJtIX6ACKM7CBjyJP": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Dragons",
+          "timestamp": 1794462941412,
+          "type": "rebounds_def"
+        },
+        "-P6DJzGGpYqZfY393WeP": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Dragons",
+          "timestamp": 1794462965843,
+          "type": "points_2"
+        },
+        "-P6DK2-8OL-58e0lwnTu": {
+          "player": "dobric_ognjen_2002",
+          "playerName": "Dobrić Ognjen",
+          "team": "Lions",
+          "timestamp": 1794462981131,
+          "type": "turnovers"
+        },
+        "-P6DK6W-XeMinIQxVjfn": {
+          "player": "cvetinovic_nikola_2002",
+          "playerName": "Cvetinović Nikola",
+          "team": "Dragons",
+          "timestamp": 1794462999618,
+          "type": "miss_2"
+        },
+        "-P6DK73e-efcZJB0gPoB": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Lions",
+          "timestamp": 1794463001900,
+          "type": "rebounds_def"
+        },
+        "-P6DK9cfyOQ1z1z9Cr9t": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Lions",
+          "timestamp": 1794463012397,
+          "type": "turnovers"
+        },
+        "-P6DKA-La-wph_MmastZ": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Dragons",
+          "timestamp": 1794463013912,
+          "type": "steals"
+        },
+        "-P6DKAH1d-ty2u_eZfH3": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Dragons",
+          "timestamp": 1794463015044,
+          "type": "points_3"
+        },
+        "-P6DKH3IKUzCozexD40_": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Lions",
+          "timestamp": 1794463042836,
+          "type": "miss_3"
+        },
+        "-P6DKHohMZRJn9kAM3yg": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794463045935,
+          "type": "rebounds_def"
+        },
+        "-P6DKUiPdLMVM9DZKry0": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Dragons",
+          "timestamp": 1794463098780,
+          "type": "points_2"
+        },
+        "-P6DKUu4Fm7XbfF2sZ-h": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794463099527,
+          "type": "assists"
+        },
+        "-P6DKdNykjbNBBSYc2BH": {
+          "player": "dobric_ognjen_2002",
+          "playerName": "Dobrić Ognjen",
+          "team": "Lions",
+          "timestamp": 1794463138368,
+          "type": "miss_3"
+        },
+        "-P6DKdv5JARihxQylHFn": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794463140552,
+          "type": "rebounds_def"
+        },
+        "-P6DOjXwO4rm464a1vVh": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Dragons",
+          "timestamp": 1794464212113,
+          "type": "points_2"
+        },
+        "-P6DPPPP8NgEYLJAv1oc": {
+          "player": "raskovic_marko_2009",
+          "playerName": "Rašković Marko",
+          "team": "Lions",
+          "timestamp": 1794464387695,
+          "type": "miss_3"
+        },
+        "-P6DPPoz-9ymQvcU3j2V": {
+          "player": "merdovic_luka_2000",
+          "playerName": "Merdović Luka",
+          "team": "Dragons",
+          "timestamp": 1794464389396,
+          "type": "rebounds_def"
+        },
+        "-P6DRfpdExAnQZzKHTly": {
+          "player": "cvetinovic_nikola_2002",
+          "playerName": "Cvetinović Nikola",
+          "team": "Dragons",
+          "timestamp": 1794464983353,
+          "type": "miss_3"
+        },
+        "-P6DRg4bmBK7Upy1l9pF": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794464984375,
+          "type": "rebounds_off"
+        },
+        "-P6DSAZLaS-amwqlmN9i": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794465113318,
+          "type": "points_2"
+        },
+        "-P6DSFhR9l97Kqgcy-Dz": {
+          "player": "dobric_ognjen_2002",
+          "playerName": "Dobrić Ognjen",
+          "team": "Lions",
+          "timestamp": 1794465134380,
+          "type": "points_3"
+        },
+        "-P6DSJBkqMni_DAByXpc": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Lions",
+          "timestamp": 1794465148672,
+          "type": "assists"
+        },
+        "-P6DSRCV_wHzBLbk_sor": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Dragons",
+          "timestamp": 1794465181488,
+          "type": "points_2"
+        },
+        "-P6DSRPXtuvAfP5zEyLs": {
+          "player": "merdovic_luka_2000",
+          "playerName": "Merdović Luka",
+          "team": "Dragons",
+          "timestamp": 1794465182322,
+          "type": "assists"
+        },
+        "-P6DSWqPEbfSfwnhf1qV": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Lions",
+          "timestamp": 1794465204586,
+          "type": "miss_3"
+        },
+        "-P6DSXaKao1HM3otVdEy": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794465207653,
+          "type": "rebounds_def"
+        },
+        "-P6DSp75TkuTdN_i1HWV": {
+          "player": "cvetinovic_nikola_2002",
+          "playerName": "Cvetinović Nikola",
+          "team": "Dragons",
+          "timestamp": 1794465283542,
+          "type": "miss_2"
+        },
+        "-P6DSq5EfveFMNQtIMYV": {
+          "player": "raskovic_marko_2009",
+          "playerName": "Rašković Marko",
+          "team": "Lions",
+          "timestamp": 1794465287519,
+          "type": "rebounds_def"
+        },
+        "-P6DSvb1QcRqEagSdseJ": {
+          "player": "dobric_ognjen_2002",
+          "playerName": "Dobrić Ognjen",
+          "team": "Lions",
+          "timestamp": 1794465310098,
+          "type": "miss_3"
+        },
+        "-P6DSwCS1LMT9KWNXQ4g": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Dragons",
+          "timestamp": 1794465312557,
+          "type": "rebounds_def"
+        },
+        "-P6DT2onQk6ewuxQPwkp": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794465343747,
+          "type": "miss_2"
+        },
+        "-P6DT3BzZVE6JavvYmul": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794465345295,
+          "type": "rebounds_def"
+        },
+        "-P6DTBJKSaCWgjEOKmhV": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794465378533,
+          "type": "points_2"
+        },
+        "-P6DTBZT3nuxRJbbi2qq": {
+          "player": "dobric_ognjen_2002",
+          "playerName": "Dobrić Ognjen",
+          "team": "Lions",
+          "timestamp": 1794465379566,
+          "type": "assists"
+        },
+        "-P6DTJ6Q4D2Ca1aiJopC": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794465410475,
+          "type": "miss_3"
+        },
+        "-P6DTJTjIPN3vKMkK1fz": {
+          "player": "cvetinovic_nikola_2002",
+          "playerName": "Cvetinović Nikola",
+          "team": "Dragons",
+          "timestamp": 1794465411967,
+          "type": "rebounds_off"
+        },
+        "-P6DTR3wWAjB-mO1L77x": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Dragons",
+          "timestamp": 1794465443084,
+          "type": "miss_2"
+        },
+        "-P6DTRHtffRg00ju16yy": {
+          "player": "stojanov_stefan_1999",
+          "playerName": "Stojanov Stefan",
+          "team": "Dragons",
+          "timestamp": 1794465443977,
+          "type": "rebounds_off"
+        },
+        "-P6DTZC4boZ-lYyS2cmf": {
+          "player": "cvetinovic_nikola_2002",
+          "playerName": "Cvetinović Nikola",
+          "team": "Dragons",
+          "timestamp": 1794465476372,
+          "type": "miss_3"
+        },
+        "-P6DTZQjNPv62EbTEM8s": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794465477311,
+          "type": "rebounds_off"
+        },
+        "-P6DTZiUsyj_QHfBRim2": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794465478511,
+          "type": "points_2"
+        },
+        "-P6DTctixKk25-jgVObg": {
+          "player": "dobric_ognjen_2002",
+          "playerName": "Dobrić Ognjen",
+          "team": "Lions",
+          "timestamp": 1794465495614,
+          "type": "miss_3"
+        },
+        "-P6DTdH3DvugNty_xx9a": {
+          "player": "merdovic_luka_2000",
+          "playerName": "Merdović Luka",
+          "team": "Dragons",
+          "timestamp": 1794465497172,
+          "type": "rebounds_def"
+        },
+        "-P6DTjWRkOdISldc6tUh": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794465522732,
+          "type": "points_3"
+        },
+        "-P6DTjjShe4Kvowl9Y0p": {
+          "player": "merdovic_luka_2000",
+          "playerName": "Merdović Luka",
+          "team": "Dragons",
+          "timestamp": 1794465523629,
+          "type": "assists"
+        },
+        "-P6DTy0YKbem-pyf2b4c": {
+          "player": "vujic_marko_1999",
+          "playerName": "Vujić Marko",
+          "team": "Lions",
+          "timestamp": 1794465582131,
+          "type": "turnovers"
+        },
+        "-P6DTyMy4T76pFsuG_YR": {
+          "player": "merdovic_luka_2000",
+          "playerName": "Merdović Luka",
+          "team": "Dragons",
+          "timestamp": 1794465583566,
+          "type": "steals"
+        },
+        "-P6DU-TwrjocIRP-o2Vx": {
+          "player": "merdovic_luka_2000",
+          "playerName": "Merdović Luka",
+          "team": "Dragons",
+          "timestamp": 1794465592204,
+          "type": "miss_3"
+        },
+        "-P6DU-izS84TOa6rVRD_": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Lions",
+          "timestamp": 1794465593231,
+          "type": "rebounds_def"
+        },
+        "-P6DU5EicqbI9NjWJW3e": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794465615806,
+          "type": "miss_2"
+        },
+        "-P6DU5gbKGrqSLnp3X2_": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794465617655,
+          "type": "blocks"
+        },
+        "-P6DUHVW1nQ_BBYmqORq": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Lions",
+          "timestamp": 1794465666033,
+          "type": "miss_3"
+        },
+        "-P6DUHsnN-Y7w1NLd_Ut": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794465667587,
+          "type": "rebounds_def"
+        },
+        "-P6DUWrXBfWH8Y9OIi7s": {
+          "player": "cvetinovic_nikola_2002",
+          "playerName": "Cvetinović Nikola",
+          "team": "Dragons",
+          "timestamp": 1794465728946,
+          "type": "points_2"
+        },
+        "-P6DUX9Fzr0IxF3tCma6": {
+          "player": "merdovic_luka_2000",
+          "playerName": "Merdović Luka",
+          "team": "Dragons",
+          "timestamp": 1794465730144,
+          "type": "assists"
+        },
+        "-P6DUeilOXx384-5XcA8": {
+          "player": "dobric_ognjen_2002",
+          "playerName": "Dobrić Ognjen",
+          "team": "Lions",
+          "timestamp": 1794465765249,
+          "type": "miss_3"
+        },
+        "-P6DUiUqJ0-ENioMEHgY": {
+          "player": "raskovic_marko_2009",
+          "playerName": "Rašković Marko",
+          "team": "Lions",
+          "timestamp": 1794465780678,
+          "type": "miss_3"
+        },
+        "-P6DUj9YyMi1Smp2v4Ex": {
+          "player": "merdovic_luka_2000",
+          "playerName": "Merdović Luka",
+          "team": "Dragons",
+          "timestamp": 1794465783411,
+          "type": "rebounds_def"
+        },
+        "-P6DUmy1x3qvlS5Bu_-8": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Dragons",
+          "timestamp": 1794465798994,
+          "type": "miss_3"
+        },
+        "-P6DUnJFQH6MCW0zT8ev": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794465800416,
+          "type": "rebounds_def"
+        },
+        "-P6DUpXGe9CTGWIN4hyL": {
+          "player": "dobric_ognjen_2002",
+          "playerName": "Dobrić Ognjen",
+          "team": "Lions",
+          "timestamp": 1794465809505,
+          "type": "points_2"
+        },
+        "-P6DUpjdKwbJyRPzBcQv": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794465810361,
+          "type": "assists"
+        },
+        "-P6DUsufY1LI0dX7U63e": {
+          "player": "cvetinovic_nikola_2002",
+          "playerName": "Cvetinović Nikola",
+          "team": "Dragons",
+          "timestamp": 1794465823355,
+          "type": "points_2"
+        },
+        "-P6DUtA1UnPyhzlDm9NC": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Dragons",
+          "timestamp": 1794465824402,
+          "type": "assists"
+        },
+        "-P6DUwX_OvwQXSRjVYO3": {
+          "player": "raskovic_marko_2009",
+          "playerName": "Rašković Marko",
+          "team": "Lions",
+          "timestamp": 1794465838196,
+          "type": "miss_3"
+        },
+        "-P6DUwvqMMpM79-cP7FE": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794465839814,
+          "type": "rebounds_def"
+        },
+        "-P6DV045kSBSclgYI3vs": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794465856790,
+          "type": "points_2"
+        },
+        "-P6DV0K3xo1iUKnm6uoy": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Dragons",
+          "timestamp": 1794465857812,
+          "type": "assists"
+        },
+        "-P6DV7ma8kaTE9J5eCcE": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794465888374,
+          "type": "miss_2"
+        },
+        "-P6DVDXQuTQRJJ-UNWka": {
+          "player": "cvetinovic_nikola_2002",
+          "playerName": "Cvetinović Nikola",
+          "team": "Dragons",
+          "timestamp": 1794465911915,
+          "type": "points_2"
+        },
+        "-P6DVOlnuPNm182ecY1t": {
+          "player": "dobric_ognjen_2002",
+          "playerName": "Dobrić Ognjen",
+          "team": "Lions",
+          "timestamp": 1794465957955,
+          "type": "miss_3"
+        },
+        "-P6DVP3fwwRlzTUE4tIy": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Dragons",
+          "timestamp": 1794465959163,
+          "type": "rebounds_def"
+        },
+        "-P6DVdRrv50xoQcAYWoE": {
+          "player": "merdovic_luka_2000",
+          "playerName": "Merdović Luka",
+          "team": "Dragons",
+          "timestamp": 1794466022151,
+          "type": "miss_2"
+        },
+        "-P6DVdhszkD2Jx_vCxXB": {
+          "player": "raskovic_marko_2009",
+          "playerName": "Rašković Marko",
+          "team": "Lions",
+          "timestamp": 1794466023240,
+          "type": "rebounds_def"
+        },
+        "-P6DVgjZMTOXA6GC-kvO": {
+          "player": "dobric_ognjen_2002",
+          "playerName": "Dobrić Ognjen",
+          "team": "Lions",
+          "timestamp": 1794466035636,
+          "type": "points_2"
+        },
+        "-P6DVhAf2jz7rJi0tfIx": {
+          "player": "raskovic_marko_2009",
+          "playerName": "Rašković Marko",
+          "team": "Lions",
+          "timestamp": 1794466037435,
+          "type": "assists"
+        },
+        "-P6DVmKjEJq1hwGYjFdG": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Dragons",
+          "timestamp": 1794466058559,
+          "type": "miss_2"
+        },
+        "-P6DVn4qH8lQOz1BsR7d": {
+          "player": "dobric_ognjen_2002",
+          "playerName": "Dobrić Ognjen",
+          "team": "Lions",
+          "timestamp": 1794466061637,
+          "type": "rebounds_def"
+        },
+        "-P6DVr8UzQg1s2c7iNU8": {
+          "player": "dobric_ognjen_2002",
+          "playerName": "Dobrić Ognjen",
+          "team": "Lions",
+          "timestamp": 1794466078255,
+          "type": "points_2"
+        },
+        "-P6DVrKk5WTSxVsHuYK6": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794466079040,
+          "type": "assists"
+        },
+        "-P6DVu6eIGoEcc22ITB5": {
+          "player": "merdovic_luka_2000",
+          "playerName": "Merdović Luka",
+          "team": "Dragons",
+          "timestamp": 1794466090426,
+          "type": "miss_3"
+        },
+        "-P6DVujgcCxAzEprvFoG": {
+          "player": "raskovic_marko_2009",
+          "playerName": "Rašković Marko",
+          "team": "Lions",
+          "timestamp": 1794466092988,
+          "type": "rebounds_def"
+        },
+        "-P6DVzPWnwSFI8bOng-I": {
+          "player": "dobric_ognjen_2002",
+          "playerName": "Dobrić Ognjen",
+          "team": "Lions",
+          "timestamp": 1794466112113,
+          "type": "miss_3"
+        },
+        "-P6DVzn2PPxhTgDoRcPw": {
+          "player": "raskovic_marko_2009",
+          "playerName": "Rašković Marko",
+          "team": "Lions",
+          "timestamp": 1794466113683,
+          "type": "rebounds_off"
+        },
+        "-P6DW1SxDXkWov1iBXvO": {
+          "player": "dobric_ognjen_2002",
+          "playerName": "Dobrić Ognjen",
+          "team": "Lions",
+          "timestamp": 1794466124621,
+          "type": "miss_2"
+        },
+        "-P6DW2SJuNzcMX0DmPy7": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794466128676,
+          "type": "rebounds_def"
+        },
+        "-P6DW8DGiZSy--DDGMo3": {
+          "player": "lazarevic_srdjan_2000",
+          "playerName": "Lazarević Srdjan",
+          "team": "Dragons",
+          "timestamp": 1794466152289,
+          "type": "points_2"
+        },
+        "-P6DW8RsnNh_EZQ9lne2": {
+          "player": "perunicic_mladen_1985",
+          "playerName": "Peruničić Mladen",
+          "team": "Dragons",
+          "timestamp": 1794466153224,
+          "type": "assists"
+        },
+        "-P6DWFel80Bts2L2PmwL": {
+          "player": "merdovic_stefan_2002",
+          "playerName": "Merdović Stefan",
+          "team": "Lions",
+          "timestamp": 1794466182785,
+          "type": "points_2"
+        },
+        "-P6DWFuPIOxPh8YCyBeI": {
+          "player": "rajacic_filip_2000",
+          "playerName": "Rajačić Filip",
+          "team": "Lions",
+          "timestamp": 1794466183786,
+          "type": "assists"
+        }
+      },
       "gameInfo": {
         "date": "10.11.2026",
         "gameId": "2026-11-10_lions_vs_dragons",
         "league": "2. kolo",
+        "location": "SC Meridiana 1",
+        "mvpPlayerId": "perunicic_mladen_1985",
+        "quarter": 1,
+        "round": 1,
+        "scoreA": 70,
+        "scoreB": 105,
+        "season": "2026/27",
+        "startTime": "22:00",
+        "status": "finished",
+        "teamA": "Lions",
+        "teamA_logo": "Black_Lions.png",
+        "teamB": "Dragons",
+        "teamB_logo": "White_Dragons.png",
+        "time": "10:00",
+        "ytLink": "https://youtu.be/HnoJdnrX-b0"
+      },
+      "lastScore": {
+        "player": "merdovic_stefan_2002",
+        "playerName": "Merdović Stefan",
+        "points": 2,
+        "shotType": "2PT",
+        "stats": {
+          "assists": 6,
+          "blocks": 0,
+          "efficiency": 0,
+          "fg_attempts": 27,
+          "fg_made": 15,
+          "fouls": 0,
+          "ft_attempts": 0,
+          "ft_made": 0,
+          "points": 30,
+          "rebounds_def": 6,
+          "rebounds_off": 5,
+          "steals": 8,
+          "three_attempts": 4,
+          "three_made": 0,
+          "turnovers": 4,
+          "two_attempts": 23,
+          "two_made": 15
+        },
+        "team": "Lions",
+        "timestamp": 1794466182735
+      },
+      "teams": {
+        "Dragons": {
+          "color": "white",
+          "logo": "White_Dragons.png",
+          "players": {
+            "cvetinovic_nikola_2002": {
+              "birth_year": 2002,
+              "mvp_count": 0,
+              "name": "Cvetinović Nikola",
+              "number": 33,
+              "photo": "Cvetinovic_Nikola.png",
+              "playerId": "cvetinovic_nikola_2002",
+              "stats": {
+                "assists": 3,
+                "blocks": 0,
+                "efficiency": 0,
+                "fg_attempts": 28,
+                "fg_made": 13,
+                "fouls": 0,
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 27,
+                "rebounds_def": 1,
+                "rebounds_off": 4,
+                "steals": 1,
+                "three_attempts": 6,
+                "three_made": 1,
+                "turnovers": 3,
+                "two_attempts": 22,
+                "two_made": 12
+              }
+            },
+            "lazarevic_srdjan_2000": {
+              "birth_year": 2000,
+              "mvp_count": 0,
+              "name": "Lazarević Srdjan",
+              "number": 38,
+              "photo": "Lazarevic_Srdjan.png",
+              "playerId": "lazarevic_srdjan_2000",
+              "stats": {
+                "assists": 5,
+                "blocks": 0,
+                "efficiency": 0,
+                "fg_attempts": 19,
+                "fg_made": 9,
+                "fouls": 0,
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 22,
+                "rebounds_def": 6,
+                "rebounds_off": 1,
+                "steals": 2,
+                "three_attempts": 7,
+                "three_made": 4,
+                "turnovers": 3,
+                "two_attempts": 12,
+                "two_made": 5
+              }
+            },
+            "merdovic_luka_2000": {
+              "birth_year": 2000,
+              "mvp_count": 0,
+              "name": "Merdović Luka",
+              "number": 17,
+              "playerId": "merdovic_luka_2000",
+              "stats": {
+                "assists": 9,
+                "blocks": 1,
+                "efficiency": 0,
+                "fg_attempts": 12,
+                "fg_made": 3,
+                "fouls": 0,
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 6,
+                "rebounds_def": 8,
+                "rebounds_off": 1,
+                "steals": 4,
+                "three_attempts": 4,
+                "three_made": 0,
+                "turnovers": 2,
+                "two_attempts": 8,
+                "two_made": 3
+              }
+            },
+            "perunicic_mladen_1985": {
+              "birth_year": 1985,
+              "mvp_count": 1,
+              "mvp_games": ["2026-11-10_lions_vs_dragons"],
+              "name": "Peruničić Mladen",
+              "number": 16,
+              "photo": "Perunicic_Mladen.png",
+              "playerId": "perunicic_mladen_1985",
+              "stats": {
+                "assists": 8,
+                "blocks": 1,
+                "efficiency": 0,
+                "fg_attempts": 25,
+                "fg_made": 16,
+                "fouls": 0,
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 36,
+                "rebounds_def": 16,
+                "rebounds_off": 11,
+                "steals": 7,
+                "three_attempts": 6,
+                "three_made": 4,
+                "turnovers": 4,
+                "two_attempts": 19,
+                "two_made": 12
+              }
+            },
+            "stojanov_stefan_1999": {
+              "birth_year": 1999,
+              "mvp_count": 1,
+              "mvp_games": ["2026-11-03_lions_vs_dragons"],
+              "name": "Stojanov Stefan",
+              "number": 30,
+              "photo": "Stojanov_Stefan.png",
+              "playerId": "stojanov_stefan_1999",
+              "stats": {
+                "assists": 5,
+                "blocks": 0,
+                "efficiency": 0,
+                "fg_attempts": 17,
+                "fg_made": 7,
+                "fouls": 0,
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 14,
+                "rebounds_def": 6,
+                "rebounds_off": 7,
+                "steals": 2,
+                "three_attempts": 4,
+                "three_made": 0,
+                "turnovers": 7,
+                "two_attempts": 13,
+                "two_made": 7
+              }
+            }
+          },
+          "team_stats": {
+            "assists": 30,
+            "blocks": 2,
+            "fg_attempts": 101,
+            "fg_made": 48,
+            "ft_attempts": 0,
+            "ft_made": 0,
+            "points": 105,
+            "rebounds_def": 37,
+            "rebounds_off": 24,
+            "steals": 16,
+            "three_attempts": 27,
+            "three_made": 9,
+            "turnovers": 19,
+            "two_attempts": 74,
+            "two_made": 39
+          }
+        },
+        "Lions": {
+          "color": "black",
+          "logo": "Black_Lions.png",
+          "players": {
+            "dobric_ognjen_2002": {
+              "birth_year": 2002,
+              "mvp_count": 0,
+              "name": "Dobrić Ognjen",
+              "number": 8,
+              "photo": "Dobric_Ognjen.png",
+              "playerId": "dobric_ognjen_2002",
+              "stats": {
+                "assists": 4,
+                "blocks": 0,
+                "efficiency": 0,
+                "fg_attempts": 22,
+                "fg_made": 7,
+                "fouls": 0,
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 15,
+                "rebounds_def": 4,
+                "rebounds_off": 2,
+                "steals": 2,
+                "three_attempts": 13,
+                "three_made": 1,
+                "turnovers": 5,
+                "two_attempts": 9,
+                "two_made": 6
+              }
+            },
+            "merdovic_stefan_2002": {
+              "birth_year": 2002,
+              "mvp_count": 0,
+              "name": "Merdović Stefan",
+              "number": 31,
+              "photo": "Merdovic_Stefan.png",
+              "playerId": "merdovic_stefan_2002",
+              "stats": {
+                "assists": 6,
+                "blocks": 0,
+                "efficiency": 0,
+                "fg_attempts": 27,
+                "fg_made": 15,
+                "fouls": 0,
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 30,
+                "rebounds_def": 6,
+                "rebounds_off": 5,
+                "steals": 8,
+                "three_attempts": 4,
+                "three_made": 0,
+                "turnovers": 4,
+                "two_attempts": 23,
+                "two_made": 15
+              }
+            },
+            "rajacic_filip_2000": {
+              "birth_year": 2000,
+              "mvp_count": 0,
+              "name": "Rajačić Filip",
+              "number": 15,
+              "photo": "Rajacic_Filip.png",
+              "playerId": "rajacic_filip_2000",
+              "stats": {
+                "assists": 3,
+                "blocks": 0,
+                "efficiency": 0,
+                "fg_attempts": 18,
+                "fg_made": 3,
+                "fouls": 0,
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 7,
+                "rebounds_def": 6,
+                "rebounds_off": 3,
+                "steals": 0,
+                "three_attempts": 15,
+                "three_made": 1,
+                "turnovers": 2,
+                "two_attempts": 3,
+                "two_made": 2
+              }
+            },
+            "raskovic_marko_2009": {
+              "birth_year": 2009,
+              "mvp_count": 0,
+              "name": "Rašković Marko",
+              "number": 7,
+              "photo": "Raskovic_Marko.png",
+              "playerId": "raskovic_marko_2009",
+              "stats": {
+                "assists": 2,
+                "blocks": 0,
+                "efficiency": 0,
+                "fg_attempts": 16,
+                "fg_made": 6,
+                "fouls": 0,
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 13,
+                "rebounds_def": 5,
+                "rebounds_off": 2,
+                "steals": 2,
+                "three_attempts": 9,
+                "three_made": 1,
+                "turnovers": 1,
+                "two_attempts": 7,
+                "two_made": 5
+              }
+            },
+            "vujic_marko_1999": {
+              "birth_year": 1999,
+              "mvp_count": 0,
+              "name": "Vujić Marko",
+              "number": 1,
+              "photo": "Vujic_Marko.png",
+              "playerId": "vujic_marko_1999",
+              "stats": {
+                "assists": 9,
+                "blocks": 1,
+                "efficiency": 0,
+                "fg_attempts": 6,
+                "fg_made": 2,
+                "fouls": 0,
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 5,
+                "rebounds_def": 5,
+                "rebounds_off": 3,
+                "steals": 2,
+                "three_attempts": 3,
+                "three_made": 1,
+                "turnovers": 11,
+                "two_attempts": 3,
+                "two_made": 1
+              }
+            }
+          },
+          "team_stats": {
+            "assists": 24,
+            "blocks": 1,
+            "fg_attempts": 89,
+            "fg_made": 33,
+            "ft_attempts": 0,
+            "ft_made": 0,
+            "points": 70,
+            "rebounds_def": 26,
+            "rebounds_off": 15,
+            "steals": 14,
+            "three_attempts": 44,
+            "three_made": 4,
+            "turnovers": 23,
+            "two_attempts": 45,
+            "two_made": 29
+          }
+        }
+      }
+    },
+    "2026-11-17_lions_vs_dragons": {
+      "gameInfo": {
+        "date": "17.11.2026",
+        "gameId": "2026-11-17_lions_vs_dragons",
+        "league": "3. kolo",
         "location": "SC Meridiana 1",
         "quarter": 1,
         "round": 1,
@@ -3180,6 +6496,7 @@
                 "two_made": 0
               }
             },
+
             "merdovic_luka_2000": {
               "birth_year": 2000,
               "mvp_count": 0,
@@ -3206,13 +6523,40 @@
                 "two_made": 0
               }
             },
-            "raskovic_marko_2009": {
-              "birth_year": 2009,
+            "merdovic_stefan_2002": {
+              "birth_year": 2002,
               "mvp_count": 0,
-              "name": "Rašković Marko",
-              "number": 7,
-              "photo": "Raskovic_Marko.png",
-              "playerId": "raskovic_marko_2009",
+              "name": "Merdović Stefan",
+              "number": 31,
+              "photo": "Merdovic_Stefan.png",
+              "playerId": "merdovic_stefan_2002",
+              "stats": {
+                "assists": 0,
+                "blocks": 0,
+                "efficiency": 0,
+                "fg_attempts": 0,
+                "fg_made": 0,
+                "fouls": 0,
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 0,
+                "rebounds_def": 0,
+                "rebounds_off": 0,
+                "steals": 0,
+                "three_attempts": 0,
+                "three_made": 0,
+                "turnovers": 0,
+                "two_attempts": 0,
+                "two_made": 0
+              }
+            },
+            "cvetinovic_nikola_2002": {
+              "birth_year": 2002,
+              "mvp_count": 0,
+              "name": "Cvetinović Nikola",
+              "number": 33,
+              "photo": "Cvetinovic_Nikola.png",
+              "playerId": "cvetinovic_nikola_2002",
               "stats": {
                 "assists": 0,
                 "blocks": 0,
@@ -3261,110 +6605,30 @@
                 "two_made": 0
               }
             },
-            "stojanov_stefan_1999": {
-              "birth_year": 1999,
-              "mvp_count": 1,
-              "mvp_games": ["2026-11-03_lions_vs_dragons"],
-              "name": "Stojanov Stefan",
-              "number": 30,
-              "photo": "Stojanov_Stefan.png",
-              "playerId": "stojanov_stefan_1999",
-              "stats": {
-                "assists": 0,
-                "blocks": 0,
-                "efficiency": 0,
-                "fg_attempts": 0,
-                "fg_made": 0,
-                "fouls": 0,
-                "ft_attempts": 0,
-                "ft_made": 0,
-                "points": 0,
-                "rebounds_def": 0,
-                "rebounds_off": 0,
-                "steals": 0,
-                "three_attempts": 0,
-                "three_made": 0,
-                "turnovers": 0,
-                "two_attempts": 0,
-                "two_made": 0
-              }
+
+            "team_stats": {
+              "assists": 0,
+              "blocks": 0,
+              "fg_attempts": 0,
+              "fg_made": 0,
+              "ft_attempts": 0,
+              "ft_made": 0,
+              "points": 0,
+              "rebounds_def": 0,
+              "rebounds_off": 0,
+              "steals": 0,
+              "three_attempts": 0,
+              "three_made": 0,
+              "turnovers": 0,
+              "two_attempts": 0,
+              "two_made": 0
             }
-          },
-          "team_stats": {
-            "assists": 0,
-            "blocks": 0,
-            "fg_attempts": 0,
-            "fg_made": 0,
-            "ft_attempts": 0,
-            "ft_made": 0,
-            "points": 0,
-            "rebounds_def": 0,
-            "rebounds_off": 0,
-            "steals": 0,
-            "three_attempts": 0,
-            "three_made": 0,
-            "turnovers": 0,
-            "two_attempts": 0,
-            "two_made": 0
           }
         },
         "Dragons": {
           "color": "white",
           "logo": "White_Dragons.png",
           "players": {
-            "cvetinovic_nikola_2002": {
-              "birth_year": 2002,
-              "mvp_count": 0,
-              "name": "Cvetinović Nikola",
-              "number": 33,
-              "photo": "Cvetinovic_Nikola.png",
-              "playerId": "cvetinovic_nikola_2002",
-              "stats": {
-                "assists": 0,
-                "blocks": 0,
-                "efficiency": 0,
-                "fg_attempts": 0,
-                "fg_made": 0,
-                "fouls": 0,
-                "ft_attempts": 0,
-                "ft_made": 0,
-                "points": 0,
-                "rebounds_def": 0,
-                "rebounds_off": 0,
-                "steals": 0,
-                "three_attempts": 0,
-                "three_made": 0,
-                "turnovers": 0,
-                "two_attempts": 0,
-                "two_made": 0
-              }
-            },
-            "merdovic_stefan_2002": {
-              "birth_year": 2002,
-              "mvp_count": 0,
-              "name": "Merdović Stefan",
-              "number": 31,
-              "playerId": "merdovic_stefan_2002",
-              "stats": {
-                "assists": 0,
-                "blocks": 0,
-                "efficiency": 0,
-                "fg_attempts": 0,
-                "fg_made": 0,
-                "fouls": 0,
-                "ft_attempts": 0,
-                "ft_made": 0,
-                "points": 0,
-                "rebounds_def": 0,
-                "rebounds_off": 0,
-                "steals": 0,
-                "three_attempts": 0,
-                "three_made": 0,
-                "turnovers": 0,
-                "two_attempts": 0,
-                "two_made": 0
-              }
-            },
             "vujic_marko_1999": {
               "birth_year": 1999,
               "mvp_count": 0,
@@ -3392,13 +6656,14 @@
                 "two_made": 0
               }
             },
-            "rajacic_filip_2000": {
-              "birth_year": 2000,
+
+            "raskovic_marko_2009": {
+              "birth_year": 2009,
               "mvp_count": 0,
-              "name": "Rajačić Filip",
-              "number": 15,
-              "photo": "Rajacic_Filip.png",
-              "playerId": "rajacic_filip_2000",
+              "name": "Rašković Marko",
+              "number": 7,
+              "photo": "Raskovic_Marko.png",
+              "playerId": "raskovic_marko_2009",
               "stats": {
                 "assists": 0,
                 "blocks": 0,
@@ -3419,9 +6684,11 @@
                 "two_made": 0
               }
             },
+
             "perunicic_mladen_1985": {
               "birth_year": 1985,
-              "mvp_count": 0,
+              "mvp_count": 1,
+              "mvp_games": ["2026-11-10_lions_vs_dragons"],
               "name": "Peruničić Mladen",
               "number": 16,
               "photo": "Perunicic_Mladen.png",
@@ -3445,24 +6712,82 @@
                 "two_attempts": 0,
                 "two_made": 0
               }
+            },
+
+            "stojanov_stefan_1999": {
+              "birth_year": 1999,
+              "mvp_count": 1,
+              "mvp_games": ["2026-11-03_lions_vs_dragons"],
+              "name": "Stojanov Stefan",
+              "number": 30,
+              "photo": "Stojanov_Stefan.png",
+              "playerId": "stojanov_stefan_1999",
+              "stats": {
+                "assists": 0,
+                "blocks": 0,
+                "efficiency": 0,
+                "fg_attempts": 0,
+                "fg_made": 0,
+                "fouls": 0,
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 0,
+                "rebounds_def": 0,
+                "rebounds_off": 0,
+                "steals": 0,
+                "three_attempts": 0,
+                "three_made": 0,
+                "turnovers": 0,
+                "two_attempts": 0,
+                "two_made": 0
+              }
+            },
+
+            "ilic_nikola_2005": {
+              "birth_year": 2005,
+              "mvp_count": 0,
+              "name": "Ilić Nikola",
+              "number": 5,
+              "photo": "Ilic_Nikola.png",
+              "playerId": "ilic_nikola_2005",
+              "stats": {
+                "assists": 0,
+                "blocks": 0,
+                "efficiency": 0,
+                "fg_attempts": 0,
+                "fg_made": 0,
+                "fouls": 0,
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 0,
+                "rebounds_def": 0,
+                "rebounds_off": 0,
+                "steals": 0,
+                "three_attempts": 0,
+                "three_made": 0,
+                "turnovers": 0,
+                "two_attempts": 0,
+                "two_made": 0
+              }
+            },
+
+            "team_stats": {
+              "assists": 0,
+              "blocks": 0,
+              "fg_attempts": 0,
+              "fg_made": 0,
+              "ft_attempts": 0,
+              "ft_made": 0,
+              "points": 0,
+              "rebounds_def": 0,
+              "rebounds_off": 0,
+              "steals": 0,
+              "three_attempts": 0,
+              "three_made": 0,
+              "turnovers": 0,
+              "two_attempts": 0,
+              "two_made": 0
             }
-          },
-          "team_stats": {
-            "assists": 0,
-            "blocks": 0,
-            "fg_attempts": 0,
-            "fg_made": 0,
-            "ft_attempts": 0,
-            "ft_made": 0,
-            "points": 0,
-            "rebounds_def": 0,
-            "rebounds_off": 0,
-            "steals": 0,
-            "three_attempts": 0,
-            "three_made": 0,
-            "turnovers": 0,
-            "two_attempts": 0,
-            "two_made": 0
           }
         }
       }

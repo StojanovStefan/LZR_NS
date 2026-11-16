@@ -424,6 +424,69 @@ td {
   white-space: nowrap;
 }
 
+/* =====================================
+   TIMSKA STATISTIKA - PRVI RED TABELE
+===================================== */
+
+#statsContainer .team-total-row {
+  background: #f1f2f4;
+  font-weight: normal;
+}
+
+#statsContainer .team-total-row td {
+  background: #f1f2f4;
+  color: #000;
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px 8px;
+  font-weight: normal;
+}
+
+/* Prva ćelija - logo i naziv */
+#statsContainer .team-total-row .team-total-name {
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Kontejner logotipa i naziva */
+#statsContainer .team-total-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+
+/* Mali logo ekipe */
+#statsContainer .team-total-logo {
+  display: block !important;
+  width: 42px !important;
+  height: 42px !important;
+  min-width: 42px !important;
+  min-height: 42px !important;
+  max-width: 42px !important;
+  max-height: 42px !important;
+  object-fit: contain !important;
+  border-radius: 50%;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+/* Naziv ekipe */
+#statsContainer .team-total-wrapper span {
+  font-size: 17px;
+  font-weight: normal;
+  white-space: nowrap;
+}
+
+/* Timske statistike */
+#statsContainer .team-total-row td:not(.team-total-name) {
+  white-space: pre-line;
+  line-height: 1.5;
+  font-size: 16px;
+  font-weight: normal;
+}
+
 @media (max-width: 600px) {
   body {
     padding: 10px;
