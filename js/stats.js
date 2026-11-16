@@ -868,6 +868,13 @@ function renderTimeline(events) {
     const alignmentClass =
       teamName === orderedTeams[1] ? "event-right" : "event-left";
     const logo = globalTeams[teamName]?.logo || "default.png";
+    const players = globalTeams[teamName]?.players || {};
+    const playerData = Object.values(players).find(
+      (p) => p.name === ev.playerName,
+    );
+    const playerImage = playerData?.photo
+      ? `team_logo/${playerData.photo}`
+      : `team_logo/default-player.png`;
 
     let bubbleScore = null;
 
@@ -888,12 +895,19 @@ function renderTimeline(events) {
     const div = document.createElement("div");
     div.className = `event-card ${alignmentClass}`;
     div.innerHTML = `
-            <img src="team_logo/${logo}" class="event-logo">
-            <div class="event-text">
-              <div class="event-player">${ev.playerName} ${""}</div>
-              <div class="event-type">${text}</div>
-            </div>
-          `;
+      <img src="team_logo/${logo}" class="event-logo">
+
+      <img
+        src="${playerImage}"
+        class="event-player-image"
+        onerror="this.onerror=null; this.src='team_logo/default_player.png'"
+      >
+
+      <div class="event-text">
+        <div class="event-player">${ev.playerName}</div>
+        <div class="event-type">${text}</div>
+      </div>
+    `;
 
     container.appendChild(div);
   });

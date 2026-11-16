@@ -311,6 +311,15 @@ td {
   z-index: 1;
 }
 
+.event-player-image {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 2px solid #ddd;
+}
+
 @media (max-width: 1200px) {
   .event-card {
     width: 90% !important;
