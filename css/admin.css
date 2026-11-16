@@ -12,13 +12,18 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background: radial-gradient(ellipse at center, #253247 0%, #111827 100%);
   color: #f9fafb;
+
   min-height: 100vh;
+  min-height: 100svh;
+
   padding: 20px;
   overflow-x: hidden;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 /* ==============================
@@ -27,14 +32,19 @@ body {
 
 .adminContainer {
   display: grid;
+
   grid-template-columns:
     minmax(420px, 1.5fr)
     minmax(380px, 1.2fr)
     minmax(420px, 1.5fr);
+
   gap: 16px;
+
   width: 100%;
   max-width: 2400px;
-  margin: 0 auto;
+
+  margin: 0;
+  flex: 0 0 auto;
   align-items: stretch;
 }
 
@@ -46,9 +56,12 @@ body {
   background: rgba(30, 41, 59, 0.95);
   border: 2px solid #374151;
   border-radius: 18px;
+
   padding: 17px 11px;
+
   min-width: 0;
-  min-height: clamp(620px, 76vh, 760px);
+  min-height: clamp(540px, 68vh, 680px);
+
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
@@ -66,6 +79,7 @@ body {
   display: flex;
   align-items: center;
   gap: 12px;
+
   font-size: 26px;
   min-height: 62px;
 }
@@ -91,14 +105,18 @@ body {
 .playerBox {
   display: flex;
   align-items: center;
+
   background: #293548;
   border: 2px solid #374151;
   border-radius: 12px;
+
   padding: 11px 9px;
   min-height: 80px;
   min-width: 0;
+
   overflow: hidden;
   cursor: pointer;
+
   transition: 0.2s;
 }
 
@@ -121,6 +139,7 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
+
   width: 100%;
   min-width: 0;
   margin: 0;
@@ -129,19 +148,23 @@ body {
 .player-img {
   width: 52px;
   height: 52px;
+
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid #9ca3af;
+
   flex-shrink: 0;
 }
 
 .player-header strong {
   flex: 1;
   min-width: 0;
+
   font-size: clamp(13px, 1.15vw, 16px);
   font-weight: 700;
   line-height: 1.4;
   letter-spacing: -0.3px;
+
   white-space: nowrap;
   overflow: hidden;
   text-overflow: clip;
@@ -159,9 +182,12 @@ body {
   background: rgba(30, 41, 59, 0.97);
   border: 2px solid #374151;
   border-radius: 20px;
+
   padding: 22px;
+
   min-width: 0;
-  min-height: clamp(620px, 76vh, 760px);
+  min-height: clamp(540px, 68vh, 680px);
+
   box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
 
   display: flex;
@@ -179,10 +205,13 @@ body {
 
 .selected-player-header {
   display: grid;
+
   grid-template-columns: 130px minmax(0, 1fr);
   grid-template-rows: 130px auto;
+
   column-gap: 0;
   row-gap: 13px;
+
   align-items: center;
   padding: 5px 0 16px;
 }
@@ -190,8 +219,10 @@ body {
 .selected-player-img {
   grid-column: 1;
   grid-row: 1;
+
   width: 130px;
   height: 130px;
+
   object-fit: cover;
   border-radius: 50%;
   border: 4px solid #cbd5e1;
@@ -200,8 +231,10 @@ body {
 .selected-player-info {
   grid-column: 2;
   grid-row: 1;
+
   min-width: 0;
   align-self: center;
+
   padding: 0;
   margin: 0;
 }
@@ -226,11 +259,14 @@ body {
 .selected-player-stats {
   grid-column: 1 / -1;
   grid-row: 2;
+
   display: flex;
   justify-content: space-around;
+
   width: 100%;
   margin-top: 0;
   padding: 17px 10px;
+
   background: #172235;
   border: 1px solid #334155;
   border-radius: 16px;
@@ -248,9 +284,11 @@ body {
 
 .stat-item strong {
   display: block;
+
   font-size: 28px;
   font-weight: 800;
   color: white;
+
   margin-bottom: 5px;
 }
 
@@ -266,12 +304,15 @@ body {
 
 .emptySelection {
   min-height: 400px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   text-align: center;
   padding: 30px;
+
   color: #cbd5e1;
 }
 
@@ -302,7 +343,9 @@ body {
 
 .playerActions .actions {
   display: grid;
+
   grid-template-columns: repeat(4, minmax(0, 1fr));
+
   gap: 10px;
   width: 100%;
 }
@@ -314,6 +357,7 @@ body {
 .playerActions .actionBtn {
   min-width: 0;
   min-height: 74px;
+
   padding: 8px 5px;
 
   display: flex;
@@ -342,7 +386,9 @@ body {
 .playerActions .actionBtn:hover {
   background: linear-gradient(145deg, #475569, #293548);
   color: white;
+
   border: 2px solid #fbbf24;
+
   box-shadow: 0 0 12px rgba(251, 191, 36, 0.25);
   transform: none;
 }
@@ -359,12 +405,13 @@ body {
 }
 
 /* ==============================
-   UNDO BUTTON - CENTER PANEL
+   UNDO BUTTON
 ============================== */
 
 #undoBtn {
   width: 100%;
   min-height: 55px;
+
   margin-top: auto;
   padding: 12px;
 
@@ -392,20 +439,23 @@ body {
 }
 
 /* ==============================
-   GAME CONTROLS - FOOTER
+   FOOTER - FINISH GAME
 ============================== */
 
 .gameControls {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px auto 0;
+
   width: 100%;
+  margin: 0;
+  flex: 0 0 auto;
 }
 
 #finishBtn {
   width: 280px;
   min-height: 58px;
+
   border: 2px solid #475569;
   border-radius: 12px;
 
@@ -425,11 +475,12 @@ body {
   background: #fbbf24;
   border-color: #fbbf24;
   color: #111827;
+
   transform: translateY(-2px);
 }
 
 /* ==============================
-   RESPONSIVE - TABLET
+   TABLET
 ============================== */
 
 @media (max-width: 1100px) {
@@ -442,12 +493,13 @@ body {
       minmax(180px, 1fr)
       minmax(350px, 1.5fr)
       minmax(180px, 1fr);
+
     gap: 10px;
   }
 
   .teamSidebar,
   .centerPanel {
-    min-height: 620px;
+    min-height: 540px;
   }
 
   .teamSidebar {
@@ -534,13 +586,37 @@ body {
 }
 
 /* ==============================
+   SHORT DESKTOP SCREENS
+============================== */
+
+@media (max-height: 750px) and (min-width: 801px) {
+  body {
+    justify-content: flex-start;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .teamSidebar,
+  .centerPanel {
+    min-height: 540px;
+  }
+}
+
+/* ==============================
    MOBILE
 ============================== */
 
 @media (max-width: 800px) {
   body {
+    min-height: 100vh;
+    min-height: 100svh;
+
     padding: 10px;
+
     justify-content: flex-start;
+    align-items: stretch;
+
+    gap: 15px;
   }
 
   .adminContainer {
@@ -593,7 +669,7 @@ body {
   }
 
   .gameControls {
-    margin-top: 15px;
+    margin-top: 0;
   }
 
   #finishBtn {
