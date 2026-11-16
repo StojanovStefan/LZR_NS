@@ -1,25 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="sr">
   <head>
-    <meta charset="UTF-8" content="width=device-width, initial-scale=1.0" />
-    <title>Admin Panel</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🏀 Admin Panel</title>
+
     <link rel="stylesheet" href="css/admin.css" />
     <script type="module" src="js/admin.js"></script>
   </head>
+
   <body>
-    <div class="teamContainer">
-      <div class="teamBox" id="teamA_box">
-        <h2 id="teamA_name"></h2>
-        <div id="teamA_players"></div>
-      </div>
+    <main class="adminContainer">
+      <!-- LEVA STRANA - LIONS -->
+      <aside class="teamSidebar" id="teamA_box">
+        <div class="teamHeader">
+          <h2 id="teamA_name"></h2>
+        </div>
 
-      <div class="teamBox" id="teamB_box">
-        <h2 id="teamB_name"></h2>
-        <div id="teamB_players"></div>
-      </div>
-    </div>
+        <div class="teamPlayers" id="teamA_players">
+          <!-- Igrači se učitavaju iz Firebase -->
+        </div>
+      </aside>
 
-    <button id="undoBtn">Undo Last Play</button>
-    <button id="finishBtn">Finish Game</button>
+      <!-- CENTRALNI PANEL - STATISTIKA -->
+      <section class="centerPanel" id="centerPanel">
+        <div id="selectedPlayer">
+          <div class="emptySelection">
+            <div class="emptyIcon">🏀</div>
+            <h2>Izaberi igrača</h2>
+            <p>
+              Klikni na igrača iz Lions ili Dragons tima da bi uneo njegovu
+              statistiku.
+            </p>
+          </div>
+        </div>
+
+        <div class="playerActions" id="playerActions" style="display: none">
+          <!-- Ovde će JavaScript prikazivati dugmiće -->
+        </div>
+
+        <button id="undoBtn">↶ Undo Last Play</button>
+      </section>
+
+      <!-- DESNA STRANA - DRAGONS -->
+      <aside class="teamSidebar" id="teamB_box">
+        <div class="teamHeader">
+          <h2 id="teamB_name"></h2>
+        </div>
+
+        <div class="teamPlayers" id="teamB_players">
+          <!-- Igrači se učitavaju iz Firebase -->
+        </div>
+      </aside>
+    </main>
+
+    <footer class="gameControls">
+      <button id="finishBtn">🏆 Finish Game</button>
+    </footer>
   </body>
 </html>
