@@ -115,3 +115,32 @@ h2 {
   transform: translateY(-2px);
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.25);
 }
+
+.player-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  min-height: 36px;
+}
+
+.player-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #c5cbd4;
+  background: #252a32;
+  flex-shrink: 0;
+}
+
+.player-header strong {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.playerBox:hover {
+  outline: 2px solid #a8e52d;
+  outline-offset: -2px;
+  box-shadow: 0 0 8px rgba(168, 229, 45, 0.25);
+}

@@ -46,13 +46,11 @@ onValue(ref(db, `games/${gameId}/gameInfo`), (snap) => {
   teamA = info.teamA;
   teamB = info.teamB;
 
-  document.getElementById(
-    "teamA_name"
-  ).innerHTML = `<img src="team_logo/${info.teamA_logo}" class="teamLogo"><span>${teamA}</span>`;
+  document.getElementById("teamA_name").innerHTML =
+    `<img src="team_logo/${info.teamA_logo}" class="teamLogo"><span>${teamA}</span>`;
 
-  document.getElementById(
-    "teamB_name"
-  ).innerHTML = `<img src="team_logo/${info.teamB_logo}" class="teamLogo"><span>${teamB}</span>`;
+  document.getElementById("teamB_name").innerHTML =
+    `<img src="team_logo/${info.teamB_logo}" class="teamLogo"><span>${teamB}</span>`;
 
   loadPlayers();
 });
@@ -75,7 +73,30 @@ function loadTeamPlayers(team, boxId) {
     sortedPlayers.forEach(([playerId, p]) => {
       const div = document.createElement("div");
       div.className = "playerBox";
-      div.innerHTML = `<strong>${p.name}</strong> (#${p.number})`;
+
+      // Zaglavlje igrača
+      const playerHeader = document.createElement("div");
+      playerHeader.className = "player-header";
+
+      // Fotografija igrača
+      const playerImg = document.createElement("img");
+      playerImg.src = `team_logo/${p.photo || "default_player.png"}`;
+      playerImg.alt = p.name;
+      playerImg.className = "player-img";
+
+      playerImg.onerror = function () {
+        this.onerror = null;
+        this.src = "team_logo/default_player.png";
+      };
+
+      // Ime i broj igrača
+      const playerName = document.createElement("strong");
+      playerName.textContent = `${p.name} #${p.number}`;
+
+      playerHeader.appendChild(playerImg);
+      playerHeader.appendChild(playerName);
+
+      div.appendChild(playerHeader);
 
       const actionsDiv = document.createElement("div");
       actionsDiv.className = "actions";
@@ -99,7 +120,8 @@ function loadTeamPlayers(team, boxId) {
         const btn = document.createElement("button");
         btn.className = "actionBtn";
         btn.textContent = a.label;
-        btn.onclick = () => applyAction(team, playerId, a.value, p.name);
+        btn.onclick = () =>
+          applyAction(team, playerId, a.value, p.name, p.photo);
         actionsDiv.appendChild(btn);
       });
 
@@ -109,10 +131,16 @@ function loadTeamPlayers(team, boxId) {
   });
 }
 
-async function applyAction(team, player, action, playerName = "") {
+async function applyAction(
+  team,
+  player,
+  action,
+  playerName = "",
+  playerPhoto = "",
+) {
   const playerStatsRef = ref(
     db,
-    `games/${gameId}/teams/${team}/players/${player}/stats`
+    `games/${gameId}/teams/${team}/players/${player}/stats`,
   );
   const teamStatsRef = ref(db, `games/${gameId}/teams/${team}/team_stats`);
   const gameInfoRef = ref(db, `games/${gameId}/gameInfo`);
@@ -178,10 +206,13 @@ async function applyAction(team, player, action, playerName = "") {
     await push(ref(db, `games/${gameId}/events`), {
       player,
       playerName,
+      playerPhoto,
       team,
       type: action,
       timestamp: Date.now(),
     });
+
+    showNotification(getActionNotification(action, playerName), playerPhoto);
 
     return;
   } else if (action.startsWith("miss_")) {
@@ -226,15 +257,17 @@ async function applyAction(team, player, action, playerName = "") {
   await push(ref(db, `games/${gameId}/events`), {
     player,
     playerName,
+    playerPhoto,
     team,
     type: action,
     timestamp: Date.now(),
   });
+
+  showNotification(getActionNotification(action, playerName), playerPhoto);
 }
 
-function showNotification(message) {
+function showNotification(message, photo = null) {
   const notification = document.createElement("div");
-  notification.textContent = message;
 
   notification.style.position = "fixed";
   notification.style.bottom = "90px";
@@ -249,6 +282,30 @@ function showNotification(message) {
   notification.style.transition = "opacity 0.3s ease";
   notification.style.zIndex = "9999";
 
+  notification.style.display = "flex";
+  notification.style.alignItems = "center";
+  notification.style.gap = "12px";
+
+  if (photo) {
+    const img = document.createElement("img");
+    img.src = `team_logo/${photo}`;
+    img.style.width = "45px";
+    img.style.height = "45px";
+    img.style.borderRadius = "50%";
+    img.style.objectFit = "cover";
+
+    img.onerror = function () {
+      this.onerror = null;
+      this.src = "team_logo/default_player.png";
+    };
+
+    notification.appendChild(img);
+  }
+
+  const text = document.createElement("span");
+  text.textContent = message;
+  notification.appendChild(text);
+
   document.body.appendChild(notification);
 
   requestAnimationFrame(() => {
@@ -257,10 +314,35 @@ function showNotification(message) {
 
   setTimeout(() => {
     notification.style.opacity = "0";
-    notification.addEventListener("transitionend", () => {
-      notification.remove();
-    });
-  }, 5000);
+    notification.addEventListener(
+      "transitionend",
+      () => {
+        notification.remove();
+      },
+      { once: true },
+    );
+  }, 4000);
+}
+
+function getActionNotification(action, playerName) {
+  const messages = {
+    points_2: "Pogodio šut za 2 poena",
+    points_3: "Pogodio šut za 3 poena",
+    points_1: "Pogodio slobodno bacanje",
+
+    miss_2: "Promašio šut za 2 poena",
+    miss_3: "Promašio šut za 3 poena",
+    miss_1: "Promašio slobodno bacanje",
+
+    assists: "Asistencija",
+    rebounds_off: "Skok u napadu",
+    rebounds_def: "Skok u odbrani",
+    steals: "Ukradena lopta",
+    turnovers: "Izgubljena lopta",
+    blocks: "Blokada",
+  };
+
+  return `${playerName} – ${messages[action] || action}`;
 }
 
 async function undoLastPlay() {
@@ -283,10 +365,10 @@ async function undoLastPlay() {
   }
 
   const lastEvent = events[lastKey];
-  const { player, playerName, team, type } = lastEvent;
+  const { player, playerName, playerPhoto, team, type } = lastEvent;
   const playerStatsRef = ref(
     db,
-    `games/${gameId}/teams/${team}/players/${player}/stats`
+    `games/${gameId}/teams/${team}/players/${player}/stats`,
   );
   const teamStatsRef = ref(db, `games/${gameId}/teams/${team}/team_stats`);
   const gameInfoRef = ref(db, `games/${gameId}/gameInfo`);
@@ -426,8 +508,10 @@ async function undoLastPlay() {
     default:
       actionText = type;
   }
-
-  showNotification(`Poslednja akcija poništena: ${playerName} - ${actionText}`);
+  showNotification(
+    `Poslednja akcija poništena: ${playerName} - ${actionText}`,
+    playerPhoto,
+  );
 }
 
 document.getElementById("undoBtn").addEventListener("click", undoLastPlay);
