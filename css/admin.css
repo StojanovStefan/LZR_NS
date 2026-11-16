@@ -95,7 +95,7 @@ h2 {
 
 #finishBtn {
   display: block;
-  margin: 170px auto;
+  margin: 150px auto;
   padding: 12px 25px;
   background: #4b5563;
   color: white;
@@ -140,7 +140,7 @@ h2 {
 }
 
 .playerBox:hover {
-  outline: 2px solid #a8e52d;
+  outline: 2px solid #fbbf24;
   outline-offset: -2px;
-  box-shadow: 0 0 8px rgba(168, 229, 45, 0.25);
+  box-shadow: 0 0 10px rgba(251, 191, 36, 0.35);
 }

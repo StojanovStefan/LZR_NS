@@ -191,7 +191,7 @@ function findBestPlayer(team) {
   return bestPlayer;
 }
 
-function createPlayerCard(player, team, title, type, teamName) {
+function createPlayerCard(player, team, title, type, teamName, teamid) {
   if (!player) return "";
 
   teamName = teamName || "Nepoznata ekipa";
@@ -254,7 +254,10 @@ function createPlayerCard(player, team, title, type, teamName) {
 
         </div>
 
-        <div class="mvp-team-logo">
+       <div class="mvp-team-logo"
+        onclick="event.stopPropagation(); window.location.href='teamProfile.html?id=${teamid}'"
+        style="cursor: pointer;"
+       >
 
           <img
             src="team_logo/${team.logo || "default_team.png"}"
@@ -321,6 +324,7 @@ function renderGameHeader(info) {
           : winnerTeam === "white_dragons"
             ? "Dragons"
             : winnerTeam,
+        winnerTeam,
       )}
 
       ${createPlayerCard(
@@ -333,6 +337,7 @@ function renderGameHeader(info) {
           : loserTeam === "white_dragons"
             ? "Dragons"
             : loserTeam,
+        loserTeam,
       )}
     `;
   }

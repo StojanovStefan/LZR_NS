@@ -255,13 +255,13 @@ td {
 
 .event-left {
   margin-right: auto;
-  border-left: 4px solid #171329;
+  border-left: 4px solid #303030;
   flex-direction: row;
 }
 
 .event-right {
   margin-left: auto;
-  border-right: 4px solid #d5d7db;
+  border-right: 4px solid #a8e52d;
   flex-direction: row-reverse;
 }
 
