@@ -6469,6 +6469,34 @@
           "logo": "Black_Lions.png",
 
           "players": {
+            "vujic_marko_1999": {
+              "birth_year": 1999,
+              "mvp_count": 0,
+              "name": "Vujić Marko",
+              "number": 1,
+              "photo": "Vujic_Marko.png",
+              "playerId": "vujic_marko_1999",
+              "stats": {
+                "assists": 0,
+                "blocks": 0,
+                "efficiency": 0,
+                "fg_attempts": 0,
+                "fg_made": 0,
+                "fouls": 0,
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 0,
+                "rebounds_def": 0,
+                "rebounds_off": 0,
+                "steals": 0,
+                "three_attempts": 0,
+                "three_made": 0,
+                "turnovers": 0,
+                "two_attempts": 0,
+                "two_made": 0
+              }
+            },
+
             "dobric_ognjen_2002": {
               "birth_year": 2002,
               "mvp_count": 0,
@@ -6576,34 +6604,6 @@
                 "two_attempts": 0,
                 "two_made": 0
               }
-            },
-
-            "lazarevic_srdjan_2000": {
-              "birth_year": 2000,
-              "mvp_count": 0,
-              "name": "Lazarević Srdjan",
-              "number": 38,
-              "photo": "Lazarevic_Srdjan.png",
-              "playerId": "lazarevic_srdjan_2000",
-              "stats": {
-                "assists": 0,
-                "blocks": 0,
-                "efficiency": 0,
-                "fg_attempts": 0,
-                "fg_made": 0,
-                "fouls": 0,
-                "ft_attempts": 0,
-                "ft_made": 0,
-                "points": 0,
-                "rebounds_def": 0,
-                "rebounds_off": 0,
-                "steals": 0,
-                "three_attempts": 0,
-                "three_made": 0,
-                "turnovers": 0,
-                "two_attempts": 0,
-                "two_made": 0
-              }
             }
           },
 
@@ -6630,34 +6630,6 @@
           "color": "white",
           "logo": "White_Dragons.png",
           "players": {
-            "vujic_marko_1999": {
-              "birth_year": 1999,
-              "mvp_count": 0,
-              "name": "Vujić Marko",
-              "number": 1,
-              "photo": "Vujic_Marko.png",
-              "playerId": "vujic_marko_1999",
-              "stats": {
-                "assists": 0,
-                "blocks": 0,
-                "efficiency": 0,
-                "fg_attempts": 0,
-                "fg_made": 0,
-                "fouls": 0,
-                "ft_attempts": 0,
-                "ft_made": 0,
-                "points": 0,
-                "rebounds_def": 0,
-                "rebounds_off": 0,
-                "steals": 0,
-                "three_attempts": 0,
-                "three_made": 0,
-                "turnovers": 0,
-                "two_attempts": 0,
-                "two_made": 0
-              }
-            },
-
             "raskovic_marko_2009": {
               "birth_year": 2009,
               "mvp_count": 0,
@@ -6751,6 +6723,34 @@
               "number": 5,
               "photo": "Ilic_Nikola.png",
               "playerId": "ilic_nikola_2005",
+              "stats": {
+                "assists": 0,
+                "blocks": 0,
+                "efficiency": 0,
+                "fg_attempts": 0,
+                "fg_made": 0,
+                "fouls": 0,
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 0,
+                "rebounds_def": 0,
+                "rebounds_off": 0,
+                "steals": 0,
+                "three_attempts": 0,
+                "three_made": 0,
+                "turnovers": 0,
+                "two_attempts": 0,
+                "two_made": 0
+              }
+            },
+
+            "lazarevic_srdjan_2000": {
+              "birth_year": 2000,
+              "mvp_count": 0,
+              "name": "Lazarević Srdjan",
+              "number": 38,
+              "photo": "Lazarevic_Srdjan.png",
+              "playerId": "lazarevic_srdjan_2000",
               "stats": {
                 "assists": 0,
                 "blocks": 0,

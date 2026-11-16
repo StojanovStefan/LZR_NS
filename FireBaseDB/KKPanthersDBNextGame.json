@@ -25,6 +25,34 @@
           "logo": "Black_Lions.png",
 
           "players": {
+            "vujic_marko_1999": {
+              "birth_year": 1999,
+              "mvp_count": 0,
+              "name": "Vujić Marko",
+              "number": 1,
+              "photo": "Vujic_Marko.png",
+              "playerId": "vujic_marko_1999",
+              "stats": {
+                "assists": 0,
+                "blocks": 0,
+                "efficiency": 0,
+                "fg_attempts": 0,
+                "fg_made": 0,
+                "fouls": 0,
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 0,
+                "rebounds_def": 0,
+                "rebounds_off": 0,
+                "steals": 0,
+                "three_attempts": 0,
+                "three_made": 0,
+                "turnovers": 0,
+                "two_attempts": 0,
+                "two_made": 0
+              }
+            },
+
             "dobric_ognjen_2002": {
               "birth_year": 2002,
               "mvp_count": 0,
@@ -79,33 +107,6 @@
                 "two_made": 0
               }
             },
-            "cvetinovic_nikola_2002": {
-              "birth_year": 2002,
-              "mvp_count": 0,
-              "name": "Cvetinović Nikola",
-              "number": 33,
-              "photo": "Cvetinovic_Nikola.png",
-              "playerId": "cvetinovic_nikola_2002",
-              "stats": {
-                "assists": 0,
-                "blocks": 0,
-                "efficiency": 0,
-                "fg_attempts": 0,
-                "fg_made": 0,
-                "fouls": 0,
-                "ft_attempts": 0,
-                "ft_made": 0,
-                "points": 0,
-                "rebounds_def": 0,
-                "rebounds_off": 0,
-                "steals": 0,
-                "three_attempts": 0,
-                "three_made": 0,
-                "turnovers": 0,
-                "two_attempts": 0,
-                "two_made": 0
-              }
-            },
             "merdovic_stefan_2002": {
               "birth_year": 2002,
               "mvp_count": 0,
@@ -133,13 +134,13 @@
                 "two_made": 0
               }
             },
-            "vujic_marko_1999": {
-              "birth_year": 1999,
+            "cvetinovic_nikola_2002": {
+              "birth_year": 2002,
               "mvp_count": 0,
-              "name": "Vujić Marko",
-              "number": 1,
-              "photo": "Vujic_Marko.png",
-              "playerId": "vujic_marko_1999",
+              "name": "Cvetinović Nikola",
+              "number": 33,
+              "photo": "Cvetinovic_Nikola.png",
+              "playerId": "cvetinovic_nikola_2002",
               "stats": {
                 "assists": 0,
                 "blocks": 0,
@@ -161,6 +162,7 @@
               }
             }
           },
+
           "team_stats": {
             "assists": 0,
             "blocks": 0,
@@ -179,6 +181,7 @@
             "two_made": 0
           }
         },
+
         "Dragons": {
           "color": "white",
           "logo": "White_Dragons.png",
@@ -210,6 +213,7 @@
                 "two_made": 0
               }
             },
+
             "perunicic_mladen_1985": {
               "birth_year": 1985,
               "mvp_count": 1,
@@ -238,6 +242,7 @@
                 "two_made": 0
               }
             },
+
             "stojanov_stefan_1999": {
               "birth_year": 1999,
               "mvp_count": 1,
@@ -246,6 +251,34 @@
               "number": 30,
               "photo": "Stojanov_Stefan.png",
               "playerId": "stojanov_stefan_1999",
+              "stats": {
+                "assists": 0,
+                "blocks": 0,
+                "efficiency": 0,
+                "fg_attempts": 0,
+                "fg_made": 0,
+                "fouls": 0,
+                "ft_attempts": 0,
+                "ft_made": 0,
+                "points": 0,
+                "rebounds_def": 0,
+                "rebounds_off": 0,
+                "steals": 0,
+                "three_attempts": 0,
+                "three_made": 0,
+                "turnovers": 0,
+                "two_attempts": 0,
+                "two_made": 0
+              }
+            },
+
+            "ilic_nikola_2005": {
+              "birth_year": 2005,
+              "mvp_count": 0,
+              "name": "Ilić Nikola",
+              "number": 5,
+              "photo": "Ilic_Nikola.png",
+              "playerId": "ilic_nikola_2005",
               "stats": {
                 "assists": 0,
                 "blocks": 0,
@@ -293,36 +326,9 @@
                 "two_attempts": 0,
                 "two_made": 0
               }
-            },
-
-            "simidzija_nikola_1999": {
-              "birth_year": 1999,
-              "mvp_count": 0,
-              "name": "Simidžija Nikola",
-              "number": 5,
-              "photo": "Simidzija_Nikola.png",
-              "playerId": "simidzija_nikola_1999",
-              "stats": {
-                "assists": 0,
-                "blocks": 0,
-                "efficiency": 0,
-                "fg_attempts": 0,
-                "fg_made": 0,
-                "fouls": 0,
-                "ft_attempts": 0,
-                "ft_made": 0,
-                "points": 0,
-                "rebounds_def": 0,
-                "rebounds_off": 0,
-                "steals": 0,
-                "three_attempts": 0,
-                "three_made": 0,
-                "turnovers": 0,
-                "two_attempts": 0,
-                "two_made": 0
-              }
             }
           },
+
           "team_stats": {
             "assists": 0,
             "blocks": 0,

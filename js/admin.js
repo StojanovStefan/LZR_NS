@@ -266,7 +266,7 @@ async function applyAction(
   showNotification(getActionNotification(action, playerName), playerPhoto);
 }
 
-function showNotification(message, photo = null) {
+function showNotification(message, photo = "") {
   const notification = document.createElement("div");
 
   notification.style.position = "fixed";
@@ -286,21 +286,21 @@ function showNotification(message, photo = null) {
   notification.style.alignItems = "center";
   notification.style.gap = "12px";
 
-  if (photo) {
-    const img = document.createElement("img");
-    img.src = `team_logo/${photo}`;
-    img.style.width = "45px";
-    img.style.height = "45px";
-    img.style.borderRadius = "50%";
-    img.style.objectFit = "cover";
+  // Fotografija igrača - ista logika kao u profilu
+  const img = document.createElement("img");
+  img.src = `team_logo/${photo || "default_player.png"}`;
+  img.alt = "Player";
+  img.style.width = "45px";
+  img.style.height = "45px";
+  img.style.borderRadius = "50%";
+  img.style.objectFit = "cover";
 
-    img.onerror = function () {
-      this.onerror = null;
-      this.src = "team_logo/default_player.png";
-    };
+  img.onerror = function () {
+    this.onerror = null;
+    this.src = "team_logo/default_player.png";
+  };
 
-    notification.appendChild(img);
-  }
+  notification.appendChild(img);
 
   const text = document.createElement("span");
   text.textContent = message;
@@ -316,9 +316,7 @@ function showNotification(message, photo = null) {
     notification.style.opacity = "0";
     notification.addEventListener(
       "transitionend",
-      () => {
-        notification.remove();
-      },
+      () => notification.remove(),
       { once: true },
     );
   }, 4000);
@@ -510,7 +508,7 @@ async function undoLastPlay() {
   }
   showNotification(
     `Poslednja akcija poništena: ${playerName} - ${actionText}`,
-    playerPhoto,
+    playerPhoto || "default_player.png",
   );
 }
 
