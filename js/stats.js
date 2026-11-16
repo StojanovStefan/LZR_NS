@@ -92,6 +92,133 @@ onValue(ref(db, `games/${gameId}/gameInfo`), (snap) => {
   renderGameHeader(info);
 });
 
+function findBestPlayer(team) {
+  if (!team) return null;
+
+  const players = team.players || {};
+
+  let bestPlayer = null;
+  let maxEff = -Infinity;
+
+  for (const number in players) {
+    const p = players[number];
+    const s = p.stats || {};
+
+    const eff =
+      Number(s.points || 0) +
+      Number(s.rebounds_off || 0) +
+      Number(s.rebounds_def || 0) +
+      Number(s.assists || 0) +
+      Number(s.steals || 0) +
+      Number(s.blocks || 0) -
+      Number(s.turnovers || 0) -
+      (Number(s.fg_attempts || 0) -
+        Number(s.fg_made || 0) +
+        Number(s.ft_attempts || 0) -
+        Number(s.ft_made || 0));
+
+    if (eff > maxEff) {
+      maxEff = eff;
+
+      bestPlayer = {
+        playerId: p.playerId,
+        name: p.name || "",
+        number: p.number || number,
+        photo: p.photo || "default_player.png",
+        points: Number(s.points || 0),
+        rebounds: Number(s.rebounds_off || 0) + Number(s.rebounds_def || 0),
+        assists: Number(s.assists || 0),
+        steals: Number(s.steals || 0),
+        blocks: Number(s.blocks || 0),
+      };
+    }
+  }
+
+  return bestPlayer;
+}
+
+function createPlayerCard(player, team, title, type, teamName) {
+  if (!player) return "";
+
+  teamName = teamName || "Nepoznata ekipa";
+
+  return `
+    <div class="mvp-block ${type}">
+
+      <div class="mvp-player"
+        onclick="window.location.href='playerProfile.html?id=${player.playerId}'">
+
+        <div class="mvp-player-info">
+
+          <img
+            class="mvp-player-photo"
+            src="team_logo/${player.photo}"
+            onerror="this.onerror=null;this.src='team_logo/default_player.png';"
+            alt="${player.name}"
+          >
+
+          <div class="mvp-player-details">
+
+            <div class="mvp-player-name">
+              <span class="mvp-number">#${player.number}</span>
+              ${player.name}
+            </div>
+
+            <div class="mvp-player-label">
+              ${title}
+            </div>
+
+          </div>
+        </div>
+
+        <div class="mvp-stats">
+
+          <div class="mvp-stat">
+            <strong>${player.points}</strong>
+            <span>PTS</span>
+          </div>
+
+          <div class="mvp-stat">
+            <strong>${player.rebounds}</strong>
+            <span>REB</span>
+          </div>
+
+          <div class="mvp-stat">
+            <strong>${player.assists}</strong>
+            <span>AST</span>
+          </div>
+
+          <div class="mvp-stat">
+            <strong>${player.steals}</strong>
+            <span>STL</span>
+          </div>
+
+          <div class="mvp-stat">
+            <strong>${player.blocks}</strong>
+            <span>BLK</span>
+          </div>
+
+        </div>
+
+        <div class="mvp-team-logo">
+
+          <img
+            src="team_logo/${team.logo || "default_team.png"}"
+            onerror="this.onerror=null;this.src='team_logo/default_team.png';"
+            alt="Logo ekipe"
+          >
+
+          <span class="mvp-team-name">
+            ${teamName}
+          </span>
+
+        </div>
+
+      </div>
+    </div>
+  `;
+}
+
 function renderGameHeader(info) {
   if (!info || !info.teamA || !info.teamB) {
     document.getElementById("gameHeader").innerHTML =
@@ -105,123 +232,117 @@ function renderGameHeader(info) {
   const startTime = info.startTime || "";
 
   let mvpHtml = "";
+
+  // MVP kartice prikazujemo samo kada je utakmica završena
   if (
     info.status === "finished" &&
     globalTeams[info.teamA] &&
     globalTeams[info.teamB]
   ) {
-    const scoreA = info.scoreA ?? 0;
-    const scoreB = info.scoreB ?? 0;
+    const scoreA = Number(info.scoreA ?? 0);
+    const scoreB = Number(info.scoreB ?? 0);
+
+    // Pobednička i poražena ekipa
     const winnerTeam = scoreA >= scoreB ? info.teamA : info.teamB;
 
-    const players = globalTeams[winnerTeam].players || {};
-    let bestPlayer = null;
-    let bestPlayerId = null;
-    let maxEff = -Infinity;
+    const loserTeam = winnerTeam === info.teamA ? info.teamB : info.teamA;
 
-    for (const number in players) {
-      const p = players[number];
-      const s = p.stats || {};
-      const eff =
-        (s.points || 0) +
-        (s.rebounds_off || 0) +
-        (s.rebounds_def || 0) +
-        (s.assists || 0) +
-        (s.steals || 0) +
-        (s.blocks || 0) -
-        (s.turnovers || 0) -
-        ((s.fg_attempts || 0) -
-          (s.fg_made || 0) +
-          (s.ft_attempts || 0) -
-          (s.ft_made || 0));
+    const winningTeam = globalTeams[winnerTeam];
+    const losingTeam = globalTeams[loserTeam];
 
-      if (eff > maxEff) {
-        maxEff = eff;
-        bestPlayer = {
-          playerId: p.playerId,
-          name: p.name,
-          photo: p.photo || "default_player.png",
-        };
-      }
-    }
+    // Najbolji igrači obe ekipe
+    const bestWinner = findBestPlayer(winningTeam);
+    const bestLoser = findBestPlayer(losingTeam);
 
-    if (bestPlayer) {
-      mvpHtml = `
-      <div class="mvp-block">
-        <div class="mvp-title">Igrač utakmice</div>
-         <div class="mvp-player" style="cursor:pointer;" 
-           onclick="window.location.href='playerProfile.html?id=${
-             bestPlayer.playerId
-           }'">
-          <img src="team_logo/${
-            bestPlayer.photo || "default_player.png"
-          }" alt="${bestPlayer.name}">
-          <div class="mvp-player-name">
-            ${bestPlayer.name}&nbsp; <span>${maxEff} (+/-)</span>
-          </div>
-        </div>
-      </div>`;
-    }
+    // Prva kartica: najbolji igrač pobednika
+    // Druga kartica: najbolji igrač poražene ekipe
+    mvpHtml = `
+      ${createPlayerCard(
+        bestWinner,
+        winningTeam,
+        "IGRAČ UTAKMICE",
+        "mvp-winner",
+        winnerTeam === "black_lions"
+          ? "Lions"
+          : winnerTeam === "white_dragons"
+            ? "Dragons"
+            : winnerTeam,
+      )}
+
+      ${createPlayerCard(
+        bestLoser,
+        losingTeam,
+        "ISTAKNUTI IGRAČ",
+        "mvp-loser",
+        loserTeam === "black_lions"
+          ? "Lions"
+          : loserTeam === "white_dragons"
+            ? "Dragons"
+            : loserTeam,
+      )}
+    `;
   }
+
+  // GLAVNI HEADER
+  // Ovaj deo se izvršava nezavisno od MVP kartica
 
   container.innerHTML = `
-  <div class="game-header">
-    <div class="game-info">
-      📍 ${info.location || "Nepoznato"} •
-      📅 ${date} •
-      🕒 ${startTime} •
-      <span class="live-broadcast">🎦</span> •
-      ${info.ytLink ? '<span class="yt-broadcast">📺</span>' : ""}
-    </div>
+    <div class="game-header">
 
-    <div class="teams">
-      <div class="team-block">
-         <img 
-      src="team_logo/${info.teamA_logo || "default.png"}" 
-      class="big-logo"
-      onclick="event.stopPropagation(); window.location.href='teamProfile.html?id=${
-        info.teamA
-      }'"
-    >
-        <div class="team-name-large">${info.teamA}</div>
+      <div class="game-info">
+        📍 ${info.location || "Nepoznato"} •
+        📅 ${date} •
+        🕒 ${startTime} •
+        <span class="live-broadcast">🎦</span> •
+        ${info.ytLink ? '<span class="yt-broadcast">📺</span>' : ""}
       </div>
 
-      <div class="score-big-container">
-  ${
-    info.status === "finished"
-      ? '<div class="final-result-text">Konačni rezultat</div>'
-      : ""
-  }
-  <div class="score-big">${info.scoreA ?? "-"} : ${info.scoreB ?? "-"}</div>
-</div>
+      <div class="teams">
 
-      <div class="team-block">
-       <img 
-      src="team_logo/${info.teamB_logo || "default.png"}" 
-      class="big-logo"
-      onclick="event.stopPropagation(); window.location.href='teamProfile.html?id=${
-        info.teamB
-      }'"
-    >
-        <div class="team-name-large">${info.teamB}</div>
+        <div class="team-block">
+          <img
+            src="team_logo/${info.teamA_logo || "default.png"}"
+            class="big-logo"
+            onclick="event.stopPropagation(); window.location.href='teamProfile.html?id=${info.teamA}'"
+          >
+
+          <div class="team-name-large">
+            ${info.teamA}
+          </div>
+        </div>
+
+        <div class="score-big-container">
+
+          ${
+            info.status === "finished"
+              ? '<div class="final-result-text">Konačni rezultat</div>'
+              : ""
+          }
+
+          <div class="score-big">
+            ${info.scoreA ?? "-"} : ${info.scoreB ?? "-"}
+          </div>
+
+        </div>
+
+        <div class="team-block">
+          <img
+            src="team_logo/${info.teamB_logo || "default.png"}"
+            class="big-logo"
+            onclick="event.stopPropagation(); window.location.href='teamProfile.html?id=${info.teamB}'"
+          >
+
+          <div class="team-name-large">
+            ${info.teamB}
+          </div>
+        </div>
+
       </div>
-    </div>
 
-    ${mvpHtml}
-  </div>
+      ${mvpHtml}
+
+    </div>
   `;
-
-  const broadcastIcon = container.querySelector(".live-broadcast");
-  if (broadcastIcon) {
-    broadcastIcon.addEventListener("click", copyBroadcastLink);
-  }
-
-  const YTbroadcastIcon = container.querySelector(".yt-broadcast");
-  if (YTbroadcastIcon && info.ytLink) {
-    YTbroadcastIcon.addEventListener("click", () => {
-      window.open(info.ytLink, "_blank");
-    });
-  }
 }
 
 function tryRenderAll() {

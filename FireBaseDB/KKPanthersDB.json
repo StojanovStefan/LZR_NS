@@ -6604,27 +6604,28 @@
                 "two_attempts": 0,
                 "two_made": 0
               }
-            },
-
-            "team_stats": {
-              "assists": 0,
-              "blocks": 0,
-              "fg_attempts": 0,
-              "fg_made": 0,
-              "ft_attempts": 0,
-              "ft_made": 0,
-              "points": 0,
-              "rebounds_def": 0,
-              "rebounds_off": 0,
-              "steals": 0,
-              "three_attempts": 0,
-              "three_made": 0,
-              "turnovers": 0,
-              "two_attempts": 0,
-              "two_made": 0
             }
+          },
+
+          "team_stats": {
+            "assists": 0,
+            "blocks": 0,
+            "fg_attempts": 0,
+            "fg_made": 0,
+            "ft_attempts": 0,
+            "ft_made": 0,
+            "points": 0,
+            "rebounds_def": 0,
+            "rebounds_off": 0,
+            "steals": 0,
+            "three_attempts": 0,
+            "three_made": 0,
+            "turnovers": 0,
+            "two_attempts": 0,
+            "two_made": 0
           }
         },
+
         "Dragons": {
           "color": "white",
           "logo": "White_Dragons.png",
@@ -6769,25 +6770,25 @@
                 "two_attempts": 0,
                 "two_made": 0
               }
-            },
-
-            "team_stats": {
-              "assists": 0,
-              "blocks": 0,
-              "fg_attempts": 0,
-              "fg_made": 0,
-              "ft_attempts": 0,
-              "ft_made": 0,
-              "points": 0,
-              "rebounds_def": 0,
-              "rebounds_off": 0,
-              "steals": 0,
-              "three_attempts": 0,
-              "three_made": 0,
-              "turnovers": 0,
-              "two_attempts": 0,
-              "two_made": 0
             }
+          },
+
+          "team_stats": {
+            "assists": 0,
+            "blocks": 0,
+            "fg_attempts": 0,
+            "fg_made": 0,
+            "ft_attempts": 0,
+            "ft_made": 0,
+            "points": 0,
+            "rebounds_def": 0,
+            "rebounds_off": 0,
+            "steals": 0,
+            "three_attempts": 0,
+            "three_made": 0,
+            "turnovers": 0,
+            "two_attempts": 0,
+            "two_made": 0
           }
         }
       }
