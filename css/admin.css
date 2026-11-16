@@ -16,55 +16,76 @@ body {
 .teamContainer {
   display: flex;
   gap: 30px;
-  margin-top: 50px;
+  margin-top: 40px;
+  width: 100%;
+  align-items: stretch;
 }
+
 .teamBox {
-  width: 48%;
+  flex: 1;
+  min-width: 0;
   background: #d1d5db;
-  padding: 20px;
-  border-radius: 10px;
+  padding: 25px;
+  border-radius: 12px;
+  box-sizing: border-box;
 }
+
 #teamA_name,
 #teamB_name {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
+  margin-bottom: 20px;
 }
+
 .teamLogo {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   object-fit: contain;
   border-radius: 50%;
 }
+
 h2 {
+  font-size: 26px;
   margin-top: 0;
 }
 .playerBox {
   background: #8b8f96;
-  color: #ececec;
-  padding: 10px;
-  margin: 5px 0;
-  border-radius: 5px;
+  color: #ffffff;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
   cursor: pointer;
+  box-sizing: border-box;
 }
+
 .playerBox:hover {
   background: #8b8f96;
   color: #1f2937;
 }
 .actions {
-  margin-top: 5px;
+  margin-top: 10px;
   display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
+  flex-wrap: nowrap;
+  gap: 6px;
+  width: 100%;
+  overflow-x: auto;
+  padding-bottom: 4px;
 }
+
 .actionBtn {
-  padding: 5px 8px;
+  flex: 0 0 auto;
+  white-space: nowrap;
+  padding: 8px 9px;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   background: #4b5563;
   color: white;
   cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
 }
+
 .actionBtn:hover {
   background: #fbbf24;
   color: black;
@@ -119,14 +140,14 @@ h2 {
 .player-header {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 8px;
-  min-height: 36px;
+  gap: 14px;
+  margin-bottom: 12px;
+  min-height: 45px;
 }
 
 .player-img {
-  width: 36px;
-  height: 36px;
+  width: 46px;
+  height: 46px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid #c5cbd4;
@@ -135,7 +156,7 @@ h2 {
 }
 
 .player-header strong {
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 700;
 }
 
@@ -143,4 +164,12 @@ h2 {
   outline: 2px solid #fbbf24;
   outline-offset: -2px;
   box-shadow: 0 0 10px rgba(251, 191, 36, 0.35);
+}
+
+@media (max-width: 600px) {
+  body {
+    transform: scale(0.8);
+    transform-origin: top left;
+    width: 125%;
+  }
 }
