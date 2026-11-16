@@ -35,20 +35,74 @@ let orderedTeams = [];
 let globalTeams = {};
 let gameInfo = null;
 
-function copyBroadcastLink() {
-  const basePath = "/LZR_NS";
-  const link = `${window.location.origin}${basePath}/broadcast.html?id=${gameId}`;
+// KOPIRANJE BROADCAST LINKA
+window.copyBroadcastLink = async function () {
+  if (!gameId) {
+    console.error("gameId nije definisan!");
+    showTemporaryNotification("ID utakmice nije dostupan!");
+    return;
+  }
 
-  navigator.clipboard
-    .writeText(link)
-    .then(() => {
-      showTemporaryNotification("Link za live broadcast kopiran!");
-    })
-    .catch((err) => {
-      console.error("Neuspešno kopiranje linka:", err);
-      showTemporaryNotification("Greška pri kopiranju linka!");
-    });
-}
+  const url = new URL("/LZR_NS/broadcast.html", window.location.origin);
+
+  url.searchParams.set("id", gameId);
+
+  const link = url.toString();
+
+  try {
+    if (navigator.clipboard && window.isSecureContext) {
+      await navigator.clipboard.writeText(link);
+    } else {
+      // Rezervna metoda za kopiranje
+      const textarea = document.createElement("textarea");
+      textarea.value = link;
+      textarea.style.position = "fixed";
+      textarea.style.opacity = "0";
+
+      document.body.appendChild(textarea);
+      textarea.select();
+
+      const success = document.execCommand("copy");
+      textarea.remove();
+
+      if (!success) throw new Error("Kopiranje nije uspelo");
+    }
+
+    showTemporaryNotification("Broadcast link je kopiran!");
+    console.log("Kopiran link:", link);
+  } catch (err) {
+    console.error("Greška pri kopiranju:", err);
+    showTemporaryNotification("Greška pri kopiranju linka!");
+  }
+};
+
+// OTVARANJE YOUTUBE LINKA
+window.openYoutubeLink = function () {
+  const youtubeUrl = gameInfo?.ytLink;
+
+  if (!youtubeUrl) {
+    showTemporaryNotification("YouTube link nije dostupan!");
+    return;
+  }
+
+  try {
+    const url = new URL(youtubeUrl);
+
+    if (!["https:", "http:"].includes(url.protocol)) {
+      throw new Error("Neispravan YouTube link");
+    }
+
+    // Otvaranje mora biti direktno u okviru korisničkog klika
+    const newTab = window.open(url.href, "_blank");
+
+    if (!newTab) {
+      showTemporaryNotification("Pregledač je blokirao otvaranje linka!");
+    }
+  } catch (err) {
+    console.error("Greška YouTube linka:", err);
+    showTemporaryNotification("YouTube link nije ispravan!");
+  }
+};
 
 function showTemporaryNotification(message) {
   const notification = document.createElement("div");
@@ -293,8 +347,27 @@ function renderGameHeader(info) {
         📍 ${info.location || "Nepoznato"} •
         📅 ${date} •
         🕒 ${startTime} •
-        <span class="live-broadcast">🎦</span> •
-        ${info.ytLink ? '<span class="yt-broadcast">📺</span>' : ""}
+        <span
+  class="live-broadcast"
+  onclick="event.stopPropagation(); window.copyBroadcastLink()"
+  title="Kopiraj broadcast link"
+  style="cursor:pointer;"
+>🎦</span>
+
+•
+
+${
+  info.ytLink
+    ? `
+  <span
+    class="yt-broadcast"
+    onclick="event.stopPropagation(); window.openYoutubeLink()"
+    title="Otvori YouTube prenos"
+    style="cursor:pointer;"
+  >📺</span>
+`
+    : ""
+}
       </div>
 
       <div class="teams">
