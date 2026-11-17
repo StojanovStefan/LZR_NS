@@ -631,7 +631,7 @@ body {
   }
 
   .centerPanel {
-    order: -1;
+    order: 0;
     padding: 15px;
   }
 

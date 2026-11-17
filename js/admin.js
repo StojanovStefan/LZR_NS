@@ -513,7 +513,7 @@ function showNotification(message, photo = "") {
 
   Object.assign(notification.style, {
     position: "fixed",
-    top: "4px",
+    top: "15px",
     left: "50%",
     transform: "translateX(-50%)",
     bottom: "auto",
@@ -552,7 +552,7 @@ function showNotification(message, photo = "") {
   });
 
   notification.style.setProperty("position", "fixed", "important");
-  notification.style.setProperty("top", "4px", "important");
+  notification.style.setProperty("top", "15px", "important");
   notification.style.setProperty("left", "50%", "important");
   notification.style.setProperty("bottom", "auto", "important");
   notification.style.setProperty("right", "auto", "important");
@@ -720,8 +720,10 @@ async function undoLastPlay() {
         timestamp: 0,
       });
     }
-
-    showNotification(`Poslednja akcija poništena: ${playerName}`, playerPhoto);
+    showNotification(
+      `Poslednja akcija poništena: ${getActionNotification(type, playerName)}`,
+      playerPhoto,
+    );
 
     updateSelectedPlayer();
   } catch (error) {
