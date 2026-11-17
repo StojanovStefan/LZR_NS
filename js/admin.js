@@ -513,21 +513,29 @@ function showNotification(message, photo = "") {
 
   Object.assign(notification.style, {
     position: "fixed",
-    bottom: "30px",
-    left: "30px",
+    top: "1px",
+    left: "50%",
+    transform: "translateX(-50%)",
+    bottom: "auto",
+    right: "auto",
+
     background: "#fbbf24",
     color: "black",
     padding: "12px 20px",
-    borderRadius: "8px",
+    borderRadius: "10px",
     fontSize: "16px",
     fontWeight: "bold",
-    boxShadow: "0 4px 8px rgba(0,0,0,0.25)",
+    boxShadow: "0 4px 12px rgba(0,0,0,0.3)",
     opacity: "0",
     transition: "opacity 0.3s ease",
-    zIndex: "9999",
+    zIndex: "99999",
     display: "flex",
     alignItems: "center",
     gap: "12px",
+
+    width: "max-content",
+    maxWidth: "90vw",
+    boxSizing: "border-box",
   });
 
   const img = document.createElement("img");
@@ -540,6 +548,7 @@ function showNotification(message, photo = "") {
     height: "45px",
     borderRadius: "50%",
     objectFit: "cover",
+    flexShrink: "0",
   });
 
   img.onerror = function () {
@@ -550,9 +559,7 @@ function showNotification(message, photo = "") {
   notification.appendChild(img);
 
   const text = document.createElement("span");
-
   text.textContent = message;
-
   notification.appendChild(text);
 
   document.body.appendChild(notification);
