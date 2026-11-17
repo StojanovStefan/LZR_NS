@@ -1023,8 +1023,8 @@ function renderCharts(events) {
   // BOJE
   // ==============================
 
-  const TEAM_A_COLOR = "#7C3AED";
-  const TEAM_B_COLOR = "#E5A000";
+  const TEAM_A_COLOR = "#303030";
+  const TEAM_B_COLOR = "#a8e52d";
   const TIE_COLOR = "#94A3B8";
 
   const isMobile = window.innerWidth <= 480;
