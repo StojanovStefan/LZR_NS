@@ -13,6 +13,7 @@
   --navy-light: #243c57;
   --blue: #315b80;
   --blue-soft: #e8eff5;
+  --blue-hover: #e2edf7;
   --accent: #fbbf24;
   --accent-dark: #d99a08;
   --text: #25364a;
@@ -134,21 +135,47 @@ body {
   cursor: pointer;
 
   transition:
-    background 0.18s ease,
-    border-color 0.18s ease,
-    box-shadow 0.18s ease;
+    background 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
 }
+
+/* NORMAL HOVER */
 
 .playerBox:hover {
-  background: #fffaf0;
-  border-color: var(--accent);
-  box-shadow: 0 3px 9px rgba(35, 58, 80, 0.08);
+  background: #edf4fa;
+  border-color: #a9bfd4;
+
+  box-shadow: 0 5px 12px rgba(35, 58, 80, 0.1);
+
+  transform: translateY(-2px);
 }
 
+/* SELECTED PLAYER */
+
 .playerBox.selected {
-  background: #fff6dc;
-  border: 2px solid var(--accent);
-  box-shadow: inset 3px 0 0 var(--accent-dark);
+  background: #e0ebf5;
+  border: 2px solid #8eabc5;
+
+  box-shadow:
+    inset 3px 0 0 #315b80,
+    0 3px 9px rgba(35, 58, 80, 0.08);
+
+  transform: none;
+}
+
+/* SELECTED PLAYER HOVER */
+
+.playerBox.selected:hover {
+  background: #e0ebf5;
+  border-color: #8eabc5;
+
+  box-shadow:
+    inset 3px 0 0 #315b80,
+    0 4px 10px rgba(35, 58, 80, 0.12);
+
+  transform: none;
 }
 
 /* ==============================
@@ -174,6 +201,16 @@ body {
   border: 2px solid #d7e0e9;
 
   flex-shrink: 0;
+
+  transition: border-color 0.2s ease;
+}
+
+.playerBox:hover .player-img {
+  border-color: #a9bfd4;
+}
+
+.playerBox.selected .player-img {
+  border-color: #8eabc5;
 }
 
 .player-header strong {
@@ -389,10 +426,10 @@ body {
   align-items: center;
   justify-content: center;
 
-  border: 1px solid #d5dfe8;
+  border: 1px solid #c7d4e0;
   border-radius: 9px;
 
-  background: #edf2f6;
+  background: #e3ebf3;
   color: var(--navy);
 
   font-size: 16px;
@@ -402,29 +439,39 @@ body {
   cursor: pointer;
 
   transition:
-    background 0.15s ease,
-    border-color 0.15s ease,
-    box-shadow 0.15s ease;
+    background 0.18s ease,
+    color 0.18s ease,
+    border-color 0.18s ease,
+    box-shadow 0.18s ease,
+    transform 0.18s ease;
 
-  box-shadow: none;
+  box-shadow: 0 2px 4px rgba(28, 48, 70, 0.05);
 }
 
 .playerActions .actionBtn:hover {
-  background: var(--accent);
-  color: #172b43;
-  border-color: var(--accent-dark);
-  box-shadow: 0 3px 9px rgba(217, 154, 8, 0.2);
-  transform: none;
+  background: #416f96;
+  color: #ffffff;
+
+  border-color: #244765;
+
+  box-shadow: 0 5px 12px rgba(35, 58, 80, 0.22);
+
+  transform: translateY(-2px);
 }
 
 .playerActions .actionBtn:active {
-  transform: none;
-  background: #e9a900;
-  color: #172b43;
+  background: #172b43;
+  color: #ffffff;
+
+  border-color: #172b43;
+
+  box-shadow: 0 2px 5px rgba(35, 58, 80, 0.18);
+
+  transform: translateY(0);
 }
 
 .playerActions .actionBtn:focus-visible {
-  outline: 2px solid var(--accent);
+  outline: 2px solid var(--blue);
   outline-offset: 3px;
 }
 
@@ -450,25 +497,36 @@ body {
 
   cursor: pointer;
 
-  box-shadow: none;
+  box-shadow: 0 1px 2px rgba(28, 48, 70, 0.03);
 
   transition:
-    background 0.15s ease,
-    border-color 0.15s ease,
-    box-shadow 0.15s ease;
+    background 0.18s ease,
+    border-color 0.18s ease,
+    box-shadow 0.18s ease,
+    transform 0.18s ease;
 }
 
 #undoBtn:hover {
-  background: var(--accent);
-  border-color: var(--accent-dark);
-  color: #172b43;
-  box-shadow: 0 3px 9px rgba(217, 154, 8, 0.2);
+  background: #dfeaf4;
+  border-color: #a9bfd4;
+
+  color: var(--navy);
+
+  box-shadow: 0 4px 10px rgba(35, 58, 80, 0.1);
+
+  transform: translateY(-2px);
 }
 
 #undoBtn:active {
-  background: #e9a900;
+  background: #d4e2ef;
+  transform: translateY(0);
+  box-shadow: none;
 }
 
+#undoBtn:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 3px;
+}
 /* ==============================
    FOOTER - FINISH GAME
 ============================== */
@@ -487,10 +545,10 @@ body {
   width: 280px;
   min-height: 58px;
 
-  border: 1px solid #d99a08;
+  border: 1px solid #315b80;
   border-radius: 9px;
 
-  background: var(--navy);
+  background: #172b43;
   color: #ffffff;
 
   font-size: 18px;
@@ -499,20 +557,37 @@ body {
   cursor: pointer;
 
   box-shadow: 0 3px 9px rgba(28, 48, 70, 0.15);
-  transition: 0.2s;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
 }
 
 #finishBtn:hover {
-  background: var(--accent);
-  border-color: var(--accent-dark);
-  color: #172b43;
+  background: #416f96;
+  border-color: #315b80;
 
-  transform: translateY(-1px);
+  color: #ffffff;
+
+  box-shadow: 0 6px 14px rgba(28, 48, 70, 0.22);
+
+  transform: translateY(-2px);
 }
 
 #finishBtn:active {
-  background: #e9a900;
-  transform: none;
+  background: #294866;
+  border-color: #244765;
+
+  transform: translateY(0);
+
+  box-shadow: 0 2px 5px rgba(28, 48, 70, 0.15);
+}
+
+#finishBtn:focus-visible {
+  outline: 2px solid #416f96;
+  outline-offset: 3px;
 }
 
 /* ==============================
@@ -716,5 +791,18 @@ body {
 
   .player-header strong {
     font-size: clamp(11px, 3vw, 14px);
+  }
+}
+
+/* ==============================
+   REDUCED MOTION
+============================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
   }
 }
