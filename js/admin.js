@@ -53,23 +53,23 @@ let selectedPlayer = null;
 ===================================== */
 
 const actions = [
-  { label: "2 Miss", value: "miss_2" },
-  { label: "2 Made", value: "points_2" },
+  { label: "🏀 2 Made", value: "points_2" },
+  { label: "🧱 2 Miss", value: "miss_2" },
 
-  { label: "3 Miss", value: "miss_3" },
-  { label: "3 Made", value: "points_3" },
+  { label: "🏀 3 Made", value: "points_3" },
+  { label: "🧱 3 Miss", value: "miss_3" },
 
-  { label: "1 Miss", value: "miss_1" },
-  { label: "1 Made", value: "points_1" },
+  { label: "🏀 1 Made", value: "points_1" },
+  { label: "🧱 1 Miss", value: "miss_1" },
 
-  { label: "Assist", value: "assists" },
-  { label: "Off Reb", value: "rebounds_off" },
+  { label: "🪄 Assist", value: "assists" },
+  { label: "💪 Off Reb", value: "rebounds_off" },
 
-  { label: "Def Reb", value: "rebounds_def" },
-  { label: "Steal", value: "steals" },
+  { label: "🛡️Def Reb", value: "rebounds_def" },
+  { label: "🥷 Steal", value: "steals" },
 
-  { label: "TO", value: "turnovers" },
-  { label: "Block", value: "blocks" },
+  { label: "❌ TO", value: "turnovers" },
+  { label: "🏐 Block", value: "blocks" },
 ];
 
 /* =====================================
