@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Player Stats</title>
     <link rel="stylesheet" href="css/stats.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script type="module" src="js/stats.js"></script>
   </head>
   <body>
@@ -17,11 +18,27 @@
         STATISTIKA IGRAČA
       </button>
       <button id="btnTimeline" class="switch-btn">TOK UTAKMICE</button>
+      <button id="btnCharts" class="switch-btn">GRAFIKONI</button>
     </div>
     <div class="scale-wrapper">
       <div id="teamTotals"></div>
       <div id="statsContainer"></div>
       <div id="timelineContainer"></div>
+      <div id="chartsContainer" style="display: none">
+        <div class="chart-card">
+          <h3>Kretanje rezultata</h3>
+          <div class="chart-wrapper">
+            <canvas id="scoreChart"></canvas>
+          </div>
+        </div>
+
+        <div class="chart-card">
+          <h3>Praćenje prednosti</h3>
+          <div class="chart-wrapper">
+            <canvas id="leadChart"></canvas>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

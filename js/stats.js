@@ -35,6 +35,14 @@ let orderedTeams = [];
 let globalTeams = {};
 let gameInfo = null;
 
+// ==============================
+// GAME CHARTS
+// ==============================
+
+let scoreChart = null;
+let leadChart = null;
+let latestEvents = {};
+
 // KOPIRANJE BROADCAST LINKA
 window.copyBroadcastLink = async function () {
   if (!gameId) {
@@ -428,6 +436,9 @@ function tryRenderAll() {
     renderStats(globalTeams);
     renderTotals(globalTeams);
     renderGameHeader(gameInfo);
+
+    // VAŽNO: napravi grafikone tek kada imamo ekipe i podatke
+    renderCharts(latestEvents);
   }
 }
 
@@ -785,8 +796,11 @@ function renderStats(teams) {
 /* ------------------ Game TimeLine ------------------ */
 
 onValue(ref(db, `games/${gameId}/events`), (snap) => {
-  const events = snap.val() || {};
-  renderTimeline(events);
+  latestEvents = snap.val() || {};
+
+  renderTimeline(latestEvents);
+
+  renderCharts(latestEvents);
 });
 
 function renderTimeline(events) {
@@ -913,6 +927,367 @@ function renderTimeline(events) {
   });
 }
 
+/* ==============================
+   GAME CHARTS
+============================== */
+
+function renderCharts(events) {
+  if (typeof Chart === "undefined") {
+    console.error("Chart.js nije učitan!");
+    return;
+  }
+
+  console.log("Grafikoni se kreiraju...");
+  console.log("Ekipe:", orderedTeams);
+  console.log("Događaji:", events);
+
+  const teamA = orderedTeams[0];
+  const teamB = orderedTeams[1];
+
+  if (!teamA || !teamB) return;
+
+  const sortedEvents = Object.values(events || {}).sort(
+    (a, b) => Number(a.timestamp || 0) - Number(b.timestamp || 0),
+  );
+
+  let scoreA = 0;
+  let scoreB = 0;
+
+  // Početni rezultat
+  const labels = ["Početak"];
+  const scoresA = [0];
+  const scoresB = [0];
+  const leadData = [0];
+
+  // Pronalazak ekipe preko igrača
+  function getEventTeam(ev) {
+    if (ev.team === teamA || ev.team === teamB) {
+      return ev.team;
+    }
+
+    for (const teamName of orderedTeams) {
+      const players = globalTeams[teamName]?.players || {};
+
+      const found = Object.values(players).some(
+        (p) => p.name === ev.playerName,
+      );
+
+      if (found) return teamName;
+    }
+
+    return null;
+  }
+
+  const pointsMap = {
+    points_1: 1,
+    points_2: 2,
+    points_3: 3,
+  };
+
+  sortedEvents.forEach((ev, index) => {
+    const points = pointsMap[ev.type] || 0;
+
+    if (points > 0) {
+      const team = getEventTeam(ev);
+
+      if (team === teamA) {
+        scoreA += points;
+      } else if (team === teamB) {
+        scoreB += points;
+      }
+    }
+
+    labels.push("");
+
+    scoresA.push(scoreA);
+    scoresB.push(scoreB);
+
+    // Pozitivno = vodi A
+    // Negativno = vodi B
+    leadData.push(scoreA - scoreB);
+  });
+
+  // ==============================
+  // UNIŠTAVANJE STARIH GRAFIKONA
+  // ==============================
+
+  if (scoreChart) {
+    scoreChart.destroy();
+  }
+
+  if (leadChart) {
+    leadChart.destroy();
+  }
+
+  // ==============================
+  // 1. KRETANJE REZULTATA
+  // ==============================
+
+  const scoreCanvas = document.getElementById("scoreChart");
+
+  if (!scoreCanvas) return;
+
+  scoreChart = new Chart(scoreCanvas, {
+    type: "line",
+
+    data: {
+      labels: labels,
+
+      datasets: [
+        {
+          label: teamA,
+          data: scoresA,
+          borderColor: "#7C3AED",
+          backgroundColor: "rgba(52, 120, 246, 0.15)",
+          borderWidth: 2.5,
+          pointRadius: 2,
+          pointHoverRadius: 6,
+          tension: 0.2,
+          fill: false,
+        },
+
+        {
+          label: teamB,
+          data: scoresB,
+          borderColor: "#E5A000",
+          backgroundColor: "rgba(239, 68, 68, 0.12)",
+          borderWidth: 2.5,
+          pointRadius: 2,
+          pointHoverRadius: 6,
+          tension: 0.2,
+          fill: false,
+        },
+      ],
+    },
+
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+
+      interaction: {
+        mode: "index",
+        intersect: false,
+      },
+
+      plugins: {
+        legend: {
+          display: true,
+          position: "top",
+          labels: {
+            usePointStyle: true,
+            pointStyle: "circle",
+            padding: 25,
+            font: {
+              size: 14,
+              weight: "bold",
+            },
+          },
+        },
+
+        tooltip: {
+          backgroundColor: "#172b43",
+          padding: 12,
+          titleFont: {
+            size: 14,
+            weight: "bold",
+          },
+          bodyFont: {
+            size: 13,
+          },
+          callbacks: {
+            title: () => "Rezultat utakmice",
+            label: (context) =>
+              `${context.dataset.label}: ${context.parsed.y} poena`,
+          },
+        },
+      },
+
+      scales: {
+        x: {
+          ticks: {
+            display: false,
+          },
+          grid: {
+            display: false,
+          },
+        },
+
+        y: {
+          beginAtZero: true,
+
+          title: {
+            display: true,
+            text: "Poeni",
+          },
+
+          ticks: {
+            precision: 0,
+          },
+        },
+      },
+    },
+  });
+
+  // ==============================
+  // 2. PRAĆENJE PREDNOSTI
+  // ==============================
+
+  const leadCanvas = document.getElementById("leadChart");
+
+  if (!leadCanvas) return;
+
+  const TEAM_A_COLOR = "#7C3AED";
+  const TEAM_B_COLOR = "#E5A000";
+  const TIE_COLOR = "#94A3B8";
+
+  leadChart = new Chart(leadCanvas, {
+    type: "line",
+
+    data: {
+      labels: labels,
+
+      datasets: [
+        {
+          label: "Razlika u poenima",
+          data: leadData,
+
+          borderWidth: 2.5,
+          borderColor: TEAM_A_COLOR,
+
+          // Boja svake tačke zavisi od toga ko vodi
+          pointBackgroundColor: leadData.map((value) => {
+            if (value > 0) return TEAM_A_COLOR;
+            if (value < 0) return TEAM_B_COLOR;
+            return TIE_COLOR;
+          }),
+
+          pointBorderColor: leadData.map((value) => {
+            if (value > 0) return TEAM_A_COLOR;
+            if (value < 0) return TEAM_B_COLOR;
+            return TIE_COLOR;
+          }),
+
+          pointRadius: 2,
+          pointHoverRadius: 4,
+          pointBorderWidth: 0,
+
+          tension: 0.2,
+          fill: false,
+
+          // Boja linije zavisi od toga ko vodi
+          segment: {
+            borderColor: (context) => {
+              const value = context.p1.parsed.y;
+
+              if (value > 0) return TEAM_A_COLOR;
+              if (value < 0) return TEAM_B_COLOR;
+
+              return TIE_COLOR;
+            },
+          },
+        },
+      ],
+    },
+
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+
+      interaction: {
+        mode: "index",
+        intersect: false,
+      },
+
+      plugins: {
+        legend: {
+          display: true,
+          position: "top",
+
+          labels: {
+            usePointStyle: true,
+            pointStyle: "circle",
+            padding: 20,
+
+            generateLabels: () => [
+              {
+                text: teamA,
+                fillStyle: TEAM_A_COLOR,
+                strokeStyle: TEAM_A_COLOR,
+                pointStyle: "circle",
+              },
+              {
+                text: teamB,
+                fillStyle: TEAM_B_COLOR,
+                strokeStyle: TEAM_B_COLOR,
+                pointStyle: "circle",
+              },
+              {
+                text: "Nerešeno",
+                fillStyle: TIE_COLOR,
+                strokeStyle: TIE_COLOR,
+                pointStyle: "circle",
+              },
+            ],
+          },
+        },
+
+        tooltip: {
+          backgroundColor: "#172b43",
+          padding: 12,
+
+          callbacks: {
+            title: () => "Prednost u utakmici",
+
+            label: (context) => {
+              const value = context.parsed.y;
+
+              if (value > 0) {
+                return `${teamA} vodi sa ${value} poena`;
+              }
+
+              if (value < 0) {
+                return `${teamB} vodi sa ${Math.abs(value)} poena`;
+              }
+
+              return "Rezultat je izjednačen";
+            },
+          },
+        },
+      },
+
+      scales: {
+        x: {
+          ticks: {
+            display: false,
+          },
+
+          grid: {
+            display: false,
+          },
+        },
+
+        y: {
+          title: {
+            display: true,
+            text: "Razlika u poenima",
+          },
+
+          ticks: {
+            precision: 0,
+          },
+
+          grid: {
+            color: (context) =>
+              context.tick.value === 0 ? "#172b43" : "#e5eaf0",
+
+            lineWidth: (context) => (context.tick.value === 0 ? 2 : 1),
+          },
+        },
+      },
+    },
+  });
+}
+
 /* ------------------ FULL TEAMS TOTALS ------------------ */
 
 function renderTotals(teams) {
@@ -1034,33 +1409,57 @@ function renderTotals(teams) {
 const btnT = document.getElementById("btnTotals");
 const btnP = document.getElementById("btnPlayers");
 const btnTimeline = document.getElementById("btnTimeline");
+const btnCharts = document.getElementById("btnCharts");
 
 btnT.onclick = () => {
   btnT.classList.add("active");
   btnP.classList.remove("active");
   btnTimeline.classList.remove("active");
+  btnCharts.classList.remove("active");
 
   document.getElementById("teamTotals").style.display = "block";
   document.getElementById("statsContainer").style.display = "none";
   document.getElementById("timelineContainer").style.display = "none";
+  document.getElementById("chartsContainer").style.display = "none";
 };
 
 btnP.onclick = () => {
   btnP.classList.add("active");
   btnT.classList.remove("active");
   btnTimeline.classList.remove("active");
+  btnCharts.classList.remove("active");
 
   document.getElementById("teamTotals").style.display = "none";
   document.getElementById("statsContainer").style.display = "block";
   document.getElementById("timelineContainer").style.display = "none";
+  document.getElementById("chartsContainer").style.display = "none";
 };
 
 btnTimeline.onclick = () => {
   btnTimeline.classList.add("active");
   btnP.classList.remove("active");
   btnT.classList.remove("active");
+  btnCharts.classList.remove("active");
 
   document.getElementById("teamTotals").style.display = "none";
   document.getElementById("statsContainer").style.display = "none";
   document.getElementById("timelineContainer").style.display = "block";
+  document.getElementById("chartsContainer").style.display = "none";
+};
+
+btnCharts.onclick = () => {
+  btnCharts.classList.add("active");
+  btnP.classList.remove("active");
+  btnT.classList.remove("active");
+  btnTimeline.classList.remove("active");
+
+  document.getElementById("teamTotals").style.display = "none";
+  document.getElementById("statsContainer").style.display = "none";
+  document.getElementById("timelineContainer").style.display = "none";
+  document.getElementById("chartsContainer").style.display = "flex";
+
+  requestAnimationFrame(() => {
+    scoreChart?.resize();
+    leadChart?.resize();
+  });
 };
