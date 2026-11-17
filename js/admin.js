@@ -513,7 +513,7 @@ function showNotification(message, photo = "") {
 
   Object.assign(notification.style, {
     position: "fixed",
-    top: "1px",
+    top: "4px",
     left: "50%",
     transform: "translateX(-50%)",
     bottom: "auto",
@@ -550,6 +550,13 @@ function showNotification(message, photo = "") {
     objectFit: "cover",
     flexShrink: "0",
   });
+
+  notification.style.setProperty("position", "fixed", "important");
+  notification.style.setProperty("top", "4px", "important");
+  notification.style.setProperty("left", "50%", "important");
+  notification.style.setProperty("bottom", "auto", "important");
+  notification.style.setProperty("right", "auto", "important");
+  notification.style.setProperty("transform", "translateX(-50%)", "important");
 
   img.onerror = function () {
     this.onerror = null;
