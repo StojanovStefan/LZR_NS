@@ -720,10 +720,10 @@ async function undoLastPlay() {
         timestamp: 0,
       });
     }
-    showNotification(
-      `Poslednja akcija poništena: ${getActionNotification(type, playerName)}`,
-      playerPhoto,
-    );
+
+    const actionDescription = getActionNotification(type, playerName);
+
+    showNotification(`Poništena akcija: ${actionDescription}`, playerPhoto);
 
     updateSelectedPlayer();
   } catch (error) {
