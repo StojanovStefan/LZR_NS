@@ -1020,6 +1020,16 @@ function renderCharts(events) {
   }
 
   // ==============================
+  // BOJE
+  // ==============================
+
+  const TEAM_A_COLOR = "#7C3AED";
+  const TEAM_B_COLOR = "#E5A000";
+  const TIE_COLOR = "#94A3B8";
+
+  const isMobile = window.innerWidth <= 480;
+
+  // ==============================
   // 1. KRETANJE REZULTATA
   // ==============================
 
@@ -1027,34 +1037,73 @@ function renderCharts(events) {
 
   if (!scoreCanvas) return;
 
+  scoreChart?.destroy();
+
   scoreChart = new Chart(scoreCanvas, {
     type: "line",
 
     data: {
-      labels: labels,
+      labels,
 
       datasets: [
         {
           label: teamA,
           data: scoresA,
-          borderColor: "#7C3AED",
-          backgroundColor: "rgba(52, 120, 246, 0.15)",
+
+          // Ljubičasta linija prvog tima
+          backgroundColor: TEAM_A_COLOR,
+          borderColor: TEAM_A_COLOR,
+
           borderWidth: 2.5,
+          stepped: "after",
+          borderCapStyle: "round",
+          borderJoinStyle: "round",
+
+          // Male tačke
           pointRadius: 2,
-          pointHoverRadius: 6,
-          tension: 0.2,
+          pointHoverRadius: 5,
+          pointHitRadius: 10,
+          pointBorderWidth: 0,
+
+          // Siva tačka kada je rezultat nerešen
+          pointBackgroundColor: scoresA.map((value, index) => {
+            return scoresA[index] === scoresB[index] ? TIE_COLOR : TEAM_A_COLOR;
+          }),
+
+          pointBorderColor: scoresA.map((value, index) => {
+            return scoresA[index] === scoresB[index] ? TIE_COLOR : TEAM_A_COLOR;
+          }),
+
           fill: false,
         },
 
         {
           label: teamB,
           data: scoresB,
-          borderColor: "#E5A000",
-          backgroundColor: "rgba(239, 68, 68, 0.12)",
+
+          // Zlatna linija drugog tima
+          backgroundColor: TEAM_B_COLOR,
+          borderColor: TEAM_B_COLOR,
+
           borderWidth: 2.5,
+          stepped: "after",
+          borderCapStyle: "round",
+          borderJoinStyle: "round",
+
           pointRadius: 2,
-          pointHoverRadius: 6,
-          tension: 0.2,
+          pointHoverRadius: 5,
+          pointHitRadius: 10,
+          pointBorderWidth: 0,
+
+          // Siva tačka kada je rezultat nerešen
+          pointBackgroundColor: scoresB.map((value, index) => {
+            return scoresA[index] === scoresB[index] ? TIE_COLOR : TEAM_B_COLOR;
+          }),
+
+          pointBorderColor: scoresB.map((value, index) => {
+            return scoresA[index] === scoresB[index] ? TIE_COLOR : TEAM_B_COLOR;
+          }),
+
           fill: false,
         },
       ],
@@ -1069,35 +1118,78 @@ function renderCharts(events) {
         intersect: false,
       },
 
+      animation: {
+        duration: 500,
+      },
+
       plugins: {
         legend: {
           display: true,
-          position: "top",
+          position: isMobile ? "bottom" : "top",
+
           labels: {
             usePointStyle: true,
-            pointStyle: "circle",
-            padding: 25,
+            pointStyle: "rect",
+            boxWidth: 11,
+            boxHeight: 11,
+            padding: isMobile ? 12 : 20,
+
             font: {
-              size: 14,
+              size: isMobile ? 11 : 13,
               weight: "bold",
             },
+
+            generateLabels: () => [
+              {
+                text: teamA,
+                fillStyle: TEAM_A_COLOR,
+                strokeStyle: TEAM_A_COLOR,
+                lineWidth: 0,
+                pointStyle: "circle",
+              },
+              {
+                text: teamB,
+                fillStyle: TEAM_B_COLOR,
+                strokeStyle: TEAM_B_COLOR,
+                lineWidth: 0,
+                pointStyle: "circle",
+              },
+              {
+                text: "Nerešeno",
+                fillStyle: TIE_COLOR,
+                strokeStyle: TIE_COLOR,
+                lineWidth: 0,
+                pointStyle: "circle",
+              },
+            ],
           },
         },
 
         tooltip: {
           backgroundColor: "#172b43",
+          titleColor: "#ffffff",
+          bodyColor: "#ffffff",
           padding: 12,
-          titleFont: {
-            size: 14,
-            weight: "bold",
-          },
-          bodyFont: {
-            size: 13,
-          },
+          displayColors: true,
+
           callbacks: {
             title: () => "Rezultat utakmice",
+
             label: (context) =>
               `${context.dataset.label}: ${context.parsed.y} poena`,
+
+            // Kvadratići uvek imaju boju svog tima
+            labelColor: (context) => {
+              const teamColor =
+                context.datasetIndex === 0 ? TEAM_A_COLOR : TEAM_B_COLOR;
+
+              return {
+                backgroundColor: teamColor,
+                borderColor: teamColor,
+                borderWidth: 0,
+                borderRadius: 2,
+              };
+            },
           },
         },
       },
@@ -1107,13 +1199,19 @@ function renderCharts(events) {
           ticks: {
             display: false,
           },
+
           grid: {
+            display: false,
+          },
+
+          border: {
             display: false,
           },
         },
 
         y: {
           beginAtZero: true,
+          suggestedMax: 100,
 
           title: {
             display: true,
@@ -1121,7 +1219,18 @@ function renderCharts(events) {
           },
 
           ticks: {
+            stepSize: 10,
             precision: 0,
+          },
+
+          grid: {
+            color: "#e5e7eb",
+            lineWidth: 1,
+            drawTicks: false,
+          },
+
+          border: {
+            display: false,
           },
         },
       },
@@ -1136,25 +1245,26 @@ function renderCharts(events) {
 
   if (!leadCanvas) return;
 
-  const TEAM_A_COLOR = "#7C3AED";
-  const TEAM_B_COLOR = "#E5A000";
-  const TIE_COLOR = "#94A3B8";
+  leadChart?.destroy();
 
   leadChart = new Chart(leadCanvas, {
     type: "line",
 
     data: {
-      labels: labels,
+      labels,
 
       datasets: [
         {
-          label: "Razlika u poenima",
+          label: "Prednost",
           data: leadData,
 
           borderWidth: 2.5,
-          borderColor: TEAM_A_COLOR,
+          borderColor: TIE_COLOR,
+          pointRadius: 2,
+          pointHoverRadius: 4,
+          pointBorderWidth: 0,
 
-          // Boja svake tačke zavisi od toga ko vodi
+          // Boja svake tačke
           pointBackgroundColor: leadData.map((value) => {
             if (value > 0) return TEAM_A_COLOR;
             if (value < 0) return TEAM_B_COLOR;
@@ -1167,20 +1277,23 @@ function renderCharts(events) {
             return TIE_COLOR;
           }),
 
-          pointRadius: 2,
-          pointHoverRadius: 4,
-          pointBorderWidth: 0,
-
           tension: 0.2,
           fill: false,
 
-          // Boja linije zavisi od toga ko vodi
+          // Boja svakog segmenta linije
           segment: {
             borderColor: (context) => {
-              const value = context.p1.parsed.y;
+              const start = context.p0.parsed.y;
+              const end = context.p1.parsed.y;
 
-              if (value > 0) return TEAM_A_COLOR;
-              if (value < 0) return TEAM_B_COLOR;
+              // Ako je segment između različitih vođstava,
+              // koristimo neutralnu sivu za prelaz.
+              if ((start > 0 && end < 0) || (start < 0 && end > 0)) {
+                return TIE_COLOR;
+              }
+
+              if (end > 0) return TEAM_A_COLOR;
+              if (end < 0) return TEAM_B_COLOR;
 
               return TIE_COLOR;
             },
@@ -1201,12 +1314,17 @@ function renderCharts(events) {
       plugins: {
         legend: {
           display: true,
-          position: "top",
+          position: isMobile ? "bottom" : "top",
 
           labels: {
             usePointStyle: true,
             pointStyle: "circle",
-            padding: 20,
+            padding: isMobile ? 10 : 18,
+
+            font: {
+              size: isMobile ? 10 : 13,
+              weight: "bold",
+            },
 
             generateLabels: () => [
               {
@@ -1249,7 +1367,7 @@ function renderCharts(events) {
                 return `${teamB} vodi sa ${Math.abs(value)} poena`;
               }
 
-              return "Rezultat je izjednačen";
+              return "Rezultat je nerešen";
             },
           },
         },
@@ -1260,7 +1378,6 @@ function renderCharts(events) {
           ticks: {
             display: false,
           },
-
           grid: {
             display: false,
           },
