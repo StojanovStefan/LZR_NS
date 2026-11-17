@@ -86,7 +86,7 @@ body {
 }
 
 #teamB_box .teamHeader {
-  border-bottom-color: var(--accent);
+  border-bottom-color: #a8e52d;
 }
 
 .teamHeader h2 {
