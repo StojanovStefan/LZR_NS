@@ -1,10 +1,10 @@
 {
   "games": {
-    "2026-11-17_lions_vs_dragons": {
+    "2026-11-24_lions_vs_dragons": {
       "gameInfo": {
-        "date": "17.11.2026",
-        "gameId": "2026-11-17_lions_vs_dragons",
-        "league": "3. kolo",
+        "date": "24.11.2026",
+        "gameId": "2026-11-24_lions_vs_dragons",
+        "league": "4. kolo",
         "location": "SC Meridiana 1",
         "quarter": 1,
         "round": 1,
@@ -53,13 +53,13 @@
               }
             },
 
-            "dobric_ognjen_2002": {
-              "birth_year": 2002,
+            "vukobratovic_mihailo_1996": {
+              "birth_year": 1996,
               "mvp_count": 0,
-              "name": "Dobrić Ognjen",
-              "number": 8,
-              "photo": "Dobric_Ognjen.png",
-              "playerId": "dobric_ognjen_2002",
+              "name": "Vukobratović Mihailo",
+              "number": 5,
+              "photo": "Vukobratovic_Mihailo.png",
+              "playerId": "vukobratovic_mihailo_1996",
               "stats": {
                 "assists": 0,
                 "blocks": 0,
@@ -81,12 +81,13 @@
               }
             },
 
-            "merdovic_luka_2000": {
+            "subara_lazar_2005": {
               "birth_year": 2000,
               "mvp_count": 0,
-              "name": "Merdović Luka",
-              "number": 17,
-              "playerId": "merdovic_luka_2000",
+              "name": "Šubara Lazar",
+              "number": 2,
+              "photo": "Subara_Lazar.png",
+              "playerId": "subara_lazar_2005",
               "stats": {
                 "assists": 0,
                 "blocks": 0,
@@ -134,13 +135,14 @@
                 "two_made": 0
               }
             },
-            "cvetinovic_nikola_2002": {
-              "birth_year": 2002,
-              "mvp_count": 0,
-              "name": "Cvetinović Nikola",
-              "number": 33,
-              "photo": "Cvetinovic_Nikola.png",
-              "playerId": "cvetinovic_nikola_2002",
+            "perunicic_mladen_1985": {
+              "birth_year": 1985,
+              "mvp_count": 1,
+              "mvp_games": ["2026-11-10_lions_vs_dragons"],
+              "name": "Peruničić Mladen",
+              "number": 16,
+              "photo": "Perunicic_Mladen.png",
+              "playerId": "perunicic_mladen_1985",
               "stats": {
                 "assists": 0,
                 "blocks": 0,
@@ -186,13 +188,13 @@
           "color": "white",
           "logo": "White_Dragons.png",
           "players": {
-            "raskovic_marko_2009": {
-              "birth_year": 2009,
+            "rajacic_filip_2000": {
+              "birth_year": 2000,
               "mvp_count": 0,
-              "name": "Rašković Marko",
-              "number": 7,
-              "photo": "Raskovic_Marko.png",
-              "playerId": "raskovic_marko_2009",
+              "name": "Rajačić Filip",
+              "number": 15,
+              "photo": "Rajacic_Filip.png",
+              "playerId": "rajacic_filip_2000",
               "stats": {
                 "assists": 0,
                 "blocks": 0,
@@ -214,14 +216,13 @@
               }
             },
 
-            "perunicic_mladen_1985": {
-              "birth_year": 1985,
-              "mvp_count": 1,
-              "mvp_games": ["2026-11-10_lions_vs_dragons"],
-              "name": "Peruničić Mladen",
-              "number": 16,
-              "photo": "Perunicic_Mladen.png",
-              "playerId": "perunicic_mladen_1985",
+            "cvetinovic_nikola_2002": {
+              "birth_year": 2002,
+              "mvp_count": 0,
+              "name": "Cvetinović Nikola",
+              "number": 33,
+              "photo": "Cvetinovic_Nikola.png",
+              "playerId": "cvetinovic_nikola_2002",
               "stats": {
                 "assists": 0,
                 "blocks": 0,
@@ -272,13 +273,13 @@
               }
             },
 
-            "ilic_nikola_2005": {
-              "birth_year": 2005,
+            "dobric_ognjen_2002": {
+              "birth_year": 2002,
               "mvp_count": 0,
-              "name": "Ilić Nikola",
-              "number": 5,
-              "photo": "Ilic_Nikola.png",
-              "playerId": "ilic_nikola_2005",
+              "name": "Dobrić Ognjen",
+              "number": 8,
+              "photo": "Dobric_Ognjen.png",
+              "playerId": "dobric_ognjen_2002",
               "stats": {
                 "assists": 0,
                 "blocks": 0,
