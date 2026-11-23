@@ -102,13 +102,10 @@ body {
   border-radius: 10px;
   border: 1px solid #c3d0de;
   cursor: pointer;
-
   background: #dce5ef;
   color: #294765;
-
   font-size: 17px;
   font-weight: 400;
-
   transition:
     background 0.15s ease,
     color 0.15s ease,
@@ -122,17 +119,17 @@ body {
 }
 
 .tab-btn.active {
-  background: linear-gradient(135deg, #294765, #42698f);
+  background: linear-gradient(135deg, #315b80 0%, #172b43 100%);
   color: #ffffff;
-  border-color: #42698f;
+  border-color: #172b43;
   font-weight: 500;
-  box-shadow: 0 3px 9px rgba(41, 71, 101, 0.2);
+  box-shadow: 0 3px 9px rgba(23, 43, 67, 0.2);
   transition: none;
 }
 
 .tab-btn.active:hover {
-  background: linear-gradient(135deg, #294765, #42698f);
-  border-color: #42698f;
+  background: linear-gradient(135deg, #315b80 0%, #172b43 100%);
+  border-color: #172b43;
   color: #ffffff;
 }
 
@@ -197,7 +194,7 @@ body {
   color: #334b63;
 }
 
-.stat-row\.header {
+.stat-row.header {
   font-weight: 700;
   color: #172b43;
   margin-bottom: 6px;
@@ -209,7 +206,7 @@ body {
 }
 
 .stat-percent {
-  background: linear-gradient(90deg, #294765, #42698f);
+  background: linear-gradient(135deg, #315b80 0%, #172b43 100%);
   text-align: center;
   padding: 14px 0;
   font-size: 22px;
@@ -246,7 +243,7 @@ body {
   font-size: 15px;
   font-weight: 600;
   letter-spacing: 0.3px;
-  background: #172b43;
+  background: linear-gradient(135deg, #315b80 0%, #172b43 100%);
   border: 1px solid #294765;
   text-align: center;
 }
@@ -273,17 +270,13 @@ body {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-
   background: #dce5ef;
   color: #294765;
   border: 1px solid #c3d0de;
-
   align-items: center;
   justify-content: center;
-
   font-size: 16px;
   cursor: pointer;
-
   transition:
     background 0.15s ease,
     color 0.15s ease,
@@ -291,8 +284,8 @@ body {
 }
 
 .game-btn:hover {
-  background: linear-gradient(135deg, #294765, #42698f);
-  border-color: #42698f;
+  background: linear-gradient(135deg, #315b80 0%, #172b43 100%);
+  border-color: #172b43;
   color: #ffffff;
 }
 
@@ -346,12 +339,12 @@ body {
 
 .mvp-badge {
   margin-top: 8px;
-  background: linear-gradient(90deg, #294765, #42698f);
+  background: linear-gradient(135deg, #315b80 0%, #172b43 100%);
   color: #f3c74a;
   font-weight: 700;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
-  border: 1px solid #42698f;
+  border: 1px solid #315b80;
   border-radius: 6px;
   padding: 6px 12px;
   font-size: 14px;
@@ -360,7 +353,7 @@ body {
 }
 
 .mvp-badge-td {
-  background: linear-gradient(90deg, #294765, #42698f);
+  background: linear-gradient(135deg, #315b80 0%, #172b43 100%);
   color: #f3c74a;
   font-weight: 700;
   display: flex;
@@ -368,7 +361,7 @@ body {
   align-items: center;
   width: 30px;
   height: 30px;
-  border: 1px solid #42698f;
+  border: 1px solid #315b80;
   border-radius: 50%;
   font-size: 9px;
 }
@@ -379,12 +372,12 @@ body {
 
 .lvp-badge {
   margin-top: 8px;
-  background: linear-gradient(90deg, #294765, #42698f);
+  background: linear-gradient(135deg, #315b80 0%, #172b43 100%);
   color: #f3c74a;
   font-weight: 700;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
-  border: 1px solid #c3d0de;
+  border: 1px solid #315b80;
   border-radius: 6px;
   padding: 6px 12px;
   font-size: 14px;
@@ -393,7 +386,7 @@ body {
 }
 
 .lvp-badge-td {
-  background: linear-gradient(90deg, #294765, #42698f);
+  background: linear-gradient(135deg, #315b80 0%, #172b43 100%);
   color: #f3c74a;
   font-weight: 700;
   display: flex;
@@ -401,7 +394,7 @@ body {
   align-items: center;
   width: 30px;
   height: 30px;
-  border: 1px solid #c3d0de;
+  border: 1px solid #315b80;
   border-radius: 50%;
   font-size: 9px;
 }

@@ -125,12 +125,12 @@ get(gamesRef).then((snapshot) => {
 
   const mvpHtml =
     mvpCount > 0
-      ? `<div class="mvp-badge">⭐ ${mvpCount}X MVP Utakmice ⭐</div>`
+      ? `<div class="mvp-badge">🏆 ${mvpCount}X MVP Utakmice 🏆</div>`
       : "";
 
   const lvpHtml =
     lvpCount > 0
-      ? `<div class="lvp-badge">⭐ ${lvpCount}X LVP Utakmice ⭐</div>`
+      ? `<div class="lvp-badge">🥈 ${lvpCount}X LVP Utakmice 🥈</div>`
       : "";
 
   playerContainer.innerHTML = `
