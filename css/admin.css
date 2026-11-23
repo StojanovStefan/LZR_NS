@@ -1,4 +1,3 @@
-```css
 /* ==============================
    GLOBAL
 ============================== */
@@ -128,7 +127,7 @@ body {
 
 .playerBox:hover {
   background: #ffffff;
-  border: 2px solid #315b80;
+  border: 1px solid #315b80;
   box-shadow:
     inset 3px 0 0 #315b80,
     0 3px 9px rgba(35, 58, 80, 0.12);
@@ -679,6 +678,17 @@ body {
 }
 
 /* ==============================
+   DISABLE ALL ANIMATIONS
+============================== */
+
+*,
+*::before,
+*::after {
+  transition: none !important;
+  animation: none !important;
+}
+
+/* ==============================
    REDUCED MOTION
 ============================== */
 
@@ -686,8 +696,6 @@ body {
   *,
   *::before,
   *::after {
-    transition-duration: 0.01ms !important;
-    animation-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
-```
