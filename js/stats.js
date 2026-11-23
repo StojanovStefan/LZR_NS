@@ -1612,12 +1612,13 @@ function renderCharts(events) {
 
       const dotRadius = 3.5;
       const textOffset = 17;
+      const MIDNIGHT_BLUE = "#172b43";
 
       // Crtanje rezultata sa obojenim tačkama
       function drawScore(scoreA, scoreB, x, y, maxWidth) {
         ctx.save();
 
-        ctx.font = `${isMobile ? 10 : 11}px Arial`;
+        ctx.font = `700 ${isMobile ? 10 : 11}px Arial`;
         ctx.textBaseline = "middle";
         ctx.textAlign = "left";
 
@@ -1630,7 +1631,6 @@ function renderCharts(events) {
 
         let startX = x;
 
-        // Ako nema dovoljno mesta, smanjujemo razmak
         if (totalWidth > maxWidth) {
           startX = x;
         }
@@ -1644,7 +1644,7 @@ function renderCharts(events) {
         // Rezultat
         const textX = startX + dotRadius * 2 + dotGap;
 
-        ctx.fillStyle = "#65778b";
+        ctx.fillStyle = MIDNIGHT_BLUE;
         ctx.fillText(scoreText, textX, y);
 
         // Druga tačka – druga ekipa
@@ -1673,9 +1673,9 @@ function renderCharts(events) {
         ctx.fillStyle = item.color;
         ctx.fill();
 
-        // Naslov statistike
-        ctx.fillStyle = "#243f5c";
-        ctx.font = `600 ${isMobile ? 11 : 13}px Arial`;
+        // Naslov statistike – midnight blue, bold
+        ctx.fillStyle = MIDNIGHT_BLUE;
+        ctx.font = `700 ${isMobile ? 11 : 13}px Arial`;
         ctx.textAlign = "left";
         ctx.textBaseline = "top";
 
@@ -1707,8 +1707,8 @@ function renderCharts(events) {
             availableWidth,
           );
 
-          ctx.font = `${isMobile ? 10 : 11}px Arial`;
-          ctx.fillStyle = "#65778b";
+          ctx.font = `700 ${isMobile ? 10 : 11}px Arial`;
+          ctx.fillStyle = MIDNIGHT_BLUE;
           ctx.textAlign = "left";
           ctx.textBaseline = "middle";
 
@@ -1724,8 +1724,8 @@ function renderCharts(events) {
             availableWidth - firstWidth - 15,
           );
         } else {
-          ctx.fillStyle = "#65778b";
-          ctx.font = `${isMobile ? 10 : 11}px Arial`;
+          ctx.fillStyle = MIDNIGHT_BLUE;
+          ctx.font = `700 ${isMobile ? 10 : 11}px Arial`;
           ctx.textAlign = "left";
           ctx.textBaseline = "middle";
           ctx.fillText(item.fallback, detailX, detailY);
