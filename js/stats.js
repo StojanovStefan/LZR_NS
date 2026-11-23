@@ -154,12 +154,12 @@ onValue(ref(db, `games/${gameId}/gameInfo`), (snap) => {
   renderGameHeader(info);
 });
 
-function findBestPlayer(team) {
-  if (!team) return null;
+function findBestPlayers(team) {
+  if (!team) return [];
 
   const players = team.players || {};
 
-  let bestPlayer = null;
+  let bestPlayers = [];
   let maxEff = -Infinity;
 
   for (const number in players) {
@@ -179,24 +179,27 @@ function findBestPlayer(team) {
         Number(s.ft_attempts || 0) -
         Number(s.ft_made || 0));
 
+    const player = {
+      playerId: p.playerId,
+      name: p.name || "",
+      number: p.number || number,
+      photo: p.photo || "default_player.png",
+      points: Number(s.points || 0),
+      rebounds: Number(s.rebounds_off || 0) + Number(s.rebounds_def || 0),
+      assists: Number(s.assists || 0),
+      steals: Number(s.steals || 0),
+      blocks: Number(s.blocks || 0),
+    };
+
     if (eff > maxEff) {
       maxEff = eff;
-
-      bestPlayer = {
-        playerId: p.playerId,
-        name: p.name || "",
-        number: p.number || number,
-        photo: p.photo || "default_player.png",
-        points: Number(s.points || 0),
-        rebounds: Number(s.rebounds_off || 0) + Number(s.rebounds_def || 0),
-        assists: Number(s.assists || 0),
-        steals: Number(s.steals || 0),
-        blocks: Number(s.blocks || 0),
-      };
+      bestPlayers = [player];
+    } else if (eff === maxEff) {
+      bestPlayers.push(player);
     }
   }
 
-  return bestPlayer;
+  return bestPlayers;
 }
 
 function createPlayerCard(player, team, title, type, teamName, teamid) {
@@ -285,6 +288,12 @@ function createPlayerCard(player, team, title, type, teamName, teamid) {
 }
 
 function renderGameHeader(info) {
+  // Zaustavi prethodno smenjivanje
+  if (window.mvpRotationInterval) {
+    clearInterval(window.mvpRotationInterval);
+    window.mvpRotationInterval = null;
+  }
+
   if (!info || !info.teamA || !info.teamB) {
     document.getElementById("gameHeader").innerHTML =
       "<p>Podaci o utakmici nisu dostupni.</p>";
@@ -298,6 +307,18 @@ function renderGameHeader(info) {
 
   let mvpHtml = "";
 
+  let winnerPlayers = [];
+  let loserPlayers = [];
+
+  let winningTeam = null;
+  let losingTeam = null;
+
+  let winnerTeam = "";
+  let loserTeam = "";
+
+  let winnerName = "";
+  let loserName = "";
+
   // MVP kartice prikazujemo samo kada je utakmica završena
   if (
     info.status === "finished" &&
@@ -307,51 +328,57 @@ function renderGameHeader(info) {
     const scoreA = Number(info.scoreA ?? 0);
     const scoreB = Number(info.scoreB ?? 0);
 
-    // Pobednička i poražena ekipa
-    const winnerTeam = scoreA >= scoreB ? info.teamA : info.teamB;
+    winnerTeam = scoreA >= scoreB ? info.teamA : info.teamB;
+    loserTeam = winnerTeam === info.teamA ? info.teamB : info.teamA;
 
-    const loserTeam = winnerTeam === info.teamA ? info.teamB : info.teamA;
+    winningTeam = globalTeams[winnerTeam];
+    losingTeam = globalTeams[loserTeam];
 
-    const winningTeam = globalTeams[winnerTeam];
-    const losingTeam = globalTeams[loserTeam];
+    // Svi igrači sa najboljim indeksom
+    winnerPlayers = findBestPlayers(winningTeam);
+    loserPlayers = findBestPlayers(losingTeam);
 
-    // Najbolji igrači obe ekipe
-    const bestWinner = findBestPlayer(winningTeam);
-    const bestLoser = findBestPlayer(losingTeam);
+    winnerName =
+      winnerTeam === "black_lions"
+        ? "Lions"
+        : winnerTeam === "white_dragons"
+          ? "Dragons"
+          : winnerTeam;
 
-    // Prva kartica: najbolji igrač pobednika
-    // Druga kartica: najbolji igrač poražene ekipe
+    loserName =
+      loserTeam === "black_lions"
+        ? "Lions"
+        : loserTeam === "white_dragons"
+          ? "Dragons"
+          : loserTeam;
+
+    // Početni prikaz - prvi igrač izjednačenih
     mvpHtml = `
-      ${createPlayerCard(
-        bestWinner,
-        winningTeam,
-        "IGRAČ UTAKMICE",
-        "mvp-winner",
-        winnerTeam === "black_lions"
-          ? "Lions"
-          : winnerTeam === "white_dragons"
-            ? "Dragons"
-            : winnerTeam,
-        winnerTeam,
-      )}
+      <div id="mvpWinnerSlot">
+        ${createPlayerCard(
+          winnerPlayers[0],
+          winningTeam,
+          "IGRAČ UTAKMICE",
+          "mvp-winner",
+          winnerName,
+          winnerTeam,
+        )}
+      </div>
 
-      ${createPlayerCard(
-        bestLoser,
-        losingTeam,
-        "ISTAKNUTI IGRAČ",
-        "mvp-loser",
-        loserTeam === "black_lions"
-          ? "Lions"
-          : loserTeam === "white_dragons"
-            ? "Dragons"
-            : loserTeam,
-        loserTeam,
-      )}
+      <div id="mvpLoserSlot">
+        ${createPlayerCard(
+          loserPlayers[0],
+          losingTeam,
+          "ISTAKNUTI IGRAČ",
+          "mvp-loser",
+          loserName,
+          loserTeam,
+        )}
+      </div>
     `;
   }
 
   // GLAVNI HEADER
-  // Ovaj deo se izvršava nezavisno od MVP kartica
 
   container.innerHTML = `
     <div class="game-header">
@@ -360,27 +387,29 @@ function renderGameHeader(info) {
         📍 ${info.location || "Nepoznato"} •
         📅 ${date} •
         🕒 ${startTime} •
+
         <span
-  class="live-broadcast"
-  onclick="event.stopPropagation(); window.copyBroadcastLink()"
-  title="Kopiraj broadcast link"
-  style="cursor:pointer;"
->🎦</span>
+          class="live-broadcast"
+          onclick="event.stopPropagation(); window.copyBroadcastLink()"
+          title="Kopiraj broadcast link"
+          style="cursor:pointer;"
+        >🎦</span>
 
-•
+        •
 
-${
-  info.ytLink
-    ? `
-  <span
-    class="yt-broadcast"
-    onclick="event.stopPropagation(); window.openYoutubeLink()"
-    title="Otvori YouTube prenos"
-    style="cursor:pointer;"
-  >📺</span>
-`
-    : ""
-}
+        ${
+          info.ytLink
+            ? `
+              <span
+                class="yt-broadcast"
+                onclick="event.stopPropagation(); window.openYoutubeLink()"
+                title="Otvori YouTube prenos"
+                style="cursor:pointer;"
+              >📺</span>
+            `
+            : ""
+        }
+
       </div>
 
       <div class="teams">
@@ -429,6 +458,54 @@ ${
 
     </div>
   `;
+
+  // SMENJIVANJE IZJEDNAČENIH IGRAČA NA SVAKIH 3 SEKUNDE
+
+  if (
+    info.status === "finished" &&
+    (winnerPlayers.length > 1 || loserPlayers.length > 1)
+  ) {
+    let winnerIndex = 0;
+    let loserIndex = 0;
+
+    window.mvpRotationInterval = setInterval(() => {
+      // MVP pobedničke ekipe
+      if (winnerPlayers.length > 1) {
+        winnerIndex = (winnerIndex + 1) % winnerPlayers.length;
+
+        const winnerSlot = document.getElementById("mvpWinnerSlot");
+
+        if (winnerSlot) {
+          winnerSlot.innerHTML = createPlayerCard(
+            winnerPlayers[winnerIndex],
+            winningTeam,
+            "IGRAČ UTAKMICE",
+            "mvp-winner",
+            winnerName,
+            winnerTeam,
+          );
+        }
+      }
+
+      // Istaknuti igrač poražene ekipe
+      if (loserPlayers.length > 1) {
+        loserIndex = (loserIndex + 1) % loserPlayers.length;
+
+        const loserSlot = document.getElementById("mvpLoserSlot");
+
+        if (loserSlot) {
+          loserSlot.innerHTML = createPlayerCard(
+            loserPlayers[loserIndex],
+            losingTeam,
+            "ISTAKNUTI IGRAČ",
+            "mvp-loser",
+            loserName,
+            loserTeam,
+          );
+        }
+      }
+    }, 3000);
+  }
 }
 
 function tryRenderAll() {
