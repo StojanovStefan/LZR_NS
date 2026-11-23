@@ -439,12 +439,12 @@ td {
   }
 
   .event-left {
-    border-left: 4px solid var(--navy) !important;
+    border-left: 4px solid #303030 !important;
     border-right: none !important;
   }
 
   .event-right {
-    border-right: 4px solid var(--accent) !important;
+    border-right: 4px solid #a8e52d !important;
     border-left: none !important;
   }
 }
@@ -551,12 +551,12 @@ td {
 }
 
 .mvp-number {
-  color: #fbbf24;
+  color: #daa520;
   font-weight: 700;
 }
 
 .mvp-player-label {
-  color: #fbbf24;
+  color: #daa520;
   font-size: 11px;
   margin-top: 2px;
   font-weight: 600;
