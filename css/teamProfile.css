@@ -75,10 +75,6 @@ h1 {
 
   font-size: 17px;
   font-weight: 400;
-
-  transition:
-    background 0.15s ease,
-    border-color 0.15s ease;
 }
 
 .tab-btn:hover {
@@ -88,7 +84,7 @@ h1 {
 }
 
 .tab-btn.active {
-  background: linear-gradient(135deg, #294765, #42698f);
+  background: linear-gradient(135deg, #315b80 0%, #172b43 100%);
   color: #ffffff;
   border-color: #42698f;
   font-weight: 500;
@@ -229,7 +225,7 @@ th {
 }
 
 .stat-percent {
-  background: linear-gradient(90deg, #294765, #42698f);
+  background: linear-gradient(135deg, #315b80 0%, #172b43 100%);
   text-align: center;
   padding: 14px 0;
   font-size: 22px;
@@ -364,7 +360,7 @@ th {
 }
 
 .sort-btn.active {
-  background: linear-gradient(135deg, #243f5c, #365b7f);
+  background: linear-gradient(135deg, #315b80 0%, #172b43 100%);
   color: #ffffff;
   border-color: #42698f;
   font-weight: 500;
@@ -386,7 +382,7 @@ th {
 ============================== */
 
 .active-ou {
-  background: #42698f;
+  background: linear-gradient(135deg, #315b80 0%, #172b43 100%);
   padding: 2px 6px;
   border-radius: 6px;
   font-weight: 400 !important;

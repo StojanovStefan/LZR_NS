@@ -118,12 +118,14 @@ function showTemporaryNotification(message) {
   notification.style.position = "fixed";
   notification.style.bottom = "20px";
   notification.style.right = "20px";
-  notification.style.background = "#e3ebf3";
-  notification.style.color = "#172b43";
-  notification.style.border = "1px solid #c7d4e0";
-  notification.style.padding = "10px 15px";
-  notification.style.borderRadius = "8px";
-  notification.style.boxShadow = "0 2px 6px rgba(0,0,0,0.3)";
+  notification.style.background =
+    "linear-gradient(135deg, #315b80 0%, #172b43 100%)";
+  notification.style.color = "#ffffff";
+  notification.style.border = "1px solid #315b80";
+  notification.style.padding = "12px 18px";
+  notification.style.borderRadius = "10px";
+  notification.style.boxShadow = "0 4px 12px rgba(23, 43, 67, 0.3)";
+  notification.style.fontWeight = "400";
   notification.style.zIndex = 9999;
   notification.style.opacity = "0";
   notification.style.transition = "opacity 0.3s ease";
@@ -133,6 +135,7 @@ function showTemporaryNotification(message) {
   requestAnimationFrame(() => {
     notification.style.opacity = "1";
   });
+
   setTimeout(() => {
     notification.style.opacity = "0";
     notification.addEventListener("transitionend", () => {
