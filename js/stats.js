@@ -1030,13 +1030,25 @@ function renderCharts(events) {
   let scoreA = 0;
   let scoreB = 0;
 
-  // Početni rezultat
   const labels = ["Početak"];
   const scoresA = [0];
   const scoresB = [0];
   const leadData = [0];
 
-  // Pronalazak ekipe preko igrača
+  // ==============================
+  // BOJE
+  // ==============================
+
+  const TEAM_A_COLOR = "#303030";
+  const TEAM_B_COLOR = "#a8e52d";
+  const TIE_COLOR = "#94A3B8";
+
+  const isMobile = window.innerWidth <= 480;
+
+  // ==============================
+  // PRONALAZAK EKIPE PREKO IGRAČA
+  // ==============================
+
   function getEventTeam(ev) {
     if (ev.team === teamA || ev.team === teamB) {
       return ev.team;
@@ -1061,16 +1073,102 @@ function renderCharts(events) {
     points_3: 3,
   };
 
+  // ==============================
+  // NAJDUŽI NIZ POENA
+  // ==============================
+
+  let currentRunTeam = null;
+  let currentRunPoints = 0;
+  let currentRunStart = 0;
+  let currentRunEnd = 0;
+
+  let currentRunStartScoreA = 0;
+  let currentRunStartScoreB = 0;
+  let currentRunEndScoreA = 0;
+  let currentRunEndScoreB = 0;
+
+  const longestRuns = {
+    A: {
+      points: 0,
+      start: 0,
+      end: 0,
+      startScoreA: 0,
+      startScoreB: 0,
+      endScoreA: 0,
+      endScoreB: 0,
+    },
+    B: {
+      points: 0,
+      start: 0,
+      end: 0,
+      startScoreA: 0,
+      startScoreB: 0,
+      endScoreA: 0,
+      endScoreB: 0,
+    },
+  };
+
+  function finishScoringRun() {
+    if (!currentRunTeam || currentRunPoints === 0) return;
+
+    const run = longestRuns[currentRunTeam];
+
+    if (currentRunPoints > run.points) {
+      run.points = currentRunPoints;
+      run.start = currentRunStart;
+      run.end = currentRunEnd;
+
+      run.startScoreA = currentRunStartScoreA;
+      run.startScoreB = currentRunStartScoreB;
+
+      run.endScoreA = currentRunEndScoreA;
+      run.endScoreB = currentRunEndScoreB;
+    }
+  }
+
+  // ==============================
+  // OBRADA DOGAĐAJA
+  // ==============================
+
   sortedEvents.forEach((ev, index) => {
     const points = pointsMap[ev.type] || 0;
 
     if (points > 0) {
       const team = getEventTeam(ev);
 
+      let scoringTeam = null;
+
       if (team === teamA) {
-        scoreA += points;
+        scoringTeam = "A";
       } else if (team === teamB) {
-        scoreB += points;
+        scoringTeam = "B";
+      }
+
+      if (scoringTeam) {
+        if (currentRunTeam !== scoringTeam) {
+          finishScoringRun();
+
+          currentRunTeam = scoringTeam;
+          currentRunPoints = 0;
+
+          currentRunStart = index + 1;
+          currentRunEnd = index + 1;
+
+          currentRunStartScoreA = scoreA;
+          currentRunStartScoreB = scoreB;
+        }
+
+        if (scoringTeam === "A") {
+          scoreA += points;
+        } else {
+          scoreB += points;
+        }
+
+        currentRunPoints += points;
+        currentRunEnd = index + 1;
+
+        currentRunEndScoreA = scoreA;
+        currentRunEndScoreB = scoreB;
       }
     }
 
@@ -1079,32 +1177,55 @@ function renderCharts(events) {
     scoresA.push(scoreA);
     scoresB.push(scoreB);
 
-    // Pozitivno = vodi A
-    // Negativno = vodi B
     leadData.push(scoreA - scoreB);
+  });
+
+  finishScoringRun();
+
+  // ==============================
+  // NAJVEĆA PREDNOST
+  // ==============================
+
+  let maxLeadA = {
+    value: 0,
+    index: 0,
+    scoreA: 0,
+    scoreB: 0,
+  };
+
+  let maxLeadB = {
+    value: 0,
+    index: 0,
+    scoreA: 0,
+    scoreB: 0,
+  };
+
+  leadData.forEach((value, index) => {
+    if (value > maxLeadA.value) {
+      maxLeadA = {
+        value,
+        index,
+        scoreA: scoresA[index],
+        scoreB: scoresB[index],
+      };
+    }
+
+    if (value < 0 && Math.abs(value) > maxLeadB.value) {
+      maxLeadB = {
+        value: Math.abs(value),
+        index,
+        scoreA: scoresA[index],
+        scoreB: scoresB[index],
+      };
+    }
   });
 
   // ==============================
   // UNIŠTAVANJE STARIH GRAFIKONA
   // ==============================
 
-  if (scoreChart) {
-    scoreChart.destroy();
-  }
-
-  if (leadChart) {
-    leadChart.destroy();
-  }
-
-  // ==============================
-  // BOJE
-  // ==============================
-
-  const TEAM_A_COLOR = "#303030";
-  const TEAM_B_COLOR = "#a8e52d";
-  const TIE_COLOR = "#94A3B8";
-
-  const isMobile = window.innerWidth <= 480;
+  scoreChart?.destroy();
+  leadChart?.destroy();
 
   // ==============================
   // 1. KRETANJE REZULTATA
@@ -1113,8 +1234,6 @@ function renderCharts(events) {
   const scoreCanvas = document.getElementById("scoreChart");
 
   if (!scoreCanvas) return;
-
-  scoreChart?.destroy();
 
   scoreChart = new Chart(scoreCanvas, {
     type: "line",
@@ -1126,60 +1245,48 @@ function renderCharts(events) {
         {
           label: teamA,
           data: scoresA,
-
-          // Ljubičasta linija prvog tima
           backgroundColor: TEAM_A_COLOR,
           borderColor: TEAM_A_COLOR,
-
           borderWidth: 2.5,
           stepped: "after",
           borderCapStyle: "round",
           borderJoinStyle: "round",
-
-          // Male tačke
           pointRadius: 2,
           pointHoverRadius: 5,
           pointHitRadius: 10,
           pointBorderWidth: 0,
 
-          // Siva tačka kada je rezultat nerešen
-          pointBackgroundColor: scoresA.map((value, index) => {
-            return scoresA[index] === scoresB[index] ? TIE_COLOR : TEAM_A_COLOR;
-          }),
+          pointBackgroundColor: scoresA.map((value, index) =>
+            scoresA[index] === scoresB[index] ? TIE_COLOR : TEAM_A_COLOR,
+          ),
 
-          pointBorderColor: scoresA.map((value, index) => {
-            return scoresA[index] === scoresB[index] ? TIE_COLOR : TEAM_A_COLOR;
-          }),
+          pointBorderColor: scoresA.map((value, index) =>
+            scoresA[index] === scoresB[index] ? TIE_COLOR : TEAM_A_COLOR,
+          ),
 
           fill: false,
         },
-
         {
           label: teamB,
           data: scoresB,
-
-          // Zlatna linija drugog tima
           backgroundColor: TEAM_B_COLOR,
           borderColor: TEAM_B_COLOR,
-
           borderWidth: 2.5,
           stepped: "after",
           borderCapStyle: "round",
           borderJoinStyle: "round",
-
           pointRadius: 2,
           pointHoverRadius: 5,
           pointHitRadius: 10,
           pointBorderWidth: 0,
 
-          // Siva tačka kada je rezultat nerešen
-          pointBackgroundColor: scoresB.map((value, index) => {
-            return scoresA[index] === scoresB[index] ? TIE_COLOR : TEAM_B_COLOR;
-          }),
+          pointBackgroundColor: scoresB.map((value, index) =>
+            scoresA[index] === scoresB[index] ? TIE_COLOR : TEAM_B_COLOR,
+          ),
 
-          pointBorderColor: scoresB.map((value, index) => {
-            return scoresA[index] === scoresB[index] ? TIE_COLOR : TEAM_B_COLOR;
-          }),
+          pointBorderColor: scoresB.map((value, index) =>
+            scoresA[index] === scoresB[index] ? TIE_COLOR : TEAM_B_COLOR,
+          ),
 
           fill: false,
         },
@@ -1255,7 +1362,6 @@ function renderCharts(events) {
             label: (context) =>
               `${context.dataset.label}: ${context.parsed.y} poena`,
 
-            // Kvadratići uvek imaju boju svog tima
             labelColor: (context) => {
               const teamColor =
                 context.datasetIndex === 0 ? TEAM_A_COLOR : TEAM_B_COLOR;
@@ -1276,11 +1382,9 @@ function renderCharts(events) {
           ticks: {
             display: false,
           },
-
           grid: {
             display: false,
           },
-
           border: {
             display: false,
           },
@@ -1315,17 +1419,335 @@ function renderCharts(events) {
   });
 
   // ==============================
-  // 2. PRAĆENJE PREDNOSTI
+  // 2. OZNAKE NA GRAFIKONU PREDNOSTI
+  // ==============================
+
+  const leadHighlightsPlugin = {
+    id: "leadHighlights",
+
+    beforeDatasetsDraw(chart) {
+      const { ctx, chartArea, scales } = chart;
+
+      if (!chartArea) return;
+
+      const runs = [
+        {
+          run: longestRuns.A,
+          background: "rgba(48, 48, 48, 0.09)",
+        },
+        {
+          run: longestRuns.B,
+          background: "rgba(168, 229, 45, 0.14)",
+        },
+      ];
+
+      runs.forEach(({ run, background }) => {
+        if (!run.points) return;
+
+        const startX = scales.x.getPixelForValue(run.start);
+        const endX = scales.x.getPixelForValue(run.end);
+
+        const left = Math.max(chartArea.left, startX);
+        const right = Math.min(chartArea.right, endX);
+
+        ctx.save();
+        ctx.fillStyle = background;
+
+        ctx.fillRect(
+          left,
+          chartArea.top,
+          Math.max(right - left, 5),
+          chartArea.bottom - chartArea.top,
+        );
+
+        ctx.restore();
+      });
+    },
+
+    // ==============================
+    // KAPLJICE I BROJEVI NIZOVA
+    // ==============================
+
+    afterDatasetsDraw(chart) {
+      const { ctx, scales, chartArea } = chart;
+
+      if (!chartArea) return;
+
+      function drawPin(index, value, color, text) {
+        const x = scales.x.getPixelForValue(index);
+        const pointY = scales.y.getPixelForValue(value);
+
+        const radius = 14;
+        const placeBelow = pointY < chartArea.top + 55;
+        const centerY = placeBelow ? pointY + 29 : pointY - 29;
+
+        ctx.save();
+        ctx.fillStyle = color;
+
+        ctx.beginPath();
+        ctx.arc(x, centerY, radius, 0, Math.PI * 2);
+        ctx.fill();
+
+        ctx.beginPath();
+
+        if (placeBelow) {
+          ctx.moveTo(x - 8, centerY - 9);
+          ctx.lineTo(x, pointY);
+          ctx.lineTo(x + 8, centerY - 9);
+        } else {
+          ctx.moveTo(x - 8, centerY + 9);
+          ctx.lineTo(x, pointY);
+          ctx.lineTo(x + 8, centerY + 9);
+        }
+
+        ctx.closePath();
+        ctx.fill();
+
+        ctx.fillStyle = "#ffffff";
+        ctx.font = "bold 12px Arial";
+        ctx.textAlign = "center";
+        ctx.textBaseline = "middle";
+        ctx.fillText(text, x, centerY);
+
+        ctx.restore();
+      }
+
+      function drawRunNumber(run, color) {
+        if (!run.points) return;
+
+        const startX = scales.x.getPixelForValue(run.start);
+        const endX = scales.x.getPixelForValue(run.end);
+
+        const centerX = (startX + endX) / 2;
+
+        ctx.save();
+        ctx.fillStyle = color;
+        ctx.font = "bold 16px Arial";
+        ctx.textAlign = "center";
+        ctx.textBaseline = "top";
+
+        ctx.fillText(String(run.points), centerX, chartArea.top + 12);
+
+        ctx.restore();
+      }
+
+      if (maxLeadA.value > 0) {
+        drawPin(
+          maxLeadA.index,
+          leadData[maxLeadA.index],
+          TEAM_A_COLOR,
+          `+${maxLeadA.value}`,
+        );
+      }
+
+      if (maxLeadB.value > 0) {
+        drawPin(
+          maxLeadB.index,
+          leadData[maxLeadB.index],
+          TEAM_B_COLOR,
+          `+${maxLeadB.value}`,
+        );
+      }
+
+      drawRunNumber(longestRuns.A, TEAM_A_COLOR);
+      drawRunNumber(longestRuns.B, TEAM_B_COLOR);
+    },
+
+    // ==============================
+    // STATISTIČKE LABELE
+    // ==============================
+
+    afterDraw(chart) {
+      const { ctx, chartArea } = chart;
+
+      if (!chartArea) return;
+
+      const items = [
+        {
+          color: TEAM_A_COLOR,
+          title: `Najveća prednost: +${maxLeadA.value}`,
+          score: maxLeadA.value > 0 ? [maxLeadA.scoreA, maxLeadA.scoreB] : null,
+          fallback: "Nije ostvarena prednost",
+        },
+        {
+          color: TEAM_B_COLOR,
+          title: `Najveća prednost: +${maxLeadB.value}`,
+          score: maxLeadB.value > 0 ? [maxLeadB.scoreA, maxLeadB.scoreB] : null,
+          fallback: "Nije ostvarena prednost",
+        },
+        {
+          color: TEAM_A_COLOR,
+          title: `Najduži niz poena: ${longestRuns.A.points}`,
+          scoreStart:
+            longestRuns.A.points > 0
+              ? [longestRuns.A.startScoreA, longestRuns.A.startScoreB]
+              : null,
+          scoreEnd:
+            longestRuns.A.points > 0
+              ? [longestRuns.A.endScoreA, longestRuns.A.endScoreB]
+              : null,
+          fallback: "Nema niza",
+        },
+        {
+          color: TEAM_B_COLOR,
+          title: `Najduži niz poena: ${longestRuns.B.points}`,
+          scoreStart:
+            longestRuns.B.points > 0
+              ? [longestRuns.B.startScoreA, longestRuns.B.startScoreB]
+              : null,
+          scoreEnd:
+            longestRuns.B.points > 0
+              ? [longestRuns.B.endScoreA, longestRuns.B.endScoreB]
+              : null,
+          fallback: "Nema niza",
+        },
+      ];
+
+      ctx.save();
+
+      const columns = isMobile ? 1 : 2;
+      const columnWidth = chartArea.width / columns;
+      const rowHeight = isMobile ? 39 : 43;
+      const startY = chartArea.bottom + (isMobile ? 17 : 18);
+
+      const dotRadius = 3.5;
+      const textOffset = 17;
+
+      // Crtanje rezultata sa obojenim tačkama
+      function drawScore(scoreA, scoreB, x, y, maxWidth) {
+        ctx.save();
+
+        ctx.font = `${isMobile ? 10 : 11}px Arial`;
+        ctx.textBaseline = "middle";
+        ctx.textAlign = "left";
+
+        const scoreText = `${scoreA} - ${scoreB}`;
+        const textWidth = ctx.measureText(scoreText).width;
+
+        const dotGap = 6;
+        const totalWidth =
+          dotRadius * 2 + dotGap + textWidth + dotGap + dotRadius * 2;
+
+        let startX = x;
+
+        // Ako nema dovoljno mesta, smanjujemo razmak
+        if (totalWidth > maxWidth) {
+          startX = x;
+        }
+
+        // Prva tačka – prva ekipa
+        ctx.beginPath();
+        ctx.arc(startX + dotRadius, y, dotRadius, 0, Math.PI * 2);
+        ctx.fillStyle = TEAM_A_COLOR;
+        ctx.fill();
+
+        // Rezultat
+        const textX = startX + dotRadius * 2 + dotGap;
+
+        ctx.fillStyle = "#65778b";
+        ctx.fillText(scoreText, textX, y);
+
+        // Druga tačka – druga ekipa
+        const secondDotX = textX + textWidth + dotGap + dotRadius;
+
+        ctx.beginPath();
+        ctx.arc(secondDotX, y, dotRadius, 0, Math.PI * 2);
+        ctx.fillStyle = TEAM_B_COLOR;
+        ctx.fill();
+
+        ctx.restore();
+
+        return secondDotX + dotRadius - x;
+      }
+
+      items.forEach((item, index) => {
+        const column = isMobile ? 0 : index % 2;
+        const row = isMobile ? index : Math.floor(index / 2);
+
+        const x = chartArea.left + column * columnWidth;
+        const y = startY + row * rowHeight;
+
+        // Obojena tačka statistike
+        ctx.beginPath();
+        ctx.arc(x + dotRadius, y + 7, dotRadius, 0, Math.PI * 2);
+        ctx.fillStyle = item.color;
+        ctx.fill();
+
+        // Naslov statistike
+        ctx.fillStyle = "#243f5c";
+        ctx.font = `600 ${isMobile ? 11 : 13}px Arial`;
+        ctx.textAlign = "left";
+        ctx.textBaseline = "top";
+
+        ctx.fillText(
+          item.title,
+          x + textOffset,
+          y,
+          Math.max(columnWidth - textOffset - 8, 40),
+        );
+
+        const detailX = x + textOffset;
+        const detailY = y + 25;
+        const availableWidth = columnWidth - textOffset - 8;
+
+        if (item.score) {
+          drawScore(
+            item.score[0],
+            item.score[1],
+            detailX,
+            detailY,
+            availableWidth,
+          );
+        } else if (item.scoreStart && item.scoreEnd) {
+          const firstWidth = drawScore(
+            item.scoreStart[0],
+            item.scoreStart[1],
+            detailX,
+            detailY,
+            availableWidth,
+          );
+
+          ctx.font = `${isMobile ? 10 : 11}px Arial`;
+          ctx.fillStyle = "#65778b";
+          ctx.textAlign = "left";
+          ctx.textBaseline = "middle";
+
+          const arrowX = detailX + firstWidth + 5;
+
+          ctx.fillText("→", arrowX, detailY);
+
+          drawScore(
+            item.scoreEnd[0],
+            item.scoreEnd[1],
+            arrowX + 15,
+            detailY,
+            availableWidth - firstWidth - 15,
+          );
+        } else {
+          ctx.fillStyle = "#65778b";
+          ctx.font = `${isMobile ? 10 : 11}px Arial`;
+          ctx.textAlign = "left";
+          ctx.textBaseline = "middle";
+          ctx.fillText(item.fallback, detailX, detailY);
+        }
+      });
+
+      ctx.restore();
+    },
+  };
+
+  // ==============================
+  // 3. PRAĆENJE PREDNOSTI
   // ==============================
 
   const leadCanvas = document.getElementById("leadChart");
 
   if (!leadCanvas) return;
 
-  leadChart?.destroy();
-
   leadChart = new Chart(leadCanvas, {
     type: "line",
+
+    plugins: [leadHighlightsPlugin],
 
     data: {
       labels,
@@ -1341,7 +1763,6 @@ function renderCharts(events) {
           pointHoverRadius: 4,
           pointBorderWidth: 0,
 
-          // Boja svake tačke
           pointBackgroundColor: leadData.map((value) => {
             if (value > 0) return TEAM_A_COLOR;
             if (value < 0) return TEAM_B_COLOR;
@@ -1357,14 +1778,11 @@ function renderCharts(events) {
           tension: 0.2,
           fill: false,
 
-          // Boja svakog segmenta linije
           segment: {
             borderColor: (context) => {
               const start = context.p0.parsed.y;
               const end = context.p1.parsed.y;
 
-              // Ako je segment između različitih vođstava,
-              // koristimo neutralnu sivu za prelaz.
               if ((start > 0 && end < 0) || (start < 0 && end > 0)) {
                 return TIE_COLOR;
               }
@@ -1383,6 +1801,15 @@ function renderCharts(events) {
       responsive: true,
       maintainAspectRatio: false,
 
+      layout: {
+        padding: {
+          top: 38,
+          bottom: isMobile ? 185 : 105,
+          left: 4,
+          right: 4,
+        },
+      },
+
       interaction: {
         mode: "index",
         intersect: false,
@@ -1391,7 +1818,7 @@ function renderCharts(events) {
       plugins: {
         legend: {
           display: true,
-          position: isMobile ? "bottom" : "top",
+          position: "top",
 
           labels: {
             usePointStyle: true,
@@ -1428,6 +1855,8 @@ function renderCharts(events) {
 
         tooltip: {
           backgroundColor: "#172b43",
+          titleColor: "#ffffff",
+          bodyColor: "#ffffff",
           padding: 12,
 
           callbacks: {
