@@ -127,76 +127,32 @@ body {
 }
 
 /* ==============================
-   TEAM HOVER COLORS
+   PLAYER HOVER - UNIFIED GRADIENT
+   ONLY NON-SELECTED PLAYERS
 ============================== */
 
-/* LEVI TIM - CRNI HOVER */
-
-#teamA_box .playerBox:hover {
-  background: #f0f1f2;
-  border-color: #303030;
-  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+.playerBox:not(.selected):hover {
+  background: linear-gradient(135deg, #315b80 0%, #172b43 100%);
+  border-color: #244765;
+  box-shadow: 0 5px 12px rgba(23, 43, 67, 0.18);
   transform: translateY(-2px);
 }
 
-/* DESNI TIM - ZELENI HOVER */
-
-#teamB_box .playerBox:hover {
-  background: #f0f5e9;
-  border-color: #a8e52d;
-  box-shadow: 0 5px 12px rgba(100, 140, 30, 0.14);
-  transform: translateY(-2px);
+.playerBox:not(.selected):hover .player-header strong {
+  color: #ffffff;
 }
 
 /* ==============================
    SELECTED PLAYER
 ============================== */
 
-/* LEVI TIM - CRNA IVICA */
-
-#teamA_box .playerBox.selected {
-  background: #f0f1f2;
-  border: 2px solid #303030;
-  box-shadow:
-    inset 3px 0 0 #303030,
-    0 3px 9px rgba(0, 0, 0, 0.1);
-  transform: none;
-}
-
-/* DESNI TIM - ZELENA IVICA */
-
+#teamA_box .playerBox.selected,
 #teamB_box .playerBox.selected {
-  background: #f0f5e9;
-  border: 2px solid #a8e52d;
+  background: #ffffff;
+  border: 2px solid #315b80;
   box-shadow:
-    inset 3px 0 0 #a8e52d,
-    0 3px 9px rgba(100, 140, 30, 0.12);
-  transform: none;
-}
-
-/* ==============================
-   SELECTED PLAYER HOVER
-============================== */
-
-/* LEVI TIM */
-
-#teamA_box .playerBox.selected:hover {
-  background: #e9ebed;
-  border-color: #303030;
-  box-shadow:
-    inset 3px 0 0 #303030,
-    0 5px 12px rgba(0, 0, 0, 0.14);
-  transform: none;
-}
-
-/* DESNI TIM */
-
-#teamB_box .playerBox.selected:hover {
-  background: #eaf2df;
-  border-color: #a8e52d;
-  box-shadow:
-    inset 3px 0 0 #a8e52d,
-    0 5px 12px rgba(100, 140, 30, 0.16);
+    inset 3px 0 0 #315b80,
+    0 3px 9px rgba(35, 58, 80, 0.12);
   transform: none;
 }
 
@@ -224,31 +180,15 @@ body {
 }
 
 /* ==============================
-   PLAYER PHOTO HOVER COLORS
+   PLAYER PHOTO HOVER
 ============================== */
 
-/* LEVI TIM - CRNA IVICA NA HOVER */
-
-#teamA_box .playerBox:hover .player-img {
-  border-color: #303030;
+.playerBox:not(.selected):hover .player-img {
+  border-color: #ffffff;
 }
 
-/* DESNI TIM - ZELENA IVICA NA HOVER */
-
-#teamB_box .playerBox:hover .player-img {
-  border-color: #a8e52d;
-}
-
-/* LEVI TIM - FOTOGRAFIJA */
-
-#teamA_box .playerBox.selected .player-img {
-  border-color: #303030;
-}
-
-/* DESNI TIM - FOTOGRAFIJA */
-
-#teamB_box .playerBox.selected .player-img {
-  border-color: #a8e52d;
+.playerBox.selected .player-img {
+  border-color: #315b80;
 }
 
 .player-header strong {
@@ -468,8 +408,8 @@ body {
   border-radius: 9px;
   background: #e3ebf3;
   color: var(--navy);
-  font-size: 16px;
-  font-weight: 800;
+  font-size: 18px;
+  font-weight: 600;
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(28, 48, 70, 0.05);
 }
@@ -502,7 +442,7 @@ body {
   background: #e3ebf3;
   color: var(--navy);
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 600;
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(28, 48, 70, 0.05);
 }
