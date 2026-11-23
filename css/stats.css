@@ -802,6 +802,11 @@ td {
   .chart-wrapper {
     height: 240px;
   }
+
+  /* Samo grafikon praćenja prednosti */
+  .chart-card:first-child .chart-wrapper {
+    height: 420px;
+  }
 }
 
 /* ==============================
