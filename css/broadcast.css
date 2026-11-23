@@ -89,6 +89,8 @@ body {
   align-items: center;
   overflow: hidden;
   z-index: 15;
+  border-radius: 14px;
+  overflow: hidden;
 }
 
 .team {
@@ -100,15 +102,17 @@ body {
 }
 
 .team.left {
-  background: #303030;
+  background: linear-gradient(135deg, #454545 0%, #242424 100%);
   justify-content: flex-end;
   padding-right: 10px;
+  border-radius: 12px 0 0 12px;
 }
 
 .team.right {
-  background: #a8e52d;
+  background: linear-gradient(135deg, #b8ed4b 0%, #8bc91f 100%);
   justify-content: flex-start;
   padding-left: 10px;
+  border-radius: 0 12px 12px 0;
 }
 
 .team img {
@@ -140,7 +144,7 @@ body {
   font-family: "Segoe UI";
   color: black;
   background: #f0f0f0;
-
+  border-radius: 10px;
   padding: 4px 10px;
   height: 100%;
 }
