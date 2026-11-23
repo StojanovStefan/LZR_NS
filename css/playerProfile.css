@@ -1,8 +1,17 @@
+/* ==============================
+   GLOBAL
+============================== */
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background: #f5f5f7;
+  background: #f5f7fa;
   font-family: "Inter", Arial, sans-serif;
   margin: 0;
   padding: 20px;
+  color: #172b43;
 }
 
 .container {
@@ -10,14 +19,19 @@ body {
   margin: auto;
 }
 
+/* ==============================
+   PLAYER HEADER
+============================== */
+
 .player-header {
   display: flex;
   align-items: center;
   gap: 25px;
-  background: #fff;
+  background: #ffffff;
   padding: 25px;
+  border: 1px solid #dce5ef;
   border-radius: 16px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 3px 12px rgba(23, 43, 67, 0.07);
   margin-bottom: 25px;
 }
 
@@ -33,25 +47,29 @@ body {
   flex-direction: column;
   gap: 8px;
 }
+
 .player-photo {
   width: 160px;
   height: 160px;
   border-radius: 50%;
   object-fit: cover;
-  background: white;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  background: #ffffff;
+  border: 3px solid #e9eff6;
+  box-shadow: 0 3px 10px rgba(23, 43, 67, 0.12);
 }
 
 .player-name {
   font-size: 32px;
-  font-weight: 300;
+  font-weight: 600;
+  color: #172b43;
 }
 
 .team-info {
   display: flex;
   align-items: center;
   gap: 12px;
-  background: #f8f8f8;
+  background: #f5f7fa;
+  border: 1px solid #dce5ef;
   padding: 10px 16px;
   border-radius: 12px;
 }
@@ -65,8 +83,13 @@ body {
 
 .team-name {
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 500;
+  color: #294765;
 }
+
+/* ==============================
+   TABS
+============================== */
 
 .tabs {
   display: flex;
@@ -77,17 +100,45 @@ body {
 .tab-btn {
   padding: 10px 24px;
   border-radius: 10px;
-  border: none;
+  border: 1px solid #c3d0de;
   cursor: pointer;
-  background: #e5e7eb;
+
+  background: #dce5ef;
+  color: #294765;
+
   font-size: 17px;
-  transition: background 0.25s;
+  font-weight: 400;
+
+  transition:
+    background 0.15s ease,
+    color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.tab-btn:hover {
+  background: #cbd8e6;
+  border-color: #aebfd1;
+  color: #294765;
 }
 
 .tab-btn.active {
-  background: #fbbf24;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.18);
+  background: linear-gradient(135deg, #294765, #42698f);
+  color: #ffffff;
+  border-color: #42698f;
+  font-weight: 500;
+  box-shadow: 0 3px 9px rgba(41, 71, 101, 0.2);
+  transition: none;
 }
+
+.tab-btn.active:hover {
+  background: linear-gradient(135deg, #294765, #42698f);
+  border-color: #42698f;
+  color: #ffffff;
+}
+
+/* ==============================
+   STATS GRID
+============================== */
 
 .stats-grid {
   display: grid;
@@ -97,19 +148,22 @@ body {
 
 .stat-card {
   background: #ffffff;
+  border: 1px solid #dce5ef;
   border-radius: 12px;
   padding: 0;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 10px rgba(23, 43, 67, 0.06);
   overflow: hidden;
 }
 
 .stat-card h3 {
   text-align: center;
   padding: 12px 0;
-  color: #f59e0b;
+  color: #172b43;
   font-size: 20px;
   margin: 0;
   font-weight: 700;
+  background: #f5f7fa;
+  border-bottom: 1px solid #dce5ef;
 }
 
 .stat-columns {
@@ -125,7 +179,7 @@ body {
 .stat-col-title {
   text-align: center;
   font-weight: 600;
-  color: #f59e0b;
+  color: #294765;
   margin-bottom: 10px;
 }
 
@@ -140,11 +194,12 @@ body {
   gap: 20px;
   padding: 4px 0;
   font-size: 16px;
+  color: #334b63;
 }
 
-.stat-row.header {
+.stat-row\.header {
   font-weight: 700;
-  color: #f59e0b;
+  color: #172b43;
   margin-bottom: 6px;
 }
 
@@ -154,14 +209,172 @@ body {
 }
 
 .stat-percent {
-  background: linear-gradient(90deg, #ffb100, #ff8c00);
+  background: linear-gradient(90deg, #294765, #42698f);
   text-align: center;
   padding: 14px 0;
   font-size: 22px;
-  font-weight: bold;
-  color: white;
+  font-weight: 700;
+  color: #ffffff;
   margin-top: 10px;
 }
+
+/* ==============================
+   PLAYERS LIST
+============================== */
+
+#playersList {
+  overflow-x: auto;
+  margin-bottom: 35px;
+  padding: 20px;
+  border: 1px solid #dce5ef;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+#playersList table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 0;
+  overflow: hidden;
+  font-size: 17px;
+}
+
+#playersList th {
+  color: #ffffff;
+  padding: 14px 10px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  background: #172b43;
+  border: 1px solid #294765;
+  text-align: center;
+}
+
+#playersList td {
+  padding: 12px 10px;
+  border-bottom: 1px solid #e5eaf0;
+  background: #ffffff;
+  border: 1px solid #dce5ef;
+  text-align: center;
+  color: #294765;
+}
+
+#playersList tr:hover td {
+  background: #f5f8fc;
+}
+
+/* ==============================
+   GAME BUTTON
+============================== */
+
+.game-btn {
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+  background: #dce5ef;
+  color: #294765;
+  border: 1px solid #c3d0de;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 16px;
+  cursor: pointer;
+
+  transition:
+    background 0.15s ease,
+    color 0.15s ease;
+}
+
+.game-btn:hover {
+  background: linear-gradient(135deg, #294765, #42698f);
+  border-color: #42698f;
+  color: #ffffff;
+}
+
+/* ==============================
+   OPPONENT
+============================== */
+
+.opp-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+}
+
+.opp-wrapper img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* ==============================
+   WIN / LOSS
+============================== */
+
+.win-loss-indicator {
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px;
+  user-select: none;
+}
+
+.win-loss-indicator.win {
+  background-color: #22a06b;
+}
+
+.win-loss-indicator.loss {
+  background-color: #dc5555;
+}
+
+/* ==============================
+   MVP BADGE
+============================== */
+
+.mvp-badge {
+  margin-top: 8px;
+  background: linear-gradient(90deg, #294765, #42698f);
+  color: #f3c74a;
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  border: 1px solid #42698f;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 14px;
+  box-shadow: 0 2px 6px rgba(23, 43, 67, 0.12);
+  user-select: none;
+}
+
+.mvp-badge-td {
+  background: linear-gradient(90deg, #294765, #42698f);
+  color: #f3c74a;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #42698f;
+  border-radius: 50%;
+  font-size: 9px;
+}
+
+/* ==============================
+   MOBILE
+============================== */
 
 @media (max-width: 600px) {
   body {
@@ -190,17 +403,18 @@ body {
     align-items: center;
     gap: 12px;
   }
+
   .player-photo {
     width: 120px;
     height: 120px;
     object-fit: cover;
     border-radius: 50%;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 3px 10px rgba(23, 43, 67, 0.12);
   }
 
   .player-name {
     font-size: 22px;
-    font-weight: 100;
+    font-weight: 600;
   }
 
   .player-info-block {
@@ -212,7 +426,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 6px;
-    background-color: #fff;
+    background-color: #f5f7fa;
     padding: 12px 16px;
     border-radius: 14px;
   }
@@ -221,13 +435,13 @@ body {
     width: 55px;
     height: 55px;
     border-radius: 50%;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
-    border: 1px solid #fff;
+    box-shadow: 0 3px 10px rgba(23, 43, 67, 0.12);
+    border: 1px solid #dce5ef;
   }
 
   .team-name {
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 500;
   }
 
   .tabs {
@@ -282,13 +496,13 @@ body {
 
   #playersList th {
     padding: 8px;
-    border: 1px solid #d8d8d8;
+    border: 1px solid #294765;
     font-size: 15px;
   }
 
   #playersList td {
     padding: 8px;
-    border: 1px solid #d8d8d8;
+    border: 1px solid #dce5ef;
     font-size: 15px;
   }
 
@@ -318,140 +532,9 @@ body {
   }
 
   .mvp-badge-td {
-    background: #f4c400;
-    color: black;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    font-size: 9px;
-  }
-  .mvp-badge-td {
     width: 24px;
     height: 24px;
     font-size: 7px;
     border-radius: 50%;
   }
-}
-
-#playersList {
-  overflow-x: auto;
-  margin-bottom: 35px;
-  padding: 20px;
-  border-radius: 12px;
-}
-
-#playersList table {
-  width: 100%;
-  border-collapse: collapse;
-  background: white;
-  border-radius: 0;
-  overflow: hidden;
-  font-size: 17px;
-}
-
-#playersList th {
-  color: white;
-  padding: 14px 10px;
-  font-size: 15px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  background: #6b7280;
-  border: 1px solid #d1d5db;
-  text-align: center;
-}
-
-#playersList td {
-  padding: 12px 10px;
-  border-bottom: 1px solid #e5e7eb;
-  background: white;
-  border: 1px solid #d1d5db;
-  text-align: center;
-}
-
-#playersList tr:hover {
-  background: #f9fafb;
-}
-
-.game-btn {
-  display: inline-flex;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: #f37e12;
-  color: white;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.15s;
-}
-
-.game-btn:hover {
-  background: orange;
-  transform: scale(1.1);
-}
-
-.opp-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  justify-content: center;
-}
-
-.opp-wrapper img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.win-loss-indicator {
-  width: 30px;
-  height: 30px;
-  border-radius: 4px;
-  color: white;
-  font-weight: bold;
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 8px;
-  user-select: none;
-}
-.win-loss-indicator.win {
-  background-color: #22c55e;
-}
-.win-loss-indicator.loss {
-  background-color: #ef4444;
-}
-
-.mvp-badge {
-  margin-top: 8px;
-  background-color: #f3c74a;
-  color: #6b4e00;
-  font-weight: 700;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center;
-  border-radius: 6px;
-  padding: 6px 12px;
-  font-size: 14px;
-  box-shadow: 0 2px 6px rgb(0 0 0 / 0.15);
-  user-select: none;
-}
-
-.mvp-badge-td {
-  background: #f4c400;
-  color: black;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  font-size: 9px;
 }

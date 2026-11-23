@@ -1,5 +1,10 @@
+/* ==============================
+   GLOBAL
+============================== */
+
 body {
-  background: #f5f5f7;
+  background: #f5f7fa;
+  color: #172b43;
   font-family: "Inter", Arial, sans-serif;
   margin: 0;
   padding: 20px;
@@ -14,17 +19,23 @@ h1 {
   text-align: center;
   margin-bottom: 25px;
   font-size: 34px;
-  font-weight: 800;
+  font-weight: 700;
+  color: #172b43;
 }
+
+/* ==============================
+   TEAM HEADER
+============================== */
 
 .team-header {
   display: flex;
   align-items: center;
   gap: 25px;
-  background: #fff;
+  background: #ffffff;
   padding: 25px;
   border-radius: 16px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  border: 1px solid #dce5ef;
+  box-shadow: 0 4px 16px rgba(23, 43, 67, 0.08);
   margin-bottom: 25px;
 }
 
@@ -34,13 +45,18 @@ h1 {
   border-radius: 50%;
   object-fit: cover;
   background: white;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 10px rgba(23, 43, 67, 0.12);
 }
 
 .team-header span {
   font-size: 32px;
-  font-weight: 300;
+  font-weight: 400;
+  color: #172b43;
 }
+
+/* ==============================
+   TABS
+============================== */
 
 .tabs {
   display: flex;
@@ -51,23 +67,54 @@ h1 {
 .tab-btn {
   padding: 10px 24px;
   border-radius: 10px;
-  border: none;
+  border: 1px solid #c3d0de;
   cursor: pointer;
-  background: #e5e7eb;
+
+  background: #dce5ef;
+  color: #294765;
+
   font-size: 17px;
-  transition: background 0.25s;
+  font-weight: 400;
+
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.tab-btn:hover {
+  background: #cbd8e6;
+  border-color: #aebfd1;
+  color: #294765;
 }
 
 .tab-btn.active {
-  background: #fbbf24;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.18);
+  background: linear-gradient(135deg, #294765, #42698f);
+  color: #ffffff;
+  border-color: #42698f;
+  font-weight: 500;
+  box-shadow: 0 3px 9px rgba(41, 71, 101, 0.2);
+  transition: none;
 }
+
+.tab-btn.active:hover {
+  background: linear-gradient(135deg, #294765, #42698f);
+  border-color: #42698f;
+  color: #ffffff;
+}
+
+/* ==============================
+   STATS GRID
+============================== */
 
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 18px;
 }
+
+/* ==============================
+   TABLE
+============================== */
 
 table {
   width: 100%;
@@ -80,23 +127,34 @@ table {
 
 th,
 td {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #dce5ef;
   padding: 12px;
   font-size: 16px;
+  color: #294765;
 }
 
+th {
+  background: #172b43;
+  color: #ffffff;
+}
+
+/* ==============================
+   GAME CARD
+============================== */
+
 .game-card {
-  background: #fff;
+  background: #ffffff;
   padding: 14px;
   border-radius: 12px;
   margin-bottom: 12px;
   cursor: pointer;
-  border-left: 5px solid #fbbf24;
+  border-left: 5px solid #42698f;
   transition: 0.2s;
+  box-shadow: 0 2px 8px rgba(23, 43, 67, 0.06);
 }
 
 .game-card:hover {
-  background: #f9f9f9;
+  background: #f5f8fb;
   transform: scale(1.01);
 }
 
@@ -105,18 +163,24 @@ td {
   display: none;
 }
 
+/* ==============================
+   STAT CARDS
+============================== */
+
 .stat-card {
   background: #ffffff;
   border-radius: 12px;
   padding: 0;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #dce5ef;
+  box-shadow: 0 4px 10px rgba(23, 43, 67, 0.07);
   overflow: hidden;
 }
 
 .stat-card h3 {
   text-align: center;
   padding: 12px 0;
-  color: #f59e0b;
+  color: #172b43;
+  background: #f5f7fa;
   font-size: 20px;
   margin: 0;
   font-weight: 700;
@@ -135,7 +199,7 @@ td {
 .stat-col-title {
   text-align: center;
   font-weight: 600;
-  color: #f59e0b;
+  color: #42698f;
   margin-bottom: 10px;
 }
 
@@ -150,11 +214,12 @@ td {
   gap: 20px;
   padding: 4px 0;
   font-size: 16px;
+  color: #294765;
 }
 
-.stat-row.header {
+.stat-row\.header {
   font-weight: 700;
-  color: #f59e0b;
+  color: #172b43;
   margin-bottom: 6px;
 }
 
@@ -162,8 +227,9 @@ td {
   width: 80px;
   text-align: center;
 }
+
 .stat-percent {
-  background: linear-gradient(90deg, #ffb100, #ff8c00);
+  background: linear-gradient(90deg, #294765, #42698f);
   text-align: center;
   padding: 14px 0;
   font-size: 22px;
@@ -171,6 +237,10 @@ td {
   color: white;
   margin-top: 10px;
 }
+
+/* ==============================
+   PLAYERS GRID
+============================== */
 
 .players-grid {
   display: grid;
@@ -180,13 +250,24 @@ td {
 }
 
 .player-card {
-  background: white;
+  background: #ffffff;
+  border: 1px solid #dce5ef;
   border-radius: 14px;
   padding: 18px;
   display: flex;
   flex-direction: column;
   gap: 12px;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 3px 12px rgba(23, 43, 67, 0.08);
+  will-change: transform;
+  cursor: pointer;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.player-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(23, 43, 67, 0.14);
 }
 
 .player-header {
@@ -199,19 +280,24 @@ td {
   width: 66px;
   height: 66px;
   border-radius: 50%;
-  border: 3px solid #e5e7eb;
+  border: 3px solid #dce5ef;
   object-fit: cover;
 }
 
 .player-name {
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 500;
+  color: #172b43;
 }
 
 .player-year {
-  color: #707070;
+  color: #718096;
   font-size: 14px;
 }
+
+/* ==============================
+   PLAYER STATS
+============================== */
 
 .player-stats-row {
   display: flex;
@@ -222,7 +308,8 @@ td {
 }
 
 .stat-box {
-  background: #f4f6f8;
+  background: #f5f7fa;
+  border: 1px solid #e4ebf2;
   padding: 6px 10px;
   border-radius: 10px;
   text-align: center;
@@ -232,13 +319,24 @@ td {
 
 .stat-box div:first-child {
   font-size: 12px;
-  color: #808080;
+  color: #718096;
 }
 
 .stat-box div:last-child {
   font-size: 16px;
   font-weight: 400;
+  color: #294765;
 }
+
+.stat-box.active-stat {
+  border: 1.5px solid #42698f;
+  border-radius: 8px;
+  background: #e9eff6;
+}
+
+/* ==============================
+   SORT BUTTONS
+============================== */
 
 .sort-container {
   display: flex;
@@ -250,49 +348,59 @@ td {
 .sort-btn {
   padding: 6px 12px;
   border-radius: 10px;
-  background: #e8eef5;
-  border: none;
+  background: #dce5ef;
+  color: #294765;
+  border: 1px solid #c3d0de;
   cursor: pointer;
+  font-weight: 400;
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.sort-btn:hover {
+  background: #cbd8e6;
+  border-color: #aebfd1;
 }
 
 .sort-btn.active {
-  background: #ff9900;
-  color: white;
+  background: linear-gradient(135deg, #243f5c, #365b7f);
+  color: #ffffff;
+  border-color: #42698f;
+  font-weight: 500;
+  transition: none;
+}
+
+.sort-btn.active:hover {
+  background: linear-gradient(135deg, #243f5c, #365b7f);
+  border-color: #42698f;
+  color: #ffffff;
 }
 
 #playersSortButtons {
   display: none;
 }
 
-.stat-box.active-stat {
-  border: 1.5px solid #ff9900;
-  border-radius: 8px;
-}
+/* ==============================
+   OVER / UNDER
+============================== */
 
-.player-card {
-  will-change: transform;
-}
 .active-ou {
-  background: #ff9900;
+  background: #42698f;
   padding: 2px 6px;
   border-radius: 6px;
-  font-weight: 300 !important;
-  color: #000 !important;
+  font-weight: 400 !important;
+  color: #ffffff !important;
 }
+
 .ou-box {
-  color: #ff9900;
+  color: #42698f;
   font-weight: 600;
 }
 
-.player-card {
-  cursor: pointer;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
-}
-
-.player-card:hover {
-  transform: scale(1.02);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
+/* ==============================
+   MOBILE
+============================== */
 
 @media (max-width: 600px) {
   body {
@@ -407,6 +515,7 @@ td {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    margin-bottom: 14px;
   }
 
   .game-card > div {
@@ -433,10 +542,6 @@ td {
   .game-card div[style*="text-align:center"] div {
     margin-top: 6px;
     font-size: 15px;
-  }
-
-  .game-card {
-    margin-bottom: 14px;
   }
 
   .players-container {
