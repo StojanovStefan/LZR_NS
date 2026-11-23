@@ -1618,7 +1618,7 @@ function renderCharts(events) {
       function drawScore(scoreA, scoreB, x, y, maxWidth) {
         ctx.save();
 
-        ctx.font = `700 ${isMobile ? 11 : 14}px Arial`;
+        ctx.font = `700 ${isMobile ? 13 : 16}px Arial`;
         ctx.textBaseline = "middle";
         ctx.textAlign = "left";
 
@@ -1675,7 +1675,7 @@ function renderCharts(events) {
 
         // Naslov statistike – midnight blue, bold
         ctx.fillStyle = MIDNIGHT_BLUE;
-        ctx.font = `700 ${isMobile ? 11 : 14}px Arial`;
+        ctx.font = `700 ${isMobile ? 13 : 16}px Arial`;
         ctx.textAlign = "left";
         ctx.textBaseline = "top";
 
@@ -1707,7 +1707,7 @@ function renderCharts(events) {
             availableWidth,
           );
 
-          ctx.font = `700 ${isMobile ? 11 : 14}px Arial`;
+          ctx.font = `700 ${isMobile ? 13 : 16}px Arial`;
           ctx.fillStyle = MIDNIGHT_BLUE;
           ctx.textAlign = "left";
           ctx.textBaseline = "middle";
@@ -1725,7 +1725,7 @@ function renderCharts(events) {
           );
         } else {
           ctx.fillStyle = MIDNIGHT_BLUE;
-          ctx.font = `700 ${isMobile ? 11 : 14}px Arial`;
+          ctx.font = `700 ${isMobile ? 13 : 16}px Arial`;
           ctx.textAlign = "left";
           ctx.textBaseline = "middle";
           ctx.fillText(item.fallback, detailX, detailY);

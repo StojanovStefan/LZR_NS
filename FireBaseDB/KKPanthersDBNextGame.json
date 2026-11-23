@@ -28,6 +28,7 @@
             "keskenovic_stefan_2000": {
               "birth_year": 2000,
               "mvp_count": 0,
+              "lvp_count": 0,
               "name": "Keskenović Stefan",
               "number": 3,
               "playerId": "keskenovic_stefan_2000",
@@ -55,6 +56,7 @@
             "vukobratovic_mihailo_1996": {
               "birth_year": 1996,
               "mvp_count": 0,
+              "lvp_count": 0,
               "name": "Vukobratović Mihailo",
               "number": 44,
               "photo": "Vukobratovic_Mihailo.png",
@@ -83,6 +85,7 @@
             "subara_lazar_2005": {
               "birth_year": 2000,
               "mvp_count": 0,
+              "lvp_count": 0,
               "name": "Šubara Lazar",
               "number": 2,
               "photo": "Subara_Lazar.png",
@@ -111,6 +114,7 @@
               "birth_year": 1985,
               "mvp_count": 1,
               "mvp_games": ["2026-11-10_lions_vs_dragons"],
+              "lvp_count": 0,
               "name": "Peruničić Mladen",
               "number": 16,
               "photo": "Perunicic_Mladen.png",
@@ -139,6 +143,7 @@
             "dobric_ognjen_2002": {
               "birth_year": 2002,
               "mvp_count": 0,
+              "lvp_count": 0,
               "name": "Dobrić Ognjen",
               "number": 8,
               "photo": "Dobric_Ognjen.png",
@@ -191,6 +196,7 @@
             "rajacic_filip_2000": {
               "birth_year": 2000,
               "mvp_count": 0,
+              "lvp_count": 0,
               "name": "Rajačić Filip",
               "number": 15,
               "photo": "Rajacic_Filip.png",
@@ -219,6 +225,8 @@
             "cvetinovic_nikola_2002": {
               "birth_year": 2002,
               "mvp_count": 0,
+              "lvp_count": 1,
+              "lvp_games": ["2026-11-03_lions_vs_dragons"],
               "name": "Cvetinović Nikola",
               "number": 33,
               "photo": "Cvetinovic_Nikola.png",
@@ -247,6 +255,11 @@
             "merdovic_stefan_2002": {
               "birth_year": 2002,
               "mvp_count": 0,
+              "lvp_count": 2,
+              "lvp_games": [
+                "2026-11-03_lions_vs_dragons",
+                "2026-11-10_lions_vs_dragons"
+              ],
               "name": "Merdović Stefan",
               "number": 31,
               "photo": "Merdovic_Stefan.png",
@@ -275,6 +288,7 @@
               "birth_year": 1999,
               "mvp_count": 1,
               "mvp_games": ["2026-11-03_lions_vs_dragons"],
+              "lvp_count": 0,
               "name": "Stojanov Stefan",
               "number": 30,
               "photo": "Stojanov_Stefan.png",
@@ -303,6 +317,8 @@
             "lazarevic_srdjan_2000": {
               "birth_year": 2000,
               "mvp_count": 0,
+              "lvp_count": 1,
+              "lvp_games": ["2026-11-17_lions_vs_dragons"],
               "name": "Lazarević Srdjan",
               "number": 38,
               "photo": "Lazarevic_Srdjan.png",

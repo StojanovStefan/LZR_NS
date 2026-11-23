@@ -2779,7 +2779,8 @@
         "teamB_logo": "White_Dragons.png",
         "time": "10:00",
         "ytLink": "https://www.youtube.com/watch?v=WiR5JnnWcpA",
-        "mvpPlayerId": "stojanov_stefan_1999"
+        "mvpPlayerIds": ["stojanov_stefan_1999"],
+        "lvpPlayerIds": ["merdovic_stefan_2002", "cvetinovic_nikola_2002"]
       },
       "lastScore": {
         "player": "stojanov_stefan_1999",
@@ -2816,6 +2817,8 @@
             "cvetinovic_nikola_2002": {
               "birth_year": 2002,
               "mvp_count": 0,
+              "lvp_count": 1,
+              "lvp_games": ["2026-11-03_lions_vs_dragons"],
               "name": "Cvetinović Nikola",
               "number": 33,
               "photo": "Cvetinovic_Nikola.png",
@@ -2843,6 +2846,7 @@
             "ilic_nikola_2005": {
               "birth_year": 2005,
               "mvp_count": 0,
+              "lvp_count": 0,
               "name": "Ilić Nikola",
               "number": 5,
               "photo": "Ilic_Nikola.png",
@@ -2870,6 +2874,8 @@
             "merdovic_stefan_2002": {
               "birth_year": 2002,
               "mvp_count": 0,
+              "lvp_count": 1,
+              "lvp_games": ["2026-11-03_lions_vs_dragons"],
               "name": "Merdović Stefan",
               "number": 31,
               "photo": "Merdovic_Stefan.png",
@@ -2897,6 +2903,7 @@
             "raskovic_marko_2009": {
               "birth_year": 2009,
               "mvp_count": 0,
+              "lvp_count": 0,
               "name": "Rašković Marko",
               "number": 7,
               "photo": "Raskovic_Marko.png",
@@ -2924,6 +2931,7 @@
             "vujic_marko_1999": {
               "birth_year": 1999,
               "mvp_count": 0,
+              "lvp_count": 0,
               "name": "Vujić Marko",
               "number": 1,
               "photo": "Vujic_Marko.png",
@@ -2974,6 +2982,7 @@
             "dobric_ognjen_2002": {
               "birth_year": 2002,
               "mvp_count": 0,
+              "lvp_count": 0,
               "name": "Dobrić Ognjen",
               "number": 8,
               "photo": "Dobric_Ognjen.png",
@@ -3001,6 +3010,7 @@
             "lazarevic_srdjan_2000": {
               "birth_year": 2000,
               "mvp_count": 0,
+              "lvp_count": 0,
               "name": "Lazarević Srdjan",
               "number": 38,
               "photo": "Lazarevic_Srdjan.png",
@@ -3028,6 +3038,7 @@
             "merdovic_luka_2000": {
               "birth_year": 2000,
               "mvp_count": 0,
+              "lvp_count": 0,
               "name": "Merdović Luka",
               "number": 17,
               "playerId": "merdovic_luka_2000",
@@ -3054,6 +3065,7 @@
             "radojevic_luka_2008": {
               "birth_year": 2008,
               "mvp_count": 0,
+              "lvp_count": 0,
               "name": "Radojević Luka",
               "number": 77,
               "photo": "Radojevic_Luka.png",
@@ -3082,6 +3094,7 @@
               "birth_year": 1999,
               "mvp_count": 1,
               "mvp_games": ["2026-11-03_lions_vs_dragons"],
+              "lvp_count": 0,
               "name": "Stojanov Stefan",
               "number": 30,
               "photo": "Stojanov_Stefan.png",
@@ -6095,7 +6108,8 @@
         "teamB_logo": "White_Dragons.png",
         "time": "10:00",
         "ytLink": "https://youtu.be/HnoJdnrX-b0",
-        "mvpPlayerId": "perunicic_mladen_1985"
+        "mvpPlayerIds": ["perunicic_mladen_1985"],
+        "lvpPlayerIds": ["merdovic_stefan_2002"]
       },
       "lastScore": {
         "player": "merdovic_stefan_2002",
@@ -6132,6 +6146,8 @@
             "cvetinovic_nikola_2002": {
               "birth_year": 2002,
               "mvp_count": 0,
+              "lvp_count": 1,
+              "lvp_games": ["2026-11-03_lions_vs_dragons"],
               "name": "Cvetinović Nikola",
               "number": 33,
               "photo": "Cvetinovic_Nikola.png",
@@ -6159,6 +6175,7 @@
             "lazarevic_srdjan_2000": {
               "birth_year": 2000,
               "mvp_count": 0,
+              "lvp_count": 0,
               "name": "Lazarević Srdjan",
               "number": 38,
               "photo": "Lazarevic_Srdjan.png",
@@ -6186,6 +6203,7 @@
             "merdovic_luka_2000": {
               "birth_year": 2000,
               "mvp_count": 0,
+              "lvp_count": 0,
               "name": "Merdović Luka",
               "number": 17,
               "playerId": "merdovic_luka_2000",
@@ -6213,6 +6231,7 @@
               "birth_year": 1985,
               "mvp_count": 1,
               "mvp_games": ["2026-11-10_lions_vs_dragons"],
+              "lvp_count": 0,
               "name": "Peruničić Mladen",
               "number": 16,
               "photo": "Perunicic_Mladen.png",
@@ -6241,6 +6260,7 @@
               "birth_year": 1999,
               "mvp_count": 1,
               "mvp_games": ["2026-11-03_lions_vs_dragons"],
+              "lvp_count": 0,
               "name": "Stojanov Stefan",
               "number": 30,
               "photo": "Stojanov_Stefan.png",
@@ -6291,6 +6311,7 @@
             "dobric_ognjen_2002": {
               "birth_year": 2002,
               "mvp_count": 0,
+              "lvp_count": 0,
               "name": "Dobrić Ognjen",
               "number": 8,
               "photo": "Dobric_Ognjen.png",
@@ -6318,6 +6339,11 @@
             "merdovic_stefan_2002": {
               "birth_year": 2002,
               "mvp_count": 0,
+              "lvp_count": 2,
+              "lvp_games": [
+                "2026-11-03_lions_vs_dragons",
+                "2026-11-10_lions_vs_dragons"
+              ],
               "name": "Merdović Stefan",
               "number": 31,
               "photo": "Merdovic_Stefan.png",
@@ -6345,6 +6371,7 @@
             "rajacic_filip_2000": {
               "birth_year": 2000,
               "mvp_count": 0,
+              "lvp_count": 0,
               "name": "Rajačić Filip",
               "number": 15,
               "photo": "Rajacic_Filip.png",
@@ -6372,6 +6399,7 @@
             "raskovic_marko_2009": {
               "birth_year": 2009,
               "mvp_count": 0,
+              "lvp_count": 0,
               "name": "Rašković Marko",
               "number": 7,
               "photo": "Raskovic_Marko.png",
@@ -6399,6 +6427,7 @@
             "vujic_marko_1999": {
               "birth_year": 1999,
               "mvp_count": 0,
+              "lvp_count": 0,
               "name": "Vujić Marko",
               "number": 1,
               "photo": "Vujic_Marko.png",
@@ -9833,7 +9862,8 @@
         "teamB_logo": "White_Dragons.png",
         "time": "10:00",
         "ytLink": "https://www.youtube.com/watch?v=dgwr3dXgKbQ",
-        "mvpPlayerId": "cvetinovic_nikola_2002"
+        "mvpPlayerIds": ["cvetinovic_nikola_2002"],
+        "lvpPlayerIds": ["lazarevic_srdjan_2000"]
       },
       "lastScore": {
         "player": "dobric_ognjen_2002",
@@ -9870,6 +9900,7 @@
             "ilic_nikola_2005": {
               "birth_year": 2005,
               "mvp_count": 0,
+              "lvp_count": 0,
               "name": "Ilić Nikola",
               "number": 5,
               "photo": "Ilic_Nikola.png",
@@ -9897,6 +9928,8 @@
             "lazarevic_srdjan_2000": {
               "birth_year": 2000,
               "mvp_count": 0,
+              "lvp_count": 1,
+              "lvp_games": ["2026-11-17_lions_vs_dragons"],
               "name": "Lazarević Srdjan",
               "number": 38,
               "photo": "Lazarevic_Srdjan.png",
@@ -9925,6 +9958,7 @@
               "birth_year": 1985,
               "mvp_count": 1,
               "mvp_games": ["2026-11-10_lions_vs_dragons"],
+              "lvp_count": 0,
               "name": "Peruničić Mladen",
               "number": 16,
               "photo": "Perunicic_Mladen.png",
@@ -9952,6 +9986,7 @@
             "raskovic_marko_2009": {
               "birth_year": 2009,
               "mvp_count": 0,
+              "lvp_count": 0,
               "name": "Rašković Marko",
               "number": 7,
               "photo": "Raskovic_Marko.png",
@@ -9980,6 +10015,7 @@
               "birth_year": 1999,
               "mvp_count": 1,
               "mvp_games": ["2026-11-03_lions_vs_dragons"],
+              "lvp_count": 0,
               "name": "Stojanov Stefan",
               "number": 30,
               "photo": "Stojanov_Stefan.png",
@@ -10031,6 +10067,8 @@
               "birth_year": 2002,
               "mvp_count": 1,
               "mvp_games": ["2026-11-17_lions_vs_dragons"],
+              "lvp_count": 1,
+              "lvp_games": ["2026-11-03_lions_vs_dragons"],
               "name": "Cvetinović Nikola",
               "number": 33,
               "photo": "Cvetinovic_Nikola.png",
@@ -10058,6 +10096,7 @@
             "dobric_ognjen_2002": {
               "birth_year": 2002,
               "mvp_count": 0,
+              "lvp_count": 0,
               "name": "Dobrić Ognjen",
               "number": 8,
               "photo": "Dobric_Ognjen.png",
@@ -10085,6 +10124,7 @@
             "merdovic_luka_2000": {
               "birth_year": 2000,
               "mvp_count": 0,
+              "lvp_count": 0,
               "name": "Merdović Luka",
               "number": 17,
               "playerId": "merdovic_luka_2000",
@@ -10111,6 +10151,11 @@
             "merdovic_stefan_2002": {
               "birth_year": 2002,
               "mvp_count": 0,
+              "lvp_count": 2,
+              "lvp_games": [
+                "2026-11-03_lions_vs_dragons",
+                "2026-11-10_lions_vs_dragons"
+              ],
               "name": "Merdović Stefan",
               "number": 31,
               "photo": "Merdovic_Stefan.png",
@@ -10138,6 +10183,7 @@
             "vujic_marko_1999": {
               "birth_year": 1999,
               "mvp_count": 0,
+              "lvp_count": 0,
               "name": "Vujić Marko",
               "number": 1,
               "photo": "Vujic_Marko.png",
@@ -10211,6 +10257,7 @@
             "keskenovic_stefan_2000": {
               "birth_year": 2000,
               "mvp_count": 0,
+              "lvp_count": 0,
               "name": "Keskenović Stefan",
               "number": 3,
               "playerId": "keskenovic_stefan_2000",
@@ -10238,6 +10285,7 @@
             "vukobratovic_mihailo_1996": {
               "birth_year": 1996,
               "mvp_count": 0,
+              "lvp_count": 0,
               "name": "Vukobratović Mihailo",
               "number": 44,
               "photo": "Vukobratovic_Mihailo.png",
@@ -10266,6 +10314,7 @@
             "subara_lazar_2005": {
               "birth_year": 2000,
               "mvp_count": 0,
+              "lvp_count": 0,
               "name": "Šubara Lazar",
               "number": 2,
               "photo": "Subara_Lazar.png",
@@ -10294,6 +10343,7 @@
               "birth_year": 1985,
               "mvp_count": 1,
               "mvp_games": ["2026-11-10_lions_vs_dragons"],
+              "lvp_count": 0,
               "name": "Peruničić Mladen",
               "number": 16,
               "photo": "Perunicic_Mladen.png",
@@ -10322,6 +10372,7 @@
             "dobric_ognjen_2002": {
               "birth_year": 2002,
               "mvp_count": 0,
+              "lvp_count": 0,
               "name": "Dobrić Ognjen",
               "number": 8,
               "photo": "Dobric_Ognjen.png",
@@ -10374,6 +10425,7 @@
             "rajacic_filip_2000": {
               "birth_year": 2000,
               "mvp_count": 0,
+              "lvp_count": 0,
               "name": "Rajačić Filip",
               "number": 15,
               "photo": "Rajacic_Filip.png",
@@ -10402,6 +10454,8 @@
             "cvetinovic_nikola_2002": {
               "birth_year": 2002,
               "mvp_count": 0,
+              "lvp_count": 1,
+              "lvp_games": ["2026-11-03_lions_vs_dragons"],
               "name": "Cvetinović Nikola",
               "number": 33,
               "photo": "Cvetinovic_Nikola.png",
@@ -10430,6 +10484,11 @@
             "merdovic_stefan_2002": {
               "birth_year": 2002,
               "mvp_count": 0,
+              "lvp_count": 2,
+              "lvp_games": [
+                "2026-11-03_lions_vs_dragons",
+                "2026-11-10_lions_vs_dragons"
+              ],
               "name": "Merdović Stefan",
               "number": 31,
               "photo": "Merdovic_Stefan.png",
@@ -10458,6 +10517,7 @@
               "birth_year": 1999,
               "mvp_count": 1,
               "mvp_games": ["2026-11-03_lions_vs_dragons"],
+              "lvp_count": 0,
               "name": "Stojanov Stefan",
               "number": 30,
               "photo": "Stojanov_Stefan.png",
@@ -10486,6 +10546,8 @@
             "lazarevic_srdjan_2000": {
               "birth_year": 2000,
               "mvp_count": 0,
+              "lvp_count": 1,
+              "lvp_games": ["2026-11-17_lions_vs_dragons"],
               "name": "Lazarević Srdjan",
               "number": 38,
               "photo": "Lazarevic_Srdjan.png",

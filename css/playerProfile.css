@@ -286,7 +286,8 @@ body {
 
   transition:
     background 0.15s ease,
-    color 0.15s ease;
+    color 0.15s ease,
+    border-color 0.15s ease;
 }
 
 .game-btn:hover {
@@ -368,6 +369,39 @@ body {
   width: 30px;
   height: 30px;
   border: 1px solid #42698f;
+  border-radius: 50%;
+  font-size: 9px;
+}
+
+/* ==============================
+   LVP BADGE
+============================== */
+
+.lvp-badge {
+  margin-top: 8px;
+  background: linear-gradient(90deg, #294765, #42698f);
+  color: #f3c74a;
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  border: 1px solid #c3d0de;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 14px;
+  box-shadow: 0 2px 6px rgba(23, 43, 67, 0.08);
+  user-select: none;
+}
+
+.lvp-badge-td {
+  background: linear-gradient(90deg, #294765, #42698f);
+  color: #f3c74a;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #c3d0de;
   border-radius: 50%;
   font-size: 9px;
 }
@@ -532,6 +566,20 @@ body {
   }
 
   .mvp-badge-td {
+    width: 24px;
+    height: 24px;
+    font-size: 7px;
+    border-radius: 50%;
+  }
+
+  .lvp-badge {
+    margin-top: 6px;
+    padding: 4px 8px;
+    font-size: 12px;
+    border-radius: 4px;
+  }
+
+  .lvp-badge-td {
     width: 24px;
     height: 24px;
     font-size: 7px;

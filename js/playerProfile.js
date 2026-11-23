@@ -6,7 +6,7 @@ import {
 } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBrMu0mjZw1SIh-0KgEVaKoPURdN1PhC0w",
+  apiKey: "AIzaSyBrMu0mjZw1SIh-0KgEVaKoPURd1NPhC0w",
   authDomain: "kk-panthers-39d91.firebaseapp.com",
   databaseURL:
     "https://kk-panthers-39d91-default-rtdb.europe-west1.firebasedatabase.app/",
@@ -83,11 +83,28 @@ get(gamesRef).then((snapshot) => {
     return;
   }
 
+  // ==============================
+  // MVP I LVP BROJANJE
+  // ==============================
+
   let mvpCount = 0;
+  let lvpCount = 0;
 
   Object.values(games).forEach((game) => {
-    if (game.gameInfo?.mvpPlayerId === playerID) {
+    const info = game.gameInfo || {};
+
+    if (
+      Array.isArray(info.mvpPlayerIds) &&
+      info.mvpPlayerIds.includes(playerID)
+    ) {
       mvpCount++;
+    }
+
+    if (
+      Array.isArray(info.lvpPlayerIds) &&
+      info.lvpPlayerIds.includes(playerID)
+    ) {
+      lvpCount++;
     }
   });
 
@@ -102,9 +119,18 @@ get(gamesRef).then((snapshot) => {
     ? `team_logo/${teamInfo.logo}`
     : "team_logo/default.png";
 
+  // ==============================
+  // MVP I LVP BEDŽEVI
+  // ==============================
+
   const mvpHtml =
     mvpCount > 0
       ? `<div class="mvp-badge">⭐ ${mvpCount}X MVP Utakmice ⭐</div>`
+      : "";
+
+  const lvpHtml =
+    lvpCount > 0
+      ? `<div class="lvp-badge">⭐ ${lvpCount}X LVP Utakmice ⭐</div>`
       : "";
 
   playerContainer.innerHTML = `
@@ -115,11 +141,11 @@ get(gamesRef).then((snapshot) => {
         <div class="player-name">${playerName}</div>
 
         <div class="team-info">
-          <img 
-            class="team-logo" 
-            src="${logoPath}" 
+          <img
+            class="team-logo"
+            src="${logoPath}"
             onclick="window.location.href='teamProfile.html?id=${encodeURIComponent(
-              teamInfo.name
+              teamInfo.name,
             )}'"
             style="cursor:pointer;"
           >
@@ -127,6 +153,7 @@ get(gamesRef).then((snapshot) => {
         </div>
 
         ${mvpHtml}
+        ${lvpHtml}
       </div>
     </div>
   `;
@@ -255,17 +282,17 @@ function renderPlayerStats(totals) {
     },
 
     /*{
-          title: "FT",
-          labels: ["FTA", "FTM"],
-          avgVals: [
-            (totals.ft_attempts / gp).toFixed(1),
-            (totals.ft_made / gp).toFixed(1),
-          ],
-          totalVals: [totals.ft_attempts, totals.ft_made],
-          percent: totals.ft_attempts
-            ? ((totals.ft_made / totals.ft_attempts) * 100).toFixed(2)
-            : "0",
-        },*/
+      title: "FT",
+      labels: ["FTA", "FTM"],
+      avgVals: [
+        (totals.ft_attempts / gp).toFixed(1),
+        (totals.ft_made / gp).toFixed(1),
+      ],
+      totalVals: [totals.ft_attempts, totals.ft_made],
+      percent: totals.ft_attempts
+        ? ((totals.ft_made / totals.ft_attempts) * 100).toFixed(2)
+        : "0",
+    },*/
 
     {
       title: "REB O/D",
@@ -313,51 +340,47 @@ function renderPlayerStats(totals) {
     },
 
     /*{
-          title: "BLK",
-          labels: [""],
-          avgVals: [(totals.blocks / gp).toFixed(1)],
-          totalVals: [totals.blocks],
-        },*/
+      title: "BLK",
+      labels: [""],
+      avgVals: [(totals.blocks / gp).toFixed(1)],
+      totalVals: [totals.blocks],
+    },*/
   ];
 
   statsGrid.innerHTML = "";
 
   stats.forEach((s) => {
     let rowsCombined = `
-            <div class="stat-row header">
-                <span>Prosečno</span>
-                <span>Ukupno</span>
-            </div>
-        `;
+      <div class="stat-row header">
+        <span>Prosečno</span>
+        <span>Ukupno</span>
+      </div>
+    `;
 
     s.labels.forEach((label, i) => {
       rowsCombined += `
-                <div class="stat-row">
-                    <span>${label}</span>
-                    <span>${label}</span>
-                </div>
-                <div class="stat-row">
-                    <span>${s.avgVals[i]}</span>
-                    <span>${s.totalVals[i]}</span>
-                </div>
-            `;
+        <div class="stat-row">
+          <span>${label}</span>
+          <span>${label}</span>
+        </div>
+        <div class="stat-row">
+          <span>${s.avgVals[i]}</span>
+          <span>${s.totalVals[i]}</span>
+        </div>
+      `;
     });
 
     statsGrid.innerHTML += `
-            <div class="stat-card">
-                <h3>${s.title}</h3>
+      <div class="stat-card">
+        <h3>${s.title}</h3>
 
-                <div class="stat-rows">
-                    ${rowsCombined}
-                </div>
+        <div class="stat-rows">
+          ${rowsCombined}
+        </div>
 
-                ${
-                  s.percent
-                    ? `<div class="stat-percent">${s.percent}%</div>`
-                    : ""
-                }
-            </div>
-        `;
+        ${s.percent ? `<div class="stat-percent">${s.percent}%</div>` : ""}
+      </div>
+    `;
   });
 }
 
@@ -463,15 +486,28 @@ function renderPlayerGames(games, playerID) {
       const row = document.createElement("tr");
 
       const tdBtn = document.createElement("td");
-      const isMvp = info.mvpPlayerId === playerID;
+
+      // MVP i LVP oznake za konkretnu utakmicu
+      const isMvp =
+        Array.isArray(info.mvpPlayerIds) &&
+        info.mvpPlayerIds.includes(playerID);
+
+      const isLvp =
+        Array.isArray(info.lvpPlayerIds) &&
+        info.lvpPlayerIds.includes(playerID);
+
       const mvpBadge = isMvp ? `<span class="mvp-badge-td">MVP</span>` : "";
 
+      const lvpBadge = isLvp ? `<span class="lvp-badge-td">LVP</span>` : "";
+
       tdBtn.innerHTML = `
-              <div style="display:flex; align-items:center; gap:6px;">
-                    ${mvpBadge}
-                    <span class="game-btn" style="cursor:pointer;">➜</span>
-              </div>
-            `;
+        <div style="display:flex; align-items:center; gap:6px;">
+          ${mvpBadge}
+          ${lvpBadge}
+          <span class="game-btn" style="cursor:pointer;">➜</span>
+        </div>
+      `;
+
       tdBtn.style.cursor = "pointer";
       tdBtn.onclick = () => (window.location.href = `stats.html?id=${gameID}`);
       row.appendChild(tdBtn);
@@ -503,15 +539,15 @@ function renderPlayerGames(games, playerID) {
       row.appendChild(createTD(`${fgMade}/${fgAtt} ${fgPct}`));
 
       row.appendChild(
-        createTD(`${p.two_made ?? 0}/${p.two_attempts ?? 0} ${twoPct}`)
+        createTD(`${p.two_made ?? 0}/${p.two_attempts ?? 0} ${twoPct}`),
       );
 
       row.appendChild(
-        createTD(`${p.three_made ?? 0}/${p.three_attempts ?? 0} ${threePct}`)
+        createTD(`${p.three_made ?? 0}/${p.three_attempts ?? 0} ${threePct}`),
       );
 
       row.appendChild(
-        createTD(`${reboundsTotal}  ${reboundsOff}/${reboundsDef}`)
+        createTD(`${reboundsTotal}  ${reboundsOff}/${reboundsDef}`),
       );
 
       ["assists", "turnovers", "steals", "blocks", "points"].forEach((stat) => {
