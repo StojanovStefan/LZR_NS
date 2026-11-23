@@ -1,3 +1,4 @@
+```css
 /* ==============================
    GLOBAL
 ============================== */
@@ -127,27 +128,10 @@ body {
 }
 
 /* ==============================
-   PLAYER HOVER - UNIFIED GRADIENT
-   ONLY NON-SELECTED PLAYERS
+   PLAYER HOVER - ALL PLAYERS
 ============================== */
 
-.playerBox:not(.selected):hover {
-  background: linear-gradient(135deg, #315b80 0%, #172b43 100%);
-  border-color: #244765;
-  box-shadow: 0 5px 12px rgba(23, 43, 67, 0.18);
-  transform: translateY(-2px);
-}
-
-.playerBox:not(.selected):hover .player-header strong {
-  color: #ffffff;
-}
-
-/* ==============================
-   SELECTED PLAYER
-============================== */
-
-#teamA_box .playerBox.selected,
-#teamB_box .playerBox.selected {
+.playerBox:hover {
   background: #ffffff;
   border: 2px solid #315b80;
   box-shadow:
@@ -156,8 +140,28 @@ body {
   transform: none;
 }
 
+.playerBox:hover .player-header strong {
+  color: var(--navy);
+}
+
 /* ==============================
-   PLAYER PHOTO + NAME
+   SELECTED PLAYER - GRADIENT
+============================== */
+
+#teamA_box .playerBox.selected,
+#teamB_box .playerBox.selected {
+  background: linear-gradient(135deg, #315b80 0%, #172b43 100%);
+  border: 1px solid #244765;
+  box-shadow: 0 5px 12px rgba(23, 43, 67, 0.18);
+  transform: none;
+}
+
+.playerBox.selected .player-header strong {
+  color: #ffffff;
+}
+
+/* ==============================
+   PLAYER HEADER + PHOTO
 ============================== */
 
 .player-header {
@@ -179,15 +183,21 @@ body {
   transition: border-color 0.2s ease;
 }
 
-/* ==============================
-   PLAYER PHOTO HOVER
-============================== */
+/* Photo hover */
 
-.playerBox:not(.selected):hover .player-img {
+.playerBox:hover .player-img {
+  border-color: #315b80;
+}
+
+/* Selected player photo */
+
+.playerBox.selected .player-img {
   border-color: #ffffff;
 }
 
-.playerBox.selected .player-img {
+/* Selected player photo on hover */
+
+.playerBox.selected:hover .player-img {
   border-color: #315b80;
 }
 
@@ -686,3 +696,4 @@ body {
     animation-duration: 0.01ms !important;
   }
 }
+```
