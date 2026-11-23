@@ -120,11 +120,6 @@ body {
   min-width: 0;
   overflow: hidden;
   cursor: pointer;
-  transition:
-    background 0.2s ease,
-    border-color 0.2s ease,
-    box-shadow 0.2s ease,
-    transform 0.2s ease;
 }
 
 /* ==============================
@@ -180,7 +175,6 @@ body {
   object-fit: cover;
   border: 2px solid #d7e0e9;
   flex-shrink: 0;
-  transition: border-color 0.2s ease;
 }
 
 /* Photo hover */
