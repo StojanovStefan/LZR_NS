@@ -7,18 +7,18 @@
 }
 
 :root {
-  --background: #f5f7fa;
+  --background: #edf1f6;
   --surface: #ffffff;
 
-  --panel: #e9eff6;
-  --panel-border: #dce5ef;
-  --panel-label: #f8fafc;
+  --panel: #172b43;
+  --panel-border: #29435f;
+  --panel-label: #243f5c;
 
-  --primary: #34495e;
-  --primary-dark: #34495e;
+  --primary: #243f5c;
+  --primary-dark: #172b43;
 
-  --text: #34495e;
-  --text-muted: #34495e;
+  --text: #263b52;
+  --text-muted: #65778b;
 
   --accent: #e5ad45;
 }
@@ -35,7 +35,7 @@ h1 {
   text-align: center;
   margin-bottom: 25px;
   font-size: 28px;
-  color: var(--text);
+  color: var(--primary-dark);
   font-weight: 700;
 }
 
@@ -50,7 +50,7 @@ h1 {
 .game-card {
   width: 100%;
   background: var(--surface);
-  border: 1px solid #e7ecf2;
+  border: 1px solid #dce4ed;
   border-radius: 14px;
 
   display: flex;
@@ -60,15 +60,15 @@ h1 {
   cursor: pointer;
   transition: all 0.2s ease;
 
-  box-shadow: 0 2px 8px rgba(40, 60, 85, 0.055);
+  box-shadow: 0 3px 12px rgba(23, 43, 67, 0.08);
 }
 
 .game-card:hover {
   transform: translateY(-2px);
 
-  box-shadow: 0 6px 16px rgba(40, 60, 85, 0.1);
+  box-shadow: 0 7px 18px rgba(23, 43, 67, 0.13);
 
-  border-color: #d4dfeb;
+  border-color: #b9c9da;
 }
 
 /* ==============================
@@ -76,13 +76,13 @@ h1 {
 ============================== */
 
 .left-info {
-  width: 180px;
-  flex-shrink: 0;
+  width: 220px;
+  flex: 0 0 220px;
 
   background: var(--panel);
   border-right: 1px solid var(--panel-border);
 
-  color: var(--text);
+  color: #ffffff;
 
   padding: 15px;
   display: flex;
@@ -98,9 +98,9 @@ h1 {
   gap: 5px;
 
   background: var(--panel-label);
-  border: 1px solid #e1e8f0;
+  border: 1px solid #34516f;
 
-  color: var(--text);
+  color: #f1f5f9;
 
   padding: 5px 10px;
   border-radius: 7px;
@@ -113,12 +113,15 @@ h1 {
   font-size: 15px;
   font-weight: bold;
 
-  color: var(--text);
+  color: #ffffff;
 
   background: none !important;
   border: none !important;
 
   padding: 0 !important;
+
+  white-space: nowrap;
+  width: 100%;
 }
 
 /* ==============================
@@ -154,8 +157,8 @@ h1 {
   font-size: 20px;
   flex-direction: column;
 
-  color: var(--text);
-  font-weight: 500;
+  color: #263b52;
+  font-weight: 600;
 }
 
 .team img {
@@ -167,7 +170,7 @@ h1 {
 
   background: white;
 
-  box-shadow: 0 3px 12px rgba(40, 60, 85, 0.12);
+  box-shadow: 0 4px 14px rgba(23, 43, 67, 0.16);
 }
 
 /* ==============================
@@ -178,8 +181,8 @@ h1 {
   font-size: 26px;
   white-space: nowrap;
 
-  color: var(--text);
-  font-weight: 600;
+  color: #172b43;
+  font-weight: 700;
 }
 
 /* ==============================
@@ -203,6 +206,8 @@ h1 {
 
   .left-info {
     width: 100%;
+    flex: 0 0 auto;
+
     padding: 10px;
 
     display: flex;
@@ -222,6 +227,7 @@ h1 {
     font-size: 15px;
     width: 100%;
     text-align: center;
+    white-space: nowrap;
   }
 
   .center-content {
@@ -287,6 +293,7 @@ h1 {
 
   .date-time {
     font-size: 14px;
+    white-space: nowrap;
   }
 
   .teams-row {

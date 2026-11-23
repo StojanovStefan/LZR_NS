@@ -25,13 +25,12 @@
           "logo": "Black_Lions.png",
 
           "players": {
-            "vujic_marko_1999": {
-              "birth_year": 1999,
+            "keskenovic_stefan_2000": {
+              "birth_year": 2000,
               "mvp_count": 0,
-              "name": "Vujić Marko",
-              "number": 1,
-              "photo": "Vujic_Marko.png",
-              "playerId": "vujic_marko_1999",
+              "name": "Keskenović Stefan",
+              "number": 3,
+              "playerId": "keskenovic_stefan_2000",
               "stats": {
                 "assists": 0,
                 "blocks": 0,
@@ -57,7 +56,7 @@
               "birth_year": 1996,
               "mvp_count": 0,
               "name": "Vukobratović Mihailo",
-              "number": 5,
+              "number": 44,
               "photo": "Vukobratovic_Mihailo.png",
               "playerId": "vukobratovic_mihailo_1996",
               "stats": {
@@ -108,13 +107,14 @@
                 "two_made": 0
               }
             },
-            "merdovic_stefan_2002": {
-              "birth_year": 2002,
-              "mvp_count": 0,
-              "name": "Merdović Stefan",
-              "number": 31,
-              "photo": "Merdovic_Stefan.png",
-              "playerId": "merdovic_stefan_2002",
+            "perunicic_mladen_1985": {
+              "birth_year": 1985,
+              "mvp_count": 1,
+              "mvp_games": ["2026-11-10_lions_vs_dragons"],
+              "name": "Peruničić Mladen",
+              "number": 16,
+              "photo": "Perunicic_Mladen.png",
+              "playerId": "perunicic_mladen_1985",
               "stats": {
                 "assists": 0,
                 "blocks": 0,
@@ -135,14 +135,14 @@
                 "two_made": 0
               }
             },
-            "perunicic_mladen_1985": {
-              "birth_year": 1985,
-              "mvp_count": 1,
-              "mvp_games": ["2026-11-10_lions_vs_dragons"],
-              "name": "Peruničić Mladen",
-              "number": 16,
-              "photo": "Perunicic_Mladen.png",
-              "playerId": "perunicic_mladen_1985",
+
+            "dobric_ognjen_2002": {
+              "birth_year": 2002,
+              "mvp_count": 0,
+              "name": "Dobrić Ognjen",
+              "number": 8,
+              "photo": "Dobric_Ognjen.png",
+              "playerId": "dobric_ognjen_2002",
               "stats": {
                 "assists": 0,
                 "blocks": 0,
@@ -244,14 +244,13 @@
               }
             },
 
-            "stojanov_stefan_1999": {
-              "birth_year": 1999,
-              "mvp_count": 1,
-              "mvp_games": ["2026-11-03_lions_vs_dragons"],
-              "name": "Stojanov Stefan",
-              "number": 30,
-              "photo": "Stojanov_Stefan.png",
-              "playerId": "stojanov_stefan_1999",
+            "merdovic_stefan_2002": {
+              "birth_year": 2002,
+              "mvp_count": 0,
+              "name": "Merdović Stefan",
+              "number": 31,
+              "photo": "Merdovic_Stefan.png",
+              "playerId": "merdovic_stefan_2002",
               "stats": {
                 "assists": 0,
                 "blocks": 0,
@@ -272,14 +271,14 @@
                 "two_made": 0
               }
             },
-
-            "dobric_ognjen_2002": {
-              "birth_year": 2002,
-              "mvp_count": 0,
-              "name": "Dobrić Ognjen",
-              "number": 8,
-              "photo": "Dobric_Ognjen.png",
-              "playerId": "dobric_ognjen_2002",
+            "stojanov_stefan_1999": {
+              "birth_year": 1999,
+              "mvp_count": 1,
+              "mvp_games": ["2026-11-03_lions_vs_dragons"],
+              "name": "Stojanov Stefan",
+              "number": 30,
+              "photo": "Stojanov_Stefan.png",
+              "playerId": "stojanov_stefan_1999",
               "stats": {
                 "assists": 0,
                 "blocks": 0,
