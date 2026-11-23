@@ -118,8 +118,9 @@ function showTemporaryNotification(message) {
   notification.style.position = "fixed";
   notification.style.bottom = "20px";
   notification.style.right = "20px";
-  notification.style.background = "#fbbf24";
-  notification.style.color = "#000";
+  notification.style.background = "#e3ebf3";
+  notification.style.color = "#172b43";
+  notification.style.border = "1px solid #c7d4e0";
   notification.style.padding = "10px 15px";
   notification.style.borderRadius = "8px";
   notification.style.boxShadow = "0 2px 6px rgba(0,0,0,0.3)";

@@ -1,6 +1,6 @@
 /* ==============================
-   GLOBAL
-============================== */
+    GLOBAL
+  ============================== */
 
 * {
   box-sizing: border-box;
@@ -21,6 +21,9 @@
   --text-muted: #65778b;
 
   --accent: #e5ad45;
+
+  --panel: #172b43;
+  --panel-gradient: linear-gradient(135deg, #315b80 0%, #172b43 100%);
 }
 
 body {
@@ -44,8 +47,8 @@ h1 {
 }
 
 /* ==============================
-   GAME CARD
-============================== */
+    GAME CARD
+  ============================== */
 
 .game-card {
   width: 100%;
@@ -72,14 +75,14 @@ h1 {
 }
 
 /* ==============================
-   LEFT INFO
-============================== */
+    LEFT INFO
+  ============================== */
 
 .left-info {
   width: 220px;
   flex: 0 0 220px;
 
-  background: var(--panel);
+  background: var(--panel-gradient);
   border-right: 1px solid var(--panel-border);
 
   color: #ffffff;
@@ -97,8 +100,8 @@ h1 {
   align-items: center;
   gap: 5px;
 
-  background: var(--panel-label);
-  border: 1px solid #34516f;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.16);
 
   color: #f1f5f9;
 
@@ -108,7 +111,6 @@ h1 {
   font-size: 13px;
   width: fit-content;
 }
-
 .date-time {
   font-size: 15px;
   font-weight: bold;
@@ -125,8 +127,8 @@ h1 {
 }
 
 /* ==============================
-   CENTER CONTENT
-============================== */
+    CENTER CONTENT
+  ============================== */
 
 .center-content {
   flex: 1;
@@ -146,8 +148,8 @@ h1 {
 }
 
 /* ==============================
-   TEAMS
-============================== */
+    TEAMS
+  ============================== */
 
 .team {
   display: flex;
@@ -157,7 +159,7 @@ h1 {
   font-size: 20px;
   flex-direction: column;
 
-  color: #263b52;
+  color: #243f5c;
   font-weight: 600;
 }
 
@@ -174,20 +176,20 @@ h1 {
 }
 
 /* ==============================
-   SCORE
-============================== */
+    SCORE
+  ============================== */
 
 .score {
-  font-size: 26px;
+  font-size: 28px;
   white-space: nowrap;
 
-  color: #172b43;
+  color: #243f5c;
   font-weight: 400;
 }
 
 /* ==============================
-   MOBILE
-============================== */
+    MOBILE
+  ============================== */
 
 @media (max-width: 600px) {
   body {
@@ -260,8 +262,8 @@ h1 {
 }
 
 /* ==============================
-   SMALL MOBILE
-============================== */
+    SMALL MOBILE
+  ============================== */
 
 @media (max-width: 400px) {
   .team img {

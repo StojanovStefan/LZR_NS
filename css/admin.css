@@ -27,13 +27,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background: #edf1f5;
   color: var(--text);
-
   min-height: 100vh;
   min-height: 100svh;
-
   padding: 20px;
   overflow-x: hidden;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,17 +44,13 @@ body {
 
 .adminContainer {
   display: grid;
-
   grid-template-columns:
     minmax(0, 3fr)
     minmax(0, 4fr)
     minmax(0, 3fr);
-
   gap: 16px;
-
   width: 100%;
   max-width: 2400px;
-
   margin: 0;
   flex: 0 0 auto;
   align-items: stretch;
@@ -71,19 +64,16 @@ body {
   background: #e3eaf1;
   border: 1px solid #d1dce7;
   border-radius: 14px;
-
   padding: 17px 11px;
-
   min-width: 0;
   min-height: clamp(540px, 68vh, 680px);
-
   box-shadow: 0 4px 14px rgba(28, 48, 70, 0.07);
 }
 
 .teamHeader {
   padding-bottom: 13px;
   margin-bottom: 16px;
-  border-bottom: 3px solid #aebdcb;
+  border-bottom: 3px solid #303030;
 }
 
 #teamB_box .teamHeader {
@@ -94,7 +84,6 @@ body {
   display: flex;
   align-items: center;
   gap: 12px;
-
   font-size: 26px;
   min-height: 62px;
   color: var(--navy);
@@ -122,18 +111,14 @@ body {
 .playerBox {
   display: flex;
   align-items: center;
-
   background: #ffffff;
   border: 1px solid #dce4ec;
   border-radius: 9px;
-
   padding: 11px 9px;
   min-height: 80px;
   min-width: 0;
-
   overflow: hidden;
   cursor: pointer;
-
   transition:
     background 0.2s ease,
     border-color 0.2s ease,
@@ -141,40 +126,77 @@ body {
     transform 0.2s ease;
 }
 
-/* NORMAL HOVER */
+/* ==============================
+   TEAM HOVER COLORS
+============================== */
 
-.playerBox:hover {
-  background: #edf4fa;
-  border-color: #a9bfd4;
+/* LEVI TIM - CRNI HOVER */
 
-  box-shadow: 0 5px 12px rgba(35, 58, 80, 0.1);
-
+#teamA_box .playerBox:hover {
+  background: #f0f1f2;
+  border-color: #303030;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
   transform: translateY(-2px);
 }
 
-/* SELECTED PLAYER */
+/* DESNI TIM - ZELENI HOVER */
 
-.playerBox.selected {
-  background: #e0ebf5;
-  border: 2px solid #8eabc5;
+#teamB_box .playerBox:hover {
+  background: #f0f5e9;
+  border-color: #a8e52d;
+  box-shadow: 0 5px 12px rgba(100, 140, 30, 0.14);
+  transform: translateY(-2px);
+}
 
+/* ==============================
+   SELECTED PLAYER
+============================== */
+
+/* LEVI TIM - CRNA IVICA */
+
+#teamA_box .playerBox.selected {
+  background: #f0f1f2;
+  border: 2px solid #303030;
   box-shadow:
-    inset 3px 0 0 #315b80,
-    0 3px 9px rgba(35, 58, 80, 0.08);
-
+    inset 3px 0 0 #303030,
+    0 3px 9px rgba(0, 0, 0, 0.1);
   transform: none;
 }
 
-/* SELECTED PLAYER HOVER */
+/* DESNI TIM - ZELENA IVICA */
 
-.playerBox.selected:hover {
-  background: #e0ebf5;
-  border-color: #8eabc5;
-
+#teamB_box .playerBox.selected {
+  background: #f0f5e9;
+  border: 2px solid #a8e52d;
   box-shadow:
-    inset 3px 0 0 #315b80,
-    0 4px 10px rgba(35, 58, 80, 0.12);
+    inset 3px 0 0 #a8e52d,
+    0 3px 9px rgba(100, 140, 30, 0.12);
+  transform: none;
+}
 
+/* ==============================
+   SELECTED PLAYER HOVER
+============================== */
+
+/* LEVI TIM */
+
+#teamA_box .playerBox.selected:hover {
+  background: #e9ebed;
+  border-color: #303030;
+  box-shadow:
+    inset 3px 0 0 #303030,
+    0 5px 12px rgba(0, 0, 0, 0.14);
+  transform: none;
+}
+
+/* DESNI TIM */
+
+#teamB_box .playerBox.selected:hover {
+  background: #eaf2df;
+  border-color: #a8e52d;
+  box-shadow:
+    inset 3px 0 0 #a8e52d,
+    0 5px 12px rgba(100, 140, 30, 0.16);
   transform: none;
 }
 
@@ -186,7 +208,6 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
-
   width: 100%;
   min-width: 0;
   margin: 0;
@@ -195,35 +216,49 @@ body {
 .player-img {
   width: 52px;
   height: 52px;
-
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid #d7e0e9;
-
   flex-shrink: 0;
-
   transition: border-color 0.2s ease;
 }
 
-.playerBox:hover .player-img {
-  border-color: #a9bfd4;
+/* ==============================
+   PLAYER PHOTO HOVER COLORS
+============================== */
+
+/* LEVI TIM - CRNA IVICA NA HOVER */
+
+#teamA_box .playerBox:hover .player-img {
+  border-color: #303030;
 }
 
-.playerBox.selected .player-img {
-  border-color: #8eabc5;
+/* DESNI TIM - ZELENA IVICA NA HOVER */
+
+#teamB_box .playerBox:hover .player-img {
+  border-color: #a8e52d;
+}
+
+/* LEVI TIM - FOTOGRAFIJA */
+
+#teamA_box .playerBox.selected .player-img {
+  border-color: #303030;
+}
+
+/* DESNI TIM - FOTOGRAFIJA */
+
+#teamB_box .playerBox.selected .player-img {
+  border-color: #a8e52d;
 }
 
 .player-header strong {
   flex: 1;
   min-width: 0;
-
   font-size: clamp(13px, 1.15vw, 16px);
   font-weight: 700;
   line-height: 1.4;
   letter-spacing: -0.3px;
-
   color: var(--navy);
-
   white-space: nowrap;
   overflow: hidden;
   text-overflow: clip;
@@ -241,14 +276,10 @@ body {
   background: #ffffff;
   border: 1px solid #dce4ec;
   border-radius: 16px;
-
   padding: 22px;
-
   min-width: 0;
   min-height: clamp(540px, 68vh, 680px);
-
   box-shadow: 0 6px 20px rgba(28, 48, 70, 0.09);
-
   display: flex;
   flex-direction: column;
 }
@@ -264,13 +295,10 @@ body {
 
 .selected-player-header {
   display: grid;
-
   grid-template-columns: 130px minmax(0, 1fr);
   grid-template-rows: 130px auto;
-
   column-gap: 0;
   row-gap: 13px;
-
   align-items: center;
   padding: 5px 0 16px;
 }
@@ -278,10 +306,8 @@ body {
 .selected-player-img {
   grid-column: 1;
   grid-row: 1;
-
   width: 130px;
   height: 130px;
-
   object-fit: cover;
   border-radius: 50%;
   border: 4px solid #e0e8ef;
@@ -290,10 +316,8 @@ body {
 .selected-player-info {
   grid-column: 2;
   grid-row: 1;
-
   min-width: 0;
   align-self: center;
-
   padding: 0;
   margin: 0;
 }
@@ -320,14 +344,11 @@ body {
 .selected-player-stats {
   grid-column: 1 / -1;
   grid-row: 2;
-
   display: flex;
   justify-content: space-around;
-
   width: 100%;
   margin-top: 0;
   padding: 17px 10px;
-
   background: #f0f4f7;
   border: 1px solid #e1e8ef;
   border-radius: 10px;
@@ -345,11 +366,9 @@ body {
 
 .stat-item strong {
   display: block;
-
   font-size: 28px;
   font-weight: 800;
   color: var(--navy);
-
   margin-bottom: 5px;
 }
 
@@ -365,15 +384,12 @@ body {
 
 .emptySelection {
   min-height: 400px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   text-align: center;
   padding: 30px;
-
   color: var(--text);
 }
 
@@ -405,9 +421,7 @@ body {
 
 .playerActions .actions {
   display: grid;
-
   grid-template-columns: repeat(4, minmax(0, 1fr));
-
   gap: 10px;
   width: 100%;
 }
@@ -419,60 +433,26 @@ body {
 .playerActions .actionBtn {
   min-width: 0;
   min-height: 74px;
-
   padding: 8px 5px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   border: 1px solid #c7d4e0;
   border-radius: 9px;
-
   background: #e3ebf3;
   color: var(--navy);
-
   font-size: 16px;
   font-weight: 800;
   line-height: 1.2;
-
   cursor: pointer;
-
-  transition:
-    background 0.18s ease,
-    color 0.18s ease,
-    border-color 0.18s ease,
-    box-shadow 0.18s ease,
-    transform 0.18s ease;
-
   box-shadow: 0 2px 4px rgba(28, 48, 70, 0.05);
 }
 
 .playerActions .actionBtn:hover {
-  background: #416f96;
+  background: linear-gradient(135deg, #416f96 0%, #172b43 100%);
   color: #ffffff;
-
   border-color: #244765;
-
-  box-shadow: 0 5px 12px rgba(35, 58, 80, 0.22);
-
-  transform: translateY(-2px);
-}
-
-.playerActions .actionBtn:active {
-  background: #172b43;
-  color: #ffffff;
-
-  border-color: #172b43;
-
-  box-shadow: 0 2px 5px rgba(35, 58, 80, 0.18);
-
-  transform: translateY(0);
-}
-
-.playerActions .actionBtn:focus-visible {
-  outline: 2px solid var(--blue);
-  outline-offset: 3px;
+  box-shadow: 0 4px 10px rgba(35, 58, 80, 0.18);
 }
 
 /* ==============================
@@ -482,51 +462,25 @@ body {
 #undoBtn {
   width: 100%;
   min-height: 55px;
-
   margin-top: auto;
   padding: 12px;
-
-  border: 1px solid #cbd7e2;
+  border: 1px solid #c7d4e0;
   border-radius: 9px;
-
-  background: #e9eff4;
+  background: #e3ebf3;
   color: var(--navy);
-
   font-size: 16px;
   font-weight: 800;
-
   cursor: pointer;
-
-  box-shadow: 0 1px 2px rgba(28, 48, 70, 0.03);
-
-  transition:
-    background 0.18s ease,
-    border-color 0.18s ease,
-    box-shadow 0.18s ease,
-    transform 0.18s ease;
+  box-shadow: 0 2px 4px rgba(28, 48, 70, 0.05);
 }
 
 #undoBtn:hover {
-  background: #dfeaf4;
-  border-color: #a9bfd4;
-
-  color: var(--navy);
-
-  box-shadow: 0 4px 10px rgba(35, 58, 80, 0.1);
-
-  transform: translateY(-2px);
+  background: linear-gradient(135deg, #416f96 0%, #172b43 100%);
+  color: #ffffff;
+  border-color: #244765;
+  box-shadow: 0 4px 10px rgba(35, 58, 80, 0.18);
 }
 
-#undoBtn:active {
-  background: #d4e2ef;
-  transform: translateY(0);
-  box-shadow: none;
-}
-
-#undoBtn:focus-visible {
-  outline: 2px solid var(--blue);
-  outline-offset: 3px;
-}
 /* ==============================
    FOOTER - FINISH GAME
 ============================== */
@@ -535,7 +489,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
   width: 100%;
   margin: 0;
   flex: 0 0 auto;
@@ -544,49 +497,40 @@ body {
 #finishBtn {
   width: 280px;
   min-height: 58px;
-
-  border: 1px solid #315b80;
+  border: 1px solid #c7d4e0;
   border-radius: 9px;
-
-  background: #172b43;
-  color: #ffffff;
-
+  background: #e3ebf3;
+  color: var(--navy);
   font-size: 18px;
   font-weight: bold;
-
   cursor: pointer;
-
-  box-shadow: 0 3px 9px rgba(28, 48, 70, 0.15);
-
-  transition:
-    background 0.2s ease,
-    border-color 0.2s ease,
-    box-shadow 0.2s ease,
-    transform 0.2s ease;
+  box-shadow: 0 2px 4px rgba(28, 48, 70, 0.05);
 }
 
 #finishBtn:hover {
-  background: #416f96;
-  border-color: #315b80;
-
+  background: linear-gradient(135deg, #416f96 0%, #172b43 100%);
   color: #ffffff;
-
-  box-shadow: 0 6px 14px rgba(28, 48, 70, 0.22);
-
-  transform: translateY(-2px);
-}
-
-#finishBtn:active {
-  background: #294866;
   border-color: #244765;
-
-  transform: translateY(0);
-
-  box-shadow: 0 2px 5px rgba(28, 48, 70, 0.15);
+  box-shadow: 0 4px 10px rgba(35, 58, 80, 0.18);
 }
 
+/* ==============================
+   SHARED ACTIVE & FOCUS EFFECTS
+============================== */
+
+.playerActions .actionBtn:active,
+#undoBtn:active,
+#finishBtn:active {
+  background: linear-gradient(135deg, #243c57 0%, #101f32 100%);
+  color: #ffffff;
+  border-color: #172b43;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.playerActions .actionBtn:focus-visible,
+#undoBtn:focus-visible,
 #finishBtn:focus-visible {
-  outline: 2px solid #416f96;
+  outline: 2px solid var(--blue);
   outline-offset: 3px;
 }
 
@@ -604,7 +548,6 @@ body {
       minmax(180px, 1fr)
       minmax(350px, 1.5fr)
       minmax(180px, 1fr);
-
     gap: 10px;
   }
 
@@ -721,12 +664,9 @@ body {
   body {
     min-height: 100vh;
     min-height: 100svh;
-
     padding: 10px;
-
     justify-content: flex-start;
     align-items: stretch;
-
     gap: 15px;
   }
 
