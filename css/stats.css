@@ -20,9 +20,6 @@
   --text: #263b52;
   --text-muted: #65778b;
 
-  --accent: #fbbf24;
-  --accent-hover: #d69a2f;
-
   --white: #ffffff;
 }
 
@@ -316,7 +313,7 @@ td {
 
 .bar-primary {
   height: 100%;
-  background: var(--accent);
+  background: #daa520;
 }
 
 .bar-secondary {
@@ -408,8 +405,8 @@ td {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  background: var(--accent);
-  color: var(--navy);
+  background: #243f5c;
+  color: #ffffff;
   font-weight: bold;
   padding: 4px 10px;
   border-radius: 12px;
