@@ -1,13 +1,47 @@
+/* ==============================
+   GLOBAL
+============================== */
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #edf1f6;
+  --surface: #ffffff;
+
+  --navy: #172b43;
+  --navy-light: #243f5c;
+  --navy-soft: #e8eef5;
+
+  --border: #dce4ed;
+  --border-dark: #cbd6e2;
+
+  --text: #263b52;
+  --text-muted: #65778b;
+
+  --accent: #fbbf24;
+  --accent-hover: #d69a2f;
+
+  --white: #ffffff;
+}
+
 body {
-  background: #e5e7eb;
-  color: black;
-  font-family: Arial;
+  background: var(--background);
+  color: var(--text);
+  font-family: Arial, sans-serif;
   padding: 20px;
+  margin: 0;
 }
 
 h1 {
   margin-top: 0;
+  color: var(--navy);
 }
+
+/* ==============================
+   TEAM STATISTICS CONTAINER
+============================== */
 
 .teamStats {
   overflow-x: auto;
@@ -16,40 +50,52 @@ h1 {
   border-radius: 12px;
 }
 
+/* ==============================
+   TABLES
+============================== */
+
 table {
   width: 100%;
   border-collapse: collapse;
-  background: white;
+  background: var(--surface);
   border-radius: 16px;
   overflow: hidden;
   font-size: 17px;
+  color: var(--text);
 }
 
 th {
-  color: white;
+  color: var(--white);
   padding: 14px 10px;
   font-size: 15px;
   font-weight: 600;
   letter-spacing: 0.5px;
+  background: var(--navy);
 }
+
 td {
   padding: 12px 10px;
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid var(--border);
 }
+
 th,
 td {
   padding: 6px;
-  border: 1px solid #d1d5db;
+  border: 1px solid var(--border);
   text-align: center;
 }
+
 th {
-  background: #6b7280;
+  background: var(--navy);
 }
+
 td {
-  background: white;
+  background: var(--surface);
 }
+
 .player-name {
   text-align: left;
+  color: var(--text);
 }
 
 .player-cell {
@@ -84,25 +130,37 @@ td {
   white-space: nowrap;
 }
 
+/* ==============================
+   TEAM HEADER
+============================== */
+
 .team-header {
   display: flex;
   align-items: center;
   gap: 10px;
 }
+
 .team-header img {
   height: 50px;
   width: 50px;
   object-fit: cover;
   border-radius: 50%;
-  border: 1px solid;
+  border: 1px solid var(--border-dark);
 }
 
+/* ==============================
+   GAME HEADER
+============================== */
+
 .game-header {
-  background: #d1d5db;
+  background: #dce5ef;
   padding: 20px;
-  border-radius: 12px;
+  border-radius: 16px;
   text-align: center;
   margin-bottom: 30px;
+  color: #263b52;
+  border: 1px solid #cbd7e4;
+  box-shadow: 0 4px 14px rgba(23, 43, 67, 0.09);
 }
 
 .game-header .teams {
@@ -118,7 +176,7 @@ td {
   object-fit: cover;
   cursor: pointer;
   border: 3px solid white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.22);
 }
 
 .team-block {
@@ -130,6 +188,7 @@ td {
   margin-top: 10px;
   font-size: 22px;
   font-weight: bold;
+  color: #172b43;
 }
 
 .score-big {
@@ -137,6 +196,8 @@ td {
   white-space: nowrap;
   min-width: 60px;
   text-align: center;
+  color: #172b43;
+  font-weight: 700;
 }
 
 @media (max-width: 1024px) {
@@ -151,11 +212,20 @@ td {
   }
 }
 
+/* ==============================
+   GAME INFO
+============================== */
+
 .game-info {
   margin-bottom: 15px;
   font-size: 16px;
-  color: #444;
+  color: #263b52;
+  font-weight: 500;
 }
+
+/* ==============================
+   TOP BUTTONS
+============================== */
 
 .top-buttons {
   display: flex;
@@ -168,26 +238,46 @@ td {
 .switch-btn {
   padding: 10px 18px;
   border-radius: 8px;
-  border: none;
+  border: 1px solid var(--border);
   cursor: pointer;
-  background: #d1d5db;
-  font-weight: normal;
+  background: #dce4ed;
+  color: var(--navy);
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.switch-btn:hover {
+  background: #cbd7e4;
 }
 
 .switch-btn.active {
-  background: #fbbf24;
+  background: var(--accent);
+  color: #172b43;
+  border-color: var(--accent);
+  font-weight: 700;
 }
+
+.switch-btn.active:hover {
+  background: var(--accent-hover);
+}
+
+/* ==============================
+   TEAM TOTALS
+============================== */
 
 #teamTotals {
   display: none;
-  background-color: white;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
   border-radius: 20px;
   margin-top: 20px;
+  box-shadow: 0 3px 12px rgba(23, 43, 67, 0.06);
 }
 
 #teamTotals strong {
-  color: #f37e12;
+  color: var(--navy);
 }
+
 .stat-row {
   display: flex;
   font-size: larger;
@@ -195,32 +285,41 @@ td {
   align-items: center;
   padding: 6px 0;
 }
+
 .stat-row div:first-child {
   padding-left: 20px;
   font-weight: bold;
+  color: var(--text);
 }
 
 .stat-row div:last-child {
   padding-right: 20px;
   font-weight: bold;
+  color: var(--navy);
 }
+
 .bar-container {
   flex: 1;
   height: 8px;
-  background: #eef2f6;
+  background: #e5ebf2;
   border-radius: 5px;
   margin: 0 12px;
   overflow: hidden;
 }
+
 .bar-primary {
   height: 100%;
-  background: #fbbf24;
+  background: var(--accent);
 }
 
 .bar-secondary {
   height: 100%;
-  background: #9ca3af;
+  background: var(--navy-light);
 }
+
+/* ==============================
+   GAME TIMELINE
+============================== */
 
 #timelineContainer {
   position: relative;
@@ -236,7 +335,7 @@ td {
   left: 50%;
   width: 2px;
   height: 100%;
-  background: #d1d5db;
+  background: var(--border-dark);
   transform: translateX(-50%);
   z-index: 0;
 }
@@ -248,8 +347,9 @@ td {
   margin: 10px 0;
   padding: 10px 15px;
   border-radius: 12px;
-  background: white;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: 0 3px 10px rgba(23, 43, 67, 0.08);
   z-index: 1;
 }
 
@@ -288,11 +388,12 @@ td {
 .event-player {
   font-weight: bold;
   margin: 0;
+  color: var(--navy);
 }
 
 .event-type {
   font-size: 14px;
-  color: #333;
+  color: var(--text-muted);
   margin: 0;
 }
 
@@ -300,13 +401,13 @@ td {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  background: #fbbf24;
-  color: black;
+  background: var(--accent);
+  color: var(--navy);
   font-weight: bold;
   padding: 4px 10px;
   border-radius: 12px;
   font-size: 16px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 6px rgba(23, 43, 67, 0.15);
   margin-top: 5px;
   z-index: 1;
 }
@@ -317,7 +418,7 @@ td {
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
-  border: 2px solid #ddd;
+  border: 2px solid var(--border);
 }
 
 @media (max-width: 1200px) {
@@ -338,12 +439,12 @@ td {
   }
 
   .event-left {
-    border-left: 4px solid #171329 !important;
+    border-left: 4px solid var(--navy) !important;
     border-right: none !important;
   }
 
   .event-right {
-    border-right: 4px solid #d5d7db !important;
+    border-right: 4px solid var(--accent) !important;
     border-left: none !important;
   }
 }
@@ -361,10 +462,15 @@ td {
   }
 }
 
+/* ==============================
+   BROADCAST ICONS
+============================== */
+
 .live-broadcast {
   cursor: pointer;
   font-size: 1em;
 }
+
 .live-broadcast:hover {
   transform: scale(1.2);
   transition: transform 0.2s;
@@ -374,29 +480,34 @@ td {
   cursor: pointer;
   font-size: 1em;
 }
+
 .yt-broadcast:hover {
   transform: scale(1.2);
   transition: transform 0.2s;
 }
+
+/* ==============================
+   MVP BLOCK
+============================== */
 
 .mvp-block {
   width: 100%;
   max-width: 470px;
   margin: 10px auto;
   padding: 8px;
-  background: #f1f5f9;
-  color: #111827;
-  border: 1px solid #dbe3ee;
+  background: #f0f4f8;
+  color: var(--text);
+  border: 1px solid var(--border);
   border-radius: 14px;
   box-sizing: border-box;
 }
 
 .mvp-title {
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 5px;
   text-align: left;
-  color: #111827;
+  color: var(--navy);
 }
 
 .mvp-player {
@@ -436,18 +547,19 @@ td {
   font-weight: 700;
   white-space: normal;
   overflow-wrap: anywhere;
+  color: var(--navy);
 }
 
 .mvp-number {
-  color: #f97316;
-  font-weight: 600;
+  color: #fbbf24;
+  font-weight: 700;
 }
 
 .mvp-player-label {
-  color: #f97316;
+  color: #fbbf24;
   font-size: 11px;
   margin-top: 2px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .mvp-stats {
@@ -462,7 +574,8 @@ td {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: white;
+  background: var(--white);
+  border: 1px solid var(--border);
   border-radius: 7px;
   min-height: 35px;
   padding: 2px 0;
@@ -471,12 +584,12 @@ td {
 .mvp-stat strong {
   font-size: 14px;
   line-height: 17px;
-  color: #111827;
+  color: var(--navy);
 }
 
 .mvp-stat span {
   font-size: 9px;
-  color: #111827;
+  color: var(--text-muted);
 }
 
 .mvp-team-logo {
@@ -488,8 +601,8 @@ td {
   justify-content: center;
   gap: 4px;
   min-height: 95px;
-  background: white;
-  border: 1px solid #dbe3ee;
+  background: var(--white);
+  border: 1px solid var(--border);
   border-radius: 10px;
   padding: 5px;
   box-sizing: border-box;
@@ -506,7 +619,7 @@ td {
   width: 100%;
   font-size: 10px;
   font-weight: 700;
-  color: #52525b;
+  color: var(--text);
   text-align: center;
   line-height: 12px;
   overflow-wrap: anywhere;
@@ -516,38 +629,45 @@ td {
   margin-top: 1px;
 }
 
+/* ==============================
+   FINAL RESULT
+============================== */
+
 .final-result-text {
   font-size: 20px;
   margin-bottom: 5px;
-  color: black;
+  color: var(--navy);
+  font-weight: 700;
   white-space: nowrap;
 }
 
 /* =====================================
-   TIMSKA STATISTIKA - PRVI RED TABELE
+   TEAM STATISTICS - FIRST TABLE ROW
 ===================================== */
 
 #statsContainer .team-total-row {
-  background: #f1f2f4;
+  background: var(--navy-soft);
   font-weight: normal;
 }
 
 #statsContainer .team-total-row td {
-  background: #f1f2f4;
-  color: #000;
+  background: var(--navy-soft);
+  color: var(--navy);
   text-align: center;
   vertical-align: middle;
   padding: 10px 8px;
   font-weight: normal;
 }
 
-/* Prva ćelija - logo i naziv */
+/* First cell - logo and name */
+
 #statsContainer .team-total-row .team-total-name {
   text-align: center;
   vertical-align: middle;
 }
 
-/* Kontejner logotipa i naziva */
+/* Logo and name wrapper */
+
 #statsContainer .team-total-wrapper {
   display: flex;
   align-items: center;
@@ -556,7 +676,8 @@ td {
   width: 100%;
 }
 
-/* Mali logo ekipe */
+/* Small team logo */
+
 #statsContainer .team-total-logo {
   display: block !important;
   width: 42px !important;
@@ -571,19 +692,22 @@ td {
   cursor: pointer;
 }
 
-/* Naziv ekipe */
+/* Team name */
+
 #statsContainer .team-total-wrapper span {
   font-size: 17px;
-  font-weight: normal;
+  font-weight: 600;
   white-space: nowrap;
+  color: var(--navy);
 }
 
-/* Timske statistike */
+/* Team statistics */
+
 #statsContainer .team-total-row td:not(.team-total-name) {
   white-space: pre-line;
   line-height: 1.5;
   font-size: 16px;
-  font-weight: normal;
+  font-weight: 600;
 }
 
 /* ==============================
@@ -603,8 +727,8 @@ td {
 .chart-card {
   width: 100%;
   min-width: 0;
-  background: #ffffff;
-  border: 1px solid #dce5ee;
+  background: var(--surface);
+  border: 1px solid var(--border);
   border-radius: 14px;
   padding: 24px;
   box-shadow: 0 4px 14px rgba(23, 43, 67, 0.07);
@@ -618,12 +742,12 @@ td {
 /* CHART TITLE */
 
 .chart-card h3 {
-  color: #172b43;
+  color: var(--navy);
   font-size: 19px;
   font-weight: 700;
   margin-bottom: 22px;
   padding-bottom: 13px;
-  border-bottom: 1px solid #e8eef4;
+  border-bottom: 1px solid var(--border);
 }
 
 /* CHART WRAPPER */
@@ -640,7 +764,7 @@ td {
   max-width: 100%;
 }
 
-/* RESPONSIVE */
+/* RESPONSIVE CHARTS */
 
 @media (max-width: 768px) {
   #chartsContainer {
@@ -671,6 +795,10 @@ td {
     height: 240px;
   }
 }
+
+/* ==============================
+   MOBILE
+============================== */
 
 @media (max-width: 600px) {
   body {
@@ -720,7 +848,7 @@ td {
   th,
   td {
     padding: 8px;
-    border: 1px solid #d8d8d8;
+    border: 1px solid var(--border);
     font-size: 15px;
   }
 
@@ -779,6 +907,10 @@ td {
     white-space: nowrap;
   }
 }
+
+/* ==============================
+   SMALL MOBILE
+============================== */
 
 @media (max-width: 400px) {
   .big-logo {
