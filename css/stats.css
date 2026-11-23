@@ -311,14 +311,18 @@ td {
   overflow: hidden;
 }
 
+/* Bolji tim - Midnight Blue */
 .bar-primary {
   height: 100%;
-  background: #daa520;
+  background: #243f5c;
+  border-radius: 5px;
 }
 
+/* Drugi tim - Muted Blue */
 .bar-secondary {
   height: 100%;
-  background: var(--navy-light);
+  background: #aebfd1;
+  border-radius: 5px;
 }
 
 /* ==============================
@@ -397,7 +401,7 @@ td {
 
 .event-type {
   font-size: 14px;
-  color: var(--text-muted);
+  color: #52677e;
   margin: 0;
 }
 
