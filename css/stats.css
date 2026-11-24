@@ -1042,14 +1042,31 @@ td {
     border-radius: 12px;
   }
 
+  /* HEADER - VERTIKALNI RASPORED */
   .category-leaders-header {
+    display: grid;
     grid-template-columns: 1fr;
-    gap: 8px;
+    gap: 10px;
     justify-items: center;
-    padding-bottom: 12px;
+    padding-bottom: 14px;
   }
 
-  .leader-team {
+  /* PRVI TIM */
+  .leader-team:first-child {
+    grid-row: 1;
+    justify-content: center !important;
+  }
+
+  /* NASLOV */
+  .category-leaders-title {
+    grid-row: 2;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  /* DRUGI TIM */
+  .leader-team:last-child {
+    grid-row: 3;
     justify-content: center !important;
   }
 
@@ -1057,164 +1074,13 @@ td {
     font-size: 16px;
   }
 
-  .category-leaders-title {
-    grid-row: 1;
-    font-size: 15px;
+  .leader-team-logo {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
   }
 
-  .category-leader-row {
-    grid-template-columns: minmax(0, 1fr) 112px minmax(0, 1fr);
-    gap: 4px;
-    min-height: 100px;
-    padding: 12px 0;
-  }
-
-  .leader-player {
-    gap: 6px;
-  }
-
-  .leader-player-photo {
-    width: 44px;
-    height: 44px;
-    min-width: 44px;
-    border-radius: 8px;
-  }
-
-  .leader-player-name {
-    font-size: 12px;
-    line-height: 1.2;
-  }
-
-  .leader-player-number {
-    font-size: 12px;
-  }
-
-  .category-leader-scores {
-    gap: 5px;
-  }
-
-  .category-leader-score {
-    width: 51px;
-    height: 43px;
-    border-radius: 9px;
-    font-size: 24px;
-  }
-
-  .category-leader-label {
-    font-size: 10px;
-    white-space: normal;
-    line-height: 1.2;
-  }
-}
-
-/* =====================================
-   VERY SMALL MOBILE
-===================================== */
-
-@media (max-width: 380px) {
-  .category-leader-row {
-    grid-template-columns: minmax(0, 1fr) 96px minmax(0, 1fr);
-  }
-
-  .leader-player-photo {
-    width: 38px;
-    height: 38px;
-    min-width: 38px;
-  }
-
-  .leader-player-name {
-    font-size: 11px;
-  }
-
-  .leader-player-number {
-    font-size: 11px;
-  }
-
-  .category-leader-score {
-    width: 44px;
-    height: 40px;
-    font-size: 21px;
-  }
-
-  .category-leader-scores {
-    gap: 4px;
-  }
-
-  .category-leader-label {
-    font-size: 9px;
-  }
-}
-
-/* =====================================
-   CATEGORY LEADERS - TABLET
-===================================== */
-
-@media (max-width: 900px) {
-  .category-leader-row {
-    grid-template-columns: minmax(0, 1fr) 150px minmax(0, 1fr);
-    gap: 8px;
-    min-height: 115px;
-  }
-
-  .leader-player-photo {
-    width: 68px;
-    height: 68px;
-    min-width: 68px;
-  }
-
-  .leader-player-name {
-    font-size: 17px;
-  }
-
-  .leader-player-number {
-    font-size: 15px;
-  }
-
-  .category-leader-score {
-    width: 68px;
-    height: 54px;
-    font-size: 30px;
-  }
-
-  .category-leader-scores {
-    gap: 8px;
-  }
-
-  .category-leader-label {
-    font-size: 14px;
-  }
-}
-
-/* =====================================
-   CATEGORY LEADERS - MOBILE
-===================================== */
-
-@media (max-width: 600px) {
-  .category-leaders-card {
-    padding: 12px 8px;
-    border-radius: 12px;
-  }
-
-  .category-leaders-header {
-    grid-template-columns: 1fr;
-    gap: 8px;
-    justify-items: center;
-    padding-bottom: 12px;
-  }
-
-  .leader-team {
-    justify-content: center !important;
-  }
-
-  .leader-team-name {
-    font-size: 16px;
-  }
-
-  .category-leaders-title {
-    grid-row: 1;
-    font-size: 15px;
-  }
-
+  /* PLAYER ROW */
   .category-leader-row {
     grid-template-columns: minmax(0, 1fr) 112px minmax(0, 1fr);
     gap: 4px;
