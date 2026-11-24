@@ -1,9 +1,11 @@
 /* ==============================
    GLOBAL
 ============================== */
+
 * {
   box-sizing: border-box;
 }
+
 :root {
   --background: #edf1f6;
   --surface: #ffffff;
@@ -16,6 +18,7 @@
   --text-muted: #65778b;
   --white: #ffffff;
 }
+
 body {
   background: var(--background);
   color: var(--text);
@@ -23,32 +26,44 @@ body {
   padding: 20px;
   margin: 0;
 }
+
 h1 {
   margin-top: 0;
   color: var(--navy);
 }
+
 /* ==============================
    TEAM STATISTICS CONTAINER
 ============================== */
+
 .teamStats {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
   overflow-x: auto;
+  overflow-y: visible;
   margin-bottom: 35px;
   padding: 20px;
   border-radius: 12px;
+  -webkit-overflow-scrolling: touch;
 }
+
 /* ==============================
    TABLES
 ============================== */
+
 table {
   width: 100%;
   table-layout: fixed;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
   background: var(--surface);
   border-radius: 16px;
-  overflow: hidden;
   font-size: 17px;
   color: var(--text);
 }
+
 th {
   color: var(--white);
   padding: 14px 10px;
@@ -58,34 +73,46 @@ th {
   background: linear-gradient(135deg, #315b80 0%, #172b43 100%);
   border-color: #29435f;
 }
+
 td {
   padding: 12px 10px;
   border-bottom: 1px solid var(--border);
+  background: var(--surface);
 }
+
 th,
 td {
   padding: 6px;
   border: 1px solid var(--border);
   text-align: center;
 }
-td {
-  background: var(--surface);
-}
+
 /* ==============================
-   PLAYER TABLE - FIXED COLUMNS
+   PLAYER TABLE
 ============================== */
+
+#statsContainer {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
 #statsContainer .stats-table {
   width: 100%;
+  min-width: 950px;
   table-layout: fixed;
 }
+
 #statsContainer .stats-table th,
 #statsContainer .stats-table td {
   overflow: hidden;
 }
+
 #statsContainer .player-cell {
   text-align: left;
   padding-left: 14px;
 }
+
 #statsContainer .player-wrapper {
   display: flex;
   align-items: center;
@@ -93,9 +120,11 @@ td {
   min-width: 0;
   overflow: hidden;
 }
+
 #statsContainer .player-img {
   flex-shrink: 0;
 }
+
 #statsContainer .player-name {
   display: block;
   min-width: 0;
@@ -103,44 +132,51 @@ td {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
 .player-name {
   text-align: left;
   color: var(--text);
+  font-size: 17px;
+  white-space: nowrap;
 }
+
 .player-cell {
   text-align: left;
   padding-left: 14px;
 }
+
 .player-wrapper {
   display: flex;
   align-items: center;
   gap: 12px;
   transition: filter 0.2s ease;
 }
+
 .player-wrapper:hover {
   filter: brightness(1.05);
 }
+
 .mvp-player:hover {
   filter: brightness(1.03);
 }
+
 .player-img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   object-fit: cover;
 }
-.player-name {
-  font-size: 17px;
-  white-space: nowrap;
-}
+
 /* ==============================
    TEAM HEADER
 ============================== */
+
 .team-header {
   display: flex;
   align-items: center;
   gap: 10px;
 }
+
 .team-header img {
   height: 50px;
   width: 50px;
@@ -148,9 +184,11 @@ td {
   border-radius: 50%;
   border: 1px solid var(--border-dark);
 }
+
 /* ==============================
    GAME HEADER
 ============================== */
+
 .game-header {
   background: #f8fafc;
   padding: 20px;
@@ -161,11 +199,13 @@ td {
   border: 1px solid #cbd7e4;
   box-shadow: 0 4px 14px rgba(23, 43, 67, 0.09);
 }
+
 .game-header .teams {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .big-logo {
   width: 140px;
   height: 140px;
@@ -175,16 +215,19 @@ td {
   border: 3px solid white;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.22);
 }
+
 .team-block {
   text-align: center;
   width: 45%;
 }
+
 .team-name-large {
   margin-top: 10px;
   font-size: 22px;
   font-weight: bold;
   color: #172b43;
 }
+
 .score-big {
   font-size: 48px;
   white-space: nowrap;
@@ -193,28 +236,34 @@ td {
   color: #172b43;
   font-weight: 400;
 }
+
 @media (max-width: 1024px) {
   .score-big {
     font-size: 36px;
   }
 }
+
 @media (max-width: 768px) {
   .score-big {
     font-size: 28px;
   }
 }
+
 /* ==============================
    GAME INFO
 ============================== */
+
 .game-info {
   margin-bottom: 15px;
   font-size: 16px;
   color: #263b52;
   font-weight: 500;
 }
+
 /* ==============================
    TOP BUTTONS
 ============================== */
+
 .top-buttons {
   display: flex;
   justify-content: center;
@@ -222,6 +271,7 @@ td {
   margin-bottom: 20px;
   width: 100%;
 }
+
 .switch-btn {
   padding: 10px 18px;
   border-radius: 8px;
@@ -231,26 +281,31 @@ td {
   color: #294765;
   font-weight: 400;
   transition:
-    * background * 0.2s ease,
+    background 0.2s ease,
     border-color 0.2s ease;
 }
+
 .switch-btn:hover {
   background: #cbd8e6;
   border-color: #aebfd1;
 }
+
 .switch-btn.active {
   background: linear-gradient(135deg, #315b80 0%, #172b43 100%);
   color: #ffffff;
   border-color: #172b43;
 }
+
 .switch-btn.active:hover {
   background: linear-gradient(135deg, #315b80 0%, #172b43 100%);
   border-color: #172b43;
   color: #ffffff;
 }
+
 /* ==============================
    TEAM TOTALS
 ============================== */
+
 #teamTotals {
   display: none;
   background-color: var(--surface);
@@ -259,9 +314,11 @@ td {
   margin-top: 20px;
   box-shadow: 0 3px 12px rgba(23, 43, 67, 0.06);
 }
+
 #teamTotals strong {
   color: var(--navy);
 }
+
 .stat-row {
   display: flex;
   font-size: larger;
@@ -269,16 +326,19 @@ td {
   align-items: center;
   padding: 6px 0;
 }
+
 .stat-row div:first-child {
   padding-left: 20px;
   font-weight: bold;
   color: var(--text);
 }
+
 .stat-row div:last-child {
   padding-right: 20px;
   font-weight: bold;
   color: var(--navy);
 }
+
 .bar-container {
   flex: 1;
   height: 8px;
@@ -287,21 +347,23 @@ td {
   margin: 0 12px;
   overflow: hidden;
 }
-/* Bolji tim - Midnight Blue */
+
 .bar-primary {
   height: 100%;
   background: linear-gradient(135deg, #315b80 0%, #172b43 100%);
   border-radius: 5px;
 }
-/* Drugi tim - Muted Blue */
+
 .bar-secondary {
   height: 100%;
   background: linear-gradient(135deg, #c5d2df 0%, #aebfd1 100%);
   border-radius: 5px;
 }
+
 /* ==============================
    GAME TIMELINE
 ============================== */
+
 #timelineContainer {
   position: relative;
   display: none;
@@ -309,6 +371,7 @@ td {
   flex-direction: column;
   align-items: center;
 }
+
 #timelineContainer::before {
   content: "";
   position: absolute;
@@ -319,6 +382,7 @@ td {
   transform: translateX(-50%);
   z-index: 0;
 }
+
 .event-card {
   display: flex;
   position: relative;
@@ -331,16 +395,19 @@ td {
   box-shadow: 0 3px 10px rgba(23, 43, 67, 0.08);
   z-index: 1;
 }
+
 .event-left {
   margin-right: auto;
   border-left: 4px solid #303030;
   flex-direction: row;
 }
+
 .event-right {
   margin-left: auto;
   border-right: 4px solid #a8e52d;
   flex-direction: row-reverse;
 }
+
 .event-logo {
   width: 40px;
   height: 40px;
@@ -348,26 +415,31 @@ td {
   object-fit: cover;
   margin-right: 10px;
 }
+
 .event-right .event-logo {
   margin-left: 10px;
   margin-right: 0;
 }
+
 .event-text {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 5px;
 }
+
 .event-player {
   font-weight: bold;
   margin: 0;
   color: var(--navy);
 }
+
 .event-type {
   font-size: 14px;
   color: #172b43;
   margin: 0;
 }
+
 .timeline-score {
   position: absolute;
   left: 50%;
@@ -382,6 +454,7 @@ td {
   margin-top: 5px;
   z-index: 1;
 }
+
 .event-player-image {
   width: 42px;
   height: 42px;
@@ -390,12 +463,14 @@ td {
   flex-shrink: 0;
   border: 2px solid var(--border);
 }
+
 @media (max-width: 1200px) {
   .event-card {
     width: 90% !important;
     margin-left: auto !important;
     margin-right: auto !important;
   }
+
   .timeline-score {
     position: relative !important;
     left: 0 !important;
@@ -405,48 +480,51 @@ td {
     width: fit-content !important;
     z-index: 10 !important;
   }
+
   .event-left {
     border-left: 4px solid #303030 !important;
     border-right: none !important;
   }
+
   .event-right {
     border-right: 4px solid #a8e52d !important;
     border-left: none !important;
   }
 }
+
 @media (max-width: 600px) {
   .timeline-score {
     padding: 6px 14px;
     font-size: 16px;
   }
 }
+
 @media (max-width: 400px) {
   .timeline-score {
     padding: 8px 16px;
   }
 }
+
 /* ==============================
    BROADCAST ICONS
 ============================== */
-.live-broadcast {
-  cursor: pointer;
-  font-size: 1em;
-}
-.live-broadcast:hover {
-  transform: scale(1.2);
-  transition: transform 0.2s;
-}
+
+.live-broadcast,
 .yt-broadcast {
   cursor: pointer;
   font-size: 1em;
-}
-.yt-broadcast:hover {
-  transform: scale(1.2);
   transition: transform 0.2s;
 }
+
+.live-broadcast:hover,
+.yt-broadcast:hover {
+  transform: scale(1.2);
+}
+
 /* ==============================
    MVP BLOCK
 ============================== */
+
 .mvp-block {
   width: 100%;
   max-width: 470px;
@@ -456,8 +534,8 @@ td {
   color: var(--text);
   border: 1px solid var(--border);
   border-radius: 14px;
-  box-sizing: border-box;
 }
+
 .mvp-title {
   font-size: 15px;
   font-weight: 700;
@@ -465,6 +543,7 @@ td {
   text-align: left;
   color: var(--navy);
 }
+
 .mvp-player {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 76px;
@@ -476,12 +555,14 @@ td {
   border-radius: 10px;
   cursor: pointer;
 }
+
 .mvp-player-info {
   display: flex;
   align-items: center;
   gap: 8px;
   min-width: 0;
 }
+
 .mvp-player-photo {
   width: 54px;
   height: 54px;
@@ -490,9 +571,11 @@ td {
   background: #e2e8f0;
   flex-shrink: 0;
 }
+
 .mvp-player-details {
   min-width: 0;
 }
+
 .mvp-player-name {
   font-size: 14px;
   font-weight: 700;
@@ -500,22 +583,26 @@ td {
   overflow-wrap: anywhere;
   color: var(--navy);
 }
+
 .mvp-number {
   color: #daa520;
   font-weight: 700;
 }
+
 .mvp-player-label {
   color: #daa520;
   font-size: 11px;
   margin-top: 2px;
   font-weight: 600;
 }
+
 .mvp-stats {
   grid-column: 1;
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 4px;
 }
+
 .mvp-stat {
   display: flex;
   flex-direction: column;
@@ -527,15 +614,18 @@ td {
   min-height: 35px;
   padding: 2px 0;
 }
+
 .mvp-stat strong {
   font-size: 14px;
   line-height: 17px;
   color: var(--navy);
 }
+
 .mvp-stat span {
   font-size: 9px;
   color: var(--text-muted);
 }
+
 .mvp-team-logo {
   grid-column: 2;
   grid-row: 1 / 3;
@@ -549,13 +639,14 @@ td {
   border: 1px solid var(--border);
   border-radius: 10px;
   padding: 5px;
-  box-sizing: border-box;
 }
+
 .mvp-team-logo img {
   width: 52px;
   height: 52px;
   object-fit: contain;
 }
+
 .mvp-team-name {
   display: block;
   width: 100%;
@@ -566,12 +657,15 @@ td {
   line-height: 12px;
   overflow-wrap: anywhere;
 }
+
 .mvp-block + .mvp-block {
   margin-top: 1px;
 }
+
 /* ==============================
    FINAL RESULT
 ============================== */
+
 .final-result-text {
   font-size: 20px;
   margin-bottom: 5px;
@@ -579,13 +673,16 @@ td {
   font-weight: 400;
   white-space: nowrap;
 }
+
 /* =====================================
    TEAM STATISTICS - FIRST TABLE ROW
 ===================================== */
+
 #statsContainer .team-total-row {
   background: var(--navy-soft);
   font-weight: normal;
 }
+
 #statsContainer .team-total-row td {
   background: var(--navy-soft);
   color: var(--navy);
@@ -594,12 +691,12 @@ td {
   padding: 10px 8px;
   font-weight: normal;
 }
-/* First cell - logo and name */
+
 #statsContainer .team-total-row .team-total-name {
   text-align: center;
   vertical-align: middle;
 }
-/* Logo and name wrapper */
+
 #statsContainer .team-total-wrapper {
   display: flex;
   align-items: center;
@@ -607,7 +704,7 @@ td {
   gap: 10px;
   width: 100%;
 }
-/* Small team logo */
+
 #statsContainer .team-total-logo {
   display: block !important;
   width: 42px !important;
@@ -621,23 +718,25 @@ td {
   flex-shrink: 0;
   cursor: pointer;
 }
-/* Team name */
+
 #statsContainer .team-total-wrapper span {
   font-size: 17px;
   font-weight: 400;
   white-space: nowrap;
   color: var(--navy);
 }
-/* Team statistics */
+
 #statsContainer .team-total-row td:not(.team-total-name) {
   white-space: pre-line;
   line-height: 1.5;
   font-size: 16px;
   font-weight: 400;
 }
+
 /* ==============================
    GAME CHARTS
 ============================== */
+
 #chartsContainer {
   width: 100%;
   display: none;
@@ -645,7 +744,7 @@ td {
   gap: 22px;
   padding: 10px 0;
 }
-/* CHART CARD */
+
 .chart-card {
   width: 100%;
   min-width: 0;
@@ -656,10 +755,11 @@ td {
   box-shadow: 0 4px 14px rgba(23, 43, 67, 0.07);
   transition: box-shadow 0.2s ease;
 }
+
 .chart-card:hover {
   box-shadow: 0 6px 18px rgba(23, 43, 67, 0.11);
 }
-/* CHART TITLE */
+
 .chart-card h3 {
   color: var(--navy);
   font-size: 19px;
@@ -668,23 +768,26 @@ td {
   padding-bottom: 13px;
   border-bottom: 1px solid var(--border);
 }
-/* CHART WRAPPER */
+
 .chart-wrapper {
   position: relative;
   width: 100%;
   height: 360px;
 }
-/* CHART LEGEND */
+
 .chart-card canvas {
   max-width: 100%;
 }
+
 /* =====================================
-   CATEGORY LEADERS - NAJBOLJI IGRAČI
+   CATEGORY LEADERS
 ===================================== */
+
 #categoryLeaders {
   width: 100%;
   margin-bottom: 20px;
 }
+
 .category-leaders-card {
   width: 100%;
   background: var(--surface);
@@ -693,7 +796,7 @@ td {
   padding: 18px 20px;
   box-shadow: 0 3px 12px rgba(23, 43, 67, 0.06);
 }
-/* TEAM HEADER */
+
 .category-leaders-header {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
@@ -702,6 +805,7 @@ td {
   padding-bottom: 15px;
   border-bottom: 1px solid var(--border);
 }
+
 .leader-team {
   display: flex;
   align-items: center;
@@ -709,12 +813,15 @@ td {
   min-width: 0;
   cursor: pointer;
 }
+
 .leader-team:first-child {
   justify-content: flex-start;
 }
+
 .leader-team:last-child {
   justify-content: flex-end;
 }
+
 .leader-team-logo {
   display: block;
   width: 42px;
@@ -724,6 +831,7 @@ td {
   flex-shrink: 0;
   border-radius: 8px;
 }
+
 .leader-team-name {
   font-size: 20px;
   font-weight: 600;
@@ -732,6 +840,7 @@ td {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 .category-leaders-title {
   text-align: center;
   font-size: 17px;
@@ -740,11 +849,11 @@ td {
   white-space: nowrap;
   letter-spacing: 0.5px;
 }
-/* CATEGORY LIST */
+
 .category-leaders-list {
   width: 100%;
 }
-/* SINGLE CATEGORY ROW */
+
 .category-leader-row {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 180px minmax(0, 1fr);
@@ -754,21 +863,25 @@ td {
   padding: 12px 0;
   border-bottom: 1px solid var(--border);
 }
+
 .category-leader-row:last-child {
   border-bottom: none;
 }
-/* PLAYER SIDES */
+
 .category-leader-side {
   display: flex;
   align-items: center;
   min-width: 0;
 }
+
 .category-leader-side.left {
   justify-content: flex-start;
 }
+
 .category-leader-side.right {
   justify-content: flex-end;
 }
+
 .leader-player {
   display: flex;
   align-items: center;
@@ -777,14 +890,16 @@ td {
   cursor: pointer;
   transition: filter 0.2s ease;
 }
+
 .leader-player:hover {
   filter: brightness(0.95);
 }
+
 .category-leader-side.right .leader-player {
   flex-direction: row-reverse;
   text-align: right;
 }
-/* PLAYER PHOTO */
+
 .leader-player-photo {
   display: block;
   width: 84px;
@@ -795,7 +910,7 @@ td {
   background: #dfe7f0;
   flex-shrink: 0;
 }
-/* PLAYER INFORMATION */
+
 .leader-player-info {
   display: flex;
   flex-direction: column;
@@ -803,6 +918,7 @@ td {
   gap: 5px;
   min-width: 0;
 }
+
 .leader-player-name {
   color: var(--navy);
   font-size: 20px;
@@ -810,18 +926,19 @@ td {
   line-height: 1.25;
   overflow-wrap: anywhere;
 }
+
 .leader-player-number {
   color: var(--text);
   font-size: 17px;
   font-weight: 500;
 }
-/* EMPTY PLAYER */
+
 .leader-player.empty {
   color: var(--text-muted);
   font-size: 15px;
   cursor: default;
 }
-/* CENTER SCORES */
+
 .category-leader-center {
   display: flex;
   flex-direction: column;
@@ -829,12 +946,14 @@ td {
   justify-content: center;
   min-width: 0;
 }
+
 .category-leader-scores {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 12px;
 }
+
 .category-leader-score {
   display: flex;
   align-items: center;
@@ -848,12 +967,12 @@ td {
   font-weight: 500;
   font-variant-numeric: tabular-nums;
 }
-/* WINNER - TAMNOPLAVI GRADIENT */
+
 .category-leader-score.winner {
   background: linear-gradient(135deg, #315b80 0%, #172b43 100%);
   color: #ffffff;
 }
-/* CATEGORY LABEL */
+
 .category-leader-label {
   margin-top: 5px;
   color: var(--navy);
@@ -863,47 +982,57 @@ td {
   white-space: nowrap;
   letter-spacing: 0.2px;
 }
+
 /* =====================================
    CATEGORY LEADERS - TABLET
 ===================================== */
+
 @media (max-width: 900px) {
   .category-leader-row {
     grid-template-columns: minmax(0, 1fr) 150px minmax(0, 1fr);
     gap: 8px;
     min-height: 115px;
   }
+
   .leader-player-photo {
     width: 68px;
     height: 68px;
     min-width: 68px;
   }
+
   .leader-player-name {
     font-size: 17px;
   }
+
   .leader-player-number {
     font-size: 15px;
   }
+
   .category-leader-score {
     width: 68px;
     height: 54px;
     font-size: 30px;
   }
+
   .category-leader-scores {
     gap: 8px;
   }
+
   .category-leader-label {
     font-size: 14px;
   }
 }
+
 /* =====================================
    CATEGORY LEADERS - MOBILE
 ===================================== */
+
 @media (max-width: 600px) {
   .category-leaders-card {
     padding: 12px 8px;
     border-radius: 12px;
   }
-  /* HEADER - VERTIKALNI RASPORED */
+
   .category-leaders-header {
     display: grid;
     grid-template-columns: 1fr;
@@ -911,282 +1040,472 @@ td {
     justify-items: center;
     padding-bottom: 14px;
   }
-  /* PRVI TIM */
+
   .leader-team:first-child {
     grid-row: 1;
     justify-content: center !important;
   }
-  /* NASLOV */
+
   .category-leaders-title {
     grid-row: 2;
     font-size: 15px;
     text-align: center;
   }
-  /* DRUGI TIM */
+
   .leader-team:last-child {
     grid-row: 3;
     justify-content: center !important;
   }
+
   .leader-team-name {
     font-size: 16px;
   }
+
   .leader-team-logo {
     width: 36px;
     height: 36px;
     min-width: 36px;
   }
-  /* PLAYER ROW */
+
   .category-leader-row {
     grid-template-columns: minmax(0, 1fr) 112px minmax(0, 1fr);
     gap: 4px;
     min-height: 100px;
     padding: 12px 0;
   }
+
   .leader-player {
     gap: 6px;
   }
+
   .leader-player-photo {
     width: 44px;
     height: 44px;
     min-width: 44px;
     border-radius: 8px;
   }
+
   .leader-player-name {
     font-size: 12px;
     line-height: 1.2;
   }
+
   .leader-player-number {
     font-size: 12px;
   }
+
   .category-leader-scores {
     gap: 5px;
   }
+
   .category-leader-score {
     width: 51px;
     height: 43px;
     border-radius: 9px;
     font-size: 24px;
   }
+
   .category-leader-label {
     font-size: 10px;
     white-space: normal;
     line-height: 1.2;
   }
 }
+
 /* =====================================
    VERY SMALL MOBILE
 ===================================== */
+
 @media (max-width: 380px) {
   .category-leader-row {
     grid-template-columns: minmax(0, 1fr) 96px minmax(0, 1fr);
   }
+
   .leader-player-photo {
     width: 38px;
     height: 38px;
     min-width: 38px;
   }
+
   .leader-player-name {
     font-size: 11px;
   }
+
   .leader-player-number {
     font-size: 11px;
   }
+
   .category-leader-score {
     width: 44px;
     height: 40px;
     font-size: 21px;
   }
+
   .category-leader-scores {
     gap: 4px;
   }
+
   .category-leader-label {
     font-size: 9px;
   }
 }
-/* RESPONSIVE CHARTS */
+
+/* ==============================
+   RESPONSIVE CHARTS
+============================== */
+
 @media (max-width: 768px) {
   #chartsContainer {
     gap: 15px;
   }
+
   .chart-card {
     padding: 16px;
     border-radius: 11px;
   }
+
   .chart-card h3 {
     font-size: 16px;
     margin-bottom: 16px;
   }
+
   .chart-wrapper {
     height: 280px;
   }
 }
+
 @media (max-width: 480px) {
   .chart-card {
     padding: 12px;
   }
+
   .chart-wrapper {
     height: 240px;
   }
-  /* Samo grafikon praćenja prednosti */
+
   .chart-card:first-child .chart-wrapper {
     height: 420px;
   }
 }
+
 /* ==============================
    MOBILE
 ============================== */
+
 @media (max-width: 600px) {
   body {
     padding: 10px;
   }
+
   h1 {
     text-align: center;
     font-size: 22px;
   }
+
   .big-logo {
     width: 90px;
     height: 90px;
     max-width: 100%;
   }
+
   .game-header {
     padding: 12px;
   }
+
   .team-name-large {
     font-size: 18px;
     margin-top: 6px;
   }
+
   .score-big {
     font-size: 32px;
   }
+
   .top-buttons {
     flex-direction: column;
     gap: 8px;
   }
+
   .switch-btn {
     width: 100%;
     font-size: 15px;
     padding: 10px;
   }
+
   table {
     font-size: 15px;
     border-radius: 12px;
   }
+
   th,
   td {
     padding: 8px;
     border: 1px solid var(--border);
     font-size: 15px;
   }
+
   .team-header img {
     width: 38px;
     height: 38px;
   }
+
   .teamStats {
     padding: 8px;
   }
+
   #teamTotals {
     padding: 10px 0;
     border-radius: 14px;
   }
+
   .stat-row {
     padding: 8px 10px;
   }
+
   .stat-row div:first-child {
     font-size: 14px;
     width: 60px;
   }
+
   .stat-row div:last-child {
     font-size: 14px;
     width: 60px;
   }
+
   .bar-container {
     margin: 0 10px;
     height: 7px;
   }
+
   #teamTotals strong {
     font-size: 14px;
   }
+
   .player-img {
     width: 40px;
     height: 40px;
   }
+
   .player-name {
     font-size: 15px;
   }
+
   .player-wrapper {
     gap: 10px;
   }
+
   .final-result-text {
     font-size: 16px;
     white-space: nowrap;
   }
 }
+
 /* ==============================
    SMALL MOBILE
 ============================== */
+
 @media (max-width: 400px) {
   .big-logo {
     width: 95px;
     height: 95px;
   }
+
   .score-big {
     font-size: 26px;
   }
+
   table {
     font-size: 12px;
   }
+
   th,
   td {
     padding: 4px;
   }
+
   .switch-btn {
     font-size: 14px;
   }
 }
-/* ==============================
-   PLAYER STATISTICS - RESPONSIVE TABLES
-============================== */
-/* Each team table gets its own horizontal scroll area. */
-.teamStats {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  min-width: 0;
-  overflow-x: auto;
-  overflow-y: hidden;
-  -webkit-overflow-scrolling: touch;
-}
-#statsContainer {
-  width: 100%;
-  max-width: 100%;
-  min-width: 0;
-}
-#statsContainer .stats-table {
-  width: 100%;
-  min-width: 950px;
-  table-layout: fixed;
-}
-#statsContainer .stats-table th,
-#statsContainer .stats-table td {
-  overflow: hidden;
-}
+
+/* =====================================
+   PLAYER STATISTICS - MOBILE TABLE
+===================================== */
+
 @media (max-width: 768px) {
   body {
     min-width: 0;
     overflow-x: hidden;
   }
-  .teamStats {
+
+  #statsContainer {
     width: 100%;
     max-width: 100%;
+    min-width: 0;
+    overflow: visible;
+  }
+
+  /* HORIZONTALNI SCROLL KONTEJNER */
+
+  .teamStats {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
     padding: 8px;
     margin-bottom: 24px;
     overflow-x: auto;
     overflow-y: hidden;
     border-radius: 12px;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
   }
+
+  /* TABELA */
+
   #statsContainer .stats-table {
-    width: 950px;
-    min-width: 950px;
+    width: 1100px;
+    min-width: 1100px;
+    max-width: none;
     table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+
+  /* USKLAĐIVANJE ŠIRINA SA FIKSIRANIM KOLONAMA */
+
+  #statsContainer .stats-table colgroup col:nth-child(1) {
+    width: 42px !important;
+  }
+
+  #statsContainer .stats-table colgroup col:nth-child(2) {
+    width: 290px !important;
+  }
+
+  #statsContainer .stats-table th,
+  #statsContainer .stats-table td {
+    overflow: hidden;
+  }
+
+  /* ZAGLAVLJE */
+
+  #statsContainer .stats-table thead th {
+    position: relative;
+    background: linear-gradient(135deg, #315b80 0%, #172b43 100%);
+    color: #ffffff;
+    z-index: 1;
+  }
+
+  /* PRVA KOLONA - BROJ IGRAČA */
+
+  #statsContainer .stats-table tbody tr:not(.team-total-row) td:nth-child(1),
+  #statsContainer .stats-table thead th:nth-child(1) {
+    position: sticky;
+    left: 0;
+    width: 42px;
+    min-width: 42px;
+    max-width: 42px;
+    background: #ffffff;
+    z-index: 5;
+  }
+
+  /* DRUGA KOLONA - IGRAČ */
+
+  #statsContainer .stats-table tbody tr:not(.team-total-row) td:nth-child(2),
+  #statsContainer .stats-table thead th:nth-child(2) {
+    position: sticky;
+    left: 42px;
+    width: 290px;
+    min-width: 290px;
+    max-width: 290px;
+    background: #ffffff;
+    z-index: 5;
+    box-shadow: 4px 0 8px rgba(23, 43, 67, 0.14);
+  }
+
+  /* ZAGLAVLJE FIKSIRANIH KOLONA */
+
+  #statsContainer .stats-table thead th:nth-child(1),
+  #statsContainer .stats-table thead th:nth-child(2) {
+    background: linear-gradient(135deg, #315b80 0%, #172b43 100%);
+    color: #ffffff;
+    z-index: 10;
+  }
+
+  /* RED SA UKUPNOM STATISTIKOM TIMA */
+
+  #statsContainer .stats-table .team-total-row td {
+    background: var(--navy-soft);
+    color: var(--navy);
+  }
+
+  /* JEDNA ĆELIJA KOJA ZAUZIMA PRVE DVE KOLONE */
+
+  #statsContainer .stats-table .team-total-row .team-total-name {
+    position: sticky;
+    left: 0;
+    width: 332px;
+    min-width: 332px;
+    max-width: 332px;
+    background: var(--navy-soft);
+    z-index: 8;
+    box-shadow: 4px 0 8px rgba(23, 43, 67, 0.1);
+  }
+
+  /* SLIKE I IMENA IGRAČA */
+
+  #statsContainer .player-wrapper {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  #statsContainer .player-img {
+    flex-shrink: 0;
+  }
+
+  #statsContainer .player-name {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  /* GRB I NAZIV EKIPE */
+
+  #statsContainer .team-total-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  #statsContainer .team-total-logo {
+    flex-shrink: 0;
+  }
+
+  #statsContainer .team-total-wrapper span {
+    flex-shrink: 0;
+  }
+
+  /* SAKRIVANJE SADRŽAJA IZA PRVE KOLONE */
+
+  .teamStats {
+    padding-left: 0;
+  }
+
+  #statsContainer .stats-table tbody tr:not(.team-total-row) td:nth-child(1) {
+    z-index: 30;
+    background: #ffffff !important;
+    background-clip: border-box;
+    box-shadow: 5px 0 10px rgba(23, 43, 67, 0.12);
+  }
+
+  #statsContainer .stats-table thead th:nth-child(1) {
+    z-index: 40;
   }
 }

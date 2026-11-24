@@ -605,8 +605,12 @@ function renderStats(teams) {
       "PTS",
     ];
 
-    headers.forEach((h) => {
+    headers.forEach((h, index) => {
       const th = document.createElement("th");
+
+      if (index === 0) th.className = "number-header";
+      if (index === 1) th.className = "player-header";
+
       th.textContent = h;
       headerRow.appendChild(th);
     });
@@ -788,6 +792,7 @@ function renderStats(teams) {
       const row = document.createElement("tr");
 
       const tdNumber = document.createElement("td");
+      tdNumber.className = "number-cell";
       tdNumber.textContent = p.number ?? "-";
       row.appendChild(tdNumber);
 
