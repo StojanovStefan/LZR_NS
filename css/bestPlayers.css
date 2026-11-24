@@ -1,0 +1,306 @@
+/* ==============================
+   GLOBAL
+============================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --navy: #172b43;
+  --navy-light: #243c57;
+  --blue: #315b80;
+  --blue-soft: #e8eff5;
+  --white: #ffffff;
+  --text: #263445;
+  --border: #dce4ec;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f6f9;
+  color: var(--text);
+  padding: 20px;
+}
+
+/* ==============================
+   TOP BUTTONS
+============================== */
+
+.top-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 25px auto;
+  max-width: 1100px;
+}
+
+.switch-btn {
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  background: #e2e9f0;
+  color: var(--navy);
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.switch-btn:hover {
+  background: #d2dfeb;
+}
+
+.switch-btn.active {
+  color: white;
+  background: linear-gradient(135deg, #315b80 0%, #172b43 100%);
+}
+
+/* ==============================
+   MAIN CONTAINER
+============================== */
+
+.scale-wrapper {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#bestPlayersContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* ==============================
+   PLAYER CARD
+============================== */
+
+.best-player-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  position: relative;
+  width: 100%;
+  min-height: 125px;
+  padding: 16px 22px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: 0 3px 10px rgba(23, 43, 67, 0.07);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.best-player-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(23, 43, 67, 0.13);
+}
+
+/* ==============================
+   RANK
+============================== */
+
+.best-player-rank {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  border-radius: 11px;
+  background: linear-gradient(135deg, #315b80 0%, #172b43 100%);
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/* ==============================
+   PLAYER PHOTO
+============================== */
+
+.best-player-photo {
+  width: 88px;
+  height: 88px;
+  flex-shrink: 0;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 14px;
+  border: 2px solid #e1e8ef;
+  background: #edf1f5;
+}
+
+/* ==============================
+   PLAYER INFO
+============================== */
+
+.best-player-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+  gap: 7px;
+}
+
+.best-player-name {
+  font-size: 19px;
+  font-weight: bold;
+  color: var(--navy);
+  overflow-wrap: anywhere;
+}
+
+/* ==============================
+   TEAM INFO
+============================== */
+
+.best-player-team {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.best-player-team-logo {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+  border-radius: 7px;
+  background: #f1f4f7;
+}
+
+/* ==============================
+   MVP / LVP AWARDS
+============================== */
+
+.best-player-awards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 3px;
+}
+
+.best-player-mvp,
+.best-player-lvp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 13px;
+  border-radius: 9px;
+  font-size: 13px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.best-player-mvp {
+  color: white;
+  background: linear-gradient(135deg, #315b80 0%, #172b43 100%);
+}
+
+.best-player-lvp {
+  color: #ffffff;
+  background: linear-gradient(135deg, #64748b 0%, #374151 100%);
+}
+
+/* ==============================
+   TABLET
+============================== */
+
+@media (max-width: 768px) {
+  body {
+    padding: 14px;
+  }
+
+  .best-player-card {
+    gap: 13px;
+    padding: 14px;
+    min-height: 110px;
+  }
+
+  .best-player-photo {
+    width: 75px;
+    height: 75px;
+  }
+
+  .best-player-name {
+    font-size: 17px;
+  }
+}
+
+/* ==============================
+   MOBILE
+============================== */
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  .top-buttons {
+    gap: 7px;
+    margin: 18px auto;
+  }
+
+  .switch-btn {
+    padding: 10px 12px;
+    font-size: 11px;
+    border-radius: 8px;
+  }
+
+  #bestPlayersContainer {
+    gap: 10px;
+  }
+
+  .best-player-card {
+    gap: 10px;
+    padding: 12px 10px;
+    min-height: 100px;
+    border-radius: 13px;
+  }
+
+  .best-player-rank {
+    width: 29px;
+    height: 29px;
+    font-size: 13px;
+    border-radius: 8px;
+  }
+
+  .best-player-photo {
+    width: 65px;
+    height: 65px;
+    border-radius: 11px;
+  }
+
+  .best-player-info {
+    gap: 5px;
+  }
+
+  .best-player-name {
+    font-size: 15px;
+  }
+
+  .best-player-team {
+    font-size: 11px;
+    gap: 6px;
+  }
+
+  .best-player-team-logo {
+    width: 21px;
+    height: 21px;
+  }
+
+  .best-player-awards {
+    gap: 6px;
+  }
+
+  .best-player-mvp,
+  .best-player-lvp {
+    padding: 6px 9px;
+    font-size: 11px;
+    border-radius: 7px;
+  }
+}

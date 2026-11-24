@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Najbolji igrači</title>
+
+    <link rel="stylesheet" href="css/bestPlayers.css" />
+    <script type="module" src="js/bestPlayers.js"></script>
+  </head>
+
+  <body>
+    <!-- ZAGLAVLJE -->
+    <div id="gameHeader"></div>
+
+    <!-- NAVIGACIJA -->
+    <div class="top-buttons">
+      <button id="btnBestPlayers" class="switch-btn active">
+        NAJBOLJI IGRAČI
+      </button>
+
+      <button id="btnLeagueLeaders" class="switch-btn">LIDERI LIGE</button>
+
+      <button id="btnGameRecords" class="switch-btn">
+        REKORDI NA UTAKMICI
+      </button>
+
+      <button id="btnPerGame" class="switch-btn">PO UTAKMICI</button>
+    </div>
+
+    <!-- GLAVNI SADRŽAJ -->
+    <div class="scale-wrapper">
+      <!-- NAJBOLJI IGRAČI -->
+      <div id="bestPlayersContainer"></div>
+
+      <!-- LIDERI LIGE -->
+      <div id="leagueLeadersContainer" style="display: none"></div>
+
+      <!-- REKORDI NA UTAKMICI -->
+      <div id="gameRecordsContainer" style="display: none"></div>
+
+      <!-- STATISTIKA PO UTAKMICI -->
+      <div id="perGameContainer" style="display: none"></div>
+    </div>
+  </body>
+</html>

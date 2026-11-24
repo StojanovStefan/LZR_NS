@@ -558,6 +558,34 @@ function renderStats(teams) {
     // =====================================
 
     const table = document.createElement("table");
+    table.className = "stats-table";
+
+    const colgroup = document.createElement("colgroup");
+
+    const columnWidths = [
+      "3.8%", // #
+      "26.5%", // Igrač
+      "5%", // EFF
+      "7.8%", // FG
+      "7.8%", // 2P
+      "7.8%", // 3P
+      "7.8%", // FT
+      "9.2%", // REB O/D
+      "5.2%", // AST
+      "4.2%", // TO
+      "5%", // STL
+      "5%", // BLK
+      "4.9%", // PTS
+    ];
+
+    columnWidths.forEach((width) => {
+      const col = document.createElement("col");
+      col.style.width = width;
+      colgroup.appendChild(col);
+    });
+
+    table.appendChild(colgroup);
+
     const thead = document.createElement("thead");
     const headerRow = document.createElement("tr");
 
