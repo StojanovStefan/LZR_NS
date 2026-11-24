@@ -768,6 +768,536 @@ td {
   max-width: 100%;
 }
 
+/* =====================================
+   CATEGORY LEADERS - NAJBOLJI IGRAČI
+===================================== */
+
+#categoryLeaders {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.category-leaders-card {
+  width: 100%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 18px 20px;
+  box-shadow: 0 3px 12px rgba(23, 43, 67, 0.06);
+}
+
+/* TEAM HEADER */
+
+.category-leaders-header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--border);
+}
+
+.leader-team {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  cursor: pointer;
+}
+
+.leader-team:first-child {
+  justify-content: flex-start;
+}
+
+.leader-team:last-child {
+  justify-content: flex-end;
+}
+
+.leader-team-logo {
+  display: block;
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  object-fit: contain;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+
+.leader-team-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--navy);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.category-leaders-title {
+  text-align: center;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--navy);
+  white-space: nowrap;
+  letter-spacing: 0.5px;
+}
+
+/* CATEGORY LIST */
+
+.category-leaders-list {
+  width: 100%;
+}
+
+/* SINGLE CATEGORY ROW */
+
+.category-leader-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 180px minmax(0, 1fr);
+  align-items: center;
+  gap: 15px;
+  min-height: 132px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.category-leader-row:last-child {
+  border-bottom: none;
+}
+
+/* PLAYER SIDES */
+
+.category-leader-side {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+
+.category-leader-side.left {
+  justify-content: flex-start;
+}
+
+.category-leader-side.right {
+  justify-content: flex-end;
+}
+
+.leader-player {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  cursor: pointer;
+  transition: filter 0.2s ease;
+}
+
+.leader-player:hover {
+  filter: brightness(0.95);
+}
+
+.category-leader-side.right .leader-player {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+/* PLAYER PHOTO */
+
+.leader-player-photo {
+  display: block;
+  width: 84px;
+  height: 84px;
+  min-width: 84px;
+  border-radius: 12px;
+  object-fit: cover;
+  background: #dfe7f0;
+  flex-shrink: 0;
+}
+
+/* PLAYER INFORMATION */
+
+.leader-player-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  min-width: 0;
+}
+
+.leader-player-name {
+  color: var(--navy);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+.leader-player-number {
+  color: var(--text);
+  font-size: 17px;
+  font-weight: 500;
+}
+
+/* EMPTY PLAYER */
+
+.leader-player.empty {
+  color: var(--text-muted);
+  font-size: 15px;
+  cursor: default;
+}
+
+/* CENTER SCORES */
+
+.category-leader-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+}
+
+.category-leader-scores {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.category-leader-score {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 84px;
+  height: 60px;
+  border-radius: 13px;
+  background: linear-gradient(135deg, #c5d2df 0%, #aebfd1 100%);
+  color: #263b52;
+  font-size: 36px;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+
+/* WINNER - TAMNOPLAVI GRADIENT */
+
+.category-leader-score.winner {
+  background: linear-gradient(135deg, #315b80 0%, #172b43 100%);
+  color: #ffffff;
+}
+
+/* CATEGORY LABEL */
+
+.category-leader-label {
+  margin-top: 5px;
+  color: var(--navy);
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+  letter-spacing: 0.2px;
+}
+
+/* =====================================
+   CATEGORY LEADERS - TABLET
+===================================== */
+
+@media (max-width: 900px) {
+  .category-leader-row {
+    grid-template-columns: minmax(0, 1fr) 150px minmax(0, 1fr);
+    gap: 8px;
+    min-height: 115px;
+  }
+
+  .leader-player-photo {
+    width: 68px;
+    height: 68px;
+    min-width: 68px;
+  }
+
+  .leader-player-name {
+    font-size: 17px;
+  }
+
+  .leader-player-number {
+    font-size: 15px;
+  }
+
+  .category-leader-score {
+    width: 68px;
+    height: 54px;
+    font-size: 30px;
+  }
+
+  .category-leader-scores {
+    gap: 8px;
+  }
+
+  .category-leader-label {
+    font-size: 14px;
+  }
+}
+
+/* =====================================
+   CATEGORY LEADERS - MOBILE
+===================================== */
+
+@media (max-width: 600px) {
+  .category-leaders-card {
+    padding: 12px 8px;
+    border-radius: 12px;
+  }
+
+  .category-leaders-header {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    justify-items: center;
+    padding-bottom: 12px;
+  }
+
+  .leader-team {
+    justify-content: center !important;
+  }
+
+  .leader-team-name {
+    font-size: 16px;
+  }
+
+  .category-leaders-title {
+    grid-row: 1;
+    font-size: 15px;
+  }
+
+  .category-leader-row {
+    grid-template-columns: minmax(0, 1fr) 112px minmax(0, 1fr);
+    gap: 4px;
+    min-height: 100px;
+    padding: 12px 0;
+  }
+
+  .leader-player {
+    gap: 6px;
+  }
+
+  .leader-player-photo {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    border-radius: 8px;
+  }
+
+  .leader-player-name {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+
+  .leader-player-number {
+    font-size: 12px;
+  }
+
+  .category-leader-scores {
+    gap: 5px;
+  }
+
+  .category-leader-score {
+    width: 51px;
+    height: 43px;
+    border-radius: 9px;
+    font-size: 24px;
+  }
+
+  .category-leader-label {
+    font-size: 10px;
+    white-space: normal;
+    line-height: 1.2;
+  }
+}
+
+/* =====================================
+   VERY SMALL MOBILE
+===================================== */
+
+@media (max-width: 380px) {
+  .category-leader-row {
+    grid-template-columns: minmax(0, 1fr) 96px minmax(0, 1fr);
+  }
+
+  .leader-player-photo {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+  }
+
+  .leader-player-name {
+    font-size: 11px;
+  }
+
+  .leader-player-number {
+    font-size: 11px;
+  }
+
+  .category-leader-score {
+    width: 44px;
+    height: 40px;
+    font-size: 21px;
+  }
+
+  .category-leader-scores {
+    gap: 4px;
+  }
+
+  .category-leader-label {
+    font-size: 9px;
+  }
+}
+
+/* =====================================
+   CATEGORY LEADERS - TABLET
+===================================== */
+
+@media (max-width: 900px) {
+  .category-leader-row {
+    grid-template-columns: minmax(0, 1fr) 150px minmax(0, 1fr);
+    gap: 8px;
+    min-height: 115px;
+  }
+
+  .leader-player-photo {
+    width: 68px;
+    height: 68px;
+    min-width: 68px;
+  }
+
+  .leader-player-name {
+    font-size: 17px;
+  }
+
+  .leader-player-number {
+    font-size: 15px;
+  }
+
+  .category-leader-score {
+    width: 68px;
+    height: 54px;
+    font-size: 30px;
+  }
+
+  .category-leader-scores {
+    gap: 8px;
+  }
+
+  .category-leader-label {
+    font-size: 14px;
+  }
+}
+
+/* =====================================
+   CATEGORY LEADERS - MOBILE
+===================================== */
+
+@media (max-width: 600px) {
+  .category-leaders-card {
+    padding: 12px 8px;
+    border-radius: 12px;
+  }
+
+  .category-leaders-header {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    justify-items: center;
+    padding-bottom: 12px;
+  }
+
+  .leader-team {
+    justify-content: center !important;
+  }
+
+  .leader-team-name {
+    font-size: 16px;
+  }
+
+  .category-leaders-title {
+    grid-row: 1;
+    font-size: 15px;
+  }
+
+  .category-leader-row {
+    grid-template-columns: minmax(0, 1fr) 112px minmax(0, 1fr);
+    gap: 4px;
+    min-height: 100px;
+    padding: 12px 0;
+  }
+
+  .leader-player {
+    gap: 6px;
+  }
+
+  .leader-player-photo {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    border-radius: 8px;
+  }
+
+  .leader-player-name {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+
+  .leader-player-number {
+    font-size: 12px;
+  }
+
+  .category-leader-scores {
+    gap: 5px;
+  }
+
+  .category-leader-score {
+    width: 51px;
+    height: 43px;
+    border-radius: 9px;
+    font-size: 24px;
+  }
+
+  .category-leader-label {
+    font-size: 10px;
+    white-space: normal;
+    line-height: 1.2;
+  }
+}
+
+/* =====================================
+   VERY SMALL MOBILE
+===================================== */
+
+@media (max-width: 380px) {
+  .category-leader-row {
+    grid-template-columns: minmax(0, 1fr) 96px minmax(0, 1fr);
+  }
+
+  .leader-player-photo {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+  }
+
+  .leader-player-name {
+    font-size: 11px;
+  }
+
+  .leader-player-number {
+    font-size: 11px;
+  }
+
+  .category-leader-score {
+    width: 44px;
+    height: 40px;
+    font-size: 21px;
+  }
+
+  .category-leader-scores {
+    gap: 4px;
+  }
+
+  .category-leader-label {
+    font-size: 9px;
+  }
+}
+
 /* RESPONSIVE CHARTS */
 
 @media (max-width: 768px) {

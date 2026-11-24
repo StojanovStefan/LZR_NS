@@ -514,6 +514,7 @@ function renderGameHeader(info) {
 
 function tryRenderAll() {
   if (gameInfo && Object.keys(globalTeams).length) {
+    renderCategoryLeaders(globalTeams);
     renderStats(globalTeams);
     renderTotals(globalTeams);
     renderGameHeader(gameInfo);
@@ -2033,6 +2034,293 @@ function renderTotals(teams) {
         `;
 }
 
+// =====================================
+// NAJBOLJI IGRAČI PO KATEGORIJAMA
+// =====================================
+
+function renderCategoryLeaders(teams) {
+  const container = document.getElementById("categoryLeaders");
+
+  if (!container || !orderedTeams.length) return;
+
+  // Zaustavljanje prethodnih rotacija
+  if (container._leaderRotationIntervals) {
+    container._leaderRotationIntervals.forEach(clearInterval);
+  }
+
+  container._leaderRotationIntervals = [];
+
+  const [teamAName, teamBName] = orderedTeams;
+
+  const teamA = teams[teamAName];
+  const teamB = teams[teamBName];
+
+  if (!teamA || !teamB) {
+    container.innerHTML = "";
+    return;
+  }
+
+  const categories = [
+    {
+      label: "POENI",
+      getValue: (s) => Number(s.points || 0),
+    },
+    {
+      label: "SKOKOVI",
+      getValue: (s) =>
+        Number(s.rebounds_off || 0) + Number(s.rebounds_def || 0),
+    },
+    {
+      label: "ASISTENCIJE",
+      getValue: (s) => Number(s.assists || 0),
+    },
+    {
+      label: "UKRADENE LOPTE",
+      getValue: (s) => Number(s.steals || 0),
+    },
+    {
+      label: "BLOKADE",
+      getValue: (s) => Number(s.blocks || 0),
+    },
+  ];
+
+  // Pronalaženje svih najboljih igrača u ekipi
+  function getBestPlayers(team, category) {
+    const players = Object.entries(team.players || {});
+
+    if (!players.length) return [];
+
+    let bestValue = 0;
+    let bestPlayers = [];
+
+    players.forEach(([number, player]) => {
+      const stats = player.stats || {};
+      const value = category.getValue(stats);
+
+      if (value > bestValue) {
+        bestValue = value;
+        bestPlayers = [];
+      }
+
+      if (value > 0 && value === bestValue) {
+        bestPlayers.push({
+          ...player,
+          number: player.number ?? number,
+          value,
+        });
+      }
+    });
+
+    return bestPlayers;
+  }
+
+  // Prikaz igrača
+  function createLeaderPlayer(player) {
+    if (!player) {
+      return `
+        <div class="leader-player empty">
+
+          <img
+            src="team_logo/default_player.png"
+            class="leader-player-photo"
+            onerror="this.onerror=null;this.src='team_logo/default_player.png';"
+            alt="Nepoznat igrač"
+          >
+
+          <div class="leader-player-info">
+            <span class="leader-player-name">-</span>
+          </div>
+
+        </div>
+      `;
+    }
+
+    return `
+      <div
+        class="leader-player"
+        onclick="window.location.href='playerProfile.html?id=${encodeURIComponent(player.playerId || "")}'"
+      >
+
+        <img
+          src="team_logo/${player.photo || "default_player.png"}"
+          class="leader-player-photo"
+          onerror="this.onerror=null;this.src='team_logo/default_player.png';"
+          alt="${player.name || "Igrač"}"
+        >
+
+        <div class="leader-player-info">
+          <span class="leader-player-name">
+            ${player.name || "Nepoznat igrač"}
+          </span>
+
+          <span class="leader-player-number">
+            #${player.number}
+          </span>
+        </div>
+
+      </div>
+    `;
+  }
+
+  // Određivanje logotipa ekipe
+  function getTeamLogo(team, teamName, logoFallback) {
+    const normalizedName = teamName.toLowerCase().replace(/[\s_-]/g, "");
+
+    if (normalizedName === "blacklions") {
+      return "Black_Lions.png";
+    }
+
+    if (normalizedName === "whitedragons") {
+      return "White_Dragons.png";
+    }
+
+    return team.logo || logoFallback || "default.png";
+  }
+
+  // Zaglavlje sa logotipima ekipa
+  function createTeamHeader(team, teamName, logoFallback) {
+    const logo = getTeamLogo(team, teamName, logoFallback);
+
+    return `
+      <div
+        class="leader-team"
+        onclick="window.location.href='teamProfile.html?id=${encodeURIComponent(teamName)}'"
+      >
+
+        <img
+          src="team_logo/${logo}"
+          class="leader-team-logo"
+          onerror="this.onerror=null;this.src='team_logo/default.png';"
+          alt="${teamName}"
+        >
+
+        <span class="leader-team-name">
+          ${teamName}
+        </span>
+
+      </div>
+    `;
+  }
+
+  const logoA = teamA.logo || gameInfo?.teamA_logo;
+  const logoB = teamB.logo || gameInfo?.teamB_logo;
+
+  let html = `
+    <div class="category-leaders-card">
+
+      <div class="category-leaders-header">
+
+        ${createTeamHeader(teamA, teamAName, logoA)}
+
+        <div class="category-leaders-title">
+          NAJBOLJI IGRAČI
+        </div>
+
+        ${createTeamHeader(teamB, teamBName, logoB)}
+
+      </div>
+
+      <div class="category-leaders-list">
+  `;
+
+  // Čuvanje igrača koji treba da se smenjuju
+  const rotationGroups = [];
+
+  categories.forEach((category, index) => {
+    const playersA = getBestPlayers(teamA, category);
+    const playersB = getBestPlayers(teamB, category);
+
+    const playerA = playersA[0] || null;
+    const playerB = playersB[0] || null;
+
+    const valueA = playerA ? playerA.value : 0;
+    const valueB = playerB ? playerB.value : 0;
+
+    const winnerA = valueA >= valueB;
+    const winnerB = valueB >= valueA;
+
+    // Rotacija izjednačenih igrača leve ekipe
+    if (playersA.length > 1) {
+      rotationGroups.push({
+        key: `leader-${index}-left`,
+        players: playersA,
+      });
+    }
+
+    // Rotacija izjednačenih igrača desne ekipe
+    if (playersB.length > 1) {
+      rotationGroups.push({
+        key: `leader-${index}-right`,
+        players: playersB,
+      });
+    }
+
+    html += `
+      <div class="category-leader-row">
+
+        <div
+          class="category-leader-side left"
+          data-rotation-key="leader-${index}-left"
+        >
+          ${createLeaderPlayer(playerA)}
+        </div>
+
+        <div class="category-leader-center">
+
+          <div class="category-leader-scores">
+
+            <div class="category-leader-score ${winnerA ? "winner" : ""}">
+              ${valueA}
+            </div>
+
+            <div class="category-leader-score ${winnerB ? "winner" : ""}">
+              ${valueB}
+            </div>
+
+          </div>
+
+          <div class="category-leader-label">
+            ${category.label}
+          </div>
+
+        </div>
+
+        <div
+          class="category-leader-side right"
+          data-rotation-key="leader-${index}-right"
+        >
+          ${createLeaderPlayer(playerB)}
+        </div>
+
+      </div>
+    `;
+  });
+
+  html += `
+      </div>
+    </div>
+  `;
+
+  container.innerHTML = html;
+
+  // Rotacija izjednačenih igrača na svake 3 sekunde
+  rotationGroups.forEach((group) => {
+    const side = container.querySelector(`[data-rotation-key="${group.key}"]`);
+
+    if (!side) return;
+
+    let currentIndex = 0;
+
+    const interval = setInterval(() => {
+      currentIndex = (currentIndex + 1) % group.players.length;
+
+      side.innerHTML = createLeaderPlayer(group.players[currentIndex]);
+    }, 3000);
+
+    container._leaderRotationIntervals.push(interval);
+  });
+}
+
 const btnT = document.getElementById("btnTotals");
 const btnP = document.getElementById("btnPlayers");
 const btnTimeline = document.getElementById("btnTimeline");
@@ -2044,6 +2332,7 @@ btnT.onclick = () => {
   btnTimeline.classList.remove("active");
   btnCharts.classList.remove("active");
 
+  document.getElementById("categoryLeaders").style.display = "block";
   document.getElementById("teamTotals").style.display = "block";
   document.getElementById("statsContainer").style.display = "none";
   document.getElementById("timelineContainer").style.display = "none";
@@ -2056,6 +2345,7 @@ btnP.onclick = () => {
   btnTimeline.classList.remove("active");
   btnCharts.classList.remove("active");
 
+  document.getElementById("categoryLeaders").style.display = "none";
   document.getElementById("teamTotals").style.display = "none";
   document.getElementById("statsContainer").style.display = "block";
   document.getElementById("timelineContainer").style.display = "none";
@@ -2068,6 +2358,7 @@ btnTimeline.onclick = () => {
   btnT.classList.remove("active");
   btnCharts.classList.remove("active");
 
+  document.getElementById("categoryLeaders").style.display = "none";
   document.getElementById("teamTotals").style.display = "none";
   document.getElementById("statsContainer").style.display = "none";
   document.getElementById("timelineContainer").style.display = "block";
@@ -2080,6 +2371,7 @@ btnCharts.onclick = () => {
   btnT.classList.remove("active");
   btnTimeline.classList.remove("active");
 
+  document.getElementById("categoryLeaders").style.display = "none";
   document.getElementById("teamTotals").style.display = "none";
   document.getElementById("statsContainer").style.display = "none";
   document.getElementById("timelineContainer").style.display = "none";
