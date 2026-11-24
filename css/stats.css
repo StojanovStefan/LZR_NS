@@ -64,6 +64,34 @@ table {
   color: var(--text);
 }
 
+/* =====================================
+   ZAOBLJENI UGLovi TABELE
+===================================== */
+
+#statsContainer .stats-table {
+  border-radius: 10px;
+}
+
+/* Gornji uglovi */
+
+#statsContainer .stats-table thead th:first-child {
+  border-top-left-radius: 10px;
+}
+
+#statsContainer .stats-table thead th:last-child {
+  border-top-right-radius: 10px;
+}
+
+/* Donji uglovi */
+
+#statsContainer .stats-table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+#statsContainer .stats-table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
 th {
   color: var(--white);
   padding: 14px 10px;
@@ -1375,7 +1403,7 @@ td {
   /* ŠIRINE KOLONA */
 
   #statsContainer .stats-table colgroup col:nth-child(1) {
-    width: 30px !important;
+    width: 20px !important;
   }
 
   #statsContainer .stats-table colgroup col:nth-child(2) {
@@ -1543,5 +1571,22 @@ td {
     padding: 4px 2px;
     line-height: 1.3;
     white-space: pre-line;
+  }
+
+  /* SAKRIVANJE SADRŽAJA IZA PRVE KOLONE */
+
+  .teamStats {
+    padding-left: 0;
+  }
+
+  #statsContainer .stats-table tbody tr:not(.team-total-row) td:nth-child(1) {
+    z-index: 30;
+    background: #ffffff !important;
+    background-clip: border-box;
+    box-shadow: 5px 0 10px rgba(23, 43, 67, 0.12);
+  }
+
+  #statsContainer .stats-table thead th:nth-child(1) {
+    z-index: 40;
   }
 }
