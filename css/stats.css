@@ -64,34 +64,6 @@ table {
   color: var(--text);
 }
 
-/* =====================================
-   ZAOBLJENI UGLovi TABELE
-===================================== */
-
-#statsContainer .stats-table {
-  border-radius: 10px;
-}
-
-/* Gornji uglovi */
-
-#statsContainer .stats-table thead th:first-child {
-  border-top-left-radius: 10px;
-}
-
-#statsContainer .stats-table thead th:last-child {
-  border-top-right-radius: 10px;
-}
-
-/* Donji uglovi */
-
-#statsContainer .stats-table tbody tr:last-child td:first-child {
-  border-bottom-left-radius: 10px;
-}
-
-#statsContainer .stats-table tbody tr:last-child td:last-child {
-  border-bottom-right-radius: 10px;
-}
-
 th {
   color: var(--white);
   padding: 14px 10px;
@@ -1355,7 +1327,6 @@ td {
     font-size: 14px;
   }
 }
-
 /* =====================================
    PLAYER STATISTICS - MOBILE TABLE
 ===================================== */
@@ -1403,7 +1374,7 @@ td {
   /* ŠIRINE KOLONA */
 
   #statsContainer .stats-table colgroup col:nth-child(1) {
-    width: 20px !important;
+    width: 24px !important;
   }
 
   #statsContainer .stats-table colgroup col:nth-child(2) {
@@ -1450,12 +1421,14 @@ td {
   #statsContainer .stats-table thead th:nth-child(1) {
     position: sticky;
     left: 0;
-    width: 30px;
-    min-width: 30px;
-    max-width: 30px;
+    width: 24px;
+    min-width: 24px;
+    max-width: 24px;
     background: #ffffff;
     z-index: 30;
     padding: 4px 1px;
+    font-size: 11px;
+    text-align: center;
   }
 
   /* DRUGA KOLONA - IGRAČ */
@@ -1463,7 +1436,7 @@ td {
   #statsContainer .stats-table tbody tr:not(.team-total-row) td:nth-child(2),
   #statsContainer .stats-table thead th:nth-child(2) {
     position: sticky;
-    left: 30px;
+    left: 24px;
     width: 90px;
     min-width: 90px;
     max-width: 90px;
@@ -1494,9 +1467,9 @@ td {
   #statsContainer .stats-table .team-total-row .team-total-name {
     position: sticky;
     left: 0;
-    width: 120px;
-    min-width: 120px;
-    max-width: 120px;
+    width: 114px;
+    min-width: 114px;
+    max-width: 114px;
     background: var(--navy-soft);
     z-index: 35;
     padding: 6px 3px;
@@ -1583,7 +1556,7 @@ td {
     z-index: 30;
     background: #ffffff !important;
     background-clip: border-box;
-    box-shadow: 5px 0 10px rgba(23, 43, 67, 0.12);
+    box-shadow: none;
   }
 
   #statsContainer .stats-table thead th:nth-child(1) {
