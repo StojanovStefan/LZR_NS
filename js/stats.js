@@ -817,8 +817,18 @@ function renderStats(teams) {
 
       const nameSpan = document.createElement("span");
       nameSpan.className = "player-name";
-      nameSpan.textContent = p.name;
+      const fullName = p.name.trim();
+      const nameParts = fullName.split(/\s+/);
+      let shortName = fullName;
+      if (nameParts.length >= 2) {
+        const firstName = nameParts[0];
+        const surname = nameParts.slice(1).join(" ");
+        shortName = `${surname} ${firstName.charAt(0).toUpperCase()}.`;
+      }
 
+      nameSpan.textContent = fullName;
+      nameSpan.dataset.shortName = shortName;
+      nameSpan.dataset.fullName = fullName;
       playerWrapper.appendChild(playerImg);
       playerWrapper.appendChild(nameSpan);
       tdName.appendChild(playerWrapper);

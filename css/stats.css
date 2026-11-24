@@ -1378,7 +1378,7 @@ td {
   }
 
   #statsContainer .stats-table colgroup col:nth-child(2) {
-    width: 90px !important;
+    width: 110px !important;
   }
 
   #statsContainer .stats-table colgroup col:nth-child(n + 3) {
@@ -1437,9 +1437,9 @@ td {
   #statsContainer .stats-table thead th:nth-child(2) {
     position: sticky;
     left: 24px;
-    width: 90px;
-    min-width: 90px;
-    max-width: 90px;
+    width: 110px;
+    min-width: 110px;
+    max-width: 110px;
     background: #ffffff;
     z-index: 30;
     padding: 4px;
@@ -1467,9 +1467,9 @@ td {
   #statsContainer .stats-table .team-total-row .team-total-name {
     position: sticky;
     left: 0;
-    width: 114px;
-    min-width: 114px;
-    max-width: 114px;
+    width: 134px;
+    min-width: 134px;
+    max-width: 134px;
     background: var(--navy-soft);
     z-index: 35;
     padding: 6px 3px;
@@ -1561,5 +1561,23 @@ td {
 
   #statsContainer .stats-table thead th:nth-child(1) {
     z-index: 40;
+  }
+
+  /* SKRAĆENA IMENA NA TELEFONU */
+
+  #statsContainer .player-name {
+    font-size: 11px;
+  }
+
+  #statsContainer .player-name::after {
+    content: attr(data-short-name);
+  }
+
+  #statsContainer .player-name {
+    font-size: 0;
+  }
+
+  #statsContainer .player-name::after {
+    font-size: 11px;
   }
 }
