@@ -85,18 +85,24 @@ onValue(ref(db, `games/${gameId}/gameInfo`), (snap) => {
   teamB = info.teamB;
 
   document.getElementById("teamA_name").innerHTML = `
-        <img src="team_logo/${info.teamA_logo || ""}"
-             class="teamLogo"
-             alt="${teamA}">
+    <img src="team_logo/${info.teamA_logo || ""}"
+         class="teamLogo"
+         alt="${teamA}">
+    <span class="team-title">
         <span>${teamA}</span>
-    `;
+        <span class="team-score">${Number(info.scoreA || 0)}</span>
+    </span>
+`;
 
   document.getElementById("teamB_name").innerHTML = `
-        <img src="team_logo/${info.teamB_logo || ""}"
-             class="teamLogo"
-             alt="${teamB}">
+    <img src="team_logo/${info.teamB_logo || ""}"
+         class="teamLogo"
+         alt="${teamB}">
+    <span class="team-title">
         <span>${teamB}</span>
-    `;
+        <span class="team-score">${Number(info.scoreB || 0)}</span>
+    </span>
+`;
 
   // Učitavanje igrača pokrećemo samo jednom
   if (!playersListenersStarted) {
