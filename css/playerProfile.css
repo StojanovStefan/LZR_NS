@@ -83,7 +83,7 @@ body {
 
 .team-name {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   color: #294765;
 }
 
@@ -155,11 +155,11 @@ body {
 .stat-card h3 {
   text-align: center;
   padding: 12px 0;
-  color: #172b43;
+  color: #ffffff;
   font-size: 20px;
   margin: 0;
   font-weight: 700;
-  background: #f5f7fa;
+  background: linear-gradient(135deg, #315b80 0%, #172b43 100%);
   border-bottom: 1px solid #dce5ef;
 }
 
@@ -191,6 +191,7 @@ body {
   gap: 20px;
   padding: 4px 0;
   font-size: 16px;
+  font-weight: 600;
   color: #334b63;
 }
 
@@ -468,7 +469,7 @@ body {
 
   .team-name {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
   }
 
   .tabs {
