@@ -20,40 +20,6 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
 
-// ==============================
-// HEADER
-// ==============================
-/*document.getElementById("headerContainer").innerHTML = `
-  <header class="main-header">
-
-    <div class="header-brand">
-      <a href="index.html" class="brand-logo">
-        <img src="team_logo/favicon.png" alt="Logo">
-      </a>
-    </div>
-
-    <nav class="main-nav">
-      <a href="index.html" class="nav-link">RASPORED</a>
-
-      <div class="nav-dropdown">
-        <a href="#" class="nav-link">
-          LIGE <span class="dropdown-arrow">⌄</span>
-        </a>
-        <div class="dropdown-menu">
-          <a href="#">Sve lige</a>
-          <a href="#">Aktuelna liga</a>
-        </div>
-      </div>
-
-      <a href="#" class="nav-link">KLUBOVI</a>
-      <a href="#" class="nav-link">ISTORIJA</a>
-      <a href="#" class="nav-link">NAJBOLJI</a>
-    </nav>
-
-  </header>
-`;
-*/
-
 const gamesRef = ref(db, "games");
 
 get(gamesRef).then((snapshot) => {
