@@ -238,8 +238,7 @@ async function updateSelectedPlayer() {
                 <h2>Izaberi igrača</h2>
 
                 <p>
-                    Klikni na igrača iz Lions ili Dragons
-                    tima da bi uneo njegovu statistiku.
+                    Klikni na bilo kog igrača da bi uneo/la njegovu statistiku.
                 </p>
             </div>
         `;
