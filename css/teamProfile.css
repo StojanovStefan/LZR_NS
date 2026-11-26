@@ -50,7 +50,7 @@ h1 {
 
 .team-header span {
   font-size: 32px;
-  font-weight: 400;
+  font-weight: 600;
   color: #172b43;
 }
 
@@ -175,8 +175,8 @@ th {
 .stat-card h3 {
   text-align: center;
   padding: 12px 0;
-  color: #172b43;
-  background: #f5f7fa;
+  color: #ffffff;
+  background: linear-gradient(135deg, #315b80 0%, #172b43 100%);
   font-size: 20px;
   margin: 0;
   font-weight: 700;
@@ -209,6 +209,7 @@ th {
   align-items: center;
   gap: 20px;
   padding: 4px 0;
+  font-weight: 600;
   font-size: 16px;
   color: #294765;
 }
@@ -327,7 +328,12 @@ th {
 .stat-box.active-stat {
   border: 1.5px solid #42698f;
   border-radius: 8px;
-  background: #e9eff6;
+  background: linear-gradient(135deg, #315b80 0%, #172b43 100%);
+}
+
+.stat-box.active-stat div:first-child,
+.stat-box.active-stat div:last-child {
+  color: #ffffff;
 }
 
 /* ==============================
@@ -531,8 +537,10 @@ th {
   }
 
   .game-card div[style*="font-size:22px"] {
-    font-size: 26px !important;
-    margin: 8px 0;
+    font-size: 18px !important;
+    margin: 4px 0;
+    white-space: nowrap;
+    letter-spacing: -0.5px;
   }
 
   .game-card div[style*="text-align:center"] div {
